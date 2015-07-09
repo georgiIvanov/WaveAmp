@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FA6C9961524C40A8B570F2A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CC663FCBFA90A9EC45B2CA /* libPods.a */; };
+		FF0A482F1B4E38FA0021B149 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0A482E1B4E38FA0021B149 /* libc++.dylib */; };
 		FF42B96D1B4E35AF00535A7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B96C1B4E35AF00535A7B /* main.m */; };
 		FF42B9701B4E35AF00535A7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B96F1B4E35AF00535A7B /* AppDelegate.m */; };
 		FF42B9761B4E35AF00535A7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9741B4E35AF00535A7B /* Main.storyboard */; };
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		57F6D79C9BC447900DED991A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D5CC663FCBFA90A9EC45B2CA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9F17805F845646925F68CD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FF0A482E1B4E38FA0021B149 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		FF42B9671B4E35AF00535A7B /* WaveAmp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveAmp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF42B96B1B4E35AF00535A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF42B96C1B4E35AF00535A7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF0A482F1B4E38FA0021B149 /* libc++.dylib in Frameworks */,
+				0FA6C9961524C40A8B570F2A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +68,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14EEFCD0369F1A55470A9A07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF0A482E1B4E38FA0021B149 /* libc++.dylib */,
+				D5CC663FCBFA90A9EC45B2CA /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4B08BFABAF9E76B6258F14D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57F6D79C9BC447900DED991A /* Pods.debug.xcconfig */,
+				DC9F17805F845646925F68CD /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FF42B95E1B4E35AF00535A7B = {
 			isa = PBXGroup;
 			children = (
 				FF42B9691B4E35AF00535A7B /* WaveAmp */,
 				FF42B9831B4E35AF00535A7B /* WaveAmpTests */,
 				FF42B9681B4E35AF00535A7B /* Products */,
+				C4B08BFABAF9E76B6258F14D /* Pods */,
+				14EEFCD0369F1A55470A9A07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF42B98A1B4E35AF00535A7B /* Build configuration list for PBXNativeTarget "WaveAmp" */;
 			buildPhases = (
+				F84B9BB3AB7CAFF785494CDE /* Check Pods Manifest.lock */,
 				FF42B9631B4E35AF00535A7B /* Sources */,
 				FF42B9641B4E35AF00535A7B /* Frameworks */,
 				FF42B9651B4E35AF00535A7B /* Resources */,
+				6B2F28AD0AF588AEF4713525 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,6 +259,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B2F28AD0AF588AEF4713525 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F84B9BB3AB7CAFF785494CDE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FF42B9631B4E35AF00535A7B /* Sources */ = {
@@ -363,9 +426,11 @@
 		};
 		FF42B98B1B4E35AF00535A7B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57F6D79C9BC447900DED991A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WaveAmp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -373,9 +438,11 @@
 		};
 		FF42B98C1B4E35AF00535A7B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC9F17805F845646925F68CD /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WaveAmp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -434,6 +501,7 @@
 				FF42B98C1B4E35AF00535A7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF42B98D1B4E35AF00535A7B /* Build configuration list for PBXNativeTarget "WaveAmpTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +510,7 @@
 				FF42B98F1B4E35AF00535A7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

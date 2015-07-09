@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100CE43077D9F6E4F4256FC6 /* Pods-Novocaine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1239555E417E166BBF740BE /* Pods-Novocaine-dummy.m */; };
+		10378544DB636B732B3B817A /* NVPeakingEQFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E53D1A0A409B43205D77107 /* NVPeakingEQFilter.h */; };
+		14044F6CD7617A007E506072 /* AudioFileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9049ADBCB66726A4F28BEB10 /* AudioFileWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		20A0387AD64906B6255D8727 /* NVLowpassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C89063F290AF92FC32A637 /* NVLowpassFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		242E1CB21A706ACBA0739DE4 /* NVNotchFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9BB6A8D4EF0D89D80A7A0E /* NVNotchFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		264571018544A669419E7D49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D133A354C9BFD1D8CC01AAD /* Foundation.framework */; };
+		2AB30CBCFD5C71A476C7076A /* AudioFileWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 72C47FE94C257EE611B88C5B /* AudioFileWriter.h */; };
+		31FD74E9083B22A0C35602BB /* Novocaine.h in Headers */ = {isa = PBXBuildFile; fileRef = 21654A1890A798FBB9B5360C /* Novocaine.h */; };
+		32CA3CEA1EFE561CF4BB568E /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 857150B5983023601B0DFE94 /* Pods-dummy.m */; };
+		343C8DD151B47616BB3B0877 /* NVLowShelvingFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D50BF2250871CE5C6F8D2CD /* NVLowShelvingFilter.h */; };
+		376797E91A6C047A9C0E4035 /* NVClippingDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = 090C4E43E67FBE9D48CE53BB /* NVClippingDetection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		3B27ACD879DE849E0EFCE500 /* Novocaine.m in Sources */ = {isa = PBXBuildFile; fileRef = 784EE33048C69BD1AC742894 /* Novocaine.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		3D3511148A6CB0D329F9FB73 /* NVDSP.h in Headers */ = {isa = PBXBuildFile; fileRef = A01D7B3C92C52F4353D65A49 /* NVDSP.h */; };
+		3D39E6D31DEC43D13C1A2546 /* NVDSP.mm in Sources */ = {isa = PBXBuildFile; fileRef = 717D59EAC217CE0F7D5C8709 /* NVDSP.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		498D485DA1FC64C472195D69 /* NVSoundLevelMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 084A34E6514F7AAE525BD77D /* NVSoundLevelMeter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		4CC458C8CFDD5F4895D84FA7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42161861DF2947D791A66962 /* AudioToolbox.framework */; };
+		4FA942BDFB3A95AFAD3EDB7F /* NVPeakingEQFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E2D7720524D02BCA409C3D /* NVPeakingEQFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		50712B8C7FA7B20A23C18D66 /* NVBandpassFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2831FC92644FF27E87511050 /* NVBandpassFilter.h */; };
+		5BBE99D7A7581068D821A2BC /* NVAllpassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC81526AD5B7595671CCD46 /* NVAllpassFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		5FE9D6DF3B67B30BE8027622 /* NVHighShelvingFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B20701BB816F7BC0AD7951B /* NVHighShelvingFilter.h */; };
+		6147192573CF3B34E3FC29E1 /* NVHighpassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DA6982FE20B03CF0FC612D /* NVHighpassFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		677D4F5137C781F1D3CA1CA7 /* RingBuffer.mm in Sources */ = {isa = PBXBuildFile; fileRef = B971DE47E45A9183BA2D7885 /* RingBuffer.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		7EB35608B3FC348803E22195 /* NVBandpassQPeakGainFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = A0825E3FADD797B521C6AE62 /* NVBandpassQPeakGainFilter.h */; };
+		7FA5CFCDFAA275F31078E81E /* NVLowShelvingFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = F79118F201EEE1AC29815ADB /* NVLowShelvingFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		7FEE9608D7BED9870C01504B /* NVSoundLevelMeter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FB34755BD558696AE2D16E6 /* NVSoundLevelMeter.h */; };
+		819F569782D0D21C3DA54C22 /* AudioFileReader.h in Headers */ = {isa = PBXBuildFile; fileRef = D6A33EC3F406912AF67415CB /* AudioFileReader.h */; };
+		8C92E022FF265BE56C27C66D /* NVBandpassQPeakGainFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4ED67F39D3ACB5EC831E7E /* NVBandpassQPeakGainFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		A20AF26FB01DDA4B6C4105C8 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34CD9FABA487D88D52DDB5F5 /* Accelerate.framework */; };
+		A6B3D3B453CD3176F9EAB995 /* NVHighpassFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = DD128A0CF05F25C580E76B17 /* NVHighpassFilter.h */; };
+		B696BFC5FA5F9938C882A1B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D133A354C9BFD1D8CC01AAD /* Foundation.framework */; };
+		C8320923910D3EDA6583771E /* Pods-NVDSP-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5946933379F6E032459D7DA8 /* Pods-NVDSP-dummy.m */; };
+		D781640D51ACC34662D70089 /* NVClippingDetection.h in Headers */ = {isa = PBXBuildFile; fileRef = A68F93B2A54DA8D9C6D2EFB6 /* NVClippingDetection.h */; };
+		D90574E79CBEAC4A53A17E2F /* NVBandpassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B5066AF9CC0A09ED263919 /* NVBandpassFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		E93BAA2778E7DA1A3B2B367F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D133A354C9BFD1D8CC01AAD /* Foundation.framework */; };
+		ED2109BA20C4D68F1055BB06 /* NVHighShelvingFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0F166737F4326BDD258C7C /* NVHighShelvingFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		EEAF72DCC5EAFFAE353EE8E8 /* RingBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = A580CAB3D43EEDB744AA5669 /* RingBuffer.h */; };
+		F1DAFD233867F33F1F1F299F /* NVLowpassFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = AAA38161077FD3CBC479DA61 /* NVLowpassFilter.h */; };
+		F60EA10521DE39DBD7654649 /* NVNotchFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = DF71CFB1F7FD2E07230F9B21 /* NVNotchFilter.h */; };
+		FA518CBE88D5580E16F75304 /* AudioFileReader.mm in Sources */ = {isa = PBXBuildFile; fileRef = E8038A4E0F7DFEB6A0F2BF90 /* AudioFileReader.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		FC512AD63FF3D3F49038328C /* NVAllpassFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FA6EBC55408A083ED1D72ED /* NVAllpassFilter.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		154C9F5415F34373FE3D1D89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C280712DA64074704A9F95B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29EA0F0A64054B664F6A11AA;
+			remoteInfo = "Pods-NVDSP";
+		};
+		62026838567EE9B884CC1243 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C280712DA64074704A9F95B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 325D0ADC1CC3CC456C2F46E6;
+			remoteInfo = "Pods-Novocaine";
+		};
+		DD47ECF79087C0166CE6CF8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C280712DA64074704A9F95B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 325D0ADC1CC3CC456C2F46E6;
+			remoteInfo = "Pods-Novocaine";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		033A4A32BECDD61B56EC99DC /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		084A34E6514F7AAE525BD77D /* NVSoundLevelMeter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVSoundLevelMeter.m; path = Utilities/NVSoundLevelMeter.m; sourceTree = "<group>"; };
+		08DA6982FE20B03CF0FC612D /* NVHighpassFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVHighpassFilter.m; path = Filters/NVHighpassFilter.m; sourceTree = "<group>"; };
+		090C4E43E67FBE9D48CE53BB /* NVClippingDetection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVClippingDetection.m; path = Utilities/NVClippingDetection.m; sourceTree = "<group>"; };
+		0B20701BB816F7BC0AD7951B /* NVHighShelvingFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVHighShelvingFilter.h; path = Filters/NVHighShelvingFilter.h; sourceTree = "<group>"; };
+		0E1210B135FF00FC51DAEA84 /* Pods-Novocaine-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Novocaine-prefix.pch"; sourceTree = "<group>"; };
+		0F4ED67F39D3ACB5EC831E7E /* NVBandpassQPeakGainFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVBandpassQPeakGainFilter.m; path = Filters/NVBandpassQPeakGainFilter.m; sourceTree = "<group>"; };
+		12A6EF9AD4C4EAEC5B6BA047 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		19C69C564CA25F763429FC59 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		21654A1890A798FBB9B5360C /* Novocaine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Novocaine.h; path = Novocaine/Novocaine.h; sourceTree = "<group>"; };
+		233B901F77E9EFF526C1EE13 /* Pods-NVDSP.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NVDSP.xcconfig"; sourceTree = "<group>"; };
+		2831FC92644FF27E87511050 /* NVBandpassFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVBandpassFilter.h; path = Filters/NVBandpassFilter.h; sourceTree = "<group>"; };
+		28D0199E1508145E42007898 /* Pods-NVDSP-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NVDSP-prefix.pch"; sourceTree = "<group>"; };
+		29E2D7720524D02BCA409C3D /* NVPeakingEQFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVPeakingEQFilter.m; path = Filters/NVPeakingEQFilter.m; sourceTree = "<group>"; };
+		2D50BF2250871CE5C6F8D2CD /* NVLowShelvingFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVLowShelvingFilter.h; path = Filters/NVLowShelvingFilter.h; sourceTree = "<group>"; };
+		2E53D1A0A409B43205D77107 /* NVPeakingEQFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVPeakingEQFilter.h; path = Filters/NVPeakingEQFilter.h; sourceTree = "<group>"; };
+		34CD9FABA487D88D52DDB5F5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		372D2DBCF6200F636DA853CC /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		3A9171AAE9F6894928494C4F /* Pods-Novocaine.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Novocaine.xcconfig"; sourceTree = "<group>"; };
+		3DC81526AD5B7595671CCD46 /* NVAllpassFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVAllpassFilter.m; path = Filters/NVAllpassFilter.m; sourceTree = "<group>"; };
+		42161861DF2947D791A66962 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		5946933379F6E032459D7DA8 /* Pods-NVDSP-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NVDSP-dummy.m"; sourceTree = "<group>"; };
+		59AC6BE62FFFBD717434DC17 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5FB34755BD558696AE2D16E6 /* NVSoundLevelMeter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVSoundLevelMeter.h; path = Utilities/NVSoundLevelMeter.h; sourceTree = "<group>"; };
+		6D133A354C9BFD1D8CC01AAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		717D59EAC217CE0F7D5C8709 /* NVDSP.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = NVDSP.mm; sourceTree = "<group>"; };
+		71B4B2E3C6F1F0429644E213 /* libPods-NVDSP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NVDSP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72C47FE94C257EE611B88C5B /* AudioFileWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AudioFileWriter.h; path = Novocaine/AudioFileWriter.h; sourceTree = "<group>"; };
+		784EE33048C69BD1AC742894 /* Novocaine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Novocaine.m; path = Novocaine/Novocaine.m; sourceTree = "<group>"; };
+		7EA0EB931B46B8B277BF071F /* Pods-NVDSP-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NVDSP-Private.xcconfig"; sourceTree = "<group>"; };
+		7FC9BF17FCFBDF7DB3E3CE66 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		857150B5983023601B0DFE94 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		8D036216D6A3A71B187A5945 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9049ADBCB66726A4F28BEB10 /* AudioFileWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AudioFileWriter.m; path = Novocaine/AudioFileWriter.m; sourceTree = "<group>"; };
+		9FA6EBC55408A083ED1D72ED /* NVAllpassFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVAllpassFilter.h; path = Filters/NVAllpassFilter.h; sourceTree = "<group>"; };
+		A01D7B3C92C52F4353D65A49 /* NVDSP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NVDSP.h; sourceTree = "<group>"; };
+		A0825E3FADD797B521C6AE62 /* NVBandpassQPeakGainFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVBandpassQPeakGainFilter.h; path = Filters/NVBandpassQPeakGainFilter.h; sourceTree = "<group>"; };
+		A580CAB3D43EEDB744AA5669 /* RingBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RingBuffer.h; path = Novocaine/RingBuffer.h; sourceTree = "<group>"; };
+		A68F93B2A54DA8D9C6D2EFB6 /* NVClippingDetection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVClippingDetection.h; path = Utilities/NVClippingDetection.h; sourceTree = "<group>"; };
+		AAA38161077FD3CBC479DA61 /* NVLowpassFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVLowpassFilter.h; path = Filters/NVLowpassFilter.h; sourceTree = "<group>"; };
+		B971DE47E45A9183BA2D7885 /* RingBuffer.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RingBuffer.mm; path = Novocaine/RingBuffer.mm; sourceTree = "<group>"; };
+		BD0F166737F4326BDD258C7C /* NVHighShelvingFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVHighShelvingFilter.m; path = Filters/NVHighShelvingFilter.m; sourceTree = "<group>"; };
+		C7B5066AF9CC0A09ED263919 /* NVBandpassFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVBandpassFilter.m; path = Filters/NVBandpassFilter.m; sourceTree = "<group>"; };
+		D6A33EC3F406912AF67415CB /* AudioFileReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AudioFileReader.h; path = Novocaine/AudioFileReader.h; sourceTree = "<group>"; };
+		DC812B86F4D67F32BB67EDE7 /* libPods-Novocaine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Novocaine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD128A0CF05F25C580E76B17 /* NVHighpassFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVHighpassFilter.h; path = Filters/NVHighpassFilter.h; sourceTree = "<group>"; };
+		DF71CFB1F7FD2E07230F9B21 /* NVNotchFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVNotchFilter.h; path = Filters/NVNotchFilter.h; sourceTree = "<group>"; };
+		E1239555E417E166BBF740BE /* Pods-Novocaine-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Novocaine-dummy.m"; sourceTree = "<group>"; };
+		E8038A4E0F7DFEB6A0F2BF90 /* AudioFileReader.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = AudioFileReader.mm; path = Novocaine/AudioFileReader.mm; sourceTree = "<group>"; };
+		EC9BB6A8D4EF0D89D80A7A0E /* NVNotchFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVNotchFilter.m; path = Filters/NVNotchFilter.m; sourceTree = "<group>"; };
+		F0150AAC3F089D34E1684F5A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F79118F201EEE1AC29815ADB /* NVLowShelvingFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVLowShelvingFilter.m; path = Filters/NVLowShelvingFilter.m; sourceTree = "<group>"; };
+		F9C89063F290AF92FC32A637 /* NVLowpassFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVLowpassFilter.m; path = Filters/NVLowpassFilter.m; sourceTree = "<group>"; };
+		FF9F96EC4854BDE33133D73F /* Pods-Novocaine-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Novocaine-Private.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33B859711DBD915A0ADA0E0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				264571018544A669419E7D49 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		611C32FE834CF09337DBD525 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20AF26FB01DDA4B6C4105C8 /* Accelerate.framework in Frameworks */,
+				4CC458C8CFDD5F4895D84FA7 /* AudioToolbox.framework in Frameworks */,
+				E93BAA2778E7DA1A3B2B367F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3AED11D8E535C5C3BA90857 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B696BFC5FA5F9938C882A1B0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06254F3B7A6172E9ED7D1023 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C485593F6B4CAE25DF537248 /* NVDSP */,
+				59DE2DD44D4C86FC464FCA08 /* Novocaine */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		283431CAAB463932E88F7A2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0150AAC3F089D34E1684F5A /* libPods.a */,
+				71B4B2E3C6F1F0429644E213 /* libPods-NVDSP.a */,
+				DC812B86F4D67F32BB67EDE7 /* libPods-Novocaine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C7E0E872688D9A64F2337F7 = {
+			isa = PBXGroup;
+			children = (
+				8D036216D6A3A71B187A5945 /* Podfile */,
+				46D488388FFA4D783FC8AEC9 /* Frameworks */,
+				06254F3B7A6172E9ED7D1023 /* Pods */,
+				283431CAAB463932E88F7A2F /* Products */,
+				8457C5967EE0EAF4C70D985E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		46D488388FFA4D783FC8AEC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9ACA466DA43890B6A9136306 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C50CF3D8AC12857A09751DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59AC6BE62FFFBD717434DC17 /* Pods-acknowledgements.markdown */,
+				19C69C564CA25F763429FC59 /* Pods-acknowledgements.plist */,
+				857150B5983023601B0DFE94 /* Pods-dummy.m */,
+				372D2DBCF6200F636DA853CC /* Pods-environment.h */,
+				033A4A32BECDD61B56EC99DC /* Pods-resources.sh */,
+				7FC9BF17FCFBDF7DB3E3CE66 /* Pods.debug.xcconfig */,
+				12A6EF9AD4C4EAEC5B6BA047 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		59DE2DD44D4C86FC464FCA08 /* Novocaine */ = {
+			isa = PBXGroup;
+			children = (
+				D6A33EC3F406912AF67415CB /* AudioFileReader.h */,
+				E8038A4E0F7DFEB6A0F2BF90 /* AudioFileReader.mm */,
+				72C47FE94C257EE611B88C5B /* AudioFileWriter.h */,
+				9049ADBCB66726A4F28BEB10 /* AudioFileWriter.m */,
+				21654A1890A798FBB9B5360C /* Novocaine.h */,
+				784EE33048C69BD1AC742894 /* Novocaine.m */,
+				A580CAB3D43EEDB744AA5669 /* RingBuffer.h */,
+				B971DE47E45A9183BA2D7885 /* RingBuffer.mm */,
+				6947858A8F9A4F470E5475AF /* Support Files */,
+			);
+			path = Novocaine;
+			sourceTree = "<group>";
+		};
+		6947858A8F9A4F470E5475AF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A9171AAE9F6894928494C4F /* Pods-Novocaine.xcconfig */,
+				FF9F96EC4854BDE33133D73F /* Pods-Novocaine-Private.xcconfig */,
+				E1239555E417E166BBF740BE /* Pods-Novocaine-dummy.m */,
+				0E1210B135FF00FC51DAEA84 /* Pods-Novocaine-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Novocaine";
+			sourceTree = "<group>";
+		};
+		8457C5967EE0EAF4C70D985E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C50CF3D8AC12857A09751DB /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9ACA466DA43890B6A9136306 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				34CD9FABA487D88D52DDB5F5 /* Accelerate.framework */,
+				42161861DF2947D791A66962 /* AudioToolbox.framework */,
+				6D133A354C9BFD1D8CC01AAD /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A277BCAEEB09235B96241D0D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				233B901F77E9EFF526C1EE13 /* Pods-NVDSP.xcconfig */,
+				7EA0EB931B46B8B277BF071F /* Pods-NVDSP-Private.xcconfig */,
+				5946933379F6E032459D7DA8 /* Pods-NVDSP-dummy.m */,
+				28D0199E1508145E42007898 /* Pods-NVDSP-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-NVDSP";
+			sourceTree = "<group>";
+		};
+		C485593F6B4CAE25DF537248 /* NVDSP */ = {
+			isa = PBXGroup;
+			children = (
+				9FA6EBC55408A083ED1D72ED /* NVAllpassFilter.h */,
+				3DC81526AD5B7595671CCD46 /* NVAllpassFilter.m */,
+				2831FC92644FF27E87511050 /* NVBandpassFilter.h */,
+				C7B5066AF9CC0A09ED263919 /* NVBandpassFilter.m */,
+				A0825E3FADD797B521C6AE62 /* NVBandpassQPeakGainFilter.h */,
+				0F4ED67F39D3ACB5EC831E7E /* NVBandpassQPeakGainFilter.m */,
+				A68F93B2A54DA8D9C6D2EFB6 /* NVClippingDetection.h */,
+				090C4E43E67FBE9D48CE53BB /* NVClippingDetection.m */,
+				A01D7B3C92C52F4353D65A49 /* NVDSP.h */,
+				717D59EAC217CE0F7D5C8709 /* NVDSP.mm */,
+				0B20701BB816F7BC0AD7951B /* NVHighShelvingFilter.h */,
+				BD0F166737F4326BDD258C7C /* NVHighShelvingFilter.m */,
+				DD128A0CF05F25C580E76B17 /* NVHighpassFilter.h */,
+				08DA6982FE20B03CF0FC612D /* NVHighpassFilter.m */,
+				2D50BF2250871CE5C6F8D2CD /* NVLowShelvingFilter.h */,
+				F79118F201EEE1AC29815ADB /* NVLowShelvingFilter.m */,
+				AAA38161077FD3CBC479DA61 /* NVLowpassFilter.h */,
+				F9C89063F290AF92FC32A637 /* NVLowpassFilter.m */,
+				DF71CFB1F7FD2E07230F9B21 /* NVNotchFilter.h */,
+				EC9BB6A8D4EF0D89D80A7A0E /* NVNotchFilter.m */,
+				2E53D1A0A409B43205D77107 /* NVPeakingEQFilter.h */,
+				29E2D7720524D02BCA409C3D /* NVPeakingEQFilter.m */,
+				5FB34755BD558696AE2D16E6 /* NVSoundLevelMeter.h */,
+				084A34E6514F7AAE525BD77D /* NVSoundLevelMeter.m */,
+				A277BCAEEB09235B96241D0D /* Support Files */,
+			);
+			path = NVDSP;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9089F4548C4B96D9F92699FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC512AD63FF3D3F49038328C /* NVAllpassFilter.h in Headers */,
+				50712B8C7FA7B20A23C18D66 /* NVBandpassFilter.h in Headers */,
+				7EB35608B3FC348803E22195 /* NVBandpassQPeakGainFilter.h in Headers */,
+				D781640D51ACC34662D70089 /* NVClippingDetection.h in Headers */,
+				3D3511148A6CB0D329F9FB73 /* NVDSP.h in Headers */,
+				5FE9D6DF3B67B30BE8027622 /* NVHighShelvingFilter.h in Headers */,
+				A6B3D3B453CD3176F9EAB995 /* NVHighpassFilter.h in Headers */,
+				343C8DD151B47616BB3B0877 /* NVLowShelvingFilter.h in Headers */,
+				F1DAFD233867F33F1F1F299F /* NVLowpassFilter.h in Headers */,
+				F60EA10521DE39DBD7654649 /* NVNotchFilter.h in Headers */,
+				10378544DB636B732B3B817A /* NVPeakingEQFilter.h in Headers */,
+				7FEE9608D7BED9870C01504B /* NVSoundLevelMeter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F55C160A4892A890F67E65B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				819F569782D0D21C3DA54C22 /* AudioFileReader.h in Headers */,
+				2AB30CBCFD5C71A476C7076A /* AudioFileWriter.h in Headers */,
+				31FD74E9083B22A0C35602BB /* Novocaine.h in Headers */,
+				EEAF72DCC5EAFFAE353EE8E8 /* RingBuffer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		29EA0F0A64054B664F6A11AA /* Pods-NVDSP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84321A2850C8687E37DF6F6A /* Build configuration list for PBXNativeTarget "Pods-NVDSP" */;
+			buildPhases = (
+				98CA9057EB57976137922956 /* Sources */,
+				33B859711DBD915A0ADA0E0E /* Frameworks */,
+				9089F4548C4B96D9F92699FE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD3951E7DE87E68281649296 /* PBXTargetDependency */,
+			);
+			name = "Pods-NVDSP";
+			productName = "Pods-NVDSP";
+			productReference = 71B4B2E3C6F1F0429644E213 /* libPods-NVDSP.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		325D0ADC1CC3CC456C2F46E6 /* Pods-Novocaine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E644CBDCD6460BFF2642859 /* Build configuration list for PBXNativeTarget "Pods-Novocaine" */;
+			buildPhases = (
+				7B2CF33DADBA1CF88362BD11 /* Sources */,
+				611C32FE834CF09337DBD525 /* Frameworks */,
+				F55C160A4892A890F67E65B2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Novocaine";
+			productName = "Pods-Novocaine";
+			productReference = DC812B86F4D67F32BB67EDE7 /* libPods-Novocaine.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FA3C7B1CEF49B0D5A8FFE219 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CAF82AF4447E650B9BC39F6 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				B08F74B087D94A2464A41245 /* Sources */,
+				F3AED11D8E535C5C3BA90857 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F13F3028CA0FCF9015F3CB80 /* PBXTargetDependency */,
+				226B452CF13295A2296B9893 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = F0150AAC3F089D34E1684F5A /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C280712DA64074704A9F95B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 78D37CA77FA46DB49CACDF25 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2C7E0E872688D9A64F2337F7;
+			productRefGroup = 283431CAAB463932E88F7A2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA3C7B1CEF49B0D5A8FFE219 /* Pods */,
+				29EA0F0A64054B664F6A11AA /* Pods-NVDSP */,
+				325D0ADC1CC3CC456C2F46E6 /* Pods-Novocaine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B2CF33DADBA1CF88362BD11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA518CBE88D5580E16F75304 /* AudioFileReader.mm in Sources */,
+				14044F6CD7617A007E506072 /* AudioFileWriter.m in Sources */,
+				3B27ACD879DE849E0EFCE500 /* Novocaine.m in Sources */,
+				100CE43077D9F6E4F4256FC6 /* Pods-Novocaine-dummy.m in Sources */,
+				677D4F5137C781F1D3CA1CA7 /* RingBuffer.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98CA9057EB57976137922956 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BBE99D7A7581068D821A2BC /* NVAllpassFilter.m in Sources */,
+				D90574E79CBEAC4A53A17E2F /* NVBandpassFilter.m in Sources */,
+				8C92E022FF265BE56C27C66D /* NVBandpassQPeakGainFilter.m in Sources */,
+				376797E91A6C047A9C0E4035 /* NVClippingDetection.m in Sources */,
+				3D39E6D31DEC43D13C1A2546 /* NVDSP.mm in Sources */,
+				ED2109BA20C4D68F1055BB06 /* NVHighShelvingFilter.m in Sources */,
+				6147192573CF3B34E3FC29E1 /* NVHighpassFilter.m in Sources */,
+				7FA5CFCDFAA275F31078E81E /* NVLowShelvingFilter.m in Sources */,
+				20A0387AD64906B6255D8727 /* NVLowpassFilter.m in Sources */,
+				242E1CB21A706ACBA0739DE4 /* NVNotchFilter.m in Sources */,
+				4FA942BDFB3A95AFAD3EDB7F /* NVPeakingEQFilter.m in Sources */,
+				498D485DA1FC64C472195D69 /* NVSoundLevelMeter.m in Sources */,
+				C8320923910D3EDA6583771E /* Pods-NVDSP-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B08F74B087D94A2464A41245 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32CA3CEA1EFE561CF4BB568E /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		226B452CF13295A2296B9893 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Novocaine";
+			target = 325D0ADC1CC3CC456C2F46E6 /* Pods-Novocaine */;
+			targetProxy = 62026838567EE9B884CC1243 /* PBXContainerItemProxy */;
+		};
+		CD3951E7DE87E68281649296 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Novocaine";
+			target = 325D0ADC1CC3CC456C2F46E6 /* Pods-Novocaine */;
+			targetProxy = DD47ECF79087C0166CE6CF8A /* PBXContainerItemProxy */;
+		};
+		F13F3028CA0FCF9015F3CB80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-NVDSP";
+			target = 29EA0F0A64054B664F6A11AA /* Pods-NVDSP */;
+			targetProxy = 154C9F5415F34373FE3D1D89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B4D8A11ACD9C6A525477AEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FC9BF17FCFBDF7DB3E3CE66 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1C7EB8FB21590C1546A1513B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EA0EB931B46B8B277BF071F /* Pods-NVDSP-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-NVDSP/Pods-NVDSP-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8866567114051CBF7F9809F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A4E85AA973ACF73447AC0EDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD61497D3551686D6A9D2CA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF9F96EC4854BDE33133D73F /* Pods-Novocaine-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Novocaine/Pods-Novocaine-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B28FBD65145EEFF212E48FF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EA0EB931B46B8B277BF071F /* Pods-NVDSP-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-NVDSP/Pods-NVDSP-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C1320805AE9EEDC39C6F7473 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12A6EF9AD4C4EAEC5B6BA047 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F3D5476EE953D22EB36A89DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF9F96EC4854BDE33133D73F /* Pods-Novocaine-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Novocaine/Pods-Novocaine-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E644CBDCD6460BFF2642859 /* Build configuration list for PBXNativeTarget "Pods-Novocaine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD61497D3551686D6A9D2CA4 /* Debug */,
+				F3D5476EE953D22EB36A89DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78D37CA77FA46DB49CACDF25 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8866567114051CBF7F9809F0 /* Debug */,
+				A4E85AA973ACF73447AC0EDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84321A2850C8687E37DF6F6A /* Build configuration list for PBXNativeTarget "Pods-NVDSP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C7EB8FB21590C1546A1513B /* Debug */,
+				B28FBD65145EEFF212E48FF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CAF82AF4447E650B9BC39F6 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B4D8A11ACD9C6A525477AEC /* Debug */,
+				C1320805AE9EEDC39C6F7473 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C280712DA64074704A9F95B7 /* Project object */;
+}
