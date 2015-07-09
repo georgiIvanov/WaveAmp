@@ -7,7 +7,7 @@
 //
 
 #import "AudiogramViewController.h"
-#import "HearingExam.h"
+#import "PureToneAudiometer.h"
 
 @interface AudiogramViewController()
 
