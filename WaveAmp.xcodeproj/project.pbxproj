@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		0FA6C9961524C40A8B570F2A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CC663FCBFA90A9EC45B2CA /* libPods.a */; };
 		FF0A482F1B4E38FA0021B149 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0A482E1B4E38FA0021B149 /* libc++.dylib */; };
+		FF0A48321B4E3D870021B149 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A48311B4E3D870021B149 /* TabBarViewController.m */; };
+		FF0A48381B4E3F560021B149 /* AbsThresholdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A48371B4E3F560021B149 /* AbsThresholdViewController.m */; };
+		FF0A483F1B4E44A80021B149 /* AudiogramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A483E1B4E44A80021B149 /* AudiogramViewController.m */; };
 		FF42B96D1B4E35AF00535A7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B96C1B4E35AF00535A7B /* main.m */; };
 		FF42B9701B4E35AF00535A7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B96F1B4E35AF00535A7B /* AppDelegate.m */; };
 		FF42B9761B4E35AF00535A7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9741B4E35AF00535A7B /* Main.storyboard */; };
 		FF42B9781B4E35AF00535A7B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9771B4E35AF00535A7B /* Images.xcassets */; };
 		FF42B97B1B4E35AF00535A7B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9791B4E35AF00535A7B /* LaunchScreen.xib */; };
 		FF42B9871B4E35AF00535A7B /* WaveAmpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B9861B4E35AF00535A7B /* WaveAmpTests.m */; };
-		FF42B9931B4E35D400535A7B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B9921B4E35D400535A7B /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,12 @@
 		D5CC663FCBFA90A9EC45B2CA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC9F17805F845646925F68CD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FF0A482E1B4E38FA0021B149 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		FF0A48301B4E3D870021B149 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		FF0A48311B4E3D870021B149 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		FF0A48361B4E3F560021B149 /* AbsThresholdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbsThresholdViewController.h; sourceTree = "<group>"; };
+		FF0A48371B4E3F560021B149 /* AbsThresholdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbsThresholdViewController.m; sourceTree = "<group>"; };
+		FF0A483D1B4E44A80021B149 /* AudiogramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiogramViewController.h; sourceTree = "<group>"; };
+		FF0A483E1B4E44A80021B149 /* AudiogramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiogramViewController.m; sourceTree = "<group>"; };
 		FF42B9671B4E35AF00535A7B /* WaveAmp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveAmp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF42B96B1B4E35AF00535A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF42B96C1B4E35AF00535A7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -44,8 +52,6 @@
 		FF42B9801B4E35AF00535A7B /* WaveAmpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaveAmpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF42B9851B4E35AF00535A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF42B9861B4E35AF00535A7B /* WaveAmpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaveAmpTests.m; sourceTree = "<group>"; };
-		FF42B9911B4E35D400535A7B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FF42B9921B4E35D400535A7B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,8 +154,12 @@
 		FF42B9901B4E35D400535A7B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				FF42B9911B4E35D400535A7B /* ViewController.h */,
-				FF42B9921B4E35D400535A7B /* ViewController.m */,
+				FF0A48301B4E3D870021B149 /* TabBarViewController.h */,
+				FF0A48311B4E3D870021B149 /* TabBarViewController.m */,
+				FF0A48361B4E3F560021B149 /* AbsThresholdViewController.h */,
+				FF0A48371B4E3F560021B149 /* AbsThresholdViewController.m */,
+				FF0A483D1B4E44A80021B149 /* AudiogramViewController.h */,
+				FF0A483E1B4E44A80021B149 /* AudiogramViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -298,7 +308,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF42B9931B4E35D400535A7B /* ViewController.m in Sources */,
+				FF0A483F1B4E44A80021B149 /* AudiogramViewController.m in Sources */,
+				FF0A48321B4E3D870021B149 /* TabBarViewController.m in Sources */,
+				FF0A48381B4E3F560021B149 /* AbsThresholdViewController.m in Sources */,
 				FF42B9701B4E35AF00535A7B /* AppDelegate.m in Sources */,
 				FF42B96D1B4E35AF00535A7B /* main.m in Sources */,
 			);

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AudiogramViewController.h
 //  WaveAmp
 //
 //  Created by Georgi Ivanov on 7/9/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface AudiogramViewController : UIViewController
 
 @end
-
