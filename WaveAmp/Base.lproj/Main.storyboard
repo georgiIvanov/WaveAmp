@@ -27,7 +27,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Audiogram" id="4ek-G7-wwF"/>
                     <connections>
-                        <segue destination="5TN-az-DWC" kind="presentation" id="QUW-ru-gMU"/>
+                        <segue destination="5TN-az-DWC" kind="presentation" identifier="AbsThresholdSegue" id="QUW-ru-gMU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Mf-Ud-FSC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -86,7 +86,6 @@
                         <segue destination="gUi-f9-8tM" kind="relationship" relationship="viewControllers" id="BUd-OQ-ujQ"/>
                         <segue destination="lWv-bN-XI1" kind="relationship" relationship="viewControllers" id="mFg-EP-7XN"/>
                         <segue destination="XYQ-93-EAs" kind="relationship" relationship="viewControllers" id="xKx-74-yFL"/>
-                        <segue destination="5TN-az-DWC" kind="presentation" id="180-FX-gf3"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ErR-NH-j1I" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -104,15 +103,20 @@
                     <view key="view" contentMode="scaleToFill" id="0Kb-lB-Rt1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hearing exam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5p-GL-Iza">
+                                <rect key="frame" x="247" y="289" width="107" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LdQ-Ri-qks" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-605" y="1002"/>
+            <point key="canvasLocation" x="1179" y="1002"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="QUW-ru-gMU"/>
-    </inferredMetricsTieBreakers>
 </document>
