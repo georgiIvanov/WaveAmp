@@ -11,6 +11,7 @@
 		FF0A482F1B4E38FA0021B149 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0A482E1B4E38FA0021B149 /* libc++.dylib */; };
 		FF0A48321B4E3D870021B149 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A48311B4E3D870021B149 /* TabBarViewController.m */; };
 		FF0A48381B4E3F560021B149 /* AbsThresholdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A48371B4E3F560021B149 /* AbsThresholdViewController.m */; };
+		FF0A483C1B4E42C20021B149 /* HearingExam.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A483B1B4E42C20021B149 /* HearingExam.m */; };
 		FF0A483F1B4E44A80021B149 /* AudiogramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A483E1B4E44A80021B149 /* AudiogramViewController.m */; };
 		FF42B96D1B4E35AF00535A7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B96C1B4E35AF00535A7B /* main.m */; };
 		FF42B9701B4E35AF00535A7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B96F1B4E35AF00535A7B /* AppDelegate.m */; };
@@ -39,6 +40,8 @@
 		FF0A48311B4E3D870021B149 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		FF0A48361B4E3F560021B149 /* AbsThresholdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbsThresholdViewController.h; sourceTree = "<group>"; };
 		FF0A48371B4E3F560021B149 /* AbsThresholdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbsThresholdViewController.m; sourceTree = "<group>"; };
+		FF0A483A1B4E42C20021B149 /* HearingExam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HearingExam.h; sourceTree = "<group>"; };
+		FF0A483B1B4E42C20021B149 /* HearingExam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HearingExam.m; sourceTree = "<group>"; };
 		FF0A483D1B4E44A80021B149 /* AudiogramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiogramViewController.h; sourceTree = "<group>"; };
 		FF0A483E1B4E44A80021B149 /* AudiogramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiogramViewController.m; sourceTree = "<group>"; };
 		FF42B9671B4E35AF00535A7B /* WaveAmp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveAmp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +95,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FF0A48391B4E41B00021B149 /* BusinessLayer */ = {
+			isa = PBXGroup;
+			children = (
+				FF0A483A1B4E42C20021B149 /* HearingExam.h */,
+				FF0A483B1B4E42C20021B149 /* HearingExam.m */,
+			);
+			path = BusinessLayer;
+			sourceTree = "<group>";
+		};
 		FF42B95E1B4E35AF00535A7B = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +127,7 @@
 		FF42B9691B4E35AF00535A7B /* WaveAmp */ = {
 			isa = PBXGroup;
 			children = (
+				FF0A48391B4E41B00021B149 /* BusinessLayer */,
 				FF42B9901B4E35D400535A7B /* ViewControllers */,
 				FF42B9941B4E35D900535A7B /* Storyboards */,
 				FF42B96E1B4E35AF00535A7B /* AppDelegate.h */,
@@ -310,6 +323,7 @@
 			files = (
 				FF0A483F1B4E44A80021B149 /* AudiogramViewController.m in Sources */,
 				FF0A48321B4E3D870021B149 /* TabBarViewController.m in Sources */,
+				FF0A483C1B4E42C20021B149 /* HearingExam.m in Sources */,
 				FF0A48381B4E3F560021B149 /* AbsThresholdViewController.m in Sources */,
 				FF42B9701B4E35AF00535A7B /* AppDelegate.m in Sources */,
 				FF42B96D1B4E35AF00535A7B /* main.m in Sources */,
