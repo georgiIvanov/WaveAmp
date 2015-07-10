@@ -37,6 +37,7 @@
     [self.audioManager setOutputBlock:^(float *data, UInt32 numFrames, UInt32 numChannels)
      {
          float samplingRate = wself.audioManager.samplingRate;
+         AudioChannel channel = wself.hearingExam.currentChannel;
          
          if(wself.hearingExam.currentFrequency == 0)
          {
@@ -45,11 +46,8 @@
          
          for (int i=0; i < numFrames; ++i)
          {
-             for (int iChannel = 0; iChannel < numChannels; ++iChannel)
-             {
-                 float theta = phase * M_PI * 2;
-                 data[i*numChannels + iChannel] = sin(theta) * [AmplitudeMultiplier multiplierForWaveDb:@(10)];
-             }
+             float theta = phase * M_PI * 2;
+             data[i*numChannels + channel] = sin(theta) * [AmplitudeMultiplier multiplierForWaveDb:@(25)];
              
              phase += 1.0 / (samplingRate / wself.hearingExam.currentFrequency);
              if (phase > 1.0){
@@ -64,4 +62,27 @@
     [self.hearingExam start];
 }
 
+#pragma mark - ToneAudiometerDelegate
+
+-(void)startingTest:(int)number
+{
+    self.testNumberLabel.text = [NSString stringWithFormat:@"Test %d of %lu", number, (unsigned long)self.hearingExam.frequencies.count];
+}
+
+-(void)testsAreOver
+{
+    self.testNumberLabel.text = @"Tests are completed.\nWell done!";
+}
+
+#pragma mark - UI Actions
+
+- (IBAction)buttonHeld:(UIButton *)sender {
+    NSLog(@"held %ld",(long)sender.tag);
+    [self.hearingExam buttonHeldForChannel:(int)sender.tag];
+}
+
+- (IBAction)buttonReleased:(UIButton *)sender {
+    NSLog(@"released %ld",(long)sender.tag);
+    [self.hearingExam buttonReleasedForChannel:(int)sender.tag];
+}
 @end

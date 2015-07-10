@@ -104,15 +104,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hearing exam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5p-GL-Iza">
-                                <rect key="frame" x="247" y="289" width="107" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5D-qF-6D0">
+                                <rect key="frame" x="16" y="384" width="276" height="200"/>
+                                <color key="backgroundColor" red="0.9137254901960784" green="0.96078431372549022" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="qhd-UT-F9K"/>
+                                </constraints>
+                                <state key="normal" title="Left">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonHeld:" destination="5TN-az-DWC" eventType="touchDown" id="Fgz-r2-0Ki"/>
+                                    <action selector="buttonReleased:" destination="5TN-az-DWC" eventType="touchUpInside" id="TB1-oO-8TM"/>
+                                    <action selector="buttonReleased:" destination="5TN-az-DWC" eventType="touchCancel" id="hyg-GW-P5f"/>
+                                    <action selector="buttonReleased:" destination="5TN-az-DWC" eventType="touchUpOutside" id="tih-c8-Ijb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAV-d2-g6y">
+                                <rect key="frame" x="308" y="384" width="276" height="200"/>
+                                <color key="backgroundColor" red="0.91764705882352937" green="0.96078431372549022" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Right">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonHeld:" destination="5TN-az-DWC" eventType="touchDown" id="uw6-cv-a79"/>
+                                    <action selector="buttonReleased:" destination="5TN-az-DWC" eventType="touchCancel" id="7cd-cm-Mdw"/>
+                                    <action selector="buttonReleased:" destination="5TN-az-DWC" eventType="touchUpInside" id="Ifa-uq-WsT"/>
+                                    <action selector="buttonReleased:" destination="5TN-az-DWC" eventType="touchUpOutside" id="OhE-cD-w0C"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test No." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kgs-k9-MQo">
+                                <rect key="frame" x="255" y="36" width="90" height="31"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="26"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g5D-qF-6D0" firstAttribute="width" secondItem="gAV-d2-g6y" secondAttribute="width" id="CMy-YN-u9A"/>
+                            <constraint firstItem="fso-Mc-5b6" firstAttribute="top" secondItem="gAV-d2-g6y" secondAttribute="bottom" constant="16" id="CPr-7o-o8X"/>
+                            <constraint firstItem="gAV-d2-g6y" firstAttribute="leading" secondItem="g5D-qF-6D0" secondAttribute="trailing" constant="16" id="JVY-pU-NlZ"/>
+                            <constraint firstItem="Kgs-k9-MQo" firstAttribute="top" secondItem="Bva-aN-sRD" secondAttribute="bottom" constant="16" id="LGp-sS-w7P"/>
+                            <constraint firstAttribute="centerX" secondItem="Kgs-k9-MQo" secondAttribute="centerX" id="Lw4-FG-PMe"/>
+                            <constraint firstItem="fso-Mc-5b6" firstAttribute="top" secondItem="g5D-qF-6D0" secondAttribute="bottom" constant="16" id="bin-Dl-Mjl"/>
+                            <constraint firstItem="g5D-qF-6D0" firstAttribute="leading" secondItem="0Kb-lB-Rt1" secondAttribute="leading" constant="16" id="iu7-v0-SiG"/>
+                            <constraint firstItem="g5D-qF-6D0" firstAttribute="height" secondItem="gAV-d2-g6y" secondAttribute="height" id="vii-9F-tF5"/>
+                            <constraint firstAttribute="trailing" secondItem="gAV-d2-g6y" secondAttribute="trailing" constant="16" id="wre-tr-XSR"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="leftButton" destination="g5D-qF-6D0" id="nVy-yz-bb6"/>
+                        <outlet property="rightButton" destination="gAV-d2-g6y" id="Fuc-2f-mz3"/>
+                        <outlet property="testNumberLabel" destination="Kgs-k9-MQo" id="D2S-Gb-Z5q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LdQ-Ri-qks" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

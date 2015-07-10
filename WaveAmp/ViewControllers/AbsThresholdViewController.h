@@ -10,4 +10,11 @@
 
 @interface AbsThresholdViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *testNumberLabel;
+@property (weak, nonatomic) IBOutlet UIButton *leftButton;
+@property (weak, nonatomic) IBOutlet UIButton *rightButton;
+
+- (IBAction)buttonHeld:(UIButton *)sender;
+- (IBAction)buttonReleased:(UIButton *)sender;
+
 @end
