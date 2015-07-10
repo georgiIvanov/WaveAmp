@@ -9,6 +9,7 @@
 #import "AmplitudeMultiplier.h"
 
 static NSDictionary* multipliersTable;
+static NSArray* dBs;
 
 @implementation AmplitudeMultiplier
 
@@ -26,14 +27,49 @@ static NSDictionary* multipliersTable;
                          @(50) : @(0.04004),
                          @(55) : @(0.07178),
                          @(60) : @(0.12696),
+                         @(65) : @(0.18696),
                          @(70) : @(0.22520),
                          @(75) : @(0.40040),
                          };
+    NSSortDescriptor* sort = [[NSSortDescriptor alloc] initWithKey:@"integerValue" ascending:YES];
+    dBs = [[multipliersTable allKeys] sortedArrayUsingDescriptors:@[sort]];
 }
 
 +(float)multiplierForWaveDb:(NSNumber*)dB
 {
     return [multipliersTable[dB] floatValue];
+}
+
++(NSInteger)intensitySettingsCount
+{
+    return dBs.count;
+}
+
++(NSNumber*)nextIntensity:(NSNumber*)currentIntensity
+{
+    for (int i = 0; i < dBs.count - 1; i++)
+    {
+        NSNumber* number = dBs[i];
+        if([number isEqualToNumber:currentIntensity])
+        {
+            return dBs[++i];
+        }
+    }
+    
+    return @(-1);
+}
+
++(NSNumber*)previousIntensity:(NSNumber*)currentIntensity
+{
+    for (int i = (int)dBs.count - 1; i >= 1 ; i--)
+    {
+        if([dBs[i] isEqualToNumber:currentIntensity])
+        {
+            return dBs[--i];
+        }
+    }
+    
+    return @(-1);
 }
 
 @end

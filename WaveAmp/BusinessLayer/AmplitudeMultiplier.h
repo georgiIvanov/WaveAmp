@@ -10,6 +10,9 @@
 
 @interface AmplitudeMultiplier : NSObject
 
++(NSInteger)intensitySettingsCount;
++(NSNumber*)nextIntensity:(NSNumber*)currentIntensity;
++(NSNumber*)previousIntensity:(NSNumber*)currentIntensity;
 +(float)multiplierForWaveDb:(NSNumber*)dB;
 
 @end
