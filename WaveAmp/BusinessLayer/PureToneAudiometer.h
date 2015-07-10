@@ -11,8 +11,15 @@
 extern NSString* const kAudiogramKey;
 extern NSTimeInterval const TimerUpdateInterval;
 
+typedef NS_ENUM(int, AudioChannel) {
+    kLeftChannel = 0,
+    kRightChannel = 1
+};
+
 @protocol ToneAudiometerDelegate <NSObject>
 
+-(void)startingTest:(int)number;
+-(void)testsAreOver;
 
 @end
 
@@ -22,9 +29,11 @@ extern NSTimeInterval const TimerUpdateInterval;
 
 @property(nonatomic) NSArray* frequencies;
 @property(nonatomic) float currentFrequency;
+@property(nonatomic) AudioChannel currentChannel;
 @property(nonatomic) NSRange testsInterval;
 
 -(void)start;
--(void)stop;
+-(void)buttonHeldForChannel:(AudioChannel)channel;
+-(void)buttonReleasedForChannel:(AudioChannel)channel;
 
 @end
