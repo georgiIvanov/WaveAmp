@@ -44,11 +44,14 @@
              phase = 0;
          }
          
-         for (int i=0; i < numFrames; ++i)
+         for (int i = 0; i < numFrames; ++i)
          {
-             float theta = phase * M_PI * 2;
-             data[i*numChannels + channel] = sin(theta) * [AmplitudeMultiplier multiplierForWaveDb:@(25)];
-             
+             for (int iChannel = 0; iChannel < numChannels; ++iChannel)
+             {
+                 float theta = phase * M_PI * 2;
+                 data[i*numChannels + iChannel] = iChannel == channel ? sin(theta) * [AmplitudeMultiplier multiplierForWaveDb:@(25)] : 0;
+             }
+
              phase += 1.0 / (samplingRate / wself.hearingExam.currentFrequency);
              if (phase > 1.0){
                  phase = -1;
