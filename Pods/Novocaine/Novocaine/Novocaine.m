@@ -735,12 +735,12 @@ OSStatus renderCallback (void						*inRefCon,
     if ( sm.numBytesPerSample == 4 ) // then we've already got floats
     {
         
-        for (int iBuffer=0; iBuffer < ioData->mNumberBuffers; ++iBuffer) {  
+        for (int iBuffer=0; iBuffer < ioData->mNumberBuffers; ++iBuffer) {
             
             int thisNumChannels = ioData->mBuffers[iBuffer].mNumberChannels;
             
             for (int iChannel = 0; iChannel < thisNumChannels; ++iChannel) {
-                vDSP_vsadd(sm.outData+iChannel, sm.numOutputChannels, &zero, (float *)ioData->mBuffers[iBuffer].mData, thisNumChannels, inNumberFrames);
+                vDSP_vsadd(sm.outData + iChannel + iBuffer, sm.numOutputChannels, &zero, (float *)ioData->mBuffers[iBuffer].mData, thisNumChannels, inNumberFrames);
             }
         }
     }
