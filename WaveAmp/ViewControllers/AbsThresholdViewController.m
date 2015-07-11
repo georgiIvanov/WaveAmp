@@ -49,7 +49,7 @@
              for (int iChannel = 0; iChannel < numChannels; ++iChannel)
              {
                  float theta = phase * M_PI * 2;
-                 data[i*numChannels + iChannel] = iChannel == channel ? sin(theta) * [AmplitudeMultiplier multiplierForWaveDb:@(25)] : 0;
+                 data[i*numChannels + iChannel] = iChannel == channel ? sin(theta) * wself.hearingExam.signalMultiplier : 0;
              }
 
              phase += 1.0 / (samplingRate / wself.hearingExam.currentFrequency);

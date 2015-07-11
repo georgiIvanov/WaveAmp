@@ -29,6 +29,7 @@ typedef NS_ENUM(int, AudioChannel) {
 
 @property(nonatomic) NSArray* frequencies;
 @property(nonatomic) float currentFrequency;
+@property(nonatomic) float signalMultiplier;
 @property(nonatomic) AudioChannel currentChannel;
 @property(nonatomic) NSRange testsInterval;
 
