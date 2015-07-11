@@ -16,6 +16,7 @@
 		FF0A48421B4FB44E0021B149 /* AmplitudeMultiplier.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A48411B4FB44E0021B149 /* AmplitudeMultiplier.m */; };
 		FF0A48451B4FB75B0021B149 /* HearingExamSoundMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A48441B4FB75B0021B149 /* HearingExamSoundMeter.m */; };
 		FF0A48491B4FEC7E0021B149 /* FrequencyThreshold.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A48481B4FEC7E0021B149 /* FrequencyThreshold.m */; };
+		FF0A484C1B5031A10021B149 /* ExamPunchCard.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A484B1B5031A10021B149 /* ExamPunchCard.m */; };
 		FF42B96D1B4E35AF00535A7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B96C1B4E35AF00535A7B /* main.m */; };
 		FF42B9701B4E35AF00535A7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B96F1B4E35AF00535A7B /* AppDelegate.m */; };
 		FF42B9761B4E35AF00535A7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9741B4E35AF00535A7B /* Main.storyboard */; };
@@ -53,6 +54,8 @@
 		FF0A48441B4FB75B0021B149 /* HearingExamSoundMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HearingExamSoundMeter.m; sourceTree = "<group>"; };
 		FF0A48471B4FEC7E0021B149 /* FrequencyThreshold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrequencyThreshold.h; sourceTree = "<group>"; };
 		FF0A48481B4FEC7E0021B149 /* FrequencyThreshold.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrequencyThreshold.m; sourceTree = "<group>"; };
+		FF0A484A1B5031A10021B149 /* ExamPunchCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExamPunchCard.h; sourceTree = "<group>"; };
+		FF0A484B1B5031A10021B149 /* ExamPunchCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExamPunchCard.m; sourceTree = "<group>"; };
 		FF42B9671B4E35AF00535A7B /* WaveAmp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveAmp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF42B96B1B4E35AF00535A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF42B96C1B4E35AF00535A7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -122,6 +125,8 @@
 			children = (
 				FF0A48471B4FEC7E0021B149 /* FrequencyThreshold.h */,
 				FF0A48481B4FEC7E0021B149 /* FrequencyThreshold.m */,
+				FF0A484A1B5031A10021B149 /* ExamPunchCard.h */,
+				FF0A484B1B5031A10021B149 /* ExamPunchCard.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -349,6 +354,7 @@
 				FF0A48321B4E3D870021B149 /* TabBarViewController.m in Sources */,
 				FF0A483C1B4E42C20021B149 /* PureToneAudiometer.m in Sources */,
 				FF0A48421B4FB44E0021B149 /* AmplitudeMultiplier.m in Sources */,
+				FF0A484C1B5031A10021B149 /* ExamPunchCard.m in Sources */,
 				FF0A48491B4FEC7E0021B149 /* FrequencyThreshold.m in Sources */,
 				FF0A48381B4E3F560021B149 /* AbsThresholdViewController.m in Sources */,
 				FF42B9701B4E35AF00535A7B /* AppDelegate.m in Sources */,
