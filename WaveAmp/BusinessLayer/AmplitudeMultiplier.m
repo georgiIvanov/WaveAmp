@@ -70,7 +70,7 @@ static NSArray* dBs;
         }
     }
     
-    return @(-1);
+    return dBs.firstObject;
 }
 
 @end

@@ -25,7 +25,7 @@
 - (void)testDecreaseIntensityEdge1
 {
     NSNumber* number = [AmplitudeMultiplier previousIntensity:@(10)];
-    XCTAssertEqual([number integerValue], -1);
+    XCTAssertEqual([number integerValue], 10);
 }
 
 - (void)testDecreaseIntensityEdge2
