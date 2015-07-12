@@ -65,7 +65,8 @@ static NSArray* dBs;
     {
         if([dBs[i] isEqualToNumber:currentIntensity])
         {
-            return dBs[--i];
+            i = i - 2 >= 0 ? i - 2 : 0;
+            return dBs[i];
         }
     }
     
