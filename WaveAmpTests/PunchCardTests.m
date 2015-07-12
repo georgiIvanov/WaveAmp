@@ -20,7 +20,7 @@
 
 - (void)testFirstAnswerCorrect
 {
-    ExamPunchCard* pc = [[ExamPunchCard alloc] init];
+    ExamPunchCard* pc = [ExamPunchCard punchCard];
     NSInteger initialVolume = [pc.currentIntensity integerValue];
     [pc addAnswerIsAccurate:YES];
     
@@ -30,7 +30,7 @@
 
 - (void)testFirstAndSecondCorrect
 {
-    ExamPunchCard* pc = [[ExamPunchCard alloc] init];
+    ExamPunchCard* pc = [ExamPunchCard punchCard];
     NSInteger initialVolume = [pc.currentIntensity integerValue];
     [pc addAnswerIsAccurate:YES];
     [pc addAnswerIsAccurate:YES];
@@ -41,7 +41,7 @@
 
 - (void)test2Correct1Wrong
 {
-    ExamPunchCard* pc = [[ExamPunchCard alloc] init];
+    ExamPunchCard* pc = [ExamPunchCard punchCard];
     NSInteger initialVolume = [pc.currentIntensity integerValue];
     [pc addAnswerIsAccurate:YES];
     [pc addAnswerIsAccurate:YES];
@@ -53,7 +53,7 @@
 
 - (void)test2Correct2Wrong
 {
-    ExamPunchCard* pc = [[ExamPunchCard alloc] init];
+    ExamPunchCard* pc = [ExamPunchCard punchCard];
     NSInteger initialVolume = [pc.currentIntensity integerValue];
     [pc addAnswerIsAccurate:YES];
     [pc addAnswerIsAccurate:YES];
@@ -66,7 +66,7 @@
 
 - (void)test2Correct2Wrong1Correct
 {
-    ExamPunchCard* pc = [[ExamPunchCard alloc] init];
+    ExamPunchCard* pc = [ExamPunchCard punchCard];
     NSInteger initialVolume = [pc.currentIntensity integerValue];
     [pc addAnswerIsAccurate:YES];
     [pc addAnswerIsAccurate:YES];
@@ -80,7 +80,7 @@
 
 -(void)testAnswerFullyFor20dBThreshold
 {
-    ExamPunchCard* pc = [[ExamPunchCard alloc] init];
+    ExamPunchCard* pc = [ExamPunchCard punchCard];
     
     XCTAssertFalse([pc addAnswerIsAccurate:YES]);
     XCTAssertFalse([pc addAnswerIsAccurate:YES]);
@@ -104,7 +104,7 @@
 
 - (void)testFirstWrong
 {
-    ExamPunchCard* pc = [[ExamPunchCard alloc] init];
+    ExamPunchCard* pc = [ExamPunchCard punchCard];
     NSInteger initialVolume = [pc.currentIntensity integerValue];
     [pc addAnswerIsAccurate:NO];
     
@@ -114,7 +114,7 @@
 
 - (void)testFirst2Wrong
 {
-    ExamPunchCard* pc = [[ExamPunchCard alloc] init];
+    ExamPunchCard* pc = [ExamPunchCard punchCard];
     NSInteger initialVolume = [pc.currentIntensity integerValue];
     XCTAssertFalse([pc addAnswerIsAccurate:NO]);
     XCTAssertFalse([pc addAnswerIsAccurate:NO]);
@@ -125,7 +125,7 @@
 
 -(void)testFullAnswersFor40dBThreshold
 {
-    ExamPunchCard* pc = [[ExamPunchCard alloc] init];
+    ExamPunchCard* pc = [ExamPunchCard punchCard];
     
     XCTAssertFalse([pc addAnswerIsAccurate:NO]);
     XCTAssertFalse([pc addAnswerIsAccurate:YES]);
@@ -144,7 +144,7 @@
 
 - (void)testReachingLowestIntensity
 {
-    ExamPunchCard* pc = [[ExamPunchCard alloc] init];
+    ExamPunchCard* pc = [ExamPunchCard punchCard];
     
     XCTAssertFalse([pc addAnswerIsAccurate:YES]);
     XCTAssertFalse([pc addAnswerIsAccurate:YES]);
@@ -161,7 +161,7 @@
 
 - (void)testExceedingHighestIntensity
 {
-    ExamPunchCard* pc = [[ExamPunchCard alloc] init];
+    ExamPunchCard* pc = [ExamPunchCard punchCard];
     
     XCTAssertFalse([pc addAnswerIsAccurate:NO]);
     XCTAssertFalse([pc addAnswerIsAccurate:NO]);
@@ -176,7 +176,7 @@
 
 -(void)test75dBThreshold
 {
-    ExamPunchCard* pc = [[ExamPunchCard alloc] init];
+    ExamPunchCard* pc = [ExamPunchCard punchCard];
     
     XCTAssertFalse([pc addAnswerIsAccurate:NO]);
     XCTAssertFalse([pc addAnswerIsAccurate:NO]);

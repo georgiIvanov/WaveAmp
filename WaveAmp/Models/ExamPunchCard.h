@@ -10,12 +10,13 @@
 
 @interface ExamPunchCard : NSObject
 
-@property(nonatomic) NSNumber* currentIntensity;
-@property(nonatomic) int channel;
-@property(nonatomic) BOOL ascending;
+@property(nonatomic, readonly) NSNumber* currentIntensity;
+@property(nonatomic, readonly) int channel;
+@property(nonatomic, readonly) BOOL ascending;
 // user heard the signal and pressed down the button
 @property(nonatomic) BOOL wasAcknowledged;
 
++(instancetype)punchCard;
 +(instancetype)punchCardForChannel:(int)channel;
 
 // returns YES when hearing threshold is determined

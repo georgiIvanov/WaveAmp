@@ -17,21 +17,26 @@
 
 @implementation ExamPunchCard
 
++(instancetype)punchCard
+{
+    return [ExamPunchCard punchCardForChannel:0];
+}
+
 +(instancetype)punchCardForChannel:(int)channel
 {
-    ExamPunchCard* pc = [ExamPunchCard new];
-    pc.channel = channel;
+    ExamPunchCard* pc = [[ExamPunchCard alloc] initForChannel:channel];
     return pc;
 }
 
-- (instancetype)init
+- (instancetype)initForChannel:(int)channel
 {
     self = [super init];
     if (self) {
         self.answers = [NSMutableDictionary new];
-        self.currentIntensity = @(30);
+        _currentIntensity = @(30);
+        _channel = channel;
         // the volume should be increased until the user hears the tone
-        self.ascending = YES;
+        _ascending = YES;
     }
     return self;
 }
@@ -84,14 +89,14 @@
         return;
     }
     
-    self.ascending = YES;
+    _ascending = YES;
     
     // if user has heard at least 1 tone we increase intensity by 5
     for (NSNumber* scores in [self.answers allValues])
     {
         if([scores integerValue] >= 0)
         {
-            self.currentIntensity = [AmplitudeMultiplier nextIntensity:self.currentIntensity];
+            _currentIntensity = [AmplitudeMultiplier nextIntensity:_currentIntensity];
             return;
         }
     }
@@ -103,23 +108,23 @@
         number = [AmplitudeMultiplier nextIntensity:number];
     }
     
-    self.currentIntensity = number;
+    _currentIntensity = number;
 }
 
 -(void)determineIntensityForAccurateAnswer
 {
-    self.ascending = NO;
+    _ascending = NO;
     NSNumber* newIntensity = [AmplitudeMultiplier previousIntensity:self.currentIntensity];
     
     if([newIntensity isEqualToNumber:self.currentIntensity])
     {
         // if we reach edge intensity we have to change to ascending
         // because we can't produce too loud or oversilent sound
-        self.ascending = YES;
+        _ascending = YES;
     }
     else
     {
-        self.currentIntensity = newIntensity;
+        _currentIntensity = newIntensity;
     }
 }
 
