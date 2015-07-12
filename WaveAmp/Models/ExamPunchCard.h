@@ -12,8 +12,11 @@
 
 @property(nonatomic) NSNumber* currentIntensity;
 @property(nonatomic) int channel;
+@property(nonatomic) BOOL ascending;
+// user heard the signal and pressed down the button
+@property(nonatomic) BOOL wasAcknowledged;
 
 +(instancetype)punchCardForChannel:(int)channel;
--(BOOL)addAnswer:(BOOL)isAccurate;
+-(BOOL)addAnswerIsAccurate:(BOOL)isAccurate;
 
 @end
