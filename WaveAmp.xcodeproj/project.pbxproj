@@ -22,9 +22,11 @@
 		FF42B9761B4E35AF00535A7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9741B4E35AF00535A7B /* Main.storyboard */; };
 		FF42B9781B4E35AF00535A7B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9771B4E35AF00535A7B /* Images.xcassets */; };
 		FF42B97B1B4E35AF00535A7B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9791B4E35AF00535A7B /* LaunchScreen.xib */; };
+		FFCE73741B52580700F52920 /* PunchCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE73731B52580700F52920 /* PunchCardTests.m */; };
 		FFCE73781B525A5600F52920 /* AmplitudeMultiplierTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE73771B525A5600F52920 /* AmplitudeMultiplierTests.m */; };
 		FFCE737B1B525D2C00F52920 /* TestsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE737A1B525D2C00F52920 /* TestsAppDelegate.m */; };
 		FFCE737C1B525D4400F52920 /* TestsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE737A1B525D2C00F52920 /* TestsAppDelegate.m */; };
+		FFCE737F1B525E3200F52920 /* ExamPunchCard.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A484B1B5031A10021B149 /* ExamPunchCard.m */; };
 		FFCE73801B525E3800F52920 /* AmplitudeMultiplier.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A48411B4FB44E0021B149 /* AmplitudeMultiplier.m */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,7 @@
 		FF42B97A1B4E35AF00535A7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FF42B9801B4E35AF00535A7B /* WaveAmpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaveAmpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF42B9851B4E35AF00535A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFCE73731B52580700F52920 /* PunchCardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PunchCardTests.m; sourceTree = "<group>"; };
 		FFCE73771B525A5600F52920 /* AmplitudeMultiplierTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmplitudeMultiplierTests.m; sourceTree = "<group>"; };
 		FFCE73791B525D2C00F52920 /* TestsAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestsAppDelegate.h; sourceTree = "<group>"; };
 		FFCE737A1B525D2C00F52920 /* TestsAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestsAppDelegate.m; sourceTree = "<group>"; };
@@ -184,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				FFCE73771B525A5600F52920 /* AmplitudeMultiplierTests.m */,
+				FFCE73731B52580700F52920 /* PunchCardTests.m */,
 				FF42B9841B4E35AF00535A7B /* Supporting Files */,
 				FFCE73791B525D2C00F52920 /* TestsAppDelegate.h */,
 				FFCE737A1B525D2C00F52920 /* TestsAppDelegate.m */,
@@ -374,7 +378,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFCE73741B52580700F52920 /* PunchCardTests.m in Sources */,
 				FFCE73801B525E3800F52920 /* AmplitudeMultiplier.m in Sources */,
+				FFCE737F1B525E3200F52920 /* ExamPunchCard.m in Sources */,
 				FFCE73781B525A5600F52920 /* AmplitudeMultiplierTests.m in Sources */,
 				FFCE737B1B525D2C00F52920 /* TestsAppDelegate.m in Sources */,
 			);
