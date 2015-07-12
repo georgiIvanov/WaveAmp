@@ -22,7 +22,8 @@
 		FF42B9761B4E35AF00535A7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9741B4E35AF00535A7B /* Main.storyboard */; };
 		FF42B9781B4E35AF00535A7B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9771B4E35AF00535A7B /* Images.xcassets */; };
 		FF42B97B1B4E35AF00535A7B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9791B4E35AF00535A7B /* LaunchScreen.xib */; };
-		FF42B9871B4E35AF00535A7B /* WaveAmpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B9861B4E35AF00535A7B /* WaveAmpTests.m */; };
+		FFCE737B1B525D2C00F52920 /* TestsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE737A1B525D2C00F52920 /* TestsAppDelegate.m */; };
+		FFCE737C1B525D4400F52920 /* TestsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE737A1B525D2C00F52920 /* TestsAppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +67,8 @@
 		FF42B97A1B4E35AF00535A7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FF42B9801B4E35AF00535A7B /* WaveAmpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaveAmpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF42B9851B4E35AF00535A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF42B9861B4E35AF00535A7B /* WaveAmpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaveAmpTests.m; sourceTree = "<group>"; };
+		FFCE73791B525D2C00F52920 /* TestsAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestsAppDelegate.h; sourceTree = "<group>"; };
+		FFCE737A1B525D2C00F52920 /* TestsAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestsAppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,8 +180,9 @@
 		FF42B9831B4E35AF00535A7B /* WaveAmpTests */ = {
 			isa = PBXGroup;
 			children = (
-				FF42B9861B4E35AF00535A7B /* WaveAmpTests.m */,
 				FF42B9841B4E35AF00535A7B /* Supporting Files */,
+				FFCE73791B525D2C00F52920 /* TestsAppDelegate.h */,
+				FFCE737A1B525D2C00F52920 /* TestsAppDelegate.m */,
 			);
 			path = WaveAmpTests;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				FF0A48451B4FB75B0021B149 /* HearingExamSoundMeter.m in Sources */,
 				FF0A48321B4E3D870021B149 /* TabBarViewController.m in Sources */,
 				FF0A483C1B4E42C20021B149 /* PureToneAudiometer.m in Sources */,
+				FFCE737C1B525D4400F52920 /* TestsAppDelegate.m in Sources */,
 				FF0A48421B4FB44E0021B149 /* AmplitudeMultiplier.m in Sources */,
 				FF0A484C1B5031A10021B149 /* ExamPunchCard.m in Sources */,
 				FF0A48491B4FEC7E0021B149 /* FrequencyThreshold.m in Sources */,
@@ -366,7 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF42B9871B4E35AF00535A7B /* WaveAmpTests.m in Sources */,
+				FFCE737B1B525D2C00F52920 /* TestsAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
