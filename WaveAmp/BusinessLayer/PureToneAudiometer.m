@@ -9,6 +9,7 @@
 #import "PureToneAudiometer.h"
 #import "ExamPunchCard.h"
 #import "AmplitudeMultiplier.h"
+#import "FrequencyThreshold.h"
 
 NSString* const kAudiogramKey = @"AudiogramData";
 NSTimeInterval const TimerUpdateInterval = 0.1f;
@@ -20,7 +21,8 @@ NSTimeInterval const TimerUpdateInterval = 0.1f;
 @property(nonatomic) NSTimer* timer;
 @property(nonatomic) int testIndex;
 @property(nonatomic) NSMutableArray* punchCards;
-@property(nonatomic) int currentPunchCard;
+@property(nonatomic) int currentPunchCardIndex;
+@property(nonatomic) NSMutableArray* thresholds;
 
 @end
 
@@ -44,6 +46,7 @@ NSTimeInterval const TimerUpdateInterval = 0.1f;
     self.nextTest = -1.0f; // starting test without delay for testing purposes
     self.testSignalLength = 0.0f;
     self.timer = [NSTimer scheduledTimerWithTimeInterval:TimerUpdateInterval target:self selector:@selector(update:) userInfo:nil repeats:YES];
+    self.thresholds = [[NSMutableArray alloc] initWithCapacity:self.frequencies.count * 2];
 }
 
 -(void)prepareForNextFreqency
@@ -56,7 +59,9 @@ NSTimeInterval const TimerUpdateInterval = 0.1f;
 {
     [self.timer invalidate];
     self.timer = nil;
-    [self.delegate testsAreOver];
+    
+    AudiogramData* ad = [[AudiogramData alloc] initWithThresholds:self.thresholds];
+    [self.delegate testsAreOver:ad];
 }
 
 -(void)update:(NSTimer*)timer
@@ -82,6 +87,13 @@ NSTimeInterval const TimerUpdateInterval = 0.1f;
 
 -(void)nextSignal
 {
+    ExamPunchCard* pc = [self currentPunchCard];
+    if(pc && pc.wasAcknowledged == NO &&
+       [pc addAnswerIsAccurate:NO])
+    {
+        [self punchCardIsReady:pc];
+    }
+    
     if(self.punchCards.count > 0)
     {
         [self pickAnEarToTestNext];
@@ -103,29 +115,67 @@ NSTimeInterval const TimerUpdateInterval = 0.1f;
 
 -(void)pickAnEarToTestNext
 {
-    self.currentPunchCard = arc4random() % self.punchCards.count;
-    ExamPunchCard* pc = self.punchCards[self.currentPunchCard];
+    for (ExamPunchCard* pc in self.punchCards) {
+        pc.wasAcknowledged = NO;
+    }
+    
+    self.currentPunchCardIndex = arc4random() % self.punchCards.count;
+    ExamPunchCard* pc = [self currentPunchCard];
     self.currentChannel = pc.channel;
     self.signalMultiplier = [AmplitudeMultiplier multiplierForWaveDb:pc.currentIntensity];
     self.currentFrequency = [self.frequencies[_testIndex] floatValue];
+    NSLog(@"presenting new tone");
+}
+
+-(void)punchCardIsReady:(ExamPunchCard*)pc
+{
+    // http://i.imgur.com/1JD4b6Y.png
+    FrequencyThreshold* threshold = [FrequencyThreshold thresholdDb:[pc.currentIntensity intValue]
+                                                          frequency:self.currentFrequency
+                                                            channel:pc.channel];
+    
+    if(self.thresholds.count > 1 && self.currentFrequency == 1000)
+    {
+        // TODO: to avoid the duplicating 1000's
+        // thresholds should be a NSSet and FrequencyThreshold should implement isEqual:
+    }
+    else
+    {
+        [self.thresholds addObject:threshold];
+    }
+    
+    [self.punchCards removeObject:pc];
+    self.currentPunchCardIndex = 0;
+}
+
+-(ExamPunchCard*)currentPunchCard
+{
+    if(self.punchCards.count)
+    {
+        return self.punchCards[self.currentPunchCardIndex];
+    }
+    return nil;
 }
 
 -(void)buttonHeldForChannel:(AudioChannel)channel
 {
-    // debug stuff
-    if (self.punchCards.count > 0)
+    ExamPunchCard* pc = [self currentPunchCard];
+    if(pc.channel == channel && self.testSignalLength > 0)
     {
-        ExamPunchCard* pc = self.punchCards[self.currentPunchCard];
-        if([pc addAnswer:NO])
-        {
-            [self.punchCards removeObject:pc];
-        }
+        pc.wasAcknowledged = YES;
     }
 }
 
 -(void)buttonReleasedForChannel:(AudioChannel)channel
 {
-    
+    ExamPunchCard* pc = [self currentPunchCard];
+    if(pc.wasAcknowledged)
+    {
+        if([pc addAnswerIsAccurate:YES])
+        {
+            [self punchCardIsReady:pc];
+        }
+    }
 }
 
 @end

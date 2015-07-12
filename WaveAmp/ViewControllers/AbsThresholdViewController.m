@@ -12,6 +12,7 @@
 #import "HearingExamSoundMeter.h"
 #import "PureToneAudiometer.h"
 #import "AmplitudeMultiplier.h"
+#import "FrequencyThreshold.h"
 
 @interface AbsThresholdViewController() <ToneAudiometerDelegate>
 
@@ -59,7 +60,14 @@
          }
          
          dB = [soundMeter getdBLevel:data numFrames:numFrames numChannels:numChannels];
-//         NSLog(@"dB level: %f", dB);
+         if(dB > 0)
+         {
+             NSLog(@"dB level: %.2f - %d", dB, channel);
+         }
+         else
+         {
+             NSLog(@"dB level: 0.00");
+         }
      }];
     
     [self.hearingExam start];
@@ -72,9 +80,18 @@
     self.testNumberLabel.text = [NSString stringWithFormat:@"Test %d of %lu", number, (unsigned long)self.hearingExam.frequencies.count];
 }
 
--(void)testsAreOver
+-(void)testsAreOver:(AudiogramData *)audiogramData
 {
     self.testNumberLabel.text = @"Tests are completed.\nWell done!";
+    
+    [self.audioManager pause];
+    NSLog(@"Results: \n\n");
+    for (int i = 0; i < audiogramData.leftEar.count; i++)
+    {
+        FrequencyThreshold* left = audiogramData.leftEar[i];
+        FrequencyThreshold* right = audiogramData.rightEar[i];
+        NSLog(@"Frequency - %@; Left Threshold: %@ dB, Right Threshold: %@ dB", left.frequency, left.thresholdDb, right.thresholdDb);
+    }
 }
 
 #pragma mark - UI Actions

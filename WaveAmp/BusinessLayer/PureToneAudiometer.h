@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AudiogramData.h"
 
 extern NSString* const kAudiogramKey;
 extern NSTimeInterval const TimerUpdateInterval;
@@ -19,7 +20,7 @@ typedef NS_ENUM(int, AudioChannel) {
 @protocol ToneAudiometerDelegate <NSObject>
 
 -(void)startingTest:(int)number;
--(void)testsAreOver;
+-(void)testsAreOver:(AudiogramData*)audiogramData;
 
 @end
 
