@@ -56,7 +56,7 @@ static NSArray* dBs;
         }
     }
     
-    return @(-1);
+    return dBs.lastObject;
 }
 
 +(NSNumber*)previousIntensity:(NSNumber*)currentIntensity

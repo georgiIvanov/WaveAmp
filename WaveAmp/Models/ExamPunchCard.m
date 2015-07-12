@@ -41,6 +41,11 @@
     // how answer should be registered depends if the volume is ascending
     // http://i.imgur.com/rW2cWYu.png
     
+    if([self.currentIntensity integerValue] >= 75 && isAccurate == NO)
+    {
+        return YES;
+    }
+    
     NSNumber* number = [self.answers objectForKey:self.currentIntensity];
     if(number)
     {
@@ -55,8 +60,10 @@
         }
         
         [self.answers setObject:newNumber forKey:self.currentIntensity];
-        [self determineIntensity:isAccurate];
-        return [newNumber integerValue] >= 2 ? YES : NO;
+        if([newNumber integerValue] >= 2)
+        {
+            return YES;
+        }
     }
     else
     {
@@ -65,6 +72,7 @@
     }
     
     [self determineIntensity:isAccurate];
+    
     return NO;
 }
 
@@ -72,8 +80,7 @@
 {
     if(isAccurate)
     {
-        self.ascending = NO;
-        self.currentIntensity = [AmplitudeMultiplier previousIntensity:self.currentIntensity];
+        [self determineIntensityForAccurateAnswer];
         return;
     }
     
@@ -97,6 +104,23 @@
     }
     
     self.currentIntensity = number;
+}
+
+-(void)determineIntensityForAccurateAnswer
+{
+    self.ascending = NO;
+    NSNumber* newIntensity = [AmplitudeMultiplier previousIntensity:self.currentIntensity];
+    
+    if([newIntensity isEqualToNumber:self.currentIntensity])
+    {
+        // if we reach edge intensity we have to change to ascending
+        // because we can't produce too loud or oversilent sound
+        self.ascending = YES;
+    }
+    else
+    {
+        self.currentIntensity = newIntensity;
+    }
 }
 
 -(NSNumber*)determineInitialScoreAccurate:(BOOL)isAccurate

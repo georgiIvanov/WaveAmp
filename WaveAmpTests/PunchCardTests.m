@@ -142,4 +142,55 @@
     XCTAssertTrue([pc addAnswerIsAccurate:YES]);
 }
 
+- (void)testReachingLowestIntensity
+{
+    ExamPunchCard* pc = [[ExamPunchCard alloc] init];
+    
+    XCTAssertFalse([pc addAnswerIsAccurate:YES]);
+    XCTAssertFalse([pc addAnswerIsAccurate:YES]);
+    XCTAssertFalse([pc addAnswerIsAccurate:YES]);
+    XCTAssertEqual(pc.ascending, YES);
+    XCTAssertFalse([pc addAnswerIsAccurate:YES]);
+    XCTAssertFalse([pc addAnswerIsAccurate:YES]);
+    
+    XCTAssertTrue([pc addAnswerIsAccurate:YES]);
+    
+    XCTAssertEqual([pc.currentIntensity integerValue], 10);
+    XCTAssertEqual(pc.ascending, YES);
+}
+
+- (void)testExceedingHighestIntensity
+{
+    ExamPunchCard* pc = [[ExamPunchCard alloc] init];
+    
+    XCTAssertFalse([pc addAnswerIsAccurate:NO]);
+    XCTAssertFalse([pc addAnswerIsAccurate:NO]);
+    XCTAssertFalse([pc addAnswerIsAccurate:NO]);
+    
+    XCTAssertTrue([pc addAnswerIsAccurate:NO]);
+    
+    
+    XCTAssertEqual([pc.currentIntensity integerValue], 75);
+    XCTAssertEqual(pc.ascending, YES);
+}
+
+-(void)test75dBThreshold
+{
+    ExamPunchCard* pc = [[ExamPunchCard alloc] init];
+    
+    XCTAssertFalse([pc addAnswerIsAccurate:NO]);
+    XCTAssertFalse([pc addAnswerIsAccurate:NO]);
+    XCTAssertFalse([pc addAnswerIsAccurate:NO]);
+    XCTAssertFalse([pc addAnswerIsAccurate:YES]);
+    XCTAssertFalse([pc addAnswerIsAccurate:NO]);
+    XCTAssertFalse([pc addAnswerIsAccurate:NO]);
+    XCTAssertFalse([pc addAnswerIsAccurate:YES]);
+    XCTAssertFalse([pc addAnswerIsAccurate:NO]);
+    XCTAssertFalse([pc addAnswerIsAccurate:NO]);
+    
+    XCTAssertTrue([pc addAnswerIsAccurate:YES]);
+    
+    XCTAssertEqual([pc.currentIntensity integerValue], 75);
+}
+
 @end

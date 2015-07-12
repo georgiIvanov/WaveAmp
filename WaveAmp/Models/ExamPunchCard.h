@@ -17,6 +17,8 @@
 @property(nonatomic) BOOL wasAcknowledged;
 
 +(instancetype)punchCardForChannel:(int)channel;
+
+// returns YES when hearing threshold is determined
 -(BOOL)addAnswerIsAccurate:(BOOL)isAccurate;
 
 @end

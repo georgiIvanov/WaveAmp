@@ -56,7 +56,7 @@
 - (void)testIncreaseIntensityEdge
 {
     NSNumber* number = [AmplitudeMultiplier nextIntensity:@(75)];
-    XCTAssertEqual([number integerValue], -1);
+    XCTAssertEqual([number integerValue], 75);
 }
 
 - (void)testIncreaseIntensityNextToHighest
