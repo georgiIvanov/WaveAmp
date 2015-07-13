@@ -9,6 +9,7 @@
 #import "AudiogramViewController.h"
 #import "PureToneAudiometer.h"
 #import "AudiogramData.h"
+#import "UIView+PopAnimations.h"
 
 @interface AudiogramViewController()
 
@@ -34,6 +35,7 @@
     if(self.audiogramData == nil)
     {
         self.noContentView.hidden = NO;
+        [self.hearingTestButton addPopOutAnimationDelay:0.3f bounciness:10];
     }
 }
 
