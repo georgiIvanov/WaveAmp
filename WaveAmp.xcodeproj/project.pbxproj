@@ -25,6 +25,7 @@
 		FF76043F1B53BEDE0024930C /* HearingWave.png in Resources */ = {isa = PBXBuildFile; fileRef = FF76043E1B53BEDE0024930C /* HearingWave.png */; };
 		FF7604431B53C6D20024930C /* UIView+PopAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7604421B53C6D20024930C /* UIView+PopAnimations.m */; };
 		FF9DB4E41B53E097006E4D3F /* TestInstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB4E31B53E097006E4D3F /* TestInstructionsViewController.m */; };
+		FF9DB4E61B53EE36006E4D3F /* Headphones.png in Resources */ = {isa = PBXBuildFile; fileRef = FF9DB4E51B53EE36006E4D3F /* Headphones.png */; };
 		FFCE73741B52580700F52920 /* PunchCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE73731B52580700F52920 /* PunchCardTests.m */; };
 		FFCE73781B525A5600F52920 /* AmplitudeMultiplierTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE73771B525A5600F52920 /* AmplitudeMultiplierTests.m */; };
 		FFCE737B1B525D2C00F52920 /* TestsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE737A1B525D2C00F52920 /* TestsAppDelegate.m */; };
@@ -82,6 +83,7 @@
 		FF7604421B53C6D20024930C /* UIView+PopAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PopAnimations.m"; sourceTree = "<group>"; };
 		FF9DB4E21B53E097006E4D3F /* TestInstructionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestInstructionsViewController.h; sourceTree = "<group>"; };
 		FF9DB4E31B53E097006E4D3F /* TestInstructionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestInstructionsViewController.m; sourceTree = "<group>"; };
+		FF9DB4E51B53EE36006E4D3F /* Headphones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Headphones.png; sourceTree = "<group>"; };
 		FFCE73731B52580700F52920 /* PunchCardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PunchCardTests.m; sourceTree = "<group>"; };
 		FFCE73771B525A5600F52920 /* AmplitudeMultiplierTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmplitudeMultiplierTests.m; sourceTree = "<group>"; };
 		FFCE73791B525D2C00F52920 /* TestsAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestsAppDelegate.h; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 		FF76043D1B53BE1D0024930C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FF9DB4E51B53EE36006E4D3F /* Headphones.png */,
 				FF76043E1B53BEDE0024930C /* HearingWave.png */,
 			);
 			path = Images;
@@ -354,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF42B9761B4E35AF00535A7B /* Main.storyboard in Resources */,
+				FF9DB4E61B53EE36006E4D3F /* Headphones.png in Resources */,
 				FF42B97B1B4E35AF00535A7B /* LaunchScreen.xib in Resources */,
 				FF42B9781B4E35AF00535A7B /* Images.xcassets in Resources */,
 				FF76043F1B53BEDE0024930C /* HearingWave.png in Resources */,

@@ -17,7 +17,12 @@
 @interface TestInstructionsViewController : UIViewController
 
 @property(nonatomic, weak) id<TestInstructionsDelegate> delegate;
+@property (weak, nonatomic) IBOutlet UIButton *nextButton;
+@property (weak, nonatomic) IBOutlet UITextView *instructionsText;
+
 
 - (IBAction)cancelTap:(id)sender;
+- (IBAction)nextButtonTap:(id)sender;
+
 
 @end

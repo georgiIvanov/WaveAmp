@@ -37,6 +37,7 @@
     });
     
     [self setupViewsForInstructions];
+    self.testNumberLabel.text = @"Tests will start soon.";
 }
 
 -(void)setupViewsForInstructions
