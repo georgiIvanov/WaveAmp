@@ -9,11 +9,11 @@
 #import "AbsThresholdViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import <Novocaine.h>
+
 #import "HearingExamSoundMeter.h"
 #import "PureToneAudiometer.h"
-#import "AmplitudeMultiplier.h"
-#import "FrequencyThreshold.h"
 #import "TestInstructionsViewController.h"
+#import "CommonAnimations.h"
 
 @interface AbsThresholdViewController() <ToneAudiometerDelegate, TestInstructionsDelegate>
 
@@ -123,7 +123,10 @@
 
 -(void)startingTest:(int)number
 {
-    self.testNumberLabel.text = [NSString stringWithFormat:@"Test %d of %lu", number, (unsigned long)self.hearingExam.frequencies.count];
+    [CommonAnimations animate:self.testNumberLabel
+                  withNewText:[NSString stringWithFormat:@"Test %d of %lu", number, (unsigned long)self.hearingExam.frequencies.count]
+                     duration:0.2f
+              completionBlock:nil];
 }
 
 -(void)testsAreOver:(AudiogramData *)audiogramData
@@ -131,13 +134,7 @@
     self.testNumberLabel.text = @"Tests are completed.\nWell done!";
     
     [self.audioManager pause];
-    NSLog(@"Results: \n\n");
-    for (int i = 0; i < audiogramData.leftEar.count; i++)
-    {
-        FrequencyThreshold* left = audiogramData.leftEar[i];
-        FrequencyThreshold* right = audiogramData.rightEar[i];
-        NSLog(@"Frequency - %@; Left Threshold: %@ dB, Right Threshold: %@ dB", left.frequency, left.thresholdDb, right.thresholdDb);
-    }
+    // TODO: save audiogram
 }
 
 #pragma mark - TestInstructionsDelegate

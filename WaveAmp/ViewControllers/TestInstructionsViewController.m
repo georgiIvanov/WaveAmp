@@ -7,6 +7,7 @@
 //
 
 #import "TestInstructionsViewController.h"
+#import "CommonAnimations.h"
 
 @interface TestInstructionsViewController()
 
@@ -40,7 +41,10 @@
 
 -(void)updateInstructionsLabel
 {
-    self.instructionsText.text = self.instructionStrings[self.stringIndex];
+    [CommonAnimations animate:(UILabel*)self.instructionsText
+                  withNewText:self.instructionStrings[self.stringIndex]
+                     duration:0.3f
+              completionBlock:nil];
 }
 
 - (IBAction)cancelTap:(id)sender {
