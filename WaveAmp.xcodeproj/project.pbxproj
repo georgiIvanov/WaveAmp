@@ -22,6 +22,7 @@
 		FF42B9761B4E35AF00535A7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9741B4E35AF00535A7B /* Main.storyboard */; };
 		FF42B9781B4E35AF00535A7B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9771B4E35AF00535A7B /* Images.xcassets */; };
 		FF42B97B1B4E35AF00535A7B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9791B4E35AF00535A7B /* LaunchScreen.xib */; };
+		FF76043F1B53BEDE0024930C /* HearingWave.png in Resources */ = {isa = PBXBuildFile; fileRef = FF76043E1B53BEDE0024930C /* HearingWave.png */; };
 		FFCE73741B52580700F52920 /* PunchCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE73731B52580700F52920 /* PunchCardTests.m */; };
 		FFCE73781B525A5600F52920 /* AmplitudeMultiplierTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE73771B525A5600F52920 /* AmplitudeMultiplierTests.m */; };
 		FFCE737B1B525D2C00F52920 /* TestsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE737A1B525D2C00F52920 /* TestsAppDelegate.m */; };
@@ -74,6 +75,7 @@
 		FF42B97A1B4E35AF00535A7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FF42B9801B4E35AF00535A7B /* WaveAmpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaveAmpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF42B9851B4E35AF00535A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF76043E1B53BEDE0024930C /* HearingWave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HearingWave.png; sourceTree = "<group>"; };
 		FFCE73731B52580700F52920 /* PunchCardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PunchCardTests.m; sourceTree = "<group>"; };
 		FFCE73771B525A5600F52920 /* AmplitudeMultiplierTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmplitudeMultiplierTests.m; sourceTree = "<group>"; };
 		FFCE73791B525D2C00F52920 /* TestsAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestsAppDelegate.h; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 		FF42B9691B4E35AF00535A7B /* WaveAmp */ = {
 			isa = PBXGroup;
 			children = (
+				FF76043C1B53BE100024930C /* Resources */,
 				FF0A48461B4FEBE00021B149 /* Models */,
 				FF0A48391B4E41B00021B149 /* BusinessLayer */,
 				FF42B9901B4E35D400535A7B /* ViewControllers */,
@@ -232,6 +235,22 @@
 				FF42B9791B4E35AF00535A7B /* LaunchScreen.xib */,
 			);
 			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		FF76043C1B53BE100024930C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FF76043D1B53BE1D0024930C /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FF76043D1B53BE1D0024930C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FF76043E1B53BEDE0024930C /* HearingWave.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +338,7 @@
 				FF42B9761B4E35AF00535A7B /* Main.storyboard in Resources */,
 				FF42B97B1B4E35AF00535A7B /* LaunchScreen.xib in Resources */,
 				FF42B9781B4E35AF00535A7B /* Images.xcassets in Resources */,
+				FF76043F1B53BEDE0024930C /* HearingWave.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

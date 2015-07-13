@@ -8,10 +8,11 @@
 
 #import "AudiogramViewController.h"
 #import "PureToneAudiometer.h"
+#import "AudiogramData.h"
 
 @interface AudiogramViewController()
 
-@property(nonatomic) NSDictionary* audiogramData;
+@property(nonatomic) AudiogramData* audiogramData;
 
 @end
 
@@ -26,14 +27,18 @@
     return self;
 }
 
--(void)viewDidAppear:(BOOL)animated
+-(void)viewDidLoad
 {
-    [super viewDidAppear:animated];
+    [super viewDidLoad];
     
-    if(!self.audiogramData)
+    if(self.audiogramData == nil)
     {
-        [self performSegueWithIdentifier:@"AbsThresholdSegue" sender:self];
+        self.noContentView.hidden = NO;
     }
 }
 
+- (IBAction)hearingTestTap:(id)sender
+{
+    [self performSegueWithIdentifier:@"AbsThresholdSegue" sender:self];
+}
 @end

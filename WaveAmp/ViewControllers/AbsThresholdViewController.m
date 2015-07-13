@@ -97,12 +97,10 @@
 #pragma mark - UI Actions
 
 - (IBAction)buttonHeld:(UIButton *)sender {
-    NSLog(@"held %ld",(long)sender.tag);
     [self.hearingExam buttonHeldForChannel:(int)sender.tag];
 }
 
 - (IBAction)buttonReleased:(UIButton *)sender {
-    NSLog(@"released %ld",(long)sender.tag);
     [self.hearingExam buttonReleasedForChannel:(int)sender.tag];
 }
 @end

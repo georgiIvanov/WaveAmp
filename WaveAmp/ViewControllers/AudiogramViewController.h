@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface AudiogramViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIView *noContentView;
+@property (weak, nonatomic) IBOutlet UIButton *hearingTestButton;
+
+- (IBAction)hearingTestTap:(id)sender;
 
 @end
