@@ -2,13 +2,16 @@ PODS:
   - Novocaine (0.0.1)
   - NVDSP (0.0.1):
     - Novocaine
+  - pop (1.0.7)
 
 DEPENDENCIES:
   - Novocaine (~> 0.0)
   - NVDSP (~> 0.0)
+  - pop (~> 1.0)
 
 SPEC CHECKSUMS:
   Novocaine: 07991e1643369e8b660f361f87f88c797d99a53f
   NVDSP: 25d806aeeaf3ed915f00085909abe7768cb48239
+  pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
 
 COCOAPODS: 0.37.2
