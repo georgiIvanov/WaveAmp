@@ -14,6 +14,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *leftButton;
 @property (weak, nonatomic) IBOutlet UIButton *rightButton;
 
+@property (weak, nonatomic) IBOutlet UIView *instructionsContainer;
+@property (strong, nonatomic) IBOutletCollection(UIView) NSArray *testUI;
+
 - (IBAction)buttonHeld:(UIButton *)sender;
 - (IBAction)buttonReleased:(UIButton *)sender;
 

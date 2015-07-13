@@ -24,6 +24,7 @@
 		FF42B97B1B4E35AF00535A7B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9791B4E35AF00535A7B /* LaunchScreen.xib */; };
 		FF76043F1B53BEDE0024930C /* HearingWave.png in Resources */ = {isa = PBXBuildFile; fileRef = FF76043E1B53BEDE0024930C /* HearingWave.png */; };
 		FF7604431B53C6D20024930C /* UIView+PopAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7604421B53C6D20024930C /* UIView+PopAnimations.m */; };
+		FF9DB4E41B53E097006E4D3F /* TestInstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB4E31B53E097006E4D3F /* TestInstructionsViewController.m */; };
 		FFCE73741B52580700F52920 /* PunchCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE73731B52580700F52920 /* PunchCardTests.m */; };
 		FFCE73781B525A5600F52920 /* AmplitudeMultiplierTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE73771B525A5600F52920 /* AmplitudeMultiplierTests.m */; };
 		FFCE737B1B525D2C00F52920 /* TestsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE737A1B525D2C00F52920 /* TestsAppDelegate.m */; };
@@ -79,6 +80,8 @@
 		FF76043E1B53BEDE0024930C /* HearingWave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HearingWave.png; sourceTree = "<group>"; };
 		FF7604411B53C6D20024930C /* UIView+PopAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PopAnimations.h"; sourceTree = "<group>"; };
 		FF7604421B53C6D20024930C /* UIView+PopAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PopAnimations.m"; sourceTree = "<group>"; };
+		FF9DB4E21B53E097006E4D3F /* TestInstructionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestInstructionsViewController.h; sourceTree = "<group>"; };
+		FF9DB4E31B53E097006E4D3F /* TestInstructionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestInstructionsViewController.m; sourceTree = "<group>"; };
 		FFCE73731B52580700F52920 /* PunchCardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PunchCardTests.m; sourceTree = "<group>"; };
 		FFCE73771B525A5600F52920 /* AmplitudeMultiplierTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmplitudeMultiplierTests.m; sourceTree = "<group>"; };
 		FFCE73791B525D2C00F52920 /* TestsAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestsAppDelegate.h; sourceTree = "<group>"; };
@@ -228,6 +231,8 @@
 				FF0A48371B4E3F560021B149 /* AbsThresholdViewController.m */,
 				FF0A483D1B4E44A80021B149 /* AudiogramViewController.h */,
 				FF0A483E1B4E44A80021B149 /* AudiogramViewController.m */,
+				FF9DB4E21B53E097006E4D3F /* TestInstructionsViewController.h */,
+				FF9DB4E31B53E097006E4D3F /* TestInstructionsViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -412,6 +417,7 @@
 				FF0A484C1B5031A10021B149 /* ExamPunchCard.m in Sources */,
 				FF0A48491B4FEC7E0021B149 /* FrequencyThreshold.m in Sources */,
 				FF0A48381B4E3F560021B149 /* AbsThresholdViewController.m in Sources */,
+				FF9DB4E41B53E097006E4D3F /* TestInstructionsViewController.m in Sources */,
 				FFCE73831B52AC6E00F52920 /* AudiogramData.m in Sources */,
 				FF42B9701B4E35AF00535A7B /* AppDelegate.m in Sources */,
 				FF42B96D1B4E35AF00535A7B /* main.m in Sources */,

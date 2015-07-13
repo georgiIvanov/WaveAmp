@@ -13,8 +13,9 @@
 #import "PureToneAudiometer.h"
 #import "AmplitudeMultiplier.h"
 #import "FrequencyThreshold.h"
+#import "TestInstructionsViewController.h"
 
-@interface AbsThresholdViewController() <ToneAudiometerDelegate>
+@interface AbsThresholdViewController() <ToneAudiometerDelegate, TestInstructionsDelegate>
 
 @property(nonatomic) Novocaine* audioManager;
 @property(nonatomic) PureToneAudiometer* hearingExam;
@@ -27,12 +28,56 @@
 {
     [super viewDidLoad];
     
-    __weak AbsThresholdViewController * wself = self;
-    self.audioManager = [Novocaine audioManager];
-    self.hearingExam = [[PureToneAudiometer alloc] init];
-    self.hearingExam.delegate = self;
-    HearingExamSoundMeter* soundMeter = [[HearingExamSoundMeter alloc] init];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        // initializing novocaine asap stalls the transition,
+        // we don't need it right away anyway.
+        self.audioManager = [Novocaine audioManager];
+        self.hearingExam = [[PureToneAudiometer alloc] init];
+        self.hearingExam.delegate = self;
+    });
     
+    [self setupViewsForInstructions];
+}
+
+-(void)setupViewsForInstructions
+{
+    for (UIView* v in self.testUI) {
+        v.hidden = YES;
+    }
+    
+    self.instructionsContainer.hidden = NO;
+}
+
+-(void)prepareViewsForStartingTests
+{
+    for (UIView* v in self.testUI) {
+        v.hidden = NO;
+        v.alpha = 0;
+        [UIView animateWithDuration:0.2f animations:^{
+            v.alpha = 1;
+        }];
+    }
+    
+    [UIView animateWithDuration:0.2f animations:^{
+        self.instructionsContainer.alpha = 0;
+    } completion:^(BOOL finished) {
+        self.instructionsContainer.hidden = YES;
+    }];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"instructionsSegue"])
+    {
+        TestInstructionsViewController* vc = (TestInstructionsViewController*)segue.destinationViewController;
+        vc.delegate = self;
+    }
+}
+
+-(void)startExam
+{
+    HearingExamSoundMeter* soundMeter = [[HearingExamSoundMeter alloc] init];
+    __weak AbsThresholdViewController * wself = self;
     __block float phase = 0.0;
     __block float dB = 0.0;
     [self.audioManager setOutputBlock:^(float *data, UInt32 numFrames, UInt32 numChannels)
@@ -52,7 +97,7 @@
                  float theta = phase * M_PI * 2;
                  data[i*numChannels + iChannel] = iChannel == channel ? sin(theta) * wself.hearingExam.signalMultiplier : 0;
              }
-
+             
              phase += 1.0 / (samplingRate / wself.hearingExam.currentFrequency);
              if (phase > 1.0){
                  phase = -1;
@@ -92,6 +137,16 @@
         FrequencyThreshold* right = audiogramData.rightEar[i];
         NSLog(@"Frequency - %@; Left Threshold: %@ dB, Right Threshold: %@ dB", left.frequency, left.thresholdDb, right.thresholdDb);
     }
+}
+
+#pragma mark - TestInstructionsDelegate
+
+-(void)userIsReady
+{
+    [self prepareViewsForStartingTests];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self startExam];
+    });
 }
 
 #pragma mark - UI Actions
