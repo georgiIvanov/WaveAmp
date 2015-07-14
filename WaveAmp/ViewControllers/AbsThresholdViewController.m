@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
     
-    dispatch_async(dispatch_get_main_queue(), ^{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         // initializing novocaine asap stalls the transition,
         // we don't need it right away anyway.
         self.audioManager = [Novocaine audioManager];

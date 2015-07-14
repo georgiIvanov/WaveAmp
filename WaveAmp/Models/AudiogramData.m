@@ -43,4 +43,68 @@
     return self;
 }
 
++(instancetype)audiogramNormalLoss
+{
+    NSMutableArray* thresholds = [NSMutableArray new];
+    
+    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:1000 channel:0]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:1000 channel:1]];
+    
+    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:2000 channel:1]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:2000 channel:0]];
+    
+    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:3000 channel:0]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:3000 channel:1]];
+    
+    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:4000 channel:0]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:4000 channel:1]];
+    
+    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:6000 channel:1]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:6000 channel:0]];
+    
+    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:8000 channel:1]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:8000 channel:0]];
+    
+    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:500 channel:0]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:500 channel:1]];
+    
+    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:250 channel:0]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:250 channel:1]];
+    
+    AudiogramData* ad = [[AudiogramData alloc] initWithThresholds:thresholds];
+    return ad;
+}
+
++(instancetype)audiogramMildLoss
+{
+    NSMutableArray* thresholds = [NSMutableArray new];
+    
+    [thresholds addObject:[FrequencyThreshold thresholdDb:10 frequency:250 channel:0]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:15 frequency:250 channel:1]];
+    
+    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:500 channel:0]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:500 channel:1]];
+    
+    [thresholds addObject:[FrequencyThreshold thresholdDb:25 frequency:1000 channel:0]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:25 frequency:1000 channel:1]];
+    
+    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:2000 channel:1]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:2000 channel:0]];
+    
+    [thresholds addObject:[FrequencyThreshold thresholdDb:25 frequency:3000 channel:0]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:25 frequency:3000 channel:1]];
+    
+    [thresholds addObject:[FrequencyThreshold thresholdDb:30 frequency:4000 channel:0]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:30 frequency:4000 channel:1]];
+    
+    [thresholds addObject:[FrequencyThreshold thresholdDb:30 frequency:6000 channel:1]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:30 frequency:6000 channel:0]];
+    
+    [thresholds addObject:[FrequencyThreshold thresholdDb:40 frequency:8000 channel:1]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:40 frequency:8000 channel:0]];
+    
+    AudiogramData* ad = [[AudiogramData alloc] initWithThresholds:thresholds];
+    return ad;
+}
+
 @end

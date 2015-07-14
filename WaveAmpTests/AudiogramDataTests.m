@@ -19,7 +19,7 @@
 
 -(void)testCorrectInitialization
 {
-    AudiogramData* ad = [[AudiogramData alloc] initWithThresholds:[self thresholds]];
+    AudiogramData* ad = [AudiogramData audiogramNormalLoss];
     NSNumber* previousNumber = nil;
     
     for (FrequencyThreshold* ft in ad.leftEar)
@@ -42,38 +42,6 @@
         }
         previousNumber = ft.frequency;
     }
-}
-
--(NSArray*)thresholds
-{
-//    @[@(1000), @(2000), @(3000), @(4000), @(6000), @(8000), @(1000), @(500), @(250)];
-    NSMutableArray* thresholds = [NSMutableArray new];
-    
-    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:1000 channel:0]];
-    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:1000 channel:1]];
-    
-    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:2000 channel:1]];
-    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:2000 channel:0]];
-    
-    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:3000 channel:0]];
-    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:3000 channel:1]];
-    
-    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:4000 channel:0]];
-    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:4000 channel:1]];
-    
-    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:6000 channel:1]];
-    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:6000 channel:0]];
-    
-    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:8000 channel:1]];
-    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:8000 channel:0]];
-    
-    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:500 channel:0]];
-    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:500 channel:1]];
-    
-    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:250 channel:0]];
-    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:250 channel:1]];
-    
-    return thresholds;
 }
 
 @end

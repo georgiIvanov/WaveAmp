@@ -13,6 +13,9 @@
 @property(nonatomic) NSArray* leftEar;
 @property(nonatomic) NSArray* rightEar;
 
++(instancetype)audiogramNormalLoss;
++(instancetype)audiogramMildLoss;
+
 -(instancetype)initWithThresholds:(NSArray*)thresholds;
 
 @end
