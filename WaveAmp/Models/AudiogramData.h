@@ -8,14 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AudiogramData : NSObject
+@interface AudiogramData : NSObject <NSCoding>
 
 @property(nonatomic) NSArray* leftEar;
 @property(nonatomic) NSArray* rightEar;
 
 +(instancetype)audiogramNormalLoss;
 +(instancetype)audiogramMildLoss;
++(instancetype)loadAudiogram;
 
 -(instancetype)initWithThresholds:(NSArray*)thresholds;
+-(BOOL)saveAudiogram;
 
 @end

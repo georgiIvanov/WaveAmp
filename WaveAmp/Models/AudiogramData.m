@@ -8,6 +8,7 @@
 
 #import "AudiogramData.h"
 #import "FrequencyThreshold.h"
+#import "AudioTypes.h"
 
 @interface AudiogramData()
 
@@ -41,6 +42,35 @@
         self.rightEar = right;
     }
     return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    if (self) {
+        self.rightEar = [coder decodeObjectForKey:@"right"];
+        self.leftEar = [coder decodeObjectForKey:@"left"];
+    }
+    return self;
+}
+
+-(void)encodeWithCoder:(NSCoder *)aCoder
+{
+    [aCoder encodeObject:self.rightEar forKey:@"right"];
+    [aCoder encodeObject:self.leftEar forKey:@"left"];
+}
+
+-(BOOL)saveAudiogram
+{
+    NSData* data = [NSKeyedArchiver archivedDataWithRootObject:self];
+    [[NSUserDefaults standardUserDefaults] setObject:data forKey:kAudiogramKey];
+    return [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
++(instancetype)loadAudiogram
+{
+    NSData* data = [[NSUserDefaults standardUserDefaults] objectForKey:kAudiogramKey];
+    AudiogramData* ad = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    return ad;
 }
 
 +(instancetype)audiogramNormalLoss

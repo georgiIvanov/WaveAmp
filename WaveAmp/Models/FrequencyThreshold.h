@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface FrequencyThreshold : NSObject
+@interface FrequencyThreshold : NSObject <NSCoding>
 
 +(instancetype)thresholdDb:(float)db frequency:(float)frequency channel:(int)channel;
 
