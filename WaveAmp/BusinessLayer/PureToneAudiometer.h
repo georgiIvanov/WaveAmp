@@ -8,14 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "AudiogramData.h"
+#import "AudioTypes.h"
 
-extern NSString* const kAudiogramKey;
-extern NSTimeInterval const TimerUpdateInterval;
-
-typedef NS_ENUM(int, AudioChannel) {
-    kLeftChannel = 0,
-    kRightChannel = 1
-};
 
 @protocol ToneAudiometerDelegate <NSObject>
 

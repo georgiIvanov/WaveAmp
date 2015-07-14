@@ -11,9 +11,6 @@
 #import "AmplitudeMultiplier.h"
 #import "FrequencyThreshold.h"
 
-NSString* const kAudiogramKey = @"AudiogramData";
-NSTimeInterval const TimerUpdateInterval = 0.1f;
-
 @interface PureToneAudiometer()
 
 @property(nonatomic) NSTimeInterval nextTest;
