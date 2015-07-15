@@ -32,6 +32,8 @@
 		FF9DB5381B563D13006E4D3F /* ToneEqualizer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB5371B563D13006E4D3F /* ToneEqualizer.m */; };
 		FF9DB5411B56887B006E4D3F /* AudioFiles in Resources */ = {isa = PBXBuildFile; fileRef = FF9DB5401B56887B006E4D3F /* AudioFiles */; };
 		FF9DB5441B568918006E4D3F /* SoundFile.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB5431B568918006E4D3F /* SoundFile.m */; };
+		FF9DB5471B569A95006E4D3F /* Pause.png in Resources */ = {isa = PBXBuildFile; fileRef = FF9DB5451B569A95006E4D3F /* Pause.png */; };
+		FF9DB5481B569A95006E4D3F /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = FF9DB5461B569A95006E4D3F /* Play.png */; };
 		FF9DB54E1B569EAA006E4D3F /* BouncyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB54D1B569EAA006E4D3F /* BouncyButton.m */; };
 		FFCE73741B52580700F52920 /* PunchCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE73731B52580700F52920 /* PunchCardTests.m */; };
 		FFCE73781B525A5600F52920 /* AmplitudeMultiplierTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE73771B525A5600F52920 /* AmplitudeMultiplierTests.m */; };
@@ -102,6 +104,8 @@
 		FF9DB5401B56887B006E4D3F /* AudioFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AudioFiles; sourceTree = "<group>"; };
 		FF9DB5421B568918006E4D3F /* SoundFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundFile.h; sourceTree = "<group>"; };
 		FF9DB5431B568918006E4D3F /* SoundFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundFile.m; sourceTree = "<group>"; };
+		FF9DB5451B569A95006E4D3F /* Pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pause.png; sourceTree = "<group>"; };
+		FF9DB5461B569A95006E4D3F /* Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Play.png; sourceTree = "<group>"; };
 		FF9DB54C1B569EAA006E4D3F /* BouncyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncyButton.h; sourceTree = "<group>"; };
 		FF9DB54D1B569EAA006E4D3F /* BouncyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncyButton.m; sourceTree = "<group>"; };
 		FFCE73731B52580700F52920 /* PunchCardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PunchCardTests.m; sourceTree = "<group>"; };
@@ -289,6 +293,8 @@
 		FF76043D1B53BE1D0024930C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FF9DB5451B569A95006E4D3F /* Pause.png */,
+				FF9DB5461B569A95006E4D3F /* Play.png */,
 				FF9DB4E51B53EE36006E4D3F /* Headphones.png */,
 				FF76043E1B53BEDE0024930C /* HearingWave.png */,
 			);
@@ -398,11 +404,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF42B9761B4E35AF00535A7B /* Main.storyboard in Resources */,
+				FF9DB5481B569A95006E4D3F /* Play.png in Resources */,
 				FF9DB4E61B53EE36006E4D3F /* Headphones.png in Resources */,
 				FF42B97B1B4E35AF00535A7B /* LaunchScreen.xib in Resources */,
 				FF9DB5411B56887B006E4D3F /* AudioFiles in Resources */,
 				FF42B9781B4E35AF00535A7B /* Images.xcassets in Resources */,
 				FF76043F1B53BEDE0024930C /* HearingWave.png in Resources */,
+				FF9DB5471B569A95006E4D3F /* Pause.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
