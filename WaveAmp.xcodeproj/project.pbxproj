@@ -33,6 +33,7 @@
 		FF9DB53D1B565420006E4D3F /* OSR_uk_000_0051_8k_m.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF9DB53A1B565420006E4D3F /* OSR_uk_000_0051_8k_m.wav */; };
 		FF9DB53E1B565420006E4D3F /* OSR_us_000_0015_8k_f.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF9DB53B1B565420006E4D3F /* OSR_us_000_0015_8k_f.wav */; };
 		FF9DB53F1B565420006E4D3F /* OSR_us_000_0039_8k_m.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF9DB53C1B565420006E4D3F /* OSR_us_000_0039_8k_m.wav */; };
+		FF9DB5441B568918006E4D3F /* SoundFile.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB5431B568918006E4D3F /* SoundFile.m */; };
 		FFCE73741B52580700F52920 /* PunchCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE73731B52580700F52920 /* PunchCardTests.m */; };
 		FFCE73781B525A5600F52920 /* AmplitudeMultiplierTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE73771B525A5600F52920 /* AmplitudeMultiplierTests.m */; };
 		FFCE737B1B525D2C00F52920 /* TestsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE737A1B525D2C00F52920 /* TestsAppDelegate.m */; };
@@ -102,6 +103,8 @@
 		FF9DB53A1B565420006E4D3F /* OSR_uk_000_0051_8k_m.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = OSR_uk_000_0051_8k_m.wav; sourceTree = "<group>"; };
 		FF9DB53B1B565420006E4D3F /* OSR_us_000_0015_8k_f.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = OSR_us_000_0015_8k_f.wav; sourceTree = "<group>"; };
 		FF9DB53C1B565420006E4D3F /* OSR_us_000_0039_8k_m.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = OSR_us_000_0039_8k_m.wav; sourceTree = "<group>"; };
+		FF9DB5421B568918006E4D3F /* SoundFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundFile.h; sourceTree = "<group>"; };
+		FF9DB5431B568918006E4D3F /* SoundFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundFile.m; sourceTree = "<group>"; };
 		FFCE73731B52580700F52920 /* PunchCardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PunchCardTests.m; sourceTree = "<group>"; };
 		FFCE73771B525A5600F52920 /* AmplitudeMultiplierTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmplitudeMultiplierTests.m; sourceTree = "<group>"; };
 		FFCE73791B525D2C00F52920 /* TestsAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestsAppDelegate.h; sourceTree = "<group>"; };
@@ -175,6 +178,8 @@
 				FF0A484B1B5031A10021B149 /* ExamPunchCard.m */,
 				FFCE73811B52AC6E00F52920 /* AudiogramData.h */,
 				FFCE73821B52AC6E00F52920 /* AudiogramData.m */,
+				FF9DB5421B568918006E4D3F /* SoundFile.h */,
+				FF9DB5431B568918006E4D3F /* SoundFile.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -457,6 +462,7 @@
 				FF0A48451B4FB75B0021B149 /* HearingExamSoundMeter.m in Sources */,
 				FF0A48321B4E3D870021B149 /* TabBarViewController.m in Sources */,
 				FF0A483C1B4E42C20021B149 /* PureToneAudiometer.m in Sources */,
+				FF9DB5441B568918006E4D3F /* SoundFile.m in Sources */,
 				FFCE737C1B525D4400F52920 /* TestsAppDelegate.m in Sources */,
 				FF0A48421B4FB44E0021B149 /* AmplitudeMultiplier.m in Sources */,
 				FF0A484C1B5031A10021B149 /* ExamPunchCard.m in Sources */,
