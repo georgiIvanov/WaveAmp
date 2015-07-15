@@ -32,6 +32,7 @@
 		FF9DB5381B563D13006E4D3F /* ToneEqualizer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB5371B563D13006E4D3F /* ToneEqualizer.m */; };
 		FF9DB5411B56887B006E4D3F /* AudioFiles in Resources */ = {isa = PBXBuildFile; fileRef = FF9DB5401B56887B006E4D3F /* AudioFiles */; };
 		FF9DB5441B568918006E4D3F /* SoundFile.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB5431B568918006E4D3F /* SoundFile.m */; };
+		FF9DB54E1B569EAA006E4D3F /* BouncyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB54D1B569EAA006E4D3F /* BouncyButton.m */; };
 		FFCE73741B52580700F52920 /* PunchCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE73731B52580700F52920 /* PunchCardTests.m */; };
 		FFCE73781B525A5600F52920 /* AmplitudeMultiplierTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE73771B525A5600F52920 /* AmplitudeMultiplierTests.m */; };
 		FFCE737B1B525D2C00F52920 /* TestsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE737A1B525D2C00F52920 /* TestsAppDelegate.m */; };
@@ -101,6 +102,8 @@
 		FF9DB5401B56887B006E4D3F /* AudioFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AudioFiles; sourceTree = "<group>"; };
 		FF9DB5421B568918006E4D3F /* SoundFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundFile.h; sourceTree = "<group>"; };
 		FF9DB5431B568918006E4D3F /* SoundFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundFile.m; sourceTree = "<group>"; };
+		FF9DB54C1B569EAA006E4D3F /* BouncyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncyButton.h; sourceTree = "<group>"; };
+		FF9DB54D1B569EAA006E4D3F /* BouncyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncyButton.m; sourceTree = "<group>"; };
 		FFCE73731B52580700F52920 /* PunchCardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PunchCardTests.m; sourceTree = "<group>"; };
 		FFCE73771B525A5600F52920 /* AmplitudeMultiplierTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmplitudeMultiplierTests.m; sourceTree = "<group>"; };
 		FFCE73791B525D2C00F52920 /* TestsAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestsAppDelegate.h; sourceTree = "<group>"; };
@@ -207,6 +210,7 @@
 				FF7604401B53C6D20024930C /* Animations */,
 				FF0A48461B4FEBE00021B149 /* Models */,
 				FF0A48391B4E41B00021B149 /* BusinessLayer */,
+				FF9DB54B1B569E74006E4D3F /* Views */,
 				FF42B9901B4E35D400535A7B /* ViewControllers */,
 				FF42B9941B4E35D900535A7B /* Storyboards */,
 				FF42B96E1B4E35AF00535A7B /* AppDelegate.h */,
@@ -300,6 +304,15 @@
 				FF9DB4E81B540192006E4D3F /* CommonAnimations.m */,
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		FF9DB54B1B569E74006E4D3F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF9DB54C1B569EAA006E4D3F /* BouncyButton.h */,
+				FF9DB54D1B569EAA006E4D3F /* BouncyButton.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -453,6 +466,7 @@
 				FF0A48491B4FEC7E0021B149 /* FrequencyThreshold.m in Sources */,
 				FF9DB5381B563D13006E4D3F /* ToneEqualizer.m in Sources */,
 				FF0A48381B4E3F560021B149 /* AbsThresholdViewController.m in Sources */,
+				FF9DB54E1B569EAA006E4D3F /* BouncyButton.m in Sources */,
 				FF9DB4E41B53E097006E4D3F /* TestInstructionsViewController.m in Sources */,
 				FFCE73831B52AC6E00F52920 /* AudiogramData.m in Sources */,
 				FF42B9701B4E35AF00535A7B /* AppDelegate.m in Sources */,
