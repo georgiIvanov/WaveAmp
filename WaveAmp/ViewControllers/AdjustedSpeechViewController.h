@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PlaybackButton.h"
 
 @interface AdjustedSpeechViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
+@property (weak, nonatomic) IBOutlet PlaybackButton *playbackButton;
+
+- (IBAction)playbackTap:(id)sender;
 
 @end

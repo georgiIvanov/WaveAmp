@@ -19,6 +19,11 @@
 @property(nonatomic) AudioFileReader* fileReader;
 @property(nonatomic) NSArray* speechFiles;
 
+// resume playback if file wasn't changed
+// TODO: AudioFileReader.currentTime does not report correct time with the currently used speech files
+//       check with different files / formats / sample rates
+@property(nonatomic) float currentTime;
+
 @end
 
 @implementation AdjustedSpeechViewController
@@ -30,7 +35,8 @@
     self.toneEqualizer = [[ToneEqualizer alloc] initWithAudiogram:ad samplingRate:self.audioManager.samplingRate];
     
     [self loadSpeechPaths];
-    
+    [self.playbackButton setScalingTouchDown:1.7 touchUp:1];
+    self.currentTime = 0.1;
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -40,7 +46,6 @@
         [wself.fileReader retrieveFreshAudio:data numFrames:numFrames numChannels:numChannels];
         [wself.toneEqualizer applyFilters:data numFrames:numFrames numChannels:numChannels];
     }];
-    [self startPlayingFile:self.speechFiles.firstObject];
 }
 
 -(void)loadSpeechPaths
@@ -69,15 +74,25 @@
                        initWithAudioFileURL:url
                        samplingRate:self.audioManager.samplingRate
                        numChannels:self.audioManager.numOutputChannels];
-    self.fileReader.currentTime = 0.1;
+    self.fileReader.currentTime = self.currentTime;
     [self.audioManager play];
     [self.fileReader play];
+}
+
+-(void)pausePlayback
+{
+    [self.fileReader pause];
+    [self.audioManager pause];
 }
 
 -(void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    [self.audioManager pause];
+    if(self.playbackButton.playing)
+    {
+        [self.playbackButton togglePlayState];
+        [self playbackTap:self.playbackButton];
+    }
 }
 
 #pragma mark - UIPickerView DataSource
@@ -102,8 +117,27 @@
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    SoundFile* sf = self.speechFiles[row];
-    [self startPlayingFile:sf];
+    if(self.playbackButton.playing)
+    {
+        self.currentTime = 0.1;
+        SoundFile* sf = self.speechFiles[row];
+        [self startPlayingFile:sf];
+    }
 }
 
+#pragma UI Actions
+
+- (IBAction)playbackTap:(id)sender
+{
+    if(self.playbackButton.playing)
+    {
+        SoundFile* sf = self.speechFiles[[self.pickerView selectedRowInComponent:0]];
+        [self startPlayingFile:sf];
+    }
+    else
+    {
+        self.currentTime = self.fileReader.currentTime > 0 ? self.fileReader.currentTime : 0.1;
+        [self pausePlayback];
+    }
+}
 @end
