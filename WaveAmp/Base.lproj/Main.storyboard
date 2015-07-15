@@ -114,7 +114,7 @@
         <!--Adjusted Speech-->
         <scene sceneID="gf4-0j-gta">
             <objects>
-                <viewController id="lWv-bN-XI1" sceneMemberID="viewController">
+                <viewController id="lWv-bN-XI1" customClass="AdjustedSpeechViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="glf-In-mfr"/>
                         <viewControllerLayoutGuide type="bottom" id="yeg-M1-mCf"/>

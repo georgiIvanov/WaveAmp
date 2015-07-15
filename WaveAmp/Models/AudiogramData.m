@@ -127,11 +127,11 @@
     [thresholds addObject:[FrequencyThreshold thresholdDb:30 frequency:4000 channel:0]];
     [thresholds addObject:[FrequencyThreshold thresholdDb:30 frequency:4000 channel:1]];
     
-    [thresholds addObject:[FrequencyThreshold thresholdDb:30 frequency:6000 channel:1]];
-    [thresholds addObject:[FrequencyThreshold thresholdDb:30 frequency:6000 channel:0]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:55 frequency:6000 channel:1]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:65 frequency:6000 channel:0]];
     
-    [thresholds addObject:[FrequencyThreshold thresholdDb:40 frequency:8000 channel:1]];
-    [thresholds addObject:[FrequencyThreshold thresholdDb:40 frequency:8000 channel:0]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:60 frequency:8000 channel:1]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:70 frequency:8000 channel:0]];
     
     AudiogramData* ad = [[AudiogramData alloc] initWithThresholds:thresholds];
     return ad;
