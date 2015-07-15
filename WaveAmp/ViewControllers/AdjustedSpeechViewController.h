@@ -10,4 +10,6 @@
 
 @interface AdjustedSpeechViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
+
 @end

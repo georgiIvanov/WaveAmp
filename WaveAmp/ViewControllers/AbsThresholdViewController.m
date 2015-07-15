@@ -117,6 +117,7 @@
      }];
     
     [self.hearingExam start];
+    [self.audioManager play];
 }
 
 #pragma mark - ToneAudiometerDelegate

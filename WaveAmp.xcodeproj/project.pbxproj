@@ -30,9 +30,7 @@
 		FF9DB4EC1B54FA8E006E4D3F /* AudioTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB4EB1B54FA8E006E4D3F /* AudioTypes.m */; };
 		FF9DB5351B56360E006E4D3F /* AdjustedSpeechViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB5341B56360E006E4D3F /* AdjustedSpeechViewController.mm */; };
 		FF9DB5381B563D13006E4D3F /* ToneEqualizer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB5371B563D13006E4D3F /* ToneEqualizer.m */; };
-		FF9DB53D1B565420006E4D3F /* OSR_uk_000_0051_8k_m.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF9DB53A1B565420006E4D3F /* OSR_uk_000_0051_8k_m.wav */; };
-		FF9DB53E1B565420006E4D3F /* OSR_us_000_0015_8k_f.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF9DB53B1B565420006E4D3F /* OSR_us_000_0015_8k_f.wav */; };
-		FF9DB53F1B565420006E4D3F /* OSR_us_000_0039_8k_m.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF9DB53C1B565420006E4D3F /* OSR_us_000_0039_8k_m.wav */; };
+		FF9DB5411B56887B006E4D3F /* AudioFiles in Resources */ = {isa = PBXBuildFile; fileRef = FF9DB5401B56887B006E4D3F /* AudioFiles */; };
 		FF9DB5441B568918006E4D3F /* SoundFile.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB5431B568918006E4D3F /* SoundFile.m */; };
 		FFCE73741B52580700F52920 /* PunchCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE73731B52580700F52920 /* PunchCardTests.m */; };
 		FFCE73781B525A5600F52920 /* AmplitudeMultiplierTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE73771B525A5600F52920 /* AmplitudeMultiplierTests.m */; };
@@ -100,9 +98,7 @@
 		FF9DB5341B56360E006E4D3F /* AdjustedSpeechViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AdjustedSpeechViewController.mm; sourceTree = "<group>"; };
 		FF9DB5361B563D13006E4D3F /* ToneEqualizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToneEqualizer.h; sourceTree = "<group>"; };
 		FF9DB5371B563D13006E4D3F /* ToneEqualizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToneEqualizer.m; sourceTree = "<group>"; };
-		FF9DB53A1B565420006E4D3F /* OSR_uk_000_0051_8k_m.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = OSR_uk_000_0051_8k_m.wav; sourceTree = "<group>"; };
-		FF9DB53B1B565420006E4D3F /* OSR_us_000_0015_8k_f.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = OSR_us_000_0015_8k_f.wav; sourceTree = "<group>"; };
-		FF9DB53C1B565420006E4D3F /* OSR_us_000_0039_8k_m.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = OSR_us_000_0039_8k_m.wav; sourceTree = "<group>"; };
+		FF9DB5401B56887B006E4D3F /* AudioFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AudioFiles; sourceTree = "<group>"; };
 		FF9DB5421B568918006E4D3F /* SoundFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundFile.h; sourceTree = "<group>"; };
 		FF9DB5431B568918006E4D3F /* SoundFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundFile.m; sourceTree = "<group>"; };
 		FFCE73731B52580700F52920 /* PunchCardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PunchCardTests.m; sourceTree = "<group>"; };
@@ -280,7 +276,7 @@
 		FF76043C1B53BE100024930C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FF9DB5391B565420006E4D3F /* AudioFiles */,
+				FF9DB5401B56887B006E4D3F /* AudioFiles */,
 				FF76043D1B53BE1D0024930C /* Images */,
 			);
 			path = Resources;
@@ -304,16 +300,6 @@
 				FF9DB4E81B540192006E4D3F /* CommonAnimations.m */,
 			);
 			path = Animations;
-			sourceTree = "<group>";
-		};
-		FF9DB5391B565420006E4D3F /* AudioFiles */ = {
-			isa = PBXGroup;
-			children = (
-				FF9DB53A1B565420006E4D3F /* OSR_uk_000_0051_8k_m.wav */,
-				FF9DB53B1B565420006E4D3F /* OSR_us_000_0015_8k_f.wav */,
-				FF9DB53C1B565420006E4D3F /* OSR_us_000_0039_8k_m.wav */,
-			);
-			path = AudioFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,13 +385,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF42B9761B4E35AF00535A7B /* Main.storyboard in Resources */,
-				FF9DB53D1B565420006E4D3F /* OSR_uk_000_0051_8k_m.wav in Resources */,
-				FF9DB53E1B565420006E4D3F /* OSR_us_000_0015_8k_f.wav in Resources */,
 				FF9DB4E61B53EE36006E4D3F /* Headphones.png in Resources */,
 				FF42B97B1B4E35AF00535A7B /* LaunchScreen.xib in Resources */,
+				FF9DB5411B56887B006E4D3F /* AudioFiles in Resources */,
 				FF42B9781B4E35AF00535A7B /* Images.xcassets in Resources */,
 				FF76043F1B53BEDE0024930C /* HearingWave.png in Resources */,
-				FF9DB53F1B565420006E4D3F /* OSR_us_000_0039_8k_m.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

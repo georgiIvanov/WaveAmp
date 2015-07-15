@@ -122,9 +122,26 @@
                     <view key="view" contentMode="scaleToFill" id="8tV-w8-PnK">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JCb-o6-aTW">
+                                <rect key="frame" x="0.0" y="233" width="600" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="lWv-bN-XI1" id="TlV-Hx-pen"/>
+                                    <outlet property="delegate" destination="lWv-bN-XI1" id="eUM-h7-OYF"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JCb-o6-aTW" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" id="QkC-oe-7G6"/>
+                            <constraint firstAttribute="trailing" secondItem="JCb-o6-aTW" secondAttribute="trailing" id="rji-Ev-TOp"/>
+                            <constraint firstItem="yeg-M1-mCf" firstAttribute="top" secondItem="JCb-o6-aTW" secondAttribute="bottom" constant="156" id="wfE-hm-qcq"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Adjusted Speech" id="hCP-bd-kuV"/>
+                    <connections>
+                        <outlet property="pickerView" destination="JCb-o6-aTW" id="57u-Rb-2l3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B0b-EJ-1kz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
