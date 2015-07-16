@@ -8,25 +8,13 @@
 
 #import "AudiogramViewController.h"
 #import "PureToneAudiometer.h"
-#import "AudiogramData.h"
 #import "UIView+PopAnimations.h"
 
 @interface AudiogramViewController()
 
-@property(nonatomic) AudiogramData* audiogramData;
-
 @end
 
 @implementation AudiogramViewController
-
-- (instancetype)initWithCoder:(NSCoder *)coder
-{
-    self = [super initWithCoder:coder];
-    if (self) {
-        self.audiogramData = [[NSUserDefaults standardUserDefaults] objectForKey:kAudiogramKey];
-    }
-    return self;
-}
 
 -(void)viewDidLoad
 {
@@ -36,6 +24,17 @@
     {
         self.noContentView.hidden = NO;
         [self.hearingTestButton addPopOutAnimationDelay:0.3f bounciness:10];
+    }
+    
+    self.audiogramData = [AudiogramData audiogramMildLoss]; // [[NSUserDefaults standardUserDefaults] objectForKey:kAudiogramKey];
+}
+
+-(void)setAudiogramData:(AudiogramData *)audiogramData
+{
+    _audiogramData = audiogramData;
+    if(self.audiogramUpdated)
+    {
+        self.audiogramUpdated(audiogramData);
     }
 }
 

@@ -28,12 +28,18 @@
 
 @implementation AdjustedSpeechViewController
 
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        self.audioManager = [Novocaine audioManager];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.audioManager = [Novocaine audioManager];
-    AudiogramData* ad = [AudiogramData audiogramMildLoss];
-    self.toneEqualizer = [[ToneEqualizer alloc] initWithAudiogram:ad samplingRate:self.audioManager.samplingRate];
-    
+        
     [self loadSpeechPaths];
     [self.playbackButton setScalingTouchDown:1.7 touchUp:1];
     self.currentTime = 0.1;
@@ -48,6 +54,17 @@
     }];
 }
 
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    if(self.playbackButton.playing)
+    {
+        [self.playbackButton togglePlayState];
+        [self playbackTap:self.playbackButton];
+    }
+}
+
+
 -(void)loadSpeechPaths
 {
     NSArray* filePaths = [[NSBundle mainBundle] pathsForResourcesOfType:@"wav" inDirectory:@"AudioFiles"];
@@ -61,8 +78,15 @@
     self.speechFiles = speechFiles;
 }
 
--(void)startPlayingFile:(SoundFile*)sf
+-(void)setAudiogramData:(AudiogramData *)audiogramData
 {
+    self.toneEqualizer = nil;
+    _audiogramData = audiogramData;
+    self.toneEqualizer = [[ToneEqualizer alloc] initWithAudiogram:audiogramData samplingRate:self.audioManager.samplingRate];
+}
+
+-(void)startPlayingFile:(SoundFile*)sf
+{    
     if(self.fileReader.playing || self.audioManager.playing)
     {
         [self.fileReader pause];
@@ -83,16 +107,6 @@
 {
     [self.fileReader pause];
     [self.audioManager pause];
-}
-
--(void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-    if(self.playbackButton.playing)
-    {
-        [self.playbackButton togglePlayState];
-        [self playbackTap:self.playbackButton];
-    }
 }
 
 #pragma mark - UIPickerView DataSource

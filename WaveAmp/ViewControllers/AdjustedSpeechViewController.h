@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "PlaybackButton.h"
+#import "AudiogramData.h"
 
 @interface AdjustedSpeechViewController : UIViewController
+
+@property(nonatomic) AudiogramData* audiogramData;
 
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 @property (weak, nonatomic) IBOutlet PlaybackButton *playbackButton;

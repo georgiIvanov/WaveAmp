@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AudiogramData.h"
 
 @interface AudiogramViewController : UIViewController
+
+@property(nonatomic) AudiogramData* audiogramData;
+@property(nonatomic, copy) void(^audiogramUpdated)(AudiogramData* audiogramData);
+
 @property (weak, nonatomic) IBOutlet UIView *noContentView;
 @property (weak, nonatomic) IBOutlet UIButton *hearingTestButton;
 
