@@ -83,15 +83,26 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 </variation>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNo-OV-52n">
+                                <rect key="frame" x="484" y="40" width="80" height="30"/>
+                                <state key="normal" title="Retake Test">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hearingTestTap:" destination="gUi-f9-8tM" eventType="touchUpInside" id="qzC-ZP-bDz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="QNo-OV-52n" secondAttribute="trailing" constant="36" id="3DY-xc-OIy"/>
                             <constraint firstItem="i3g-VW-bJx" firstAttribute="leading" secondItem="cuJ-xo-9EO" secondAttribute="leadingMargin" constant="20" id="4MJ-Dv-OaB"/>
                             <constraint firstAttribute="centerY" secondItem="i3g-VW-bJx" secondAttribute="centerY" id="8Ct-EQ-n2T"/>
                             <constraint firstAttribute="bottom" secondItem="LSq-9H-3hD" secondAttribute="bottom" constant="100" id="Hvu-98-hOr"/>
                             <constraint firstAttribute="centerX" secondItem="i3g-VW-bJx" secondAttribute="centerX" id="Pff-Ex-766"/>
                             <constraint firstAttribute="trailingMargin" secondItem="i3g-VW-bJx" secondAttribute="trailing" constant="20" id="VSa-Fb-Mm4"/>
                             <constraint firstItem="LSq-9H-3hD" firstAttribute="leading" secondItem="cuJ-xo-9EO" secondAttribute="leading" constant="7" id="hR6-1k-o8N"/>
+                            <constraint firstItem="QNo-OV-52n" firstAttribute="top" secondItem="cuJ-xo-9EO" secondAttribute="top" constant="40" id="mwm-eL-R31"/>
                             <constraint firstAttribute="trailing" secondItem="LSq-9H-3hD" secondAttribute="trailing" constant="7" id="rMC-NM-HYP"/>
                             <constraint firstItem="LSq-9H-3hD" firstAttribute="top" secondItem="W8L-RC-4tv" secondAttribute="bottom" id="sZl-S8-G2A"/>
                         </constraints>
@@ -101,6 +112,7 @@
                         <outlet property="audiogramTextView" destination="i3g-VW-bJx" id="v2w-MM-NKQ"/>
                         <outlet property="hearingTestButton" destination="4XS-Og-nZP" id="oQg-eK-Rhv"/>
                         <outlet property="noContentView" destination="LSq-9H-3hD" id="R49-vD-ej5"/>
+                        <outlet property="retakeTestButton" destination="QNo-OV-52n" id="6HK-Ta-ai0"/>
                         <segue destination="5TN-az-DWC" kind="presentation" identifier="AbsThresholdSegue" id="QUW-ru-gMU"/>
                     </connections>
                 </viewController>

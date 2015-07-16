@@ -31,12 +31,14 @@
     {
         self.noContentView.hidden = NO;
         self.audiogramTextView.hidden = YES;
+        self.retakeTestButton.hidden = YES;
         [self.hearingTestButton addPopOutAnimationDelay:0.3f bounciness:10];
     }
     else
     {
         self.noContentView.hidden = YES;
         self.audiogramTextView.hidden = NO;
+        self.retakeTestButton.hidden = NO;
         [self displayAudiogramData];
     }
 }
