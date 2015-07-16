@@ -69,7 +69,11 @@
 +(instancetype)loadAudiogram
 {
     NSData* data = [[NSUserDefaults standardUserDefaults] objectForKey:kAudiogramKey];
-    AudiogramData* ad = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    AudiogramData* ad = nil;
+    if(data != nil)
+    {
+        ad = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    }
     return ad;
 }
 

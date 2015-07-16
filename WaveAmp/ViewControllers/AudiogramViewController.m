@@ -10,8 +10,9 @@
 #import "PureToneAudiometer.h"
 #import "UIView+PopAnimations.h"
 #import "FrequencyThreshold.h"
+#import "AbsThresholdViewController.h"
 
-@interface AudiogramViewController()
+@interface AudiogramViewController() <ThresholdExamDelegate>
 
 @end
 
@@ -21,7 +22,7 @@
 {
     [super viewDidLoad];
     [self setupGestures];
-    self.audiogramData = [AudiogramData audiogramNormalLoss]; //[[NSUserDefaults standardUserDefaults] objectForKey:kAudiogramKey];
+    self.audiogramData = [AudiogramData loadAudiogram];
 }
 
 -(void)setupContentViews
@@ -29,11 +30,13 @@
     if(self.audiogramData == nil)
     {
         self.noContentView.hidden = NO;
+        self.audiogramTextView.hidden = YES;
         [self.hearingTestButton addPopOutAnimationDelay:0.3f bounciness:10];
     }
     else
     {
         self.noContentView.hidden = YES;
+        self.audiogramTextView.hidden = NO;
         [self displayAudiogramData];
     }
 }
@@ -86,6 +89,11 @@
     self.audiogramTextView.text = text;
 }
 
+-(void)examIsSuccessfullyCompleted
+{
+    self.audiogramData = [AudiogramData loadAudiogram];
+}
+
 -(void)displayAudiogramPresets
 {
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Audiogram Data"
@@ -94,12 +102,12 @@
     UIAlertAction* alertAction;
     
     
-    AudiogramData* ad = [[NSUserDefaults standardUserDefaults] objectForKey:kAudiogramKey];
+    AudiogramData* ad = [AudiogramData loadAudiogram];
     if(ad)
     {
         alertAction = [UIAlertAction actionWithTitle:@"Original" style:UIAlertActionStyleDefault
                                                        handler:^(UIAlertAction * action) {
-                                                           self.audiogramData = [[NSUserDefaults standardUserDefaults] objectForKey:kAudiogramKey];
+                                                           self.audiogramData = [AudiogramData loadAudiogram];
                                                        }];
         [alert addAction:alertAction];
     }
@@ -131,6 +139,15 @@
     }
     
     [self presentViewController:alert animated:YES completion:nil];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"AbsThresholdSegue"])
+    {
+        AbsThresholdViewController* vc = (AbsThresholdViewController*)segue.destinationViewController;
+        vc.delegate = self;
+    }
 }
 
 #pragma mark - UI Actions

@@ -28,13 +28,9 @@
 {
     [super viewDidLoad];
     
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        // initializing novocaine asap stalls the transition,
-        // we don't need it right away anyway.
-        self.audioManager = [Novocaine audioManager];
-        self.hearingExam = [[PureToneAudiometer alloc] init];
-        self.hearingExam.delegate = self;
-    });
+    self.audioManager = [Novocaine audioManager];
+    self.hearingExam = [[PureToneAudiometer alloc] init];
+    self.hearingExam.delegate = self;
     
     [self setupViewsForInstructions];
     self.testNumberLabel.text = @"Tests will start soon.";
@@ -135,7 +131,14 @@
     self.testNumberLabel.text = @"Tests are completed.\nWell done!";
     
     [self.audioManager pause];
-    // TODO: save audiogram
+    [audiogramData saveAudiogram];
+    [self.delegate examIsSuccessfullyCompleted];
+    self.leftButton.enabled = NO;
+    self.rightButton.enabled = NO;
+    // TODO: redirect user with UI
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self dismissViewControllerAnimated:YES completion:nil];
+    });
 }
 
 #pragma mark - TestInstructionsDelegate

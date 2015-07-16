@@ -8,7 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol ThresholdExamDelegate <NSObject>
+
+-(void)examIsSuccessfullyCompleted;
+
+@end
+
 @interface AbsThresholdViewController : UIViewController
+
+@property(nonatomic, weak) id<ThresholdExamDelegate> delegate;
 
 @property (weak, nonatomic) IBOutlet UILabel *testNumberLabel;
 @property (weak, nonatomic) IBOutlet UIButton *leftButton;
