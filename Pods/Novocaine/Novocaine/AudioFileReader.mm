@@ -40,7 +40,7 @@
 @property float *holdingBuffer;
 @property UInt32 numSamplesReadPerPacket;
 @property UInt32 desiredPrebufferedSamples;
-@property SInt64 currentFileTime;
+@property double currentFileTime;
 @property dispatch_source_t callbackTimer;
 
 
@@ -135,6 +135,10 @@
         self.outputBuffer = (float *)calloc(2*self.samplingRate, sizeof(float));
         self.holdingBuffer = (float *)calloc(2*self.samplingRate, sizeof(float));
         
+        UInt32 propertySize = sizeof(AudioStreamBasicDescription);
+        AudioStreamBasicDescription fileStreamFormat;
+        ExtAudioFileGetProperty(self.inputFile, kExtAudioFileProperty_FileDataFormat, &propertySize, &fileStreamFormat);
+        self.samplingRate = fileStreamFormat.mSampleRate;
         
         // Allocate a ring buffer (this is what's going to buffer our audio)
         ringBuffer = new RingBuffer(self.outputBufferSize, self.numChannels);
@@ -207,11 +211,7 @@
     UInt32 propertySize = sizeof(framesInThisFile);
     ExtAudioFileGetProperty(self.inputFile, kExtAudioFileProperty_FileLengthFrames, &propertySize, &framesInThisFile);
     
-    AudioStreamBasicDescription fileStreamFormat;
-    propertySize = sizeof(AudioStreamBasicDescription);
-    ExtAudioFileGetProperty(self.inputFile, kExtAudioFileProperty_FileDataFormat, &propertySize, &fileStreamFormat);
-    
-    return (float)framesInThisFile/(float)fileStreamFormat.mSampleRate;
+    return (float)framesInThisFile/self.samplingRate;
     
 }
 
