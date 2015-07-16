@@ -19,22 +19,23 @@
 
 +(instancetype)punchCard
 {
-    return [ExamPunchCard punchCardForChannel:0];
+    return [ExamPunchCard punchCardForChannel:0 frequency:1000];
 }
 
-+(instancetype)punchCardForChannel:(int)channel
++(instancetype)punchCardForChannel:(int)channel frequency:(float)frequency
 {
-    ExamPunchCard* pc = [[ExamPunchCard alloc] initForChannel:channel];
+    ExamPunchCard* pc = [[ExamPunchCard alloc] initForChannel:channel frequency:frequency];
     return pc;
 }
 
-- (instancetype)initForChannel:(int)channel
+- (instancetype)initForChannel:(int)channel frequency:(float)frequency
 {
     self = [super init];
     if (self) {
         self.answers = [NSMutableDictionary new];
         _currentIntensity = @(30);
         _channel = channel;
+        _frequency = frequency;
         // the volume should be increased until the user hears the tone
         _ascending = YES;
     }

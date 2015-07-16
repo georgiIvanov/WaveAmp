@@ -13,11 +13,12 @@
 @property(nonatomic, readonly) NSNumber* currentIntensity;
 @property(nonatomic, readonly) int channel;
 @property(nonatomic, readonly) BOOL ascending;
+@property(nonatomic, readonly) float frequency;
 // user heard the signal and pressed down the button
 @property(nonatomic) BOOL wasAcknowledged;
 
 +(instancetype)punchCard;
-+(instancetype)punchCardForChannel:(int)channel;
++(instancetype)punchCardForChannel:(int)channel frequency:(float)frequency;
 
 // returns YES when hearing threshold is determined
 -(BOOL)addAnswerIsAccurate:(BOOL)isAccurate;

@@ -48,8 +48,9 @@
 
 -(void)prepareForNextFreqency
 {
-    self.punchCards = [NSMutableArray arrayWithObjects:[ExamPunchCard punchCardForChannel:kLeftChannel],
-                                                       [ExamPunchCard punchCardForChannel:kRightChannel], nil];
+    float frequency = [self.frequencies[self.testIndex] floatValue];
+    self.punchCards = [NSMutableArray arrayWithObjects:[ExamPunchCard punchCardForChannel:kLeftChannel frequency:frequency],
+                                                       [ExamPunchCard punchCardForChannel:kRightChannel frequency:frequency], nil];
 }
 
 -(void)stop
@@ -128,7 +129,7 @@
 {
     // http://i.imgur.com/1JD4b6Y.png
     FrequencyThreshold* threshold = [FrequencyThreshold thresholdDb:[pc.currentIntensity intValue]
-                                                          frequency:self.currentFrequency
+                                                          frequency:pc.frequency
                                                             channel:pc.channel];
     
     if(self.thresholds.count > 1 && self.currentFrequency == 1000)
