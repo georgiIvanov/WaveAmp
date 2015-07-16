@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HPS-WT-VF7">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Audiogram-->
@@ -72,10 +73,26 @@
                                     </constraint>
                                 </constraints>
                             </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="i3g-VW-bJx">
+                                <rect key="frame" x="36" y="80" width="528" height="440"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="440" id="wGK-Vm-3j9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                </variation>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="i3g-VW-bJx" firstAttribute="leading" secondItem="cuJ-xo-9EO" secondAttribute="leadingMargin" constant="20" id="4MJ-Dv-OaB"/>
+                            <constraint firstAttribute="centerY" secondItem="i3g-VW-bJx" secondAttribute="centerY" id="8Ct-EQ-n2T"/>
                             <constraint firstAttribute="bottom" secondItem="LSq-9H-3hD" secondAttribute="bottom" constant="100" id="Hvu-98-hOr"/>
+                            <constraint firstAttribute="centerX" secondItem="i3g-VW-bJx" secondAttribute="centerX" id="Pff-Ex-766"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="i3g-VW-bJx" secondAttribute="trailing" constant="20" id="VSa-Fb-Mm4"/>
                             <constraint firstItem="LSq-9H-3hD" firstAttribute="leading" secondItem="cuJ-xo-9EO" secondAttribute="leading" constant="7" id="hR6-1k-o8N"/>
                             <constraint firstAttribute="trailing" secondItem="LSq-9H-3hD" secondAttribute="trailing" constant="7" id="rMC-NM-HYP"/>
                             <constraint firstItem="LSq-9H-3hD" firstAttribute="top" secondItem="W8L-RC-4tv" secondAttribute="bottom" id="sZl-S8-G2A"/>
@@ -83,6 +100,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Audiogram" id="4ek-G7-wwF"/>
                     <connections>
+                        <outlet property="audiogramTextView" destination="i3g-VW-bJx" id="v2w-MM-NKQ"/>
                         <outlet property="hearingTestButton" destination="4XS-Og-nZP" id="oQg-eK-Rhv"/>
                         <outlet property="noContentView" destination="LSq-9H-3hD" id="R49-vD-ej5"/>
                         <segue destination="5TN-az-DWC" kind="presentation" identifier="AbsThresholdSegue" id="QUW-ru-gMU"/>

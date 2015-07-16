@@ -9,6 +9,7 @@
 #import "AudiogramViewController.h"
 #import "PureToneAudiometer.h"
 #import "UIView+PopAnimations.h"
+#import "FrequencyThreshold.h"
 
 @interface AudiogramViewController()
 
@@ -20,7 +21,7 @@
 {
     [super viewDidLoad];
     [self setupGestures];
-    self.audiogramData = [[NSUserDefaults standardUserDefaults] objectForKey:kAudiogramKey];
+    self.audiogramData = [AudiogramData audiogramNormalLoss]; //[[NSUserDefaults standardUserDefaults] objectForKey:kAudiogramKey];
 }
 
 -(void)setupContentViews
@@ -29,6 +30,11 @@
     {
         self.noContentView.hidden = NO;
         [self.hearingTestButton addPopOutAnimationDelay:0.3f bounciness:10];
+    }
+    else
+    {
+        self.noContentView.hidden = YES;
+        [self displayAudiogramData];
     }
 }
 
@@ -60,6 +66,24 @@
     {
         self.audiogramUpdated(audiogramData);
     }
+}
+
+-(void)displayAudiogramData
+{
+    NSMutableString* text = [NSMutableString new];
+    [text appendString:@"Frequency\tEar\t\tdB\n\n"];
+    NSString* format = @"%@\t\t%@\t\t%@\n";
+    for (int r = 0; r < self.audiogramData.leftEar.count; r++)
+    {
+        FrequencyThreshold* ft = self.audiogramData.leftEar[r];
+        NSString* left = [ft.frequency floatValue] < 1000 ? @"\tL" : @"L";
+        [text appendFormat:format, ft.frequency, left, ft.thresholdDb];
+        
+        ft = self.audiogramData.rightEar[r];
+        [text appendFormat:format, @"\t", @"R", ft.thresholdDb];
+    }
+    
+    self.audiogramTextView.text = text;
 }
 
 -(void)displayAudiogramPresets

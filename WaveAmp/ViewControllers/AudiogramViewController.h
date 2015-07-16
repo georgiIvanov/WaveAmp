@@ -16,6 +16,7 @@
 
 @property (weak, nonatomic) IBOutlet UIView *noContentView;
 @property (weak, nonatomic) IBOutlet UIButton *hearingTestButton;
+@property (weak, nonatomic) IBOutlet UITextView *audiogramTextView;
 
 - (IBAction)hearingTestTap:(id)sender;
 
