@@ -30,6 +30,10 @@ static NSArray* dBs;
                          @(65) : @(0.18696),
                          @(70) : @(0.22520),
                          @(75) : @(0.40040),
+                         @(80) : @(0.80040),
+                         @(85) : @(1.60040),
+                         @(90) : @(3.00040),
+                         @(95) : @(5.40040),
                          };
     NSSortDescriptor* sort = [[NSSortDescriptor alloc] initWithKey:@"integerValue" ascending:YES];
     dBs = [[multipliersTable allKeys] sortedArrayUsingDescriptors:@[sort]];
@@ -71,6 +75,11 @@ static NSArray* dBs;
     }
     
     return dBs.firstObject;
+}
+
++(NSNumber *)maxIntensity
+{
+    return dBs.lastObject;
 }
 
 @end

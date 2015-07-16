@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "ExamPunchCard.h"
+#import "AmplitudeMultiplier.h"
 
 @interface PunchCardTests : XCTestCase
 
@@ -166,15 +167,15 @@
     XCTAssertFalse([pc addAnswerIsAccurate:NO]);
     XCTAssertFalse([pc addAnswerIsAccurate:NO]);
     XCTAssertFalse([pc addAnswerIsAccurate:NO]);
+    XCTAssertFalse([pc addAnswerIsAccurate:NO]);
     
     XCTAssertTrue([pc addAnswerIsAccurate:NO]);
     
-    
-    XCTAssertEqual([pc.currentIntensity integerValue], 75);
+    XCTAssertEqual([pc.currentIntensity integerValue], [AmplitudeMultiplier maxIntensity].integerValue);
     XCTAssertEqual(pc.ascending, YES);
 }
 
--(void)test75dBThreshold
+-(void)test90dBThreshold
 {
     ExamPunchCard* pc = [ExamPunchCard punchCard];
     
@@ -190,7 +191,7 @@
     
     XCTAssertTrue([pc addAnswerIsAccurate:YES]);
     
-    XCTAssertEqual([pc.currentIntensity integerValue], 75);
+    XCTAssertEqual([pc.currentIntensity integerValue], 90);
 }
 
 @end

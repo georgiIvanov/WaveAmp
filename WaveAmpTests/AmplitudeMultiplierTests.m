@@ -37,7 +37,7 @@
 - (void)testDecreaseFromMaxToMin
 {
     NSInteger count = [AmplitudeMultiplier intensitySettingsCount] / 2;
-    NSNumber* number = @(75); // highest
+    NSNumber* number = [AmplitudeMultiplier maxIntensity]; // highest
     
     for (int i = 0; i < count; i++)
     {
@@ -55,14 +55,15 @@
 
 - (void)testIncreaseIntensityEdge
 {
-    NSNumber* number = [AmplitudeMultiplier nextIntensity:@(75)];
-    XCTAssertEqual([number integerValue], 75);
+    NSNumber* number = [AmplitudeMultiplier maxIntensity];
+    number = [AmplitudeMultiplier nextIntensity:number];
+    XCTAssertEqual([number integerValue], [AmplitudeMultiplier maxIntensity].integerValue);
 }
 
 - (void)testIncreaseIntensityNextToHighest
 {
-    NSNumber* number = [AmplitudeMultiplier nextIntensity:@(70)];
-    XCTAssertEqual([number integerValue], 75);
+    NSNumber* number = [AmplitudeMultiplier nextIntensity:@(90)];
+    XCTAssertEqual([number integerValue], [AmplitudeMultiplier maxIntensity].integerValue);
 }
 
 - (void)testIncreaseFromMinToMax
@@ -75,7 +76,7 @@
         number = [AmplitudeMultiplier nextIntensity:number];
     }
     
-    XCTAssertEqual([number integerValue], 75);
+    XCTAssertEqual([number integerValue], [AmplitudeMultiplier maxIntensity].integerValue);
 }
 
 @end

@@ -47,7 +47,7 @@
     // how answer should be registered depends if the volume is ascending
     // http://i.imgur.com/rW2cWYu.png
     
-    if([self.currentIntensity integerValue] >= 75 && isAccurate == NO)
+    if([self.currentIntensity integerValue] >= [AmplitudeMultiplier maxIntensity].integerValue && isAccurate == NO)
     {
         return YES;
     }
