@@ -137,4 +137,36 @@
     return ad;
 }
 
++(instancetype)audiogramSevereLoss
+{
+    NSMutableArray* thresholds = [NSMutableArray new];
+    
+    [thresholds addObject:[FrequencyThreshold thresholdDb:65 frequency:250 channel:0]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:65 frequency:250 channel:1]];
+    
+    [thresholds addObject:[FrequencyThreshold thresholdDb:65 frequency:500 channel:0]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:65 frequency:500 channel:1]];
+    
+    [thresholds addObject:[FrequencyThreshold thresholdDb:65 frequency:1000 channel:0]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:65 frequency:1000 channel:1]];
+    
+    [thresholds addObject:[FrequencyThreshold thresholdDb:70 frequency:2000 channel:1]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:70 frequency:2000 channel:0]];
+    
+    [thresholds addObject:[FrequencyThreshold thresholdDb:75 frequency:3000 channel:0]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:75 frequency:3000 channel:1]];
+    
+    [thresholds addObject:[FrequencyThreshold thresholdDb:80 frequency:4000 channel:0]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:80 frequency:4000 channel:1]];
+    
+    [thresholds addObject:[FrequencyThreshold thresholdDb:85 frequency:6000 channel:1]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:90 frequency:6000 channel:0]];
+    
+    [thresholds addObject:[FrequencyThreshold thresholdDb:85 frequency:8000 channel:1]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:95 frequency:8000 channel:0]];
+    
+    AudiogramData* ad = [[AudiogramData alloc] initWithThresholds:thresholds];
+    return ad;
+}
+
 @end

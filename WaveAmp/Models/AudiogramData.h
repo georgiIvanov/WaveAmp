@@ -15,6 +15,7 @@
 
 +(instancetype)audiogramNormalLoss;
 +(instancetype)audiogramMildLoss;
++(instancetype)audiogramSevereLoss;
 +(instancetype)loadAudiogram;
 
 -(instancetype)initWithThresholds:(NSArray*)thresholds;

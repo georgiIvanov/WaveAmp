@@ -80,7 +80,6 @@
 
 -(void)setAudiogramData:(AudiogramData *)audiogramData
 {
-    self.toneEqualizer = nil;
     _audiogramData = audiogramData;
     self.toneEqualizer = [[ToneEqualizer alloc] initWithAudiogram:audiogramData samplingRate:self.audioManager.samplingRate];
 }
