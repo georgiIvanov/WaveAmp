@@ -19,11 +19,6 @@
 @property(nonatomic) AudioFileReader* fileReader;
 @property(nonatomic) NSArray* speechFiles;
 
-// resume playback if file wasn't changed
-// TODO: AudioFileReader.currentTime does not report correct time with the currently used speech files
-//       check with different files / formats / sample rates
-@property(nonatomic) float currentTime;
-
 @end
 
 @implementation AdjustedSpeechViewController
@@ -42,15 +37,22 @@
         
     [self loadSpeechPaths];
     [self.playbackButton setScalingTouchDown:1.7 touchUp:1];
-    self.currentTime = 0.1;
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
     __weak AdjustedSpeechViewController * wself = self;
     [self.audioManager setOutputBlock:^(float *data, UInt32 numFrames, UInt32 numChannels) {
-        [wself.fileReader retrieveFreshAudio:data numFrames:numFrames numChannels:numChannels];
-        [wself.toneEqualizer applyFilters:data numFrames:numFrames numChannels:numChannels];
+        
+        if(wself.playbackButton.playing)
+        {
+            [wself.fileReader retrieveFreshAudio:data numFrames:numFrames numChannels:numChannels];
+            [wself.toneEqualizer applyFilters:data numFrames:numFrames numChannels:numChannels];
+        }
+        else
+        {
+            memset(data, 0, numChannels* numFrames * sizeof(float));
+        }
     }];
 }
 
@@ -61,6 +63,7 @@
     {
         [self.playbackButton togglePlayState];
         [self playbackTap:self.playbackButton];
+        self.audioManager.outputBlock = nil;
     }
 }
 
@@ -97,7 +100,7 @@
                        initWithAudioFileURL:url
                        samplingRate:self.audioManager.samplingRate
                        numChannels:self.audioManager.numOutputChannels];
-    self.fileReader.currentTime = self.currentTime;
+    self.fileReader.currentTime = 0;
     [self.audioManager play];
     [self.fileReader play];
 }
@@ -132,7 +135,6 @@
 {
     if(self.playbackButton.playing)
     {
-        self.currentTime = 0.1;
         SoundFile* sf = self.speechFiles[row];
         [self startPlayingFile:sf];
     }
@@ -149,7 +151,6 @@
     }
     else
     {
-        self.currentTime = self.fileReader.currentTime > 0 ? self.fileReader.currentTime : 0.1;
         [self pausePlayback];
     }
 }
