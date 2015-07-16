@@ -283,13 +283,13 @@ static Novocaine *audioManager = nil;
     
     
     // Enable input
-    UInt32 one = 1;
-    CheckError( AudioUnitSetProperty(inputUnit, 
-                                     kAudioOutputUnitProperty_EnableIO, 
-                                     kAudioUnitScope_Input, 
-                                     kInputBus, 
-                                     &one, 
-                                     sizeof(one)), "Couldn't enable IO on the input scope of output unit");
+//    UInt32 one = 1;
+//    CheckError( AudioUnitSetProperty(inputUnit, 
+//                                     kAudioOutputUnitProperty_EnableIO, 
+//                                     kAudioUnitScope_Input, 
+//                                     kInputBus, 
+//                                     &one, 
+//                                     sizeof(one)), "Couldn't enable IO on the input scope of output unit");
     
 #if defined ( USING_OSX )    
     // Disable output on the input unit
