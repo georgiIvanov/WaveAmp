@@ -47,11 +47,11 @@
         if(maxThreshold > 25)
         {
             NVPeakingEQFilter* filter = [[NVPeakingEQFilter alloc] initWithSamplingRate:_samplingRate];
-            filter.Q = 2.0f;
+            filter.Q = 100.0f;
             filter.centerFrequency = [ft1.frequency floatValue];
             
             float baseGain = [AmplitudeMultiplier multiplierForWaveDb:@(10)];
-            float adjustedGain = [AmplitudeMultiplier multiplierForWaveDb:@(maxThreshold)] - baseGain;
+            float adjustedGain = ([AmplitudeMultiplier multiplierForWaveDb:@(maxThreshold)] - baseGain) * 5;
             
             filter.G = adjustedGain + vol;
             

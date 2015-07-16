@@ -17,6 +17,7 @@
 @property(nonatomic) Novocaine* audioManager;
 @property(nonatomic) ToneEqualizer* toneEqualizer;
 @property(nonatomic) AudioFileReader* fileReader;
+@property(nonatomic) float duration;
 @property(nonatomic) NSArray* speechFiles;
 
 @end
@@ -43,6 +44,13 @@
 {
     __weak AdjustedSpeechViewController * wself = self;
     [self.audioManager setOutputBlock:^(float *data, UInt32 numFrames, UInt32 numChannels) {
+        
+        if(wself.fileReader.currentTime + 0.1 >= wself.duration && wself.fileReader != nil)
+        {
+            wself.fileReader.currentTime = 0;
+            memset(data, 0, numChannels* numFrames * sizeof(float));
+            return;
+        }
         
         if(wself.playbackButton.playing)
         {
@@ -101,6 +109,7 @@
                        samplingRate:self.audioManager.samplingRate
                        numChannels:self.audioManager.numOutputChannels];
     self.fileReader.currentTime = 0;
+    self.duration = [self.fileReader getDuration];
     [self.audioManager play];
     [self.fileReader play];
 }
