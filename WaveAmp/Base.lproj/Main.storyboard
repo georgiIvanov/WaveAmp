@@ -16,15 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNo-OV-52n">
-                                <rect key="frame" x="484" y="40" width="80" height="30"/>
-                                <state key="normal" title="Retake Test">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="hearingTestTap:" destination="gUi-f9-8tM" eventType="touchUpInside" id="qzC-ZP-bDz"/>
-                                </connections>
-                            </button>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LSq-9H-3hD" userLabel="NoContent">
                                 <rect key="frame" x="7" y="20" width="586" height="480"/>
                                 <subviews>
@@ -88,6 +79,15 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GHh-Uk-t72" customClass="AudiogramView">
                                 <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNo-OV-52n">
+                                        <rect key="frame" x="515" y="-3" width="80" height="30"/>
+                                        <state key="normal" title="Retake Test">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hearingTestTap:" destination="gUi-f9-8tM" eventType="touchUpInside" id="qzC-ZP-bDz"/>
+                                        </connections>
+                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pb2-GM-ZMm">
                                         <rect key="frame" x="5" y="58" width="19" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
@@ -514,6 +514,7 @@
                                     <constraint firstItem="ax3-y6-7Lg" firstAttribute="centerY" secondItem="Dtb-e0-mmC" secondAttribute="centerY" id="Vvu-mZ-5ML"/>
                                     <constraint firstItem="ax3-y6-7Lg" firstAttribute="centerX" secondItem="8zo-cn-rih" secondAttribute="centerX" constant="0.5" id="Wi5-Rh-jhq"/>
                                     <constraint firstItem="Gmg-Y1-pZ7" firstAttribute="leading" secondItem="GHh-Uk-t72" secondAttribute="leading" id="Yjc-bm-6MV"/>
+                                    <constraint firstAttribute="trailing" secondItem="QNo-OV-52n" secondAttribute="trailing" constant="5" id="a62-fb-xea"/>
                                     <constraint firstItem="6bR-ja-Gdc" firstAttribute="top" secondItem="GHh-Uk-t72" secondAttribute="top" id="bme-yH-OF6"/>
                                     <constraint firstItem="xpC-cb-bAZ" firstAttribute="centerX" secondItem="xPR-9R-RTN" secondAttribute="centerX" id="c0d-ZA-3WY"/>
                                     <constraint firstItem="Rln-Og-HX8" firstAttribute="leading" secondItem="Mek-zv-w0v" secondAttribute="trailing" constant="20" id="cC3-pD-Ieb">
@@ -546,6 +547,7 @@
                                         <variation key="heightClass=regular-widthClass=compact" constant="15"/>
                                     </constraint>
                                     <constraint firstItem="In3-4P-QZo" firstAttribute="centerX" secondItem="vnw-1S-xdj" secondAttribute="centerX" id="gqC-jJ-1HW"/>
+                                    <constraint firstItem="QNo-OV-52n" firstAttribute="top" secondItem="GHh-Uk-t72" secondAttribute="top" constant="-3" id="h5S-Mm-E6n"/>
                                     <constraint firstAttribute="bottom" secondItem="jCg-bh-Pcr" secondAttribute="bottom" id="hDJ-E1-87O"/>
                                     <constraint firstItem="Pb2-GM-ZMm" firstAttribute="centerX" secondItem="4DF-bV-Vze" secondAttribute="centerX" constant="1" id="jMA-cf-A5G">
                                         <variation key="heightClass=compact" constant="-3"/>
@@ -622,14 +624,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="GHh-Uk-t72" secondAttribute="trailing" id="1ei-98-Bqy"/>
-                            <constraint firstAttribute="trailing" secondItem="QNo-OV-52n" secondAttribute="trailing" constant="36" id="3DY-xc-OIy"/>
                             <constraint firstItem="GHh-Uk-t72" firstAttribute="leading" secondItem="cuJ-xo-9EO" secondAttribute="leading" id="7r2-80-znt"/>
                             <constraint firstItem="AJe-Fn-6Hh" firstAttribute="top" secondItem="LSq-9H-3hD" secondAttribute="bottom" constant="51" id="9Z5-xf-XEF">
                                 <variation key="heightClass=compact" constant="5"/>
                             </constraint>
                             <constraint firstItem="AJe-Fn-6Hh" firstAttribute="top" secondItem="GHh-Uk-t72" secondAttribute="bottom" id="dG8-vy-O1P"/>
                             <constraint firstItem="LSq-9H-3hD" firstAttribute="leading" secondItem="cuJ-xo-9EO" secondAttribute="leading" constant="7" id="hR6-1k-o8N"/>
-                            <constraint firstItem="QNo-OV-52n" firstAttribute="top" secondItem="cuJ-xo-9EO" secondAttribute="top" constant="40" id="mwm-eL-R31"/>
                             <constraint firstAttribute="trailing" secondItem="LSq-9H-3hD" secondAttribute="trailing" constant="7" id="rMC-NM-HYP"/>
                             <constraint firstItem="LSq-9H-3hD" firstAttribute="top" secondItem="W8L-RC-4tv" secondAttribute="bottom" id="sZl-S8-G2A"/>
                             <constraint firstItem="GHh-Uk-t72" firstAttribute="top" secondItem="W8L-RC-4tv" secondAttribute="bottom" id="uhm-zF-AHp"/>
