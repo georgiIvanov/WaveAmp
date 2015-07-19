@@ -113,10 +113,10 @@
 {
     NSMutableArray* thresholds = [NSMutableArray new];
     
-    [thresholds addObject:[FrequencyThreshold thresholdDb:10 frequency:250 channel:0]];
-    [thresholds addObject:[FrequencyThreshold thresholdDb:15 frequency:250 channel:1]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:10 frequency:250 channel:1]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:15 frequency:250 channel:0]];
     
-    [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:500 channel:0]];
+    [thresholds addObject:[FrequencyThreshold thresholdDb:25 frequency:500 channel:0]];
     [thresholds addObject:[FrequencyThreshold thresholdDb:20 frequency:500 channel:1]];
     
     [thresholds addObject:[FrequencyThreshold thresholdDb:25 frequency:1000 channel:0]];
