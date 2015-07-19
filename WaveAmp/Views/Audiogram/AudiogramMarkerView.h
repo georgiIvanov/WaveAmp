@@ -10,4 +10,6 @@
 
 @interface AudiogramMarkerView : UIImageView
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint* topConstraint;
+
 @end

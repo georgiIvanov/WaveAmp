@@ -40,7 +40,7 @@
         self.noContentView.hidden = YES;
         
         self.retakeTestButton.hidden = NO;
-        [self displayAudiogramData];
+        [self.audiogramView showAudiogram:self.audiogramData];
     }
 }
 
@@ -72,24 +72,7 @@
     {
         self.audiogramUpdated(audiogramData);
     }
-}
-
--(void)displayAudiogramData
-{
-    NSMutableString* text = [NSMutableString new];
-    [text appendString:@"Frequency\tEar\t\tdB\n\n"];
-    NSString* format = @"%@\t\t%@\t\t%@\n";
-    for (int r = 0; r < self.audiogramData.leftEar.count; r++)
-    {
-        FrequencyThreshold* ft = self.audiogramData.leftEar[r];
-        NSString* left = [ft.frequency floatValue] < 1000 ? @"\tL" : @"L";
-        [text appendFormat:format, ft.frequency, left, ft.thresholdDb];
-        
-        ft = self.audiogramData.rightEar[r];
-        [text appendFormat:format, @"\t", @"R", ft.thresholdDb];
-    }
-    
-    
+    [self.audiogramView layoutSubviews];
 }
 
 -(void)examIsSuccessfullyCompleted

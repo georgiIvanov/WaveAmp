@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "AudiogramData.h"
+#import "AudiogramMarkerView.h"
 
 @interface AudiogramView : UIView
+
+@property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray* dBVerticalConstraints;
+@property (strong, nonatomic) IBOutletCollection(AudiogramMarkerView) NSArray* leftMarkers;
+@property (strong, nonatomic) IBOutletCollection(AudiogramMarkerView) NSArray* rightMarkers;
 
 -(void)setupView;
 -(void)showAudiogram:(AudiogramData*)audiogramData;
