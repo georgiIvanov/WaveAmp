@@ -31,14 +31,14 @@
     if(self.audiogramData == nil)
     {
         self.noContentView.hidden = NO;
-        
+        self.audiogramView.hidden = YES;
         self.retakeTestButton.hidden = YES;
         [self.hearingTestButton addPopOutAnimationDelay:0.3f bounciness:10];
     }
     else
     {
         self.noContentView.hidden = YES;
-        
+        self.audiogramView.hidden = NO;
         self.retakeTestButton.hidden = NO;
         [self.audiogramView showAudiogram:self.audiogramData];
     }

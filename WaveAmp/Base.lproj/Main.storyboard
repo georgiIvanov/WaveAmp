@@ -449,7 +449,7 @@
                                         </connections>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.8899307192332403" blue="0.81021925022165719" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="rst-I5-vAa" firstAttribute="top" secondItem="GHh-Uk-t72" secondAttribute="top" constant="304" id="0Rp-N4-Qbn">
                                         <variation key="heightClass=compact" constant="234"/>

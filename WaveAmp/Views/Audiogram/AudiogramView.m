@@ -8,6 +8,7 @@
 
 #import "AudiogramView.h"
 #import "FrequencyThreshold.h"
+#import "UIView+PopAnimations.h"
 
 @interface AudiogramView()
 
@@ -48,16 +49,17 @@
         AudiogramMarkerView* marker = (AudiogramMarkerView*)markers[i];
         
         NSLayoutConstraint* constraint = (NSLayoutConstraint*)self.dBConstraints[dbIndex];
-        
+        CGFloat verticalSpacing = 0;
         if(ft.thresholdDb.integerValue % 10 > 0)
         {
-            marker.topConstraint.constant = constraint.constant + 15;
+            verticalSpacing = constraint.constant + 15;
         }
         else
         {
-            marker.topConstraint.constant = constraint.constant;
-        }        
+            verticalSpacing = constraint.constant;
+        }
+        
+        [marker animateConstraint:marker.topConstraint toValue:verticalSpacing];
     }
 }
-
 @end
