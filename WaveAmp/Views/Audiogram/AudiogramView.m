@@ -52,7 +52,7 @@
         CGFloat verticalSpacing = 0;
         if(ft.thresholdDb.integerValue % 10 > 0)
         {
-            verticalSpacing = constraint.constant + 15;
+            verticalSpacing = constraint.constant + self.frame.size.height * 0.035;
         }
         else
         {
