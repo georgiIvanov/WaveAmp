@@ -28,6 +28,7 @@
 @property(nonatomic) AudioChannel currentChannel;
 @property(nonatomic) NSRange testsInterval;
 
+-(instancetype)initWithExamOptions:(ExamOptions)examOptions;
 -(void)start;
 -(void)buttonHeldForChannel:(AudioChannel)channel;
 -(void)buttonReleasedForChannel:(AudioChannel)channel;

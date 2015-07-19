@@ -17,4 +17,9 @@ typedef NS_ENUM(int, AudioChannel) {
     kRightChannel = 1
 };
 
+typedef NS_ENUM(int, ExamOptions) {
+    kFullLengthExam = 1,
+    kShortExam = 1 << 1,
+};
+
 #endif

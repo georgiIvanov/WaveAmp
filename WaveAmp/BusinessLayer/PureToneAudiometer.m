@@ -20,20 +20,37 @@
 @property(nonatomic) NSMutableArray* punchCards;
 @property(nonatomic) int currentPunchCardIndex;
 @property(nonatomic) NSMutableArray* thresholds;
+@property(nonatomic) ExamOptions options;
 
 @end
 
 @implementation PureToneAudiometer
 
-- (instancetype)init
+-(instancetype)initWithExamOptions:(ExamOptions)examOptions
 {
     self = [super init];
     if (self) {
-        self.frequencies = @[@(1000), @(2000), @(3000), @(4000), @(6000), @(8000), @(1000), @(500), @(250)];
+        
+        if(examOptions & kFullLengthExam)
+        {
+            self.frequencies = @[@(1000), @(2000), @(3000), @(4000), @(6000), @(8000), @(1000), @(500), @(250)];
+        }
+        else if(examOptions & kShortExam)
+        {
+            self.frequencies = @[@(1000), @(2000), @(3000), @(4000), @(6000), @(8000), @(500), @(250)];
+        }
+        
+        _options = examOptions;
         self.currentFrequency = 0;
         self.testsInterval = NSMakeRange(2, 3);
         self.punchCards = [NSMutableArray new];
     }
+    return self;
+}
+
+- (instancetype)init
+{
+    self = [self initWithExamOptions:kFullLengthExam];
     return self;
 }
 
