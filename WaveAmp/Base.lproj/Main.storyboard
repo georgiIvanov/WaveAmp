@@ -240,6 +240,26 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LeftEar.png" translatesAutoresizingMaskIntoConstraints="NO" id="lg4-Io-3Fk" userLabel="L250" customClass="AudiogramMarkerView">
+                                        <rect key="frame" x="64" y="32" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="6ch-hT-xtq"/>
+                                            <constraint firstAttribute="width" constant="20" id="Htv-xu-3XA"/>
+                                        </constraints>
+                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="30" y="29" width="25" height="25"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RightEar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mbi-NU-3bL" userLabel="R250" customClass="AudiogramMarkerView">
+                                        <rect key="frame" x="64" y="32" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Jag-0J-BXZ"/>
+                                            <constraint firstAttribute="width" constant="20" id="JvC-vU-hmM"/>
+                                        </constraints>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="30" y="29" width="25" height="25"/>
+                                        </variation>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.8899307192332403" blue="0.81021925022165719" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -284,11 +304,13 @@
                                         <variation key="heightClass=compact-widthClass=compact" constant="12"/>
                                         <variation key="heightClass=regular-widthClass=compact" constant="30"/>
                                     </constraint>
+                                    <constraint firstItem="Mbi-NU-3bL" firstAttribute="centerX" secondItem="Dtb-e0-mmC" secondAttribute="centerX" id="GQ0-yZ-0CW"/>
                                     <constraint firstItem="ZhG-H9-1Xu" firstAttribute="leading" secondItem="Sm7-Zw-dXX" secondAttribute="trailing" constant="20" id="I6e-HT-qFa">
                                         <variation key="heightClass=compact" constant="40"/>
                                         <variation key="heightClass=compact-widthClass=compact" constant="40"/>
                                         <variation key="heightClass=regular-widthClass=compact" constant="15"/>
                                     </constraint>
+                                    <constraint firstItem="lg4-Io-3Fk" firstAttribute="top" secondItem="GHh-Uk-t72" secondAttribute="top" constant="32" id="Ib9-mb-FzN"/>
                                     <constraint firstItem="AuO-e8-4h0" firstAttribute="top" secondItem="DlX-By-yrN" secondAttribute="bottom" constant="20" id="J5y-AH-L4o">
                                         <variation key="heightClass=compact" constant="12"/>
                                         <variation key="heightClass=regular-widthClass=compact" constant="30"/>
@@ -339,6 +361,8 @@
                                         <variation key="heightClass=regular-widthClass=compact" constant="30"/>
                                     </constraint>
                                     <constraint firstItem="Gmg-Y1-pZ7" firstAttribute="top" secondItem="Dtb-e0-mmC" secondAttribute="bottom" constant="-2" id="pLQ-h8-vox"/>
+                                    <constraint firstItem="lg4-Io-3Fk" firstAttribute="centerX" secondItem="Dtb-e0-mmC" secondAttribute="centerX" id="plK-Xv-t4E"/>
+                                    <constraint firstItem="Mbi-NU-3bL" firstAttribute="top" secondItem="GHh-Uk-t72" secondAttribute="top" constant="32" id="pnj-id-rn1"/>
                                     <constraint firstItem="lte-MK-bEz" firstAttribute="top" secondItem="czy-1C-keT" secondAttribute="bottom" constant="20" id="q7f-Am-snw">
                                         <variation key="heightClass=compact" constant="12"/>
                                         <variation key="heightClass=regular-widthClass=compact" constant="30"/>
@@ -681,6 +705,8 @@
     <resources>
         <image name="Headphones.png" width="512" height="331"/>
         <image name="HearingWave.png" width="512" height="360"/>
+        <image name="LeftEar.png" width="512" height="512"/>
         <image name="Play.png" width="1024" height="1024"/>
+        <image name="RightEar.png" width="512" height="512"/>
     </resources>
 </document>
