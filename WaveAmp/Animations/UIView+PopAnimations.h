@@ -13,5 +13,6 @@
 
 -(void)addPopOutAnimationDelay:(CGFloat)delay bounciness:(CGFloat)bounciness;
 -(void)addStretchAnimationBounciness:(CGFloat)bounciness velocity:(CGPoint)velocity;
+-(void)animateConstraint:(NSLayoutConstraint*)constraint toValue:(CGFloat)constant;
 
 @end

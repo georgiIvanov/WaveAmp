@@ -37,4 +37,17 @@
     springAnimation.springBounciness = bounciness;
     [self pop_addAnimation:springAnimation forKey:@"springAnimation"];
 }
+
+-(void)animateConstraint:(NSLayoutConstraint*)constraint toValue:(CGFloat)constant
+{
+    POPSpringAnimation *layoutAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayoutConstraintConstant];
+    layoutAnimation.velocity = [NSValue valueWithCGPoint:CGPointMake(0, 1)];
+    layoutAnimation.springBounciness = 20;
+    layoutAnimation.springSpeed = 5;
+    layoutAnimation.dynamicsMass = 0.1;
+    layoutAnimation.dynamicsFriction = 0.1;
+    layoutAnimation.toValue = [NSValue valueWithCGPoint:CGPointMake(constant, 0)];
+    [constraint pop_addAnimation:layoutAnimation forKey:@"constraintAnimation"];
+    
+}
 @end
