@@ -14,6 +14,7 @@
 +(NSNumber*)nextIntensity:(NSNumber*)currentIntensity;
 +(NSNumber*)previousIntensity:(NSNumber*)currentIntensity;
 +(NSNumber*)maxIntensity;
++(NSNumber*)minIntensity;
 +(float)multiplierForWaveDb:(NSNumber*)dB;
 
 @end

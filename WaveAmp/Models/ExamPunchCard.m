@@ -9,9 +9,13 @@
 #import "ExamPunchCard.h"
 #import "AmplitudeMultiplier.h"
 
+const int CorrectAnswersShort = 0;
+const int CorrectAnswersFull = 2;
+
 @interface ExamPunchCard()
 
 @property(nonatomic) NSMutableDictionary* answers;
+@property(nonatomic) int correctAnswersLimit;
 
 @end
 
@@ -19,16 +23,21 @@
 
 +(instancetype)punchCard
 {
-    return [ExamPunchCard punchCardForChannel:0 frequency:1000];
+    return [ExamPunchCard punchCardForChannel:0 frequency:1000 options:kFullLengthExam];
 }
 
-+(instancetype)punchCardForChannel:(int)channel frequency:(float)frequency
++(instancetype)punchCard:(ExamOptions)options
 {
-    ExamPunchCard* pc = [[ExamPunchCard alloc] initForChannel:channel frequency:frequency];
+    return [ExamPunchCard punchCardForChannel:0 frequency:1000 options:options];
+}
+
++(instancetype)punchCardForChannel:(int)channel frequency:(float)frequency options:(ExamOptions)options
+{
+    ExamPunchCard* pc = [[ExamPunchCard alloc] initForChannel:channel frequency:frequency options:options];
     return pc;
 }
 
-- (instancetype)initForChannel:(int)channel frequency:(float)frequency
+- (instancetype)initForChannel:(int)channel frequency:(float)frequency options:(ExamOptions)options
 {
     self = [super init];
     if (self) {
@@ -38,6 +47,19 @@
         _frequency = frequency;
         // the volume should be increased until the user hears the tone
         _ascending = YES;
+        
+        if(options & kFullLengthExam)
+        {
+            self.correctAnswersLimit = CorrectAnswersFull;
+        }
+        else if(options & kShortExam)
+        {
+            self.correctAnswersLimit = CorrectAnswersShort;
+        }
+        else
+        {
+            [NSException raise:@"Invalid punchcard options" format:@"Invalid options of %d were set.", options];
+        }
     }
     return self;
 }
@@ -49,6 +71,13 @@
     
     if([self.currentIntensity integerValue] >= [AmplitudeMultiplier maxIntensity].integerValue && isAccurate == NO)
     {
+        // user did not hear highest intensity
+        return YES;
+    }
+    
+    if(_correctAnswersLimit == CorrectAnswersShort && [self.currentIntensity integerValue] == [AmplitudeMultiplier minIntensity].integerValue)
+    {
+        // in short mode if user hears the min intensity he passes the punch card
         return YES;
     }
     
@@ -66,7 +95,7 @@
         }
         
         [self.answers setObject:newNumber forKey:self.currentIntensity];
-        if([newNumber integerValue] >= 2)
+        if([newNumber integerValue] >= _correctAnswersLimit)
         {
             return YES;
         }

@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AudioTypes.h"
 
+// TODO: Derive 2 subclasses for short and full exam mode
 @interface ExamPunchCard : NSObject
 
 @property(nonatomic, readonly) NSNumber* currentIntensity;
@@ -18,7 +20,8 @@
 @property(nonatomic) BOOL wasAcknowledged;
 
 +(instancetype)punchCard;
-+(instancetype)punchCardForChannel:(int)channel frequency:(float)frequency;
++(instancetype)punchCard:(ExamOptions)options;
++(instancetype)punchCardForChannel:(int)channel frequency:(float)frequency options:(ExamOptions)options;
 
 // returns YES when hearing threshold is determined
 -(BOOL)addAnswerIsAccurate:(BOOL)isAccurate;

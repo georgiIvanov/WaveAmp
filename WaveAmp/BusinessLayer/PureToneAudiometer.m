@@ -66,8 +66,8 @@
 -(void)prepareForNextFreqency
 {
     float frequency = [self.frequencies[self.testIndex] floatValue];
-    self.punchCards = [NSMutableArray arrayWithObjects:[ExamPunchCard punchCardForChannel:kLeftChannel frequency:frequency],
-                                                       [ExamPunchCard punchCardForChannel:kRightChannel frequency:frequency], nil];
+    self.punchCards = [NSMutableArray arrayWithObjects:[ExamPunchCard punchCardForChannel:kLeftChannel frequency:frequency options:self.options],
+                                                       [ExamPunchCard punchCardForChannel:kRightChannel frequency:frequency options:self.options], nil];
 }
 
 -(void)stop

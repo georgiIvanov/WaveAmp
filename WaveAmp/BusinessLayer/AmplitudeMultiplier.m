@@ -82,4 +82,9 @@ static NSArray* dBs;
     return dBs.lastObject;
 }
 
++(NSNumber*)minIntensity
+{
+    return dBs.firstObject;
+}
+
 @end
