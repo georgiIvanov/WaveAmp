@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HPS-WT-VF7">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Audiogram-->
@@ -86,40 +85,301 @@
                                     </constraint>
                                 </constraints>
                             </view>
-                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="i3g-VW-bJx">
-                                <rect key="frame" x="36" y="80" width="528" height="440"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GHh-Uk-t72" customClass="AudiogramView">
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pb2-GM-ZMm">
+                                        <rect key="frame" x="5" y="58" width="19" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlX-By-yrN">
+                                        <rect key="frame" x="5" y="99" width="19" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AuO-e8-4h0">
+                                        <rect key="frame" x="5" y="140" width="19" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ub3-0E-mSV">
+                                        <rect key="frame" x="5" y="181" width="19" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4h-MO-OFJ">
+                                        <rect key="frame" x="5" y="222" width="19" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3N-3s-LsO">
+                                        <rect key="frame" x="5" y="263" width="19" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="70" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rst-I5-vAa">
+                                        <rect key="frame" x="5" y="304" width="19" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czy-1C-keT">
+                                        <rect key="frame" x="5" y="345" width="19" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="90" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lte-MK-bEz">
+                                        <rect key="frame" x="5" y="386" width="19" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="250" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dtb-e0-mmC">
+                                        <rect key="frame" x="60" y="25" width="29" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnw-1S-xdj">
+                                        <rect key="frame" x="158" y="25" width="38" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPR-9R-RTN">
+                                        <rect key="frame" x="216" y="25" width="38" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mek-zv-w0v">
+                                        <rect key="frame" x="274" y="25" width="38" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rln-Og-HX8">
+                                        <rect key="frame" x="332" y="25" width="38" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frequency (Hz)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bR-ja-Gdc">
+                                        <rect key="frame" x="253" y="0.0" width="115" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sm7-Zw-dXX">
+                                        <rect key="frame" x="390" y="25" width="38" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhG-H9-1Xu">
+                                        <rect key="frame" x="448" y="25" width="38" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ax3-y6-7Lg">
+                                        <rect key="frame" x="109" y="25" width="29" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                        </variation>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gmg-Y1-pZ7" userLabel="HorizontalSeparator">
+                                        <rect key="frame" x="0.0" y="44" width="600" height="1"/>
+                                        <color key="backgroundColor" red="0.11904761904761907" green="0.11904761904761907" blue="0.11904761904761907" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="vo9-6a-iXv"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jCg-bh-Pcr" userLabel="VerticalSeparator">
+                                        <rect key="frame" x="27" y="25" width="1" height="506"/>
+                                        <color key="backgroundColor" red="0.11904761899999999" green="0.11904761899999999" blue="0.11904761899999999" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1" id="02A-cc-4u0"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dB" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4DF-bV-Vze">
+                                        <rect key="frame" x="2" y="0.0" width="22" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.8899307192332403" blue="0.81021925022165719" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="440" id="wGK-Vm-3j9"/>
+                                    <constraint firstItem="Rln-Og-HX8" firstAttribute="centerY" secondItem="Mek-zv-w0v" secondAttribute="centerY" id="0hF-e3-5C2"/>
+                                    <constraint firstItem="J3N-3s-LsO" firstAttribute="centerX" secondItem="w4h-MO-OFJ" secondAttribute="centerX" id="1Z6-iR-UoX"/>
+                                    <constraint firstItem="Pb2-GM-ZMm" firstAttribute="top" secondItem="Dtb-e0-mmC" secondAttribute="bottom" constant="12" id="28R-Bo-hxC">
+                                        <variation key="heightClass=compact" constant="0.0"/>
+                                    </constraint>
+                                    <constraint firstItem="Mek-zv-w0v" firstAttribute="leading" secondItem="xPR-9R-RTN" secondAttribute="trailing" constant="20" id="2Cw-wZ-wfZ">
+                                        <variation key="heightClass=compact" constant="40"/>
+                                        <variation key="widthClass=compact" constant="15"/>
+                                        <variation key="heightClass=compact-widthClass=compact" constant="40"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                                    </constraint>
+                                    <constraint firstItem="4DF-bV-Vze" firstAttribute="centerY" secondItem="6bR-ja-Gdc" secondAttribute="centerY" id="2sk-f3-mB3"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gmg-Y1-pZ7" secondAttribute="trailing" id="4Uh-hv-UHB"/>
+                                    <constraint firstItem="J3N-3s-LsO" firstAttribute="top" secondItem="w4h-MO-OFJ" secondAttribute="bottom" constant="20" id="5zO-59-Ybt">
+                                        <variation key="heightClass=compact" constant="12"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                    </constraint>
+                                    <constraint firstItem="Sm7-Zw-dXX" firstAttribute="leading" secondItem="Rln-Og-HX8" secondAttribute="trailing" constant="20" id="7L9-yK-8e6">
+                                        <variation key="heightClass=compact" constant="40"/>
+                                        <variation key="widthClass=compact" constant="15"/>
+                                        <variation key="heightClass=compact-widthClass=compact" constant="40"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                                    </constraint>
+                                    <constraint firstItem="czy-1C-keT" firstAttribute="centerX" secondItem="rst-I5-vAa" secondAttribute="centerX" id="8m0-KV-37f"/>
+                                    <constraint firstItem="rst-I5-vAa" firstAttribute="top" secondItem="J3N-3s-LsO" secondAttribute="bottom" constant="20" id="9jI-LK-NZx">
+                                        <variation key="heightClass=compact" constant="12"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                    </constraint>
+                                    <constraint firstItem="jCg-bh-Pcr" firstAttribute="top" secondItem="Dtb-e0-mmC" secondAttribute="top" id="9oW-Xa-tQc"/>
+                                    <constraint firstItem="vnw-1S-xdj" firstAttribute="leading" secondItem="ax3-y6-7Lg" secondAttribute="trailing" constant="20" id="AIx-s9-ojy">
+                                        <variation key="heightClass=compact" constant="40"/>
+                                        <variation key="widthClass=compact" constant="12"/>
+                                        <variation key="heightClass=compact-widthClass=compact" constant="40"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                                    </constraint>
+                                    <constraint firstItem="AuO-e8-4h0" firstAttribute="centerX" secondItem="Ub3-0E-mSV" secondAttribute="centerX" id="BM6-Xz-LwP"/>
+                                    <constraint firstItem="DlX-By-yrN" firstAttribute="top" secondItem="Pb2-GM-ZMm" secondAttribute="bottom" constant="20" id="BTY-8d-gUC">
+                                        <variation key="heightClass=compact" constant="12"/>
+                                        <variation key="heightClass=compact-widthClass=compact" constant="12"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                    </constraint>
+                                    <constraint firstItem="ZhG-H9-1Xu" firstAttribute="leading" secondItem="Sm7-Zw-dXX" secondAttribute="trailing" constant="20" id="I6e-HT-qFa">
+                                        <variation key="heightClass=compact" constant="40"/>
+                                        <variation key="heightClass=compact-widthClass=compact" constant="40"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                                    </constraint>
+                                    <constraint firstItem="AuO-e8-4h0" firstAttribute="top" secondItem="DlX-By-yrN" secondAttribute="bottom" constant="20" id="J5y-AH-L4o">
+                                        <variation key="heightClass=compact" constant="12"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                    </constraint>
+                                    <constraint firstItem="Ub3-0E-mSV" firstAttribute="top" secondItem="AuO-e8-4h0" secondAttribute="bottom" constant="20" id="JQ0-B3-s1h">
+                                        <variation key="heightClass=compact" constant="12"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                    </constraint>
+                                    <constraint firstItem="Ub3-0E-mSV" firstAttribute="centerX" secondItem="w4h-MO-OFJ" secondAttribute="centerX" id="MfP-m4-7JE"/>
+                                    <constraint firstItem="Sm7-Zw-dXX" firstAttribute="centerY" secondItem="ZhG-H9-1Xu" secondAttribute="centerY" id="Oen-kh-tB0"/>
+                                    <constraint firstItem="Mek-zv-w0v" firstAttribute="centerY" secondItem="xPR-9R-RTN" secondAttribute="centerY" id="PVG-zQ-hw2"/>
+                                    <constraint firstItem="Pb2-GM-ZMm" firstAttribute="centerX" secondItem="DlX-By-yrN" secondAttribute="centerX" id="Ulx-UR-36F"/>
+                                    <constraint firstItem="ax3-y6-7Lg" firstAttribute="centerY" secondItem="Dtb-e0-mmC" secondAttribute="centerY" id="Vvu-mZ-5ML"/>
+                                    <constraint firstItem="czy-1C-keT" firstAttribute="top" secondItem="rst-I5-vAa" secondAttribute="bottom" constant="20" id="YCg-Cn-acN">
+                                        <variation key="heightClass=compact" constant="12"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                    </constraint>
+                                    <constraint firstItem="Gmg-Y1-pZ7" firstAttribute="leading" secondItem="GHh-Uk-t72" secondAttribute="leading" id="Yjc-bm-6MV"/>
+                                    <constraint firstItem="6bR-ja-Gdc" firstAttribute="top" secondItem="GHh-Uk-t72" secondAttribute="top" id="bme-yH-OF6"/>
+                                    <constraint firstItem="Rln-Og-HX8" firstAttribute="leading" secondItem="Mek-zv-w0v" secondAttribute="trailing" constant="20" id="cC3-pD-Ieb">
+                                        <variation key="heightClass=compact" constant="40"/>
+                                        <variation key="widthClass=compact" constant="15"/>
+                                        <variation key="heightClass=compact-widthClass=compact" constant="40"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                                    </constraint>
+                                    <constraint firstItem="Sm7-Zw-dXX" firstAttribute="centerY" secondItem="Rln-Og-HX8" secondAttribute="centerY" id="d3T-ui-lEt"/>
+                                    <constraint firstItem="Pb2-GM-ZMm" firstAttribute="leading" secondItem="GHh-Uk-t72" secondAttribute="leading" constant="5" id="dUN-DA-Duz">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="5"/>
+                                    </constraint>
+                                    <constraint firstItem="ax3-y6-7Lg" firstAttribute="leading" secondItem="Dtb-e0-mmC" secondAttribute="trailing" constant="20" id="fPJ-Js-Cvx">
+                                        <variation key="heightClass=compact" constant="40"/>
+                                        <variation key="widthClass=compact" constant="12"/>
+                                        <variation key="heightClass=compact-widthClass=compact" constant="40"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="12"/>
+                                    </constraint>
+                                    <constraint firstItem="xPR-9R-RTN" firstAttribute="leading" secondItem="vnw-1S-xdj" secondAttribute="trailing" constant="20" id="fXe-XT-wnL">
+                                        <variation key="heightClass=compact" constant="40"/>
+                                        <variation key="widthClass=compact" constant="12"/>
+                                        <variation key="heightClass=compact-widthClass=compact" constant="40"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                                    </constraint>
+                                    <constraint firstAttribute="bottom" secondItem="jCg-bh-Pcr" secondAttribute="bottom" id="hDJ-E1-87O"/>
+                                    <constraint firstItem="Pb2-GM-ZMm" firstAttribute="centerX" secondItem="4DF-bV-Vze" secondAttribute="centerX" constant="1" id="jMA-cf-A5G">
+                                        <variation key="heightClass=compact" constant="-3"/>
+                                    </constraint>
+                                    <constraint firstItem="w4h-MO-OFJ" firstAttribute="top" secondItem="Ub3-0E-mSV" secondAttribute="bottom" constant="20" id="jm1-YK-0Hz">
+                                        <variation key="heightClass=compact" constant="12"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                    </constraint>
+                                    <constraint firstItem="Gmg-Y1-pZ7" firstAttribute="top" secondItem="Dtb-e0-mmC" secondAttribute="bottom" constant="-2" id="pLQ-h8-vox"/>
+                                    <constraint firstItem="lte-MK-bEz" firstAttribute="top" secondItem="czy-1C-keT" secondAttribute="bottom" constant="20" id="q7f-Am-snw">
+                                        <variation key="heightClass=compact" constant="12"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                    </constraint>
+                                    <constraint firstItem="J3N-3s-LsO" firstAttribute="centerX" secondItem="rst-I5-vAa" secondAttribute="centerX" id="rLo-Ut-nbe"/>
+                                    <constraint firstItem="czy-1C-keT" firstAttribute="centerX" secondItem="lte-MK-bEz" secondAttribute="centerX" id="vX5-4F-Y7s"/>
+                                    <constraint firstItem="Dtb-e0-mmC" firstAttribute="leading" secondItem="GHh-Uk-t72" secondAttribute="leading" constant="60" id="vnZ-a1-J2h">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                    </constraint>
+                                    <constraint firstItem="AuO-e8-4h0" firstAttribute="centerX" secondItem="DlX-By-yrN" secondAttribute="centerX" id="voy-uZ-aQP"/>
+                                    <constraint firstItem="ax3-y6-7Lg" firstAttribute="centerY" secondItem="vnw-1S-xdj" secondAttribute="centerY" id="wNS-v8-jMY"/>
+                                    <constraint firstAttribute="centerX" secondItem="6bR-ja-Gdc" secondAttribute="centerX" constant="-11" id="xHP-ek-0wT"/>
+                                    <constraint firstItem="jCg-bh-Pcr" firstAttribute="leading" secondItem="Pb2-GM-ZMm" secondAttribute="trailing" constant="3" id="xbw-RV-zH8">
+                                        <variation key="heightClass=compact" constant="10"/>
+                                    </constraint>
+                                    <constraint firstItem="Dtb-e0-mmC" firstAttribute="top" secondItem="GHh-Uk-t72" secondAttribute="top" constant="25" id="xqg-qV-OpB">
+                                        <variation key="heightClass=compact" constant="20"/>
+                                    </constraint>
+                                    <constraint firstItem="vnw-1S-xdj" firstAttribute="centerY" secondItem="xPR-9R-RTN" secondAttribute="centerY" id="yjT-cP-0fk"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                </variation>
-                            </textView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GHh-Uk-t72" secondAttribute="trailing" id="1ei-98-Bqy"/>
                             <constraint firstAttribute="trailing" secondItem="QNo-OV-52n" secondAttribute="trailing" constant="36" id="3DY-xc-OIy"/>
-                            <constraint firstItem="i3g-VW-bJx" firstAttribute="leading" secondItem="cuJ-xo-9EO" secondAttribute="leadingMargin" constant="20" id="4MJ-Dv-OaB"/>
-                            <constraint firstAttribute="centerY" secondItem="i3g-VW-bJx" secondAttribute="centerY" id="8Ct-EQ-n2T">
-                                <variation key="heightClass=compact" constant="-30"/>
-                            </constraint>
+                            <constraint firstItem="GHh-Uk-t72" firstAttribute="leading" secondItem="cuJ-xo-9EO" secondAttribute="leading" id="7r2-80-znt"/>
                             <constraint firstItem="AJe-Fn-6Hh" firstAttribute="top" secondItem="LSq-9H-3hD" secondAttribute="bottom" constant="51" id="9Z5-xf-XEF">
                                 <variation key="heightClass=compact" constant="5"/>
                             </constraint>
-                            <constraint firstAttribute="centerX" secondItem="i3g-VW-bJx" secondAttribute="centerX" id="Pff-Ex-766"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="i3g-VW-bJx" secondAttribute="trailing" constant="20" id="VSa-Fb-Mm4"/>
+                            <constraint firstItem="AJe-Fn-6Hh" firstAttribute="top" secondItem="GHh-Uk-t72" secondAttribute="bottom" id="dG8-vy-O1P"/>
                             <constraint firstItem="LSq-9H-3hD" firstAttribute="leading" secondItem="cuJ-xo-9EO" secondAttribute="leading" constant="7" id="hR6-1k-o8N"/>
                             <constraint firstItem="QNo-OV-52n" firstAttribute="top" secondItem="cuJ-xo-9EO" secondAttribute="top" constant="40" id="mwm-eL-R31"/>
                             <constraint firstAttribute="trailing" secondItem="LSq-9H-3hD" secondAttribute="trailing" constant="7" id="rMC-NM-HYP"/>
                             <constraint firstItem="LSq-9H-3hD" firstAttribute="top" secondItem="W8L-RC-4tv" secondAttribute="bottom" id="sZl-S8-G2A"/>
+                            <constraint firstItem="GHh-Uk-t72" firstAttribute="top" secondItem="W8L-RC-4tv" secondAttribute="bottom" id="uhm-zF-AHp"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Audiogram" id="4ek-G7-wwF"/>
                     <connections>
-                        <outlet property="audiogramTextView" destination="i3g-VW-bJx" id="v2w-MM-NKQ"/>
+                        <outlet property="audiogramView" destination="GHh-Uk-t72" id="l8Q-qQ-ZzB"/>
                         <outlet property="hearingTestButton" destination="4XS-Og-nZP" id="oQg-eK-Rhv"/>
                         <outlet property="noContentView" destination="LSq-9H-3hD" id="R49-vD-ej5"/>
                         <outlet property="retakeTestButton" destination="QNo-OV-52n" id="6HK-Ta-ai0"/>

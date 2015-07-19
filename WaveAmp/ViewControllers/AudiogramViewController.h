@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AudiogramData.h"
+#import "AudiogramView.h"
 
 @interface AudiogramViewController : UIViewController
 
@@ -17,7 +18,8 @@
 @property (weak, nonatomic) IBOutlet UIView *noContentView;
 @property (weak, nonatomic) IBOutlet UIButton *hearingTestButton;
 @property (weak, nonatomic) IBOutlet UIButton *retakeTestButton;
-@property (weak, nonatomic) IBOutlet UITextView *audiogramTextView;
+@property (weak, nonatomic) IBOutlet AudiogramView *audiogramView;
+
 
 - (IBAction)hearingTestTap:(id)sender;
 

@@ -22,6 +22,7 @@
 		FF42B9761B4E35AF00535A7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9741B4E35AF00535A7B /* Main.storyboard */; };
 		FF42B9781B4E35AF00535A7B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9771B4E35AF00535A7B /* Images.xcassets */; };
 		FF42B97B1B4E35AF00535A7B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9791B4E35AF00535A7B /* LaunchScreen.xib */; };
+		FF481DC61B5BB27900AF588B /* AudiogramView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF481DC51B5BB27900AF588B /* AudiogramView.m */; };
 		FF76043F1B53BEDE0024930C /* HearingWave.png in Resources */ = {isa = PBXBuildFile; fileRef = FF76043E1B53BEDE0024930C /* HearingWave.png */; };
 		FF7604431B53C6D20024930C /* UIView+PopAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7604421B53C6D20024930C /* UIView+PopAnimations.m */; };
 		FF9DB4E41B53E097006E4D3F /* TestInstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB4E31B53E097006E4D3F /* TestInstructionsViewController.m */; };
@@ -88,6 +89,8 @@
 		FF42B97A1B4E35AF00535A7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FF42B9801B4E35AF00535A7B /* WaveAmpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaveAmpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF42B9851B4E35AF00535A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF481DC41B5BB27900AF588B /* AudiogramView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiogramView.h; sourceTree = "<group>"; };
+		FF481DC51B5BB27900AF588B /* AudiogramView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiogramView.m; sourceTree = "<group>"; };
 		FF76043E1B53BEDE0024930C /* HearingWave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HearingWave.png; sourceTree = "<group>"; };
 		FF7604411B53C6D20024930C /* UIView+PopAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PopAnimations.h"; sourceTree = "<group>"; };
 		FF7604421B53C6D20024930C /* UIView+PopAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PopAnimations.m"; sourceTree = "<group>"; };
@@ -284,6 +287,15 @@
 			name = Storyboards;
 			sourceTree = "<group>";
 		};
+		FF481DC31B5BB27900AF588B /* Audiogram */ = {
+			isa = PBXGroup;
+			children = (
+				FF481DC41B5BB27900AF588B /* AudiogramView.h */,
+				FF481DC51B5BB27900AF588B /* AudiogramView.m */,
+			);
+			path = Audiogram;
+			sourceTree = "<group>";
+		};
 		FF76043C1B53BE100024930C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -318,6 +330,7 @@
 		FF9DB54B1B569E74006E4D3F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FF481DC31B5BB27900AF588B /* Audiogram */,
 				FF9DB54C1B569EAA006E4D3F /* BouncyButton.h */,
 				FF9DB54D1B569EAA006E4D3F /* BouncyButton.m */,
 				FF9DB54F1B56A02D006E4D3F /* PlaybackButton.h */,
@@ -476,6 +489,7 @@
 				FFCE737C1B525D4400F52920 /* TestsAppDelegate.m in Sources */,
 				FF0A48421B4FB44E0021B149 /* AmplitudeMultiplier.m in Sources */,
 				FF0A484C1B5031A10021B149 /* ExamPunchCard.m in Sources */,
+				FF481DC61B5BB27900AF588B /* AudiogramView.m in Sources */,
 				FF0A48491B4FEC7E0021B149 /* FrequencyThreshold.m in Sources */,
 				FF9DB5381B563D13006E4D3F /* ToneEqualizer.m in Sources */,
 				FF0A48381B4E3F560021B149 /* AbsThresholdViewController.m in Sources */,

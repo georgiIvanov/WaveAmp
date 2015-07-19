@@ -22,6 +22,7 @@
 {
     [super viewDidLoad];
     [self setupGestures];
+    [self.audiogramView setupView];
     self.audiogramData = [AudiogramData loadAudiogram];
 }
 
@@ -30,14 +31,14 @@
     if(self.audiogramData == nil)
     {
         self.noContentView.hidden = NO;
-        self.audiogramTextView.hidden = YES;
+        
         self.retakeTestButton.hidden = YES;
         [self.hearingTestButton addPopOutAnimationDelay:0.3f bounciness:10];
     }
     else
     {
         self.noContentView.hidden = YES;
-        self.audiogramTextView.hidden = NO;
+        
         self.retakeTestButton.hidden = NO;
         [self displayAudiogramData];
     }
@@ -88,7 +89,7 @@
         [text appendFormat:format, @"\t", @"R", ft.thresholdDb];
     }
     
-    self.audiogramTextView.text = text;
+    
 }
 
 -(void)examIsSuccessfullyCompleted
