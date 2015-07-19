@@ -29,7 +29,7 @@
     [super viewDidLoad];
     
     self.audioManager = [Novocaine audioManager];
-    self.hearingExam = [[PureToneAudiometer alloc] init];
+    self.hearingExam = [[PureToneAudiometer alloc] initWithExamOptions:kShortExam];
     self.hearingExam.delegate = self;
     
     [self setupViewsForInstructions];
