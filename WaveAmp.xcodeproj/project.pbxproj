@@ -23,6 +23,8 @@
 		FF42B9781B4E35AF00535A7B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9771B4E35AF00535A7B /* Images.xcassets */; };
 		FF42B97B1B4E35AF00535A7B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9791B4E35AF00535A7B /* LaunchScreen.xib */; };
 		FF481DC61B5BB27900AF588B /* AudiogramView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF481DC51B5BB27900AF588B /* AudiogramView.m */; };
+		FF481DC91B5BB42C00AF588B /* LeftEar.png in Resources */ = {isa = PBXBuildFile; fileRef = FF481DC71B5BB42C00AF588B /* LeftEar.png */; };
+		FF481DCA1B5BB42C00AF588B /* RightEar.png in Resources */ = {isa = PBXBuildFile; fileRef = FF481DC81B5BB42C00AF588B /* RightEar.png */; };
 		FF76043F1B53BEDE0024930C /* HearingWave.png in Resources */ = {isa = PBXBuildFile; fileRef = FF76043E1B53BEDE0024930C /* HearingWave.png */; };
 		FF7604431B53C6D20024930C /* UIView+PopAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7604421B53C6D20024930C /* UIView+PopAnimations.m */; };
 		FF9DB4E41B53E097006E4D3F /* TestInstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB4E31B53E097006E4D3F /* TestInstructionsViewController.m */; };
@@ -91,6 +93,8 @@
 		FF42B9851B4E35AF00535A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF481DC41B5BB27900AF588B /* AudiogramView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiogramView.h; sourceTree = "<group>"; };
 		FF481DC51B5BB27900AF588B /* AudiogramView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiogramView.m; sourceTree = "<group>"; };
+		FF481DC71B5BB42C00AF588B /* LeftEar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeftEar.png; sourceTree = "<group>"; };
+		FF481DC81B5BB42C00AF588B /* RightEar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RightEar.png; sourceTree = "<group>"; };
 		FF76043E1B53BEDE0024930C /* HearingWave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HearingWave.png; sourceTree = "<group>"; };
 		FF7604411B53C6D20024930C /* UIView+PopAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PopAnimations.h"; sourceTree = "<group>"; };
 		FF7604421B53C6D20024930C /* UIView+PopAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PopAnimations.m"; sourceTree = "<group>"; };
@@ -308,6 +312,8 @@
 		FF76043D1B53BE1D0024930C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FF481DC71B5BB42C00AF588B /* LeftEar.png */,
+				FF481DC81B5BB42C00AF588B /* RightEar.png */,
 				FF9DB5451B569A95006E4D3F /* Pause.png */,
 				FF9DB5461B569A95006E4D3F /* Play.png */,
 				FF9DB4E51B53EE36006E4D3F /* Headphones.png */,
@@ -424,10 +430,12 @@
 				FF42B9761B4E35AF00535A7B /* Main.storyboard in Resources */,
 				FF9DB5481B569A95006E4D3F /* Play.png in Resources */,
 				FF9DB4E61B53EE36006E4D3F /* Headphones.png in Resources */,
+				FF481DCA1B5BB42C00AF588B /* RightEar.png in Resources */,
 				FF42B97B1B4E35AF00535A7B /* LaunchScreen.xib in Resources */,
 				FF9DB5411B56887B006E4D3F /* AudioFiles in Resources */,
 				FF42B9781B4E35AF00535A7B /* Images.xcassets in Resources */,
 				FF76043F1B53BEDE0024930C /* HearingWave.png in Resources */,
+				FF481DC91B5BB42C00AF588B /* LeftEar.png in Resources */,
 				FF9DB5471B569A95006E4D3F /* Pause.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
