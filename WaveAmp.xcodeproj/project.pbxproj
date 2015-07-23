@@ -27,6 +27,7 @@
 		FF481DCD1B5BB91300AF588B /* AudiogramMarkerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF481DCC1B5BB91300AF588B /* AudiogramMarkerView.m */; };
 		FF76043F1B53BEDE0024930C /* HearingWave.png in Resources */ = {isa = PBXBuildFile; fileRef = FF76043E1B53BEDE0024930C /* HearingWave.png */; };
 		FF7604431B53C6D20024930C /* UIView+PopAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7604421B53C6D20024930C /* UIView+PopAnimations.m */; };
+		FF86FF631B60B18500C3E093 /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF621B60B18500C3E093 /* AudioPlayer.m */; };
 		FF86FF6B1B60CE4A00C3E093 /* PureToneAudiometer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF6A1B60CE4A00C3E093 /* PureToneAudiometer.m */; };
 		FF9DB4E41B53E097006E4D3F /* TestInstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB4E31B53E097006E4D3F /* TestInstructionsViewController.m */; };
 		FF9DB4E61B53EE36006E4D3F /* Headphones.png in Resources */ = {isa = PBXBuildFile; fileRef = FF9DB4E51B53EE36006E4D3F /* Headphones.png */; };
@@ -99,6 +100,9 @@
 		FF76043E1B53BEDE0024930C /* HearingWave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HearingWave.png; sourceTree = "<group>"; };
 		FF7604411B53C6D20024930C /* UIView+PopAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PopAnimations.h"; sourceTree = "<group>"; };
 		FF7604421B53C6D20024930C /* UIView+PopAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PopAnimations.m"; sourceTree = "<group>"; };
+		FF86FF611B60B18500C3E093 /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
+		FF86FF621B60B18500C3E093 /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
+		FF86FF641B60B36000C3E093 /* AudioPlayer_protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer_protected.h; sourceTree = "<group>"; };
 		FF86FF691B60CE4A00C3E093 /* PureToneAudiometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureToneAudiometer.h; sourceTree = "<group>"; };
 		FF86FF6A1B60CE4A00C3E093 /* PureToneAudiometer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PureToneAudiometer.m; sourceTree = "<group>"; };
 		FF86FF6C1B60CE6700C3E093 /* AudiometerProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiometerProtocols.h; sourceTree = "<group>"; };
@@ -172,6 +176,7 @@
 		FF0A48391B4E41B00021B149 /* BusinessLayer */ = {
 			isa = PBXGroup;
 			children = (
+				FF86FF601B60B15400C3E093 /* AudioPlayer */,
 				FF86FF681B60CE4A00C3E093 /* Audiometer */,
 				FF0A48401B4FB44E0021B149 /* AmplitudeMultiplier.h */,
 				FF0A48411B4FB44E0021B149 /* AmplitudeMultiplier.m */,
@@ -336,6 +341,16 @@
 				FF9DB4E81B540192006E4D3F /* CommonAnimations.m */,
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		FF86FF601B60B15400C3E093 /* AudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				FF86FF611B60B18500C3E093 /* AudioPlayer.h */,
+				FF86FF641B60B36000C3E093 /* AudioPlayer_protected.h */,
+				FF86FF621B60B18500C3E093 /* AudioPlayer.m */,
+			);
+			path = AudioPlayer;
 			sourceTree = "<group>";
 		};
 		FF86FF681B60CE4A00C3E093 /* Audiometer */ = {
@@ -509,6 +524,7 @@
 				FF0A48321B4E3D870021B149 /* TabBarViewController.m in Sources */,
 				FF86FF6B1B60CE4A00C3E093 /* PureToneAudiometer.m in Sources */,
 				FF9DB5441B568918006E4D3F /* SoundFile.m in Sources */,
+				FF86FF631B60B18500C3E093 /* AudioPlayer.m in Sources */,
 				FFCE737C1B525D4400F52920 /* TestsAppDelegate.m in Sources */,
 				FF0A48421B4FB44E0021B149 /* AmplitudeMultiplier.m in Sources */,
 				FF0A484C1B5031A10021B149 /* ExamPunchCard.m in Sources */,
