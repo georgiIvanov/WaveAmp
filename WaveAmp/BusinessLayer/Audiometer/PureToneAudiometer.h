@@ -8,19 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "AudiogramData.h"
-#import "AudioTypes.h"
-
-
-@protocol ToneAudiometerDelegate <NSObject>
-
--(void)startingTest:(int)number;
--(void)testsAreOver:(AudiogramData*)audiogramData;
-
-@end
+#import "AudiometerProtocols.h"
 
 @interface PureToneAudiometer : NSObject
 
 @property(nonatomic) id<ToneAudiometerDelegate> delegate;
+@property(nonatomic) id<AudiometerPlayerDelegate> playerDelegate;
 
 @property(nonatomic) NSArray* frequencies;
 @property(nonatomic) float currentFrequency;

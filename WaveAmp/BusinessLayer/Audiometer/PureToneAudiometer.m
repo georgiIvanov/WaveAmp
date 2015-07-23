@@ -193,4 +193,24 @@
     }
 }
 
+#pragma mark - Property Setters
+
+-(void)setCurrentFrequency:(float)currentFrequency
+{
+    _currentFrequency = currentFrequency;
+    [self.playerDelegate testingFrequency:currentFrequency];
+}
+
+-(void)setSignalMultiplier:(float)signalMultiplier
+{
+    _signalMultiplier = signalMultiplier;
+    [self.playerDelegate testingWithSignalMultiplier:signalMultiplier];
+}
+
+-(void)setCurrentChannel:(AudioChannel)currentChannel
+{
+    _currentChannel = currentChannel;
+    [self.playerDelegate testingAudioChannel:currentChannel];
+}
+
 @end
