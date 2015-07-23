@@ -139,7 +139,6 @@
     self.currentChannel = pc.channel;
     self.signalMultiplier = [AmplitudeMultiplier multiplierForWaveDb:pc.currentIntensity];
     self.currentFrequency = [self.frequencies[_testIndex] floatValue];
-    NSLog(@"presenting new tone");
 }
 
 -(void)punchCardIsReady:(ExamPunchCard*)pc

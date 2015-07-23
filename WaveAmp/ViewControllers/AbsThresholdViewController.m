@@ -7,17 +7,16 @@
 //
 
 #import "AbsThresholdViewController.h"
-#import <AVFoundation/AVFoundation.h>
-#import <Novocaine.h>
 
 #import "HearingExamSoundMeter.h"
 #import "PureToneAudiometer.h"
+#import "PureTonePlayer.h"
 #import "TestInstructionsViewController.h"
 #import "CommonAnimations.h"
 
 @interface AbsThresholdViewController() <ToneAudiometerDelegate, TestInstructionsDelegate>
 
-@property(nonatomic) Novocaine* audioManager;
+@property(nonatomic) PureTonePlayer* pureTonePlayer;
 @property(nonatomic) PureToneAudiometer* hearingExam;
 
 @end
@@ -28,9 +27,11 @@
 {
     [super viewDidLoad];
     
-    self.audioManager = [Novocaine audioManager];
+    self.pureTonePlayer = [[PureTonePlayer alloc] init];
+    
     self.hearingExam = [[PureToneAudiometer alloc] initWithExamOptions:kShortExam];
     self.hearingExam.delegate = self;
+    self.hearingExam.playerDelegate = self.pureTonePlayer;
     
     [self setupViewsForInstructions];
     self.testNumberLabel.text = @"Tests will start soon.";
@@ -73,47 +74,11 @@
 
 -(void)startExam
 {
-    HearingExamSoundMeter* soundMeter = [[HearingExamSoundMeter alloc] init];
-    __weak AbsThresholdViewController * wself = self;
-    __block float phase = 0.0;
-    __block float dB = 0.0;
-    [self.audioManager setOutputBlock:^(float *data, UInt32 numFrames, UInt32 numChannels)
-     {
-         float samplingRate = wself.audioManager.samplingRate;
-         AudioChannel channel = wself.hearingExam.currentChannel;
-         
-         if(wself.hearingExam.currentFrequency == 0)
-         {
-             phase = 0;
-         }
-         
-         for (int i = 0; i < numFrames; ++i)
-         {
-             for (int iChannel = 0; iChannel < numChannels; ++iChannel)
-             {
-                 float theta = phase * M_PI * 2;
-                 data[i*numChannels + iChannel] = iChannel == channel ? sin(theta) * wself.hearingExam.signalMultiplier : 0;
-             }
-             
-             phase += 1.0 / (samplingRate / wself.hearingExam.currentFrequency);
-             if (phase > 1.0){
-                 phase = -1;
-             }
-         }
-         
-         dB = [soundMeter getdBLevel:data numFrames:numFrames numChannels:numChannels];
-         if(dB > 0)
-         {
-             NSLog(@"dB level: %.2f - %d", dB, channel);
-         }
-         else
-         {
-             NSLog(@"dB level: 0.00");
-         }
-     }];
+    // TODO: use sound meter to measure output volume
+//    HearingExamSoundMeter* soundMeter = [[HearingExamSoundMeter alloc] init];
     
     [self.hearingExam start];
-    [self.audioManager play];
+    [self.pureTonePlayer play];
 }
 
 #pragma mark - ToneAudiometerDelegate
@@ -130,7 +95,7 @@
 {
     self.testNumberLabel.text = @"Tests are completed.\nWell done!";
     
-    [self.audioManager pause];
+    [self.pureTonePlayer pause];
     [audiogramData saveAudiogram];
     [self.delegate examIsSuccessfullyCompleted];
     self.leftButton.enabled = NO;
