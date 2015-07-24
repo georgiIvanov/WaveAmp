@@ -13,6 +13,8 @@ typedef void (^AudioOutputBlock)(float *data, UInt32 numFrames, UInt32 numChanne
 @interface AudioPlayer : NSObject
 
 @property(nonatomic, copy) AudioOutputBlock outputBlock;
+@property(nonatomic, readonly) float samplingRate;
+@property(nonatomic, readonly) BOOL playing;
 
 -(void)play;
 -(void)pause;

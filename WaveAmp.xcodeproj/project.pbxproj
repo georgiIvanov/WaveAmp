@@ -30,6 +30,7 @@
 		FF86FF631B60B18500C3E093 /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF621B60B18500C3E093 /* AudioPlayer.m */; };
 		FF86FF671B60B3F100C3E093 /* PureTonePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF661B60B3F100C3E093 /* PureTonePlayer.m */; };
 		FF86FF6B1B60CE4A00C3E093 /* PureToneAudiometer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF6A1B60CE4A00C3E093 /* PureToneAudiometer.m */; };
+		FF86FF711B60D75C00C3E093 /* FilePlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF701B60D75C00C3E093 /* FilePlayer.mm */; };
 		FF9DB4E41B53E097006E4D3F /* TestInstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB4E31B53E097006E4D3F /* TestInstructionsViewController.m */; };
 		FF9DB4E61B53EE36006E4D3F /* Headphones.png in Resources */ = {isa = PBXBuildFile; fileRef = FF9DB4E51B53EE36006E4D3F /* Headphones.png */; };
 		FF9DB4E91B540192006E4D3F /* CommonAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB4E81B540192006E4D3F /* CommonAnimations.m */; };
@@ -109,6 +110,8 @@
 		FF86FF691B60CE4A00C3E093 /* PureToneAudiometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureToneAudiometer.h; sourceTree = "<group>"; };
 		FF86FF6A1B60CE4A00C3E093 /* PureToneAudiometer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PureToneAudiometer.m; sourceTree = "<group>"; };
 		FF86FF6C1B60CE6700C3E093 /* AudiometerProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiometerProtocols.h; sourceTree = "<group>"; };
+		FF86FF6F1B60D75C00C3E093 /* FilePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilePlayer.h; sourceTree = "<group>"; };
+		FF86FF701B60D75C00C3E093 /* FilePlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FilePlayer.mm; sourceTree = "<group>"; };
 		FF9DB4E21B53E097006E4D3F /* TestInstructionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestInstructionsViewController.h; sourceTree = "<group>"; };
 		FF9DB4E31B53E097006E4D3F /* TestInstructionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestInstructionsViewController.m; sourceTree = "<group>"; };
 		FF9DB4E51B53EE36006E4D3F /* Headphones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Headphones.png; sourceTree = "<group>"; };
@@ -354,6 +357,8 @@
 				FF86FF621B60B18500C3E093 /* AudioPlayer.m */,
 				FF86FF651B60B3F100C3E093 /* PureTonePlayer.h */,
 				FF86FF661B60B3F100C3E093 /* PureTonePlayer.m */,
+				FF86FF6F1B60D75C00C3E093 /* FilePlayer.h */,
+				FF86FF701B60D75C00C3E093 /* FilePlayer.mm */,
 			);
 			path = AudioPlayer;
 			sourceTree = "<group>";
@@ -545,6 +550,7 @@
 				FF9DB4EC1B54FA8E006E4D3F /* AudioTypes.m in Sources */,
 				FF481DCD1B5BB91300AF588B /* AudiogramMarkerView.m in Sources */,
 				FF9DB5351B56360E006E4D3F /* AdjustedSpeechViewController.mm in Sources */,
+				FF86FF711B60D75C00C3E093 /* FilePlayer.mm in Sources */,
 				FF42B96D1B4E35AF00535A7B /* main.m in Sources */,
 				FF9DB5511B56A02D006E4D3F /* PlaybackButton.m in Sources */,
 			);

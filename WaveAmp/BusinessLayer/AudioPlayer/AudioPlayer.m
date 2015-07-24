@@ -43,4 +43,14 @@
     }
 }
 
+-(float)samplingRate
+{
+    return _audioManager.samplingRate;
+}
+
+-(BOOL)playing
+{
+    return _audioManager.playing;
+}
+
 @end
