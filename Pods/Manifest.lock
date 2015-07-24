@@ -1,17 +1,28 @@
 PODS:
+  - EZAudio (1.1.1):
+    - EZAudio/Full (= 1.1.1)
+  - EZAudio/Core (1.1.1)
+  - EZAudio/Full (1.1.1):
+    - EZAudio/Core
+    - TPCircularBuffer (~> 0.0)
   - Novocaine (0.0.1)
   - NVDSP (0.0.1):
     - Novocaine
   - pop (1.0.7)
+  - TPCircularBuffer (0.0.1)
 
 DEPENDENCIES:
+  - EZAudio (~> 1.1)
   - Novocaine (~> 0.0)
   - NVDSP (~> 0.0)
   - pop (~> 1.0)
+  - TPCircularBuffer (~> 0.0)
 
 SPEC CHECKSUMS:
+  EZAudio: 63cd1f0d1b1261f76955dab204a10af067ffb689
   Novocaine: 07991e1643369e8b660f361f87f88c797d99a53f
   NVDSP: 25d806aeeaf3ed915f00085909abe7768cb48239
   pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
+  TPCircularBuffer: 949e9632b9fb99b7274d7b2296ee22bff5841e35
 
 COCOAPODS: 0.37.2

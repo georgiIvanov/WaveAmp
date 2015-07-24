@@ -7,582 +7,839 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0008D79F6369F1B5C83868F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57C2B2F976DF85EE3F906EFB /* Foundation.framework */; };
-		002F1EB9D30A837013415345 /* Pods-NVDSP-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0AEF4251EDEA94938588C5 /* Pods-NVDSP-dummy.m */; };
-		017CE289A748936FD3B83486 /* POPAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 35CBE4BBFFDCAA525A62BDB4 /* POPAnimationInternal.h */; };
-		0A885259F707542C72086FC5 /* NVSoundLevelMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B01563DD5651D02785E5FA /* NVSoundLevelMeter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		0E3011BB1448CF34C999000C /* POPPropertyAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = FD2D9974037E69E8AF68FFEF /* POPPropertyAnimation.h */; };
-		1100A74FF3BB842CAD2E1C14 /* POPAnimationEventInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 827C421589773069958FCEBB /* POPAnimationEventInternal.h */; };
-		13B50A91EF48F44046D80F98 /* POPAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C3D976A302455D988AF1E29 /* POPAction.h */; };
-		15EC0C75759D50B1BC3DB8B8 /* POPDecayAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = EB362F87D555BAA09C599F39 /* POPDecayAnimation.h */; };
-		1B14EC5664CA026FC2038AC6 /* NVHighpassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F5C9EFEF96D76D97D2C004 /* NVHighpassFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		1B5FD61B26EE556B676D35AB /* POPAnimationRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 34E38F746C687BDBD9B9740C /* POPAnimationRuntime.h */; };
-		1DC6AD6D8B682D162B0FA7A6 /* NVLowpassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2608282720B6137286440D68 /* NVLowpassFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		206DCEF714360ADC1D49F051 /* POPPropertyAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = F594D240B80CD4B60741853D /* POPPropertyAnimation.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		241A1C1A27D4F899B761FB72 /* POPSpringSolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 9887C4C29B3C8C0CE7502A0A /* POPSpringSolver.h */; };
-		245FCD4CCEF1C25290215B17 /* NVBandpassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D20F88E0F3EFC30B94B97671 /* NVBandpassFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		2569667682D722EF5C8434A5 /* NVLowShelvingFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EBFE1D874F206045A10796F /* NVLowShelvingFilter.h */; };
-		265EF5F864947F12903FFEC9 /* NVBandpassFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 64F7D93E2BEA5C552BB6BFA1 /* NVBandpassFilter.h */; };
-		26AA2AD42AE3847396C106CA /* POPCGUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = A7584BECE14147BFE60BD145 /* POPCGUtils.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		289681D9B0E5323E8662C51C /* RingBuffer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9627393A5E8B1CD59BADD977 /* RingBuffer.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		28F93BD5B823F29B995B9439 /* POPAnimationExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2E6AA2058200010099921D /* POPAnimationExtras.h */; };
-		29A8696B77192BA10198529A /* TransformationMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 28A0534B5C358A2BC0E725A9 /* TransformationMatrix.h */; };
-		2C2E67B6A7AB9EEAD162CFD9 /* POPAnimatableProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = CD659FE5F8C8F51305DC22B6 /* POPAnimatableProperty.h */; };
-		2DB9FC470957F2B1BEFBCB9F /* UnitBezier.h in Headers */ = {isa = PBXBuildFile; fileRef = A83773953875F0D6FCADF452 /* UnitBezier.h */; };
-		2EDB0EDA68B623D3835B366A /* POPAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = FFC25273AC870EC8F86DDD0B /* POPAnimation.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		2F2B9F6FBBC1575DC89DF2D7 /* POPCGUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = B580106885F7F81C9E5DB31D /* POPCGUtils.h */; };
-		2F74657289D4312F1C3E3060 /* POPAnimatableProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13042C605330BB4D32AD580B /* POPAnimatableProperty.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		323A63A084FA7877735DA4DA /* Pods-pop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51CA4CAF917ED6ECB8DDCDE7 /* Pods-pop-dummy.m */; };
-		32AF13A5244C3B76C02D4031 /* POPSpringAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F5A0068EE3B1A34A5CA41 /* POPSpringAnimation.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		35795A6B40E497FC7FB974DB /* NVSoundLevelMeter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EB648A2A1350DA82E51ABA8 /* NVSoundLevelMeter.h */; };
-		38FB29A73D0A7B1F6C86CA7C /* POPDecayAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = D34F0AA0B6FD5B804CCF4465 /* POPDecayAnimationInternal.h */; };
-		41F48B57D5D8F756571BC47A /* POPCustomAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5257FE1295EDD72910F82F19 /* POPCustomAnimation.h */; };
-		44BDD267D150641DC3A40555 /* POPBasicAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = D87A41AA7DAE6193889EFC4B /* POPBasicAnimation.h */; };
-		47C554C5A37ABC5358174254 /* Pods-Novocaine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DE1D0AFACEB7B3998F94FF /* Pods-Novocaine-dummy.m */; };
-		4839B1A73B975F084ABD3AA8 /* POPSpringAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = FE2F3273B24A75B1747769D0 /* POPSpringAnimationInternal.h */; };
-		483AD109D3D593B1AA270022 /* TransformationMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C4B2EAAA51F83DBA85E5955 /* TransformationMatrix.cpp */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		492C80BB0FEF31B81EFF4744 /* Novocaine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1876D7CCA71A5C68A6BF7296 /* Novocaine.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		4BE451758CD72F4CC4D2278F /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88B445597C63CAF33BC5F63D /* Accelerate.framework */; };
-		4E4B7122AA9C6E68F1EB524C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57C2B2F976DF85EE3F906EFB /* Foundation.framework */; };
-		5A0FDC29AB84C85F8E2383BB /* AudioFileWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A70A475CFD11EBCDB3FC8CF /* AudioFileWriter.h */; };
-		5B21EF0B46B1CC88FF7E1A7E /* POPBasicAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = AB043B14C615546A395914EB /* POPBasicAnimationInternal.h */; };
-		650F2EB72CAED038FCAC72EB /* NVClippingDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C69B56FBDD938B9F0B67A5E /* NVClippingDetection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		6A7903FBB575AD1A3668F15D /* NVHighpassFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = EAE4EA04E0F2A796C7D5AF69 /* NVHighpassFilter.h */; };
-		6CC1EAB1C7F1D7D250D47FFD /* POPAnimationTracer.h in Headers */ = {isa = PBXBuildFile; fileRef = A0143109B2023A44A64B0A07 /* POPAnimationTracer.h */; };
-		6D5C4DACD06EB7C19536ABB1 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0FA07D780687195427B9D8 /* Pods-dummy.m */; };
-		6F390FA88C525154C2FA8E68 /* NVPeakingEQFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = FC9F8E1789EA2BB704B9BBA0 /* NVPeakingEQFilter.h */; };
-		7082A16C518080491BEC2375 /* Novocaine.h in Headers */ = {isa = PBXBuildFile; fileRef = D0FA98388C038A469FC15F33 /* Novocaine.h */; };
-		709126F4019AC1E2FB4F37B2 /* RingBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 053482B1388351AD07944FCC /* RingBuffer.h */; };
-		72A146B2E09F7484542E7144 /* POPAnimationExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3D283144C83B1D3D140BC29D /* POPAnimationExtras.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		733167C15BBABFCB5682574B /* POPAnimationTracerInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = A596F57E14BDC5E695F8F67B /* POPAnimationTracerInternal.h */; };
-		7489E98A8876FCEEA570C3B6 /* AudioFileReader.mm in Sources */ = {isa = PBXBuildFile; fileRef = 029FF88EC09A24AC400E9884 /* AudioFileReader.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		75B737E974A409E2E08512D6 /* NVBandpassQPeakGainFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F7FCE4FD0BAF85E65E0E6B9 /* NVBandpassQPeakGainFilter.h */; };
-		7B10C744B2CF0832A9D0AEF4 /* POPSpringAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = BAF84E34C6A9FE90C8F3EE94 /* POPSpringAnimation.h */; };
-		7FA58EC8A97DAF165D2782F5 /* NVHighShelvingFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 388EA3F11D0FC3DA39F8ADA5 /* NVHighShelvingFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		83DDDB5DDA73A5C100184FCC /* POPCustomAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D21A7149893C3C886144420 /* POPCustomAnimation.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		84063C957C68B64302BF24DB /* POPPropertyAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = F7114DCE3DBB52BF9841A189 /* POPPropertyAnimationInternal.h */; };
-		8AC0E31C731D7D22D86EACFE /* NVAllpassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31779E32E59F54B650DBEB /* NVAllpassFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		8E9908E6176F2ED289206530 /* POPAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = BB0EDCB40428C4074AA8190E /* POPAnimator.h */; };
-		923E3E46E308625B2035365A /* NVHighShelvingFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EF6161433A277BC8D38175 /* NVHighShelvingFilter.h */; };
-		9294BABDF35E1784112CAB2E /* NVDSP.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AB64946CA7E51C5884A1FB5 /* NVDSP.h */; };
-		94111BC4BC42F8897FD09BA8 /* POPDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 470B11F319778E129D88EF3D /* POPDefines.h */; };
-		97A365B5380B9427632CE5CE /* POPAnimationEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 34EEBE51DB0348B420D2E296 /* POPAnimationEvent.h */; };
-		98BD61F9849367ED2CC4824E /* AudioFileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D8DC49F8815F2CC6AB04E0 /* AudioFileWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		991544938932EC35B32D1636 /* NVPeakingEQFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8DF3C7A6F7FDE2B2B0D072 /* NVPeakingEQFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		9FFBE31E2290D349CE54D453 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57C2B2F976DF85EE3F906EFB /* Foundation.framework */; };
-		A1C8310688EEBE66CB93B42B /* AudioFileReader.h in Headers */ = {isa = PBXBuildFile; fileRef = FB58D0EA7657EE31B28EBC9C /* AudioFileReader.h */; };
-		AA40A3870DAD949BAEB2D387 /* POPAnimationPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = E41903B4CC3326CE062B771D /* POPAnimationPrivate.h */; };
-		AADA819F5549F727C0E57288 /* POPVector.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF7D292D0F1D90A50FB07A94 /* POPVector.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		AB62CC1B3A88CABC103D386B /* NVAllpassFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 24379211D29616A24C337555 /* NVAllpassFilter.h */; };
-		AC2BD482BE2BD2C8287C4392 /* POPAnimationEvent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9F3AA333E1930099AC568889 /* POPAnimationEvent.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		ACE8EF33491C39CB2468034A /* POPAnimatorPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 874253F8D1F5328C4B220C9D /* POPAnimatorPrivate.h */; };
-		AD727C6056DCE0AD162A2D3B /* POPAnimationTracer.mm in Sources */ = {isa = PBXBuildFile; fileRef = F8CAAD6D882525D9474346DC /* POPAnimationTracer.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		B446C7DBE22627D05B00C99A /* POPAnimationRuntime.mm in Sources */ = {isa = PBXBuildFile; fileRef = 601D6F55FABA8343C2EDDEBF /* POPAnimationRuntime.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		B5FC62F9EE1455E3631FFECD /* NVNotchFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = A0577F9902476E6155334DEC /* NVNotchFilter.h */; };
-		B6BF60255A31C97559F07B52 /* POPLayerExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = 301AE8F9BE83245CA71BC9D7 /* POPLayerExtras.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		BCDC241619E1A19DDDCC8742 /* POPAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = F2CCE043DDCB02866A18DCE7 /* POPAnimation.h */; };
-		BE6DEFDBF35FA791D30EF376 /* POPLayerExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A471A6ECDFE47B66D7C4018 /* POPLayerExtras.h */; };
-		C0E923F73538254AF6721C44 /* POPGeometry.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4F84984F2AF7FB7B143EF84A /* POPGeometry.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		C3B67C8F08749A2BAD823052 /* NVLowpassFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = EFABA43604413F8629444D65 /* NVLowpassFilter.h */; };
-		C7EDF9123421D25A382654DB /* NVClippingDetection.h in Headers */ = {isa = PBXBuildFile; fileRef = 023B667F6606B8B3FABF8295 /* NVClippingDetection.h */; };
-		CCC17A94FBEB418F68D6B813 /* POPVector.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1CF019E3B642A3B424F2F0 /* POPVector.h */; };
-		D6AA31C733761EC6B9F7C9D0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3BC48D90452A7D0F9284F6 /* AudioToolbox.framework */; };
-		D817465D0587C82C849664BD /* POPMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 9890EF676DC9819B6435BB33 /* POPMath.h */; };
-		DD3623155D92A310C75FCA3A /* POPBasicAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4753493C6A801084A40354FD /* POPBasicAnimation.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		E1F9E504983AB5AED6948AF4 /* POPGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 3077CEC918A9F4F572C00D9F /* POPGeometry.h */; };
-		E212741A4F5344B53435DC90 /* POP.h in Headers */ = {isa = PBXBuildFile; fileRef = B2CE698C89C3BDD3107EB17A /* POP.h */; };
-		E3B4ED189B554A3F961A203E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57C2B2F976DF85EE3F906EFB /* Foundation.framework */; };
-		E522EA6D2A489E7EFAD22565 /* POPMath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 109F57A9EA3B92F807E82587 /* POPMath.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		E80AFF36D63E124FC75FB475 /* POPAnimator.mm in Sources */ = {isa = PBXBuildFile; fileRef = CADD695D6113169D1DE758BB /* POPAnimator.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		EA1FE97E8ACCBA6BD591C244 /* POPDecayAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 12190D494EAF44A692A4FEE4 /* POPDecayAnimation.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		EE064A395E64D6ECC01CC3B4 /* NVBandpassQPeakGainFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 919C7738B878F9AF5C31E713 /* NVBandpassQPeakGainFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		F81E17DA69EC1132BA3B642B /* NVNotchFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1544F1C0E5AD2D37AB645630 /* NVNotchFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		F95391719260C3C1C89F3EDC /* NVDSP.mm in Sources */ = {isa = PBXBuildFile; fileRef = CD4505DC1F5026D8CF83CC30 /* NVDSP.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		FD618262C61148100143D6A7 /* FloatConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = E81E2F28D83D3EA28FC022B2 /* FloatConversion.h */; };
-		FF15A9A296AB53D61F6B4BD5 /* NVLowShelvingFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = DA06A0573560E6B87603BE14 /* NVLowShelvingFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		000E431E200D82C56B3E9440 /* POPAnimator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 69ED7BF5A909329FBE52007F /* POPAnimator.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		0193620BB4B5A74F717F63B3 /* EZAudioFFT.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3485C8362DFB027999F68A /* EZAudioFFT.h */; };
+		02953B091E314FB5B0D07C33 /* POPBasicAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A45268E377F8AE99630700 /* POPBasicAnimationInternal.h */; };
+		058207F129BF8A90067E318F /* POPMath.h in Headers */ = {isa = PBXBuildFile; fileRef = B71D67365F9CD31504EBCF10 /* POPMath.h */; };
+		078ADB4BB2BCEFF14802B1F3 /* POPLayerExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F24365B27A13084A35BDBAD /* POPLayerExtras.h */; };
+		08CB6813AAC0664994FA1BDD /* EZAudioUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EF2E14EC71DC85DC553B485 /* EZAudioUtilities.h */; };
+		091E968F84C9EBCABDD0D276 /* EZMicrophone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7A6C969768E532BD8D465B /* EZMicrophone.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		09A8D2E258EBCADC4B908949 /* POPAnimationExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = DF917D98DD19A2C704DFE20B /* POPAnimationExtras.h */; };
+		0A3025BD9ACC627F8CD3042C /* EZAudio.h in Headers */ = {isa = PBXBuildFile; fileRef = A5B748F1D1C55CD5322D4BD0 /* EZAudio.h */; };
+		10BB9B25DD6E4AE85795C614 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 260BA9E507EBF0496D46313E /* Accelerate.framework */; };
+		140E5C431CC7D34088E573CE /* POPBasicAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 311699F57D26D3FA5B945B25 /* POPBasicAnimation.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		1446AF8C953F2966CECE5154 /* EZAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = CB88334E1A79DE20F379A6B3 /* EZAudio.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		14DAB80C0F18A93A21BD3BCC /* Pods-TPCircularBuffer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F22377969B5B9101001AE32 /* Pods-TPCircularBuffer-dummy.m */; };
+		159D5B1E82A07FA3762CDE17 /* POPMath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 46C9CC90EEC3F0C75712E6E0 /* POPMath.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		1D539499E4CC2545EBE526BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0126D56C581019635C6EBC01 /* Foundation.framework */; };
+		20C65D4E8F78DE56B983401B /* EZAudioUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F510EFCB1220E570D071DAA2 /* EZAudioUtilities.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		233CB69C456EE8216EA9236D /* TPCircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = C13501C37E33F1E735DBB56B /* TPCircularBuffer.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		246AB08B2CA60F9EA52C39D8 /* EZAudioFloatData.h in Headers */ = {isa = PBXBuildFile; fileRef = 5980DBDA479A670646F40588 /* EZAudioFloatData.h */; };
+		24B81D8043AB3029F4BEEC58 /* TransformationMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 213DDB6C22A94FF892488BB2 /* TransformationMatrix.cpp */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		2770251F4F386FB62AC7A9F6 /* NVDSP.mm in Sources */ = {isa = PBXBuildFile; fileRef = 853DB521B2E73B986FF0F60F /* NVDSP.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		29515EF6175F7B22848EF9A4 /* EZAudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 88066EB3991BF397A97D9760 /* EZAudioFile.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		2B5EC4059944C51D04DF5EDC /* POPAnimationRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = FB23FA30FD0B44BEE0C57167 /* POPAnimationRuntime.h */; };
+		2C659F7182886E3F38908230 /* NVBandpassFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = DEBC6BBDB74B546DA84F28BE /* NVBandpassFilter.h */; };
+		2C88FFB187E3C93EE5CCA867 /* EZAudioPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4434ED350361CEF996B0B66C /* EZAudioPlayer.h */; };
+		2FFAEFC7000E78DF953BC809 /* NVClippingDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C475FF36ADB651E8BBB4C2 /* NVClippingDetection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		31475BE41D0FC297415B30AD /* NVBandpassQPeakGainFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC30C94F844C7C176C1C5BD /* NVBandpassQPeakGainFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		31EB526154EC03A1FC703080 /* NVLowShelvingFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCD025BC5BDAFAF815E7669 /* NVLowShelvingFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		340BDD733496FE36B5C8C31E /* EZAudioFloatConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 76594432145BF1330D6D1BF3 /* EZAudioFloatConverter.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		366CE660A1893A878C7D28C8 /* NVHighpassFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0755C80A0BC4536AD4BA652E /* NVHighpassFilter.h */; };
+		36F00A37151893E84D910E83 /* POPAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9892FE3007AEA400CB54F98C /* POPAnimation.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		3968CB4DC8AFF15639BCC71D /* POPSpringAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3C1EDE8C1AB72C7A617F2301 /* POPSpringAnimation.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		396B7709248ED05106951FD1 /* POPVector.h in Headers */ = {isa = PBXBuildFile; fileRef = D01E35BEC2FC37ED89C41CAC /* POPVector.h */; };
+		3B123BBD299EA220FE8F91C2 /* POPAction.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E06F11AC4B4D8C66C98384 /* POPAction.h */; };
+		3FC33368F5A80A36C79E994A /* EZPlot.h in Headers */ = {isa = PBXBuildFile; fileRef = DDED212372C54BE9E67D2486 /* EZPlot.h */; };
+		445E6238DC76B105BCF986DB /* EZAudioPlot.h in Headers */ = {isa = PBXBuildFile; fileRef = C64F02C97A57DC3A47D7662E /* EZAudioPlot.h */; };
+		4493CF52E75EE63C0F30DB16 /* AudioFileWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = DB11148BEE34311BC37B6517 /* AudioFileWriter.h */; };
+		482301A06FB83A34EB2CBCDF /* NVClippingDetection.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9667BCF0B897FA63D3FD02 /* NVClippingDetection.h */; };
+		488309806578FECD658220ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0126D56C581019635C6EBC01 /* Foundation.framework */; };
+		4D29D70CE4E7E7A5096C8FC8 /* POPAnimationEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = E8FFB86688AF06FCE76228A9 /* POPAnimationEvent.h */; };
+		4FDC892ECC64C787788409F4 /* TPCircularBuffer+AudioBufferList.c in Sources */ = {isa = PBXBuildFile; fileRef = 68C736B3A84DE03BA8D28642 /* TPCircularBuffer+AudioBufferList.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		5102A8565D60186BE4D79A90 /* NVLowpassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB46DD43BB01D863E412452 /* NVLowpassFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		53EC0AFEA8637EDEA4443CEA /* NVSoundLevelMeter.h in Headers */ = {isa = PBXBuildFile; fileRef = 12DB7789DC0378DB05D546B2 /* NVSoundLevelMeter.h */; };
+		55576F949B0AB7ADDB4E828A /* AudioFileReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4176C81E0EC27500E2DE6CA6 /* AudioFileReader.h */; };
+		55B244861C7144B0EC0FA9DD /* NVPeakingEQFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D45CEC4AED0C8BEC40E73CB /* NVPeakingEQFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		55D821C35B00D7B69F480BE9 /* EZAudioFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 93B792503EB5939AC2AB7611 /* EZAudioFile.h */; };
+		575DDEAD86FBA2269DCB8744 /* POPAnimatorPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = A1749D6BC65609D48B06EFEA /* POPAnimatorPrivate.h */; };
+		58F326886057740B51D75FD8 /* NVLowpassFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2C27916551430C45614723 /* NVLowpassFilter.h */; };
+		5CD8D050CBB66015971B1F7C /* POPGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = A24A02FB30FF1D1A1D2A11DE /* POPGeometry.h */; };
+		5DD85458D00D65970EFA9EE9 /* POPCGUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = EADC9A67A3C96619BBE35EA3 /* POPCGUtils.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		6109645887A3ADE2FA66E582 /* POPPropertyAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = D173E9BB098050C1C26884DA /* POPPropertyAnimationInternal.h */; };
+		61641FE9F849BA4A5EAFCEFF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937C7938A8BF265ECFA808D8 /* AudioToolbox.framework */; };
+		623BED8508E5BAF4D7364103 /* UnitBezier.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FA46FAA91AE476E22EE7E2F /* UnitBezier.h */; };
+		63DCC9D287D1E7A33F3A5F81 /* POPAnimationPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4034BB0F8C88F6C80D5B4124 /* POPAnimationPrivate.h */; };
+		64454DA7C5FC5AA76010C975 /* Pods-Novocaine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 837B3989F6001679B9C68740 /* Pods-Novocaine-dummy.m */; };
+		6B820B3BF50E488CFC515868 /* POPDecayAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9764BFFC815CA7D44F48923B /* POPDecayAnimation.h */; };
+		6F21D2DDD7DEF50C9DCAF45F /* POPAnimationEventInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = A88D633EE0864A1F0DE281D6 /* POPAnimationEventInternal.h */; };
+		6F485E89B6D1D743EEA8FCDB /* POPBasicAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = DC22822CE7EB3383446DE588 /* POPBasicAnimation.h */; };
+		70979EF09830DCADC490ACB8 /* NVPeakingEQFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = A735EB9744153C7EC1CE0D88 /* NVPeakingEQFilter.h */; };
+		734B052C6A2781B5B5FABD6C /* NVNotchFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD2859EF90DBDCD84635C82 /* NVNotchFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		74158492E9E26D15B5966F65 /* POPAnimatableProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = C68D2FB5F9A78D1809994133 /* POPAnimatableProperty.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		773F9A77863A3B30AA9EED3B /* FloatConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D0385CE883B479CDCF8D2E /* FloatConversion.h */; };
+		77977846CB8083F7458B4904 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7BECC585286CD97737CBEC /* GLKit.framework */; };
+		77DB50A3194E37BD664B55C0 /* EZAudioFloatData.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D42F65EE6A079DDD132E04 /* EZAudioFloatData.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		7877DE2F0BC9B638AEEE8047 /* POPSpringSolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 824B696218EC3FA794982ACB /* POPSpringSolver.h */; };
+		7887C0484C416F91F9F260D8 /* POPAnimationRuntime.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9A8223FC542EC31ECBA936F2 /* POPAnimationRuntime.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		797C97A28D6A5AA2255D625A /* EZPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BE369D2FF67736EB0E5048 /* EZPlot.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		7CB309427669FB3EEAAB5A68 /* EZRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B993FC43FF5D5AEE8990D1 /* EZRecorder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		7D807FB3E4EFFA40861F98F3 /* NVHighShelvingFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 66C74E2FF3BB8FD4E471DB71 /* NVHighShelvingFilter.h */; };
+		7F2EF8C040EF3FC19A539EFD /* EZMicrophone.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAB926792C70EB1B608055 /* EZMicrophone.h */; };
+		7F420279F3C39391BE93BEF1 /* POP.h in Headers */ = {isa = PBXBuildFile; fileRef = 11863C6ADF43A4BF106525F2 /* POP.h */; };
+		82B9E7EABF5DB07585908A32 /* POPCustomAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = F318E633CDE3E3F1F97BF45B /* POPCustomAnimation.h */; };
+		82D9E0A843273E5EF25EEEBC /* POPCGUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F97A067F6E65AF85BAE33C1 /* POPCGUtils.h */; };
+		865A1419B9260D341E160096 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0126D56C581019635C6EBC01 /* Foundation.framework */; };
+		86E9C5E3029D599C417A5596 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937C7938A8BF265ECFA808D8 /* AudioToolbox.framework */; };
+		8705838FD2D8CDCBEFC07EC0 /* EZRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F5B767B19D77080D0C8645C /* EZRecorder.h */; };
+		87AE60C70A1ECD24D02E8B01 /* POPAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 55BDC6877282AF960D377D00 /* POPAnimator.h */; };
+		8815FB8E0B3E80DD3997F4C7 /* POPDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 7846B3CC7220DC75259C181F /* POPDefines.h */; };
+		8A3E97E8A00CF6EA87B0796E /* POPAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 10CA9907CA38AE7FA081A707 /* POPAnimation.h */; };
+		8ABA55067ECF67A30D05174E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0126D56C581019635C6EBC01 /* Foundation.framework */; };
+		8D657D1C3AC5F93DEA8F75CF /* EZAudioDisplayLink.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FA8016800D0413EEB5FE48 /* EZAudioDisplayLink.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		8E2BEF1917697B56FA411EF9 /* POPAnimationEvent.mm in Sources */ = {isa = PBXBuildFile; fileRef = EFD5D57FDA63C5FC4D95B214 /* POPAnimationEvent.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		9071BB194AD2E21A269CC944 /* Pods-NVDSP-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0BCAB269AC1FAEA367A4E0 /* Pods-NVDSP-dummy.m */; };
+		919B6C03BC8AAE3CD60A2562 /* NVHighShelvingFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D1094687D7DBB03D1115CF /* NVHighShelvingFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		9349502C23C017BEC5D282BB /* Pods-pop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 548B70F59A4544BD495EF02E /* Pods-pop-dummy.m */; };
+		939790955127B67E83E6A6AB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937C7938A8BF265ECFA808D8 /* AudioToolbox.framework */; };
+		93D1C2D04B87E6C644020D6D /* POPGeometry.mm in Sources */ = {isa = PBXBuildFile; fileRef = 95EC73ADF6DA5CAF792854C2 /* POPGeometry.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		95113FCE5B3E418B01A01747 /* NVBandpassQPeakGainFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = E8E08E5022D87794D0FC325B /* NVBandpassQPeakGainFilter.h */; };
+		9C67849C35086F5CC33A7A7C /* EZAudioPlotGL.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB4CFC78723C55428C716CF /* EZAudioPlotGL.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		9F0F06B14C6D5066EFDD58D4 /* POPAnimationTracerInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 302A445F2BC63AD5DE65DB56 /* POPAnimationTracerInternal.h */; };
+		9FC585DBBEA3F4AE0322167E /* EZAudioFFT.m in Sources */ = {isa = PBXBuildFile; fileRef = EC686C9DC13ED921836F71EB /* EZAudioFFT.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		A0F01C3C453932A4E95822C6 /* TPCircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 56B2ADC6D5D7425542EDD345 /* TPCircularBuffer.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		A13B54D5EB8FA3F26F33174B /* TPCircularBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8000A3DFF1EC8FE1AD09EE3E /* TPCircularBuffer.h */; };
+		A2A917D671702F46083CD5F3 /* POPAnimatableProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 114F94E60FE77E787BCEBCDC /* POPAnimatableProperty.h */; };
+		A31F83AF0385F2463C83578C /* POPPropertyAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2270A76F428EEE0F7217B550 /* POPPropertyAnimation.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		A3284595410CE8A4262765FC /* TPCircularBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = C2FA106E4BCE485291180A22 /* TPCircularBuffer.h */; };
+		A69930046B961D87DB415090 /* EZAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F97456BB12FCBE576E92CA22 /* EZAudioPlayer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		A9BE562E5B219646B617ABDB /* POPAnimationTracer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 406D137501C853F7B62D41C4 /* POPAnimationTracer.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		AA6BFF1516CD9B0B6F86046D /* POPLayerExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = AD128B4F80962C67386C7BF9 /* POPLayerExtras.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		AD8CAA762A7FF2F2B284CC3A /* EZAudioDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D42C585B0353C94C24DC0EF /* EZAudioDevice.h */; };
+		B01B7BFCA8586AFC5CC2A5E7 /* EZAudioPlotGL.h in Headers */ = {isa = PBXBuildFile; fileRef = F2C7A4A90F762F009FA953FD /* EZAudioPlotGL.h */; };
+		B1458E6B891B2AFEA3E7EBC1 /* POPDecayAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EE584B3D9C11A0FA2BA788 /* POPDecayAnimationInternal.h */; };
+		B2BD10C4C79858DBAB585DE8 /* NVDSP.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E9909E16D35E40C866ECFA7 /* NVDSP.h */; };
+		B577303750746F66B7D50725 /* AudioFileReader.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A88ACA9A9D8E296265CE015 /* AudioFileReader.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		B74DEE42005ACEC1862041DD /* NVSoundLevelMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 435EC7393481A94B5B9BF9E6 /* NVSoundLevelMeter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		B7892787C70AD1B652996C85 /* NVNotchFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 27DF3B8411D4DB606C5CD208 /* NVNotchFilter.h */; };
+		BA1944FEB0306F35CA46B443 /* EZAudioPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADEC3F558D5F4208CA09A3B /* EZAudioPlot.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		BBDD4BC483E3E2C90CCD17CA /* NVAllpassFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D67F8DB89AA29D84BF464FE /* NVAllpassFilter.h */; };
+		BC1864FFB3AAE1836C787B22 /* EZOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD469823BBAE2D7E13AEDB1 /* EZOutput.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		C099DB32A6D8AE2266394586 /* POPSpringAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 75E29C14C51C8CE99E59BD9A /* POPSpringAnimationInternal.h */; };
+		C107841FB0E95106CD193639 /* NVLowShelvingFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = D4F93157CD4D41379BA0E99F /* NVLowShelvingFilter.h */; };
+		C378D65E6B1C261D50ED4DA8 /* POPAnimationTracer.h in Headers */ = {isa = PBXBuildFile; fileRef = E639D0BDDD036E8571E91848 /* POPAnimationTracer.h */; };
+		C50DFCFEAF68DB3F7A51C7A4 /* POPDecayAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2EC013D334A7BBC4560A5 /* POPDecayAnimation.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		C51A56D294CAADC6369939C9 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A65ADD6F2E809A72827C1C45 /* Pods-dummy.m */; };
+		C6A153BBBAB2813DE113A6A5 /* EZAudioFloatConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = FC97A7AD1DB9913B503B4FFE /* EZAudioFloatConverter.h */; };
+		CA6CC3CA705C3BE6E21A89F5 /* AudioFileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE84528A321920B857028A6B /* AudioFileWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		CA847F48620B9C8A27D6B8C2 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 260BA9E507EBF0496D46313E /* Accelerate.framework */; };
+		CC97EBC87C6F5DD74816618B /* POPAnimationExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = B84C229FAC3E1356F39B44F5 /* POPAnimationExtras.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		CE8001BB115DFF27ED2768FD /* TPCircularBuffer+AudioBufferList.h in Headers */ = {isa = PBXBuildFile; fileRef = BF9B795C38F32616FD9FCE70 /* TPCircularBuffer+AudioBufferList.h */; };
+		CF3304BCC971EDE4CB5847CB /* NVBandpassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8751100FB0865A807C0F56A8 /* NVBandpassFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		CF37C17102A1A049A7BDE46E /* Pods-EZAudio-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD98B6A91DA3A011588C708 /* Pods-EZAudio-dummy.m */; };
+		CFBB6219AF4DFF380E71B8A1 /* Novocaine.m in Sources */ = {isa = PBXBuildFile; fileRef = 200AF4E7FB0A6BF226124175 /* Novocaine.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		D13DF83FF16BE174ABFC7B87 /* RingBuffer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 58D19091377AF8068729128A /* RingBuffer.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		D2E7098CE36F256C770D16D6 /* POPAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FC3907C296BFD0B558E2278 /* POPAnimationInternal.h */; };
+		D4948EAFBEA8C69C376A7489 /* TransformationMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B7589E8B04DE967AE5977E3 /* TransformationMatrix.h */; };
+		D6CE99A46E550F5B1CD4BBCC /* EZAudioDisplayLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 068C9B0806BC6599BFF69BCD /* EZAudioDisplayLink.h */; };
+		DC24CEF270F3675C23459406 /* NVHighpassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F3422CCF5D09E45A761AE2 /* NVHighpassFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		E54B8FADBA8AEF9B750FB75E /* POPSpringAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = D278C445167C0682F4AE1078 /* POPSpringAnimation.h */; };
+		E5CFA7442F5F94EBF2D9665C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0126D56C581019635C6EBC01 /* Foundation.framework */; };
+		E72BB8123FDB3A5F84A4A74C /* POPPropertyAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 349C08A3302DCC9B234D4E76 /* POPPropertyAnimation.h */; };
+		ED5947E3B91322C8ABC8F5BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0126D56C581019635C6EBC01 /* Foundation.framework */; };
+		EDDC5C1A58437A1C4E961C4A /* EZOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 8386B0A9D69B72037B3A831B /* EZOutput.h */; };
+		F1C2F52F7AA865FB8EF277E1 /* EZAudioDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = B40DC81CE53C6123C425C447 /* EZAudioDevice.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		F4D47572346EEC26B0182F6B /* POPVector.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABBFA98CC39A62EC8489E6E8 /* POPVector.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		F5147BAD0E190E79F65BD639 /* Novocaine.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FA86C21B905ABA526FAC594 /* Novocaine.h */; };
+		F8AF758611464F1C43DA3BD3 /* POPCustomAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 778F50467F7407907FBF0604 /* POPCustomAnimation.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		FBAA6B91D163F6F4FC5D7F5F /* RingBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = DB3BEA06BDBB54871CDD077E /* RingBuffer.h */; };
+		FDF5964D8063456917B9DD96 /* NVAllpassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 873889DEE1B492E39FE96113 /* NVAllpassFilter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		FF690CD08E97495DEB3C6228 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1349E7CB6364EB404553652 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		03B99C21344B81348E3668AE /* PBXContainerItemProxy */ = {
+		353BA0209F9AF6187734AFC8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E730451B1B4BB7A7056159EF /* Project object */;
+			containerPortal = 45A2747A85CDB0215C81176E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = ECDE5E41D782E24B61175E66;
+			remoteGlobalIDString = E6BD2F225DDFE13DC10DFF81;
+			remoteInfo = "Pods-TPCircularBuffer";
+		};
+		58DB744BAEC977D5E7D6A1FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45A2747A85CDB0215C81176E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A20D3D819323CCA48E0D551;
+			remoteInfo = "Pods-Novocaine";
+		};
+		6330A9DE36240B6DDB8FD762 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45A2747A85CDB0215C81176E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6BD2F225DDFE13DC10DFF81;
+			remoteInfo = "Pods-TPCircularBuffer";
+		};
+		A8B19C229C3B4C51F58B452C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45A2747A85CDB0215C81176E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDF4EA9F6B4338CBC9E12F42;
 			remoteInfo = "Pods-NVDSP";
 		};
-		735CE07DF1DFF44831852497 /* PBXContainerItemProxy */ = {
+		B66E76613C3D94F20C8621B7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E730451B1B4BB7A7056159EF /* Project object */;
+			containerPortal = 45A2747A85CDB0215C81176E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E6A2254B28D06F4F099DC988;
+			remoteGlobalIDString = 9A20D3D819323CCA48E0D551;
 			remoteInfo = "Pods-Novocaine";
 		};
-		B3C043920125504888345290 /* PBXContainerItemProxy */ = {
+		D230E8586D422D50A647C566 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E730451B1B4BB7A7056159EF /* Project object */;
+			containerPortal = 45A2747A85CDB0215C81176E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E6A2254B28D06F4F099DC988;
-			remoteInfo = "Pods-Novocaine";
+			remoteGlobalIDString = AD13D9044A5D607222BC48E8;
+			remoteInfo = "Pods-EZAudio";
 		};
-		C24B0B0ED6A05A47CBC52F36 /* PBXContainerItemProxy */ = {
+		FA86B65D41B49AEBEBC973E2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E730451B1B4BB7A7056159EF /* Project object */;
+			containerPortal = 45A2747A85CDB0215C81176E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 41AF826FAAC7B888F9DD887C;
+			remoteGlobalIDString = 813C1D60E69FD925E7FCEF3A;
 			remoteInfo = "Pods-pop";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00B9933D5C348A5807A27019 /* libPods-NVDSP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NVDSP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		023B667F6606B8B3FABF8295 /* NVClippingDetection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVClippingDetection.h; path = Utilities/NVClippingDetection.h; sourceTree = "<group>"; };
-		029FF88EC09A24AC400E9884 /* AudioFileReader.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = AudioFileReader.mm; path = Novocaine/AudioFileReader.mm; sourceTree = "<group>"; };
-		053482B1388351AD07944FCC /* RingBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RingBuffer.h; path = Novocaine/RingBuffer.h; sourceTree = "<group>"; };
-		0A31779E32E59F54B650DBEB /* NVAllpassFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVAllpassFilter.m; path = Filters/NVAllpassFilter.m; sourceTree = "<group>"; };
-		0A70A475CFD11EBCDB3FC8CF /* AudioFileWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AudioFileWriter.h; path = Novocaine/AudioFileWriter.h; sourceTree = "<group>"; };
-		0C3D976A302455D988AF1E29 /* POPAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAction.h; path = pop/POPAction.h; sourceTree = "<group>"; };
-		0D1CF019E3B642A3B424F2F0 /* POPVector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPVector.h; path = pop/POPVector.h; sourceTree = "<group>"; };
-		109F57A9EA3B92F807E82587 /* POPMath.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPMath.mm; path = pop/POPMath.mm; sourceTree = "<group>"; };
-		12190D494EAF44A692A4FEE4 /* POPDecayAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPDecayAnimation.mm; path = pop/POPDecayAnimation.mm; sourceTree = "<group>"; };
-		13042C605330BB4D32AD580B /* POPAnimatableProperty.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimatableProperty.mm; path = pop/POPAnimatableProperty.mm; sourceTree = "<group>"; };
-		1544F1C0E5AD2D37AB645630 /* NVNotchFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVNotchFilter.m; path = Filters/NVNotchFilter.m; sourceTree = "<group>"; };
-		1876D7CCA71A5C68A6BF7296 /* Novocaine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Novocaine.m; path = Novocaine/Novocaine.m; sourceTree = "<group>"; };
-		1A471A6ECDFE47B66D7C4018 /* POPLayerExtras.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPLayerExtras.h; path = pop/POPLayerExtras.h; sourceTree = "<group>"; };
-		1C752181FD295D5FA3F5310D /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		1D21A7149893C3C886144420 /* POPCustomAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPCustomAnimation.mm; path = pop/POPCustomAnimation.mm; sourceTree = "<group>"; };
-		24379211D29616A24C337555 /* NVAllpassFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVAllpassFilter.h; path = Filters/NVAllpassFilter.h; sourceTree = "<group>"; };
-		25C814A79B1BA059DA6DB316 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		2608282720B6137286440D68 /* NVLowpassFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVLowpassFilter.m; path = Filters/NVLowpassFilter.m; sourceTree = "<group>"; };
-		26DE1D0AFACEB7B3998F94FF /* Pods-Novocaine-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Novocaine-dummy.m"; sourceTree = "<group>"; };
-		28A0534B5C358A2BC0E725A9 /* TransformationMatrix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TransformationMatrix.h; path = pop/WebCore/TransformationMatrix.h; sourceTree = "<group>"; };
-		2D0AEF4251EDEA94938588C5 /* Pods-NVDSP-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NVDSP-dummy.m"; sourceTree = "<group>"; };
-		301AE8F9BE83245CA71BC9D7 /* POPLayerExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPLayerExtras.mm; path = pop/POPLayerExtras.mm; sourceTree = "<group>"; };
-		3077CEC918A9F4F572C00D9F /* POPGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPGeometry.h; path = pop/POPGeometry.h; sourceTree = "<group>"; };
-		345E57D5304B269560461890 /* Pods-NVDSP.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NVDSP.xcconfig"; sourceTree = "<group>"; };
-		34E38F746C687BDBD9B9740C /* POPAnimationRuntime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationRuntime.h; path = pop/POPAnimationRuntime.h; sourceTree = "<group>"; };
-		34EEBE51DB0348B420D2E296 /* POPAnimationEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationEvent.h; path = pop/POPAnimationEvent.h; sourceTree = "<group>"; };
-		35CBE4BBFFDCAA525A62BDB4 /* POPAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationInternal.h; path = pop/POPAnimationInternal.h; sourceTree = "<group>"; };
-		37F7E90E783426E1014B5B95 /* libPods-pop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		388EA3F11D0FC3DA39F8ADA5 /* NVHighShelvingFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVHighShelvingFilter.m; path = Filters/NVHighShelvingFilter.m; sourceTree = "<group>"; };
-		3AACA7A7866D5EF6EFDFA300 /* Pods-pop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pop.xcconfig"; sourceTree = "<group>"; };
-		3B3BC48D90452A7D0F9284F6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
-		3B8EADF61CA681E695D4B066 /* Pods-Novocaine-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Novocaine-Private.xcconfig"; sourceTree = "<group>"; };
-		3D283144C83B1D3D140BC29D /* POPAnimationExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationExtras.mm; path = pop/POPAnimationExtras.mm; sourceTree = "<group>"; };
-		3E8DF3C7A6F7FDE2B2B0D072 /* NVPeakingEQFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVPeakingEQFilter.m; path = Filters/NVPeakingEQFilter.m; sourceTree = "<group>"; };
-		3F7FCE4FD0BAF85E65E0E6B9 /* NVBandpassQPeakGainFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVBandpassQPeakGainFilter.h; path = Filters/NVBandpassQPeakGainFilter.h; sourceTree = "<group>"; };
-		40F5C9EFEF96D76D97D2C004 /* NVHighpassFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVHighpassFilter.m; path = Filters/NVHighpassFilter.m; sourceTree = "<group>"; };
-		44712A38FCB69694F11D3E07 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		45696B11258AA93406AE8CCA /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		470B11F319778E129D88EF3D /* POPDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDefines.h; path = pop/POPDefines.h; sourceTree = "<group>"; };
-		4753493C6A801084A40354FD /* POPBasicAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPBasicAnimation.mm; path = pop/POPBasicAnimation.mm; sourceTree = "<group>"; };
-		4A0FA07D780687195427B9D8 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		4E75BFD02A49303C3E8CDDF1 /* Pods-pop-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pop-Private.xcconfig"; sourceTree = "<group>"; };
-		4EBFE1D874F206045A10796F /* NVLowShelvingFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVLowShelvingFilter.h; path = Filters/NVLowShelvingFilter.h; sourceTree = "<group>"; };
-		4F84984F2AF7FB7B143EF84A /* POPGeometry.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPGeometry.mm; path = pop/POPGeometry.mm; sourceTree = "<group>"; };
-		50D8DC49F8815F2CC6AB04E0 /* AudioFileWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AudioFileWriter.m; path = Novocaine/AudioFileWriter.m; sourceTree = "<group>"; };
-		51CA4CAF917ED6ECB8DDCDE7 /* Pods-pop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-pop-dummy.m"; sourceTree = "<group>"; };
-		5257FE1295EDD72910F82F19 /* POPCustomAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPCustomAnimation.h; path = pop/POPCustomAnimation.h; sourceTree = "<group>"; };
-		57C2B2F976DF85EE3F906EFB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5EE12A38B7C2CCC56A7351A3 /* Pods-Novocaine.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Novocaine.xcconfig"; sourceTree = "<group>"; };
-		601D6F55FABA8343C2EDDEBF /* POPAnimationRuntime.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationRuntime.mm; path = pop/POPAnimationRuntime.mm; sourceTree = "<group>"; };
-		61A1F6B57395858328ECFA86 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		64F7D93E2BEA5C552BB6BFA1 /* NVBandpassFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVBandpassFilter.h; path = Filters/NVBandpassFilter.h; sourceTree = "<group>"; };
-		6601BEC7E68565FD370A4B7B /* Pods-pop-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-pop-prefix.pch"; sourceTree = "<group>"; };
-		761D70F61BF8F2AC2B2B2CEB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		827C421589773069958FCEBB /* POPAnimationEventInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationEventInternal.h; path = pop/POPAnimationEventInternal.h; sourceTree = "<group>"; };
-		855E17B3AA1EAF570F21B945 /* libPods-Novocaine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Novocaine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		874253F8D1F5328C4B220C9D /* POPAnimatorPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimatorPrivate.h; path = pop/POPAnimatorPrivate.h; sourceTree = "<group>"; };
-		88B445597C63CAF33BC5F63D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
-		8AB64946CA7E51C5884A1FB5 /* NVDSP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NVDSP.h; sourceTree = "<group>"; };
-		8C4B2EAAA51F83DBA85E5955 /* TransformationMatrix.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = TransformationMatrix.cpp; path = pop/WebCore/TransformationMatrix.cpp; sourceTree = "<group>"; };
-		8C69B56FBDD938B9F0B67A5E /* NVClippingDetection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVClippingDetection.m; path = Utilities/NVClippingDetection.m; sourceTree = "<group>"; };
-		8EB648A2A1350DA82E51ABA8 /* NVSoundLevelMeter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVSoundLevelMeter.h; path = Utilities/NVSoundLevelMeter.h; sourceTree = "<group>"; };
-		919C7738B878F9AF5C31E713 /* NVBandpassQPeakGainFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVBandpassQPeakGainFilter.m; path = Filters/NVBandpassQPeakGainFilter.m; sourceTree = "<group>"; };
-		9627393A5E8B1CD59BADD977 /* RingBuffer.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RingBuffer.mm; path = Novocaine/RingBuffer.mm; sourceTree = "<group>"; };
-		9887C4C29B3C8C0CE7502A0A /* POPSpringSolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringSolver.h; path = pop/POPSpringSolver.h; sourceTree = "<group>"; };
-		9890EF676DC9819B6435BB33 /* POPMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPMath.h; path = pop/POPMath.h; sourceTree = "<group>"; };
-		9A1F5A0068EE3B1A34A5CA41 /* POPSpringAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPSpringAnimation.mm; path = pop/POPSpringAnimation.mm; sourceTree = "<group>"; };
-		9A2E6AA2058200010099921D /* POPAnimationExtras.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationExtras.h; path = pop/POPAnimationExtras.h; sourceTree = "<group>"; };
-		9F3AA333E1930099AC568889 /* POPAnimationEvent.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationEvent.mm; path = pop/POPAnimationEvent.mm; sourceTree = "<group>"; };
-		A0143109B2023A44A64B0A07 /* POPAnimationTracer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationTracer.h; path = pop/POPAnimationTracer.h; sourceTree = "<group>"; };
-		A0577F9902476E6155334DEC /* NVNotchFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVNotchFilter.h; path = Filters/NVNotchFilter.h; sourceTree = "<group>"; };
-		A596F57E14BDC5E695F8F67B /* POPAnimationTracerInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationTracerInternal.h; path = pop/POPAnimationTracerInternal.h; sourceTree = "<group>"; };
-		A7584BECE14147BFE60BD145 /* POPCGUtils.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPCGUtils.mm; path = pop/POPCGUtils.mm; sourceTree = "<group>"; };
-		A83773953875F0D6FCADF452 /* UnitBezier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UnitBezier.h; path = pop/WebCore/UnitBezier.h; sourceTree = "<group>"; };
-		AB043B14C615546A395914EB /* POPBasicAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPBasicAnimationInternal.h; path = pop/POPBasicAnimationInternal.h; sourceTree = "<group>"; };
-		B2CE698C89C3BDD3107EB17A /* POP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POP.h; path = pop/POP.h; sourceTree = "<group>"; };
-		B580106885F7F81C9E5DB31D /* POPCGUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPCGUtils.h; path = pop/POPCGUtils.h; sourceTree = "<group>"; };
-		B7EF6161433A277BC8D38175 /* NVHighShelvingFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVHighShelvingFilter.h; path = Filters/NVHighShelvingFilter.h; sourceTree = "<group>"; };
-		BAF84E34C6A9FE90C8F3EE94 /* POPSpringAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringAnimation.h; path = pop/POPSpringAnimation.h; sourceTree = "<group>"; };
-		BB0EDCB40428C4074AA8190E /* POPAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimator.h; path = pop/POPAnimator.h; sourceTree = "<group>"; };
-		BF7D292D0F1D90A50FB07A94 /* POPVector.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPVector.mm; path = pop/POPVector.mm; sourceTree = "<group>"; };
-		BF81EA8FD83AF3748E03EE45 /* Pods-NVDSP-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NVDSP-prefix.pch"; sourceTree = "<group>"; };
-		C0B01563DD5651D02785E5FA /* NVSoundLevelMeter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVSoundLevelMeter.m; path = Utilities/NVSoundLevelMeter.m; sourceTree = "<group>"; };
-		C61F8087F2C82DA70B29B460 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		C800B00EC4697FD6B89B5937 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CADD695D6113169D1DE758BB /* POPAnimator.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimator.mm; path = pop/POPAnimator.mm; sourceTree = "<group>"; };
-		CD4505DC1F5026D8CF83CC30 /* NVDSP.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = NVDSP.mm; sourceTree = "<group>"; };
-		CD659FE5F8C8F51305DC22B6 /* POPAnimatableProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimatableProperty.h; path = pop/POPAnimatableProperty.h; sourceTree = "<group>"; };
-		CE67C0D8D0EA1A4E40333712 /* Pods-Novocaine-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Novocaine-prefix.pch"; sourceTree = "<group>"; };
-		D0FA98388C038A469FC15F33 /* Novocaine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Novocaine.h; path = Novocaine/Novocaine.h; sourceTree = "<group>"; };
-		D20F88E0F3EFC30B94B97671 /* NVBandpassFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVBandpassFilter.m; path = Filters/NVBandpassFilter.m; sourceTree = "<group>"; };
-		D34F0AA0B6FD5B804CCF4465 /* POPDecayAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDecayAnimationInternal.h; path = pop/POPDecayAnimationInternal.h; sourceTree = "<group>"; };
-		D87A41AA7DAE6193889EFC4B /* POPBasicAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPBasicAnimation.h; path = pop/POPBasicAnimation.h; sourceTree = "<group>"; };
-		DA06A0573560E6B87603BE14 /* NVLowShelvingFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVLowShelvingFilter.m; path = Filters/NVLowShelvingFilter.m; sourceTree = "<group>"; };
-		DAA072A52E089572F1E31A03 /* Pods-NVDSP-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NVDSP-Private.xcconfig"; sourceTree = "<group>"; };
-		E41903B4CC3326CE062B771D /* POPAnimationPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationPrivate.h; path = pop/POPAnimationPrivate.h; sourceTree = "<group>"; };
-		E81E2F28D83D3EA28FC022B2 /* FloatConversion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FloatConversion.h; path = pop/WebCore/FloatConversion.h; sourceTree = "<group>"; };
-		EAE4EA04E0F2A796C7D5AF69 /* NVHighpassFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVHighpassFilter.h; path = Filters/NVHighpassFilter.h; sourceTree = "<group>"; };
-		EB362F87D555BAA09C599F39 /* POPDecayAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDecayAnimation.h; path = pop/POPDecayAnimation.h; sourceTree = "<group>"; };
-		EFABA43604413F8629444D65 /* NVLowpassFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVLowpassFilter.h; path = Filters/NVLowpassFilter.h; sourceTree = "<group>"; };
-		F2CCE043DDCB02866A18DCE7 /* POPAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimation.h; path = pop/POPAnimation.h; sourceTree = "<group>"; };
-		F594D240B80CD4B60741853D /* POPPropertyAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPPropertyAnimation.mm; path = pop/POPPropertyAnimation.mm; sourceTree = "<group>"; };
-		F7114DCE3DBB52BF9841A189 /* POPPropertyAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPPropertyAnimationInternal.h; path = pop/POPPropertyAnimationInternal.h; sourceTree = "<group>"; };
-		F8CAAD6D882525D9474346DC /* POPAnimationTracer.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationTracer.mm; path = pop/POPAnimationTracer.mm; sourceTree = "<group>"; };
-		FB58D0EA7657EE31B28EBC9C /* AudioFileReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AudioFileReader.h; path = Novocaine/AudioFileReader.h; sourceTree = "<group>"; };
-		FC9F8E1789EA2BB704B9BBA0 /* NVPeakingEQFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVPeakingEQFilter.h; path = Filters/NVPeakingEQFilter.h; sourceTree = "<group>"; };
-		FD2D9974037E69E8AF68FFEF /* POPPropertyAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPPropertyAnimation.h; path = pop/POPPropertyAnimation.h; sourceTree = "<group>"; };
-		FE2F3273B24A75B1747769D0 /* POPSpringAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringAnimationInternal.h; path = pop/POPSpringAnimationInternal.h; sourceTree = "<group>"; };
-		FFC25273AC870EC8F86DDD0B /* POPAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimation.mm; path = pop/POPAnimation.mm; sourceTree = "<group>"; };
+		0094763493A0E4EAF98AC3C5 /* Pods-Novocaine-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Novocaine-prefix.pch"; sourceTree = "<group>"; };
+		0126D56C581019635C6EBC01 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		03A287BAB94CDD42D1BBC78B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		068C9B0806BC6599BFF69BCD /* EZAudioDisplayLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioDisplayLink.h; path = EZAudio/EZAudioDisplayLink.h; sourceTree = "<group>"; };
+		0755C80A0BC4536AD4BA652E /* NVHighpassFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVHighpassFilter.h; path = Filters/NVHighpassFilter.h; sourceTree = "<group>"; };
+		08EE584B3D9C11A0FA2BA788 /* POPDecayAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDecayAnimationInternal.h; path = pop/POPDecayAnimationInternal.h; sourceTree = "<group>"; };
+		0AB4CFC78723C55428C716CF /* EZAudioPlotGL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZAudioPlotGL.m; path = EZAudio/EZAudioPlotGL.m; sourceTree = "<group>"; };
+		0CB2EC013D334A7BBC4560A5 /* POPDecayAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPDecayAnimation.mm; path = pop/POPDecayAnimation.mm; sourceTree = "<group>"; };
+		0CD2859EF90DBDCD84635C82 /* NVNotchFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVNotchFilter.m; path = Filters/NVNotchFilter.m; sourceTree = "<group>"; };
+		0CD98B6A91DA3A011588C708 /* Pods-EZAudio-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EZAudio-dummy.m"; sourceTree = "<group>"; };
+		0D67F8DB89AA29D84BF464FE /* NVAllpassFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVAllpassFilter.h; path = Filters/NVAllpassFilter.h; sourceTree = "<group>"; };
+		10ABDCD6CF4F8987C31A7B5E /* Pods-Novocaine.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Novocaine.xcconfig"; sourceTree = "<group>"; };
+		10CA9907CA38AE7FA081A707 /* POPAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimation.h; path = pop/POPAnimation.h; sourceTree = "<group>"; };
+		114F94E60FE77E787BCEBCDC /* POPAnimatableProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimatableProperty.h; path = pop/POPAnimatableProperty.h; sourceTree = "<group>"; };
+		11863C6ADF43A4BF106525F2 /* POP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POP.h; path = pop/POP.h; sourceTree = "<group>"; };
+		12DB7789DC0378DB05D546B2 /* NVSoundLevelMeter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVSoundLevelMeter.h; path = Utilities/NVSoundLevelMeter.h; sourceTree = "<group>"; };
+		1D42C585B0353C94C24DC0EF /* EZAudioDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioDevice.h; path = EZAudio/EZAudioDevice.h; sourceTree = "<group>"; };
+		200AF4E7FB0A6BF226124175 /* Novocaine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Novocaine.m; path = Novocaine/Novocaine.m; sourceTree = "<group>"; };
+		213DDB6C22A94FF892488BB2 /* TransformationMatrix.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = TransformationMatrix.cpp; path = pop/WebCore/TransformationMatrix.cpp; sourceTree = "<group>"; };
+		2270A76F428EEE0F7217B550 /* POPPropertyAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPPropertyAnimation.mm; path = pop/POPPropertyAnimation.mm; sourceTree = "<group>"; };
+		260BA9E507EBF0496D46313E /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		27DF3B8411D4DB606C5CD208 /* NVNotchFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVNotchFilter.h; path = Filters/NVNotchFilter.h; sourceTree = "<group>"; };
+		302A445F2BC63AD5DE65DB56 /* POPAnimationTracerInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationTracerInternal.h; path = pop/POPAnimationTracerInternal.h; sourceTree = "<group>"; };
+		311699F57D26D3FA5B945B25 /* POPBasicAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPBasicAnimation.mm; path = pop/POPBasicAnimation.mm; sourceTree = "<group>"; };
+		3192619411B0BE8D57A222E2 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		349C08A3302DCC9B234D4E76 /* POPPropertyAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPPropertyAnimation.h; path = pop/POPPropertyAnimation.h; sourceTree = "<group>"; };
+		3654C0DD8903C802B736EB20 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		39C51AE6801C5FA2B11417BD /* Pods-pop-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-pop-prefix.pch"; sourceTree = "<group>"; };
+		3C1EDE8C1AB72C7A617F2301 /* POPSpringAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPSpringAnimation.mm; path = pop/POPSpringAnimation.mm; sourceTree = "<group>"; };
+		3F5B767B19D77080D0C8645C /* EZRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRecorder.h; path = EZAudio/EZRecorder.h; sourceTree = "<group>"; };
+		3F97A067F6E65AF85BAE33C1 /* POPCGUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPCGUtils.h; path = pop/POPCGUtils.h; sourceTree = "<group>"; };
+		4034BB0F8C88F6C80D5B4124 /* POPAnimationPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationPrivate.h; path = pop/POPAnimationPrivate.h; sourceTree = "<group>"; };
+		406D137501C853F7B62D41C4 /* POPAnimationTracer.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationTracer.mm; path = pop/POPAnimationTracer.mm; sourceTree = "<group>"; };
+		4176C81E0EC27500E2DE6CA6 /* AudioFileReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AudioFileReader.h; path = Novocaine/AudioFileReader.h; sourceTree = "<group>"; };
+		435EC7393481A94B5B9BF9E6 /* NVSoundLevelMeter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVSoundLevelMeter.m; path = Utilities/NVSoundLevelMeter.m; sourceTree = "<group>"; };
+		4434ED350361CEF996B0B66C /* EZAudioPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioPlayer.h; path = EZAudio/EZAudioPlayer.h; sourceTree = "<group>"; };
+		46C9CC90EEC3F0C75712E6E0 /* POPMath.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPMath.mm; path = pop/POPMath.mm; sourceTree = "<group>"; };
+		49C475FF36ADB651E8BBB4C2 /* NVClippingDetection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVClippingDetection.m; path = Utilities/NVClippingDetection.m; sourceTree = "<group>"; };
+		4A88ACA9A9D8E296265CE015 /* AudioFileReader.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = AudioFileReader.mm; path = Novocaine/AudioFileReader.mm; sourceTree = "<group>"; };
+		4B7589E8B04DE967AE5977E3 /* TransformationMatrix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TransformationMatrix.h; path = pop/WebCore/TransformationMatrix.h; sourceTree = "<group>"; };
+		4C7A6C969768E532BD8D465B /* EZMicrophone.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZMicrophone.m; path = EZAudio/EZMicrophone.m; sourceTree = "<group>"; };
+		4C7BECC585286CD97737CBEC /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
+		4EBF61EF6D814F401624B6B6 /* Pods-Novocaine-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Novocaine-Private.xcconfig"; sourceTree = "<group>"; };
+		4EF2E14EC71DC85DC553B485 /* EZAudioUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioUtilities.h; path = EZAudio/EZAudioUtilities.h; sourceTree = "<group>"; };
+		4FA86C21B905ABA526FAC594 /* Novocaine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Novocaine.h; path = Novocaine/Novocaine.h; sourceTree = "<group>"; };
+		548B70F59A4544BD495EF02E /* Pods-pop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-pop-dummy.m"; sourceTree = "<group>"; };
+		55BDC6877282AF960D377D00 /* POPAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimator.h; path = pop/POPAnimator.h; sourceTree = "<group>"; };
+		56364B5699D415A1A7A1230A /* Pods-NVDSP-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NVDSP-Private.xcconfig"; sourceTree = "<group>"; };
+		56B2ADC6D5D7425542EDD345 /* TPCircularBuffer.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = TPCircularBuffer.c; path = EZAudio/TPCircularBuffer.c; sourceTree = "<group>"; };
+		58122FD038A6B0D4CC7DA6FC /* libPods-EZAudio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EZAudio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58D19091377AF8068729128A /* RingBuffer.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RingBuffer.mm; path = Novocaine/RingBuffer.mm; sourceTree = "<group>"; };
+		5980DBDA479A670646F40588 /* EZAudioFloatData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFloatData.h; path = EZAudio/EZAudioFloatData.h; sourceTree = "<group>"; };
+		5EAEF1551663247AB3F3E872 /* libPods-pop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F22377969B5B9101001AE32 /* Pods-TPCircularBuffer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TPCircularBuffer-dummy.m"; sourceTree = "<group>"; };
+		60985640EE3A43DD36A6B8DF /* Pods-TPCircularBuffer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TPCircularBuffer-prefix.pch"; sourceTree = "<group>"; };
+		638BCCD865B0187FED39DCCB /* libPods-TPCircularBuffer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TPCircularBuffer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66C74E2FF3BB8FD4E471DB71 /* NVHighShelvingFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVHighShelvingFilter.h; path = Filters/NVHighShelvingFilter.h; sourceTree = "<group>"; };
+		68C736B3A84DE03BA8D28642 /* TPCircularBuffer+AudioBufferList.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = "TPCircularBuffer+AudioBufferList.c"; sourceTree = "<group>"; };
+		69ED7BF5A909329FBE52007F /* POPAnimator.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimator.mm; path = pop/POPAnimator.mm; sourceTree = "<group>"; };
+		6C66F52FFD0936A7A7B5BA0B /* Pods-NVDSP.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NVDSP.xcconfig"; sourceTree = "<group>"; };
+		6D45CEC4AED0C8BEC40E73CB /* NVPeakingEQFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVPeakingEQFilter.m; path = Filters/NVPeakingEQFilter.m; sourceTree = "<group>"; };
+		73D0385CE883B479CDCF8D2E /* FloatConversion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FloatConversion.h; path = pop/WebCore/FloatConversion.h; sourceTree = "<group>"; };
+		75E29C14C51C8CE99E59BD9A /* POPSpringAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringAnimationInternal.h; path = pop/POPSpringAnimationInternal.h; sourceTree = "<group>"; };
+		76594432145BF1330D6D1BF3 /* EZAudioFloatConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZAudioFloatConverter.m; path = EZAudio/EZAudioFloatConverter.m; sourceTree = "<group>"; };
+		778F50467F7407907FBF0604 /* POPCustomAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPCustomAnimation.mm; path = pop/POPCustomAnimation.mm; sourceTree = "<group>"; };
+		7846B3CC7220DC75259C181F /* POPDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDefines.h; path = pop/POPDefines.h; sourceTree = "<group>"; };
+		7AE20735C98ED4B7DE6162A4 /* libPods-NVDSP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NVDSP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EA27AEE3C92CF9CD65B06F5 /* Pods-TPCircularBuffer-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TPCircularBuffer-Private.xcconfig"; sourceTree = "<group>"; };
+		7F24365B27A13084A35BDBAD /* POPLayerExtras.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPLayerExtras.h; path = pop/POPLayerExtras.h; sourceTree = "<group>"; };
+		7FC3907C296BFD0B558E2278 /* POPAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationInternal.h; path = pop/POPAnimationInternal.h; sourceTree = "<group>"; };
+		8000A3DFF1EC8FE1AD09EE3E /* TPCircularBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TPCircularBuffer.h; sourceTree = "<group>"; };
+		824B696218EC3FA794982ACB /* POPSpringSolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringSolver.h; path = pop/POPSpringSolver.h; sourceTree = "<group>"; };
+		837B3989F6001679B9C68740 /* Pods-Novocaine-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Novocaine-dummy.m"; sourceTree = "<group>"; };
+		8386B0A9D69B72037B3A831B /* EZOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZOutput.h; path = EZAudio/EZOutput.h; sourceTree = "<group>"; };
+		853DB521B2E73B986FF0F60F /* NVDSP.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = NVDSP.mm; sourceTree = "<group>"; };
+		873889DEE1B492E39FE96113 /* NVAllpassFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVAllpassFilter.m; path = Filters/NVAllpassFilter.m; sourceTree = "<group>"; };
+		8751100FB0865A807C0F56A8 /* NVBandpassFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVBandpassFilter.m; path = Filters/NVBandpassFilter.m; sourceTree = "<group>"; };
+		88066EB3991BF397A97D9760 /* EZAudioFile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZAudioFile.m; path = EZAudio/EZAudioFile.m; sourceTree = "<group>"; };
+		894BA9E602B24E6E7CC3534A /* Pods-EZAudio-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EZAudio-prefix.pch"; sourceTree = "<group>"; };
+		8ADEC3F558D5F4208CA09A3B /* EZAudioPlot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZAudioPlot.m; path = EZAudio/EZAudioPlot.m; sourceTree = "<group>"; };
+		8DD469823BBAE2D7E13AEDB1 /* EZOutput.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZOutput.m; path = EZAudio/EZOutput.m; sourceTree = "<group>"; };
+		8E4912F8E04F6E8CC9B084BB /* Pods-TPCircularBuffer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TPCircularBuffer.xcconfig"; sourceTree = "<group>"; };
+		8F349AE4590EFBEFC234D8B2 /* Pods-EZAudio-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EZAudio-Private.xcconfig"; sourceTree = "<group>"; };
+		8F9667BCF0B897FA63D3FD02 /* NVClippingDetection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVClippingDetection.h; path = Utilities/NVClippingDetection.h; sourceTree = "<group>"; };
+		8FA46FAA91AE476E22EE7E2F /* UnitBezier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UnitBezier.h; path = pop/WebCore/UnitBezier.h; sourceTree = "<group>"; };
+		91F3422CCF5D09E45A761AE2 /* NVHighpassFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVHighpassFilter.m; path = Filters/NVHighpassFilter.m; sourceTree = "<group>"; };
+		937C7938A8BF265ECFA808D8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		93B792503EB5939AC2AB7611 /* EZAudioFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFile.h; path = EZAudio/EZAudioFile.h; sourceTree = "<group>"; };
+		94A45268E377F8AE99630700 /* POPBasicAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPBasicAnimationInternal.h; path = pop/POPBasicAnimationInternal.h; sourceTree = "<group>"; };
+		95EC73ADF6DA5CAF792854C2 /* POPGeometry.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPGeometry.mm; path = pop/POPGeometry.mm; sourceTree = "<group>"; };
+		9764BFFC815CA7D44F48923B /* POPDecayAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDecayAnimation.h; path = pop/POPDecayAnimation.h; sourceTree = "<group>"; };
+		9892FE3007AEA400CB54F98C /* POPAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimation.mm; path = pop/POPAnimation.mm; sourceTree = "<group>"; };
+		99D1094687D7DBB03D1115CF /* NVHighShelvingFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVHighShelvingFilter.m; path = Filters/NVHighShelvingFilter.m; sourceTree = "<group>"; };
+		9A2C27916551430C45614723 /* NVLowpassFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVLowpassFilter.h; path = Filters/NVLowpassFilter.h; sourceTree = "<group>"; };
+		9A8223FC542EC31ECBA936F2 /* POPAnimationRuntime.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationRuntime.mm; path = pop/POPAnimationRuntime.mm; sourceTree = "<group>"; };
+		9DB55D63CA208B24D2F6D0A7 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		9E9909E16D35E40C866ECFA7 /* NVDSP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NVDSP.h; sourceTree = "<group>"; };
+		A1349E7CB6364EB404553652 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		A1749D6BC65609D48B06EFEA /* POPAnimatorPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimatorPrivate.h; path = pop/POPAnimatorPrivate.h; sourceTree = "<group>"; };
+		A24A02FB30FF1D1A1D2A11DE /* POPGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPGeometry.h; path = pop/POPGeometry.h; sourceTree = "<group>"; };
+		A3B993FC43FF5D5AEE8990D1 /* EZRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZRecorder.m; path = EZAudio/EZRecorder.m; sourceTree = "<group>"; };
+		A4A934E6A422AC88C4A16211 /* libPods-Novocaine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Novocaine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5B748F1D1C55CD5322D4BD0 /* EZAudio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudio.h; path = EZAudio/EZAudio.h; sourceTree = "<group>"; };
+		A65ADD6F2E809A72827C1C45 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		A735EB9744153C7EC1CE0D88 /* NVPeakingEQFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVPeakingEQFilter.h; path = Filters/NVPeakingEQFilter.h; sourceTree = "<group>"; };
+		A83F4BBEB0B9F60074834F8E /* Pods-pop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pop.xcconfig"; sourceTree = "<group>"; };
+		A88D633EE0864A1F0DE281D6 /* POPAnimationEventInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationEventInternal.h; path = pop/POPAnimationEventInternal.h; sourceTree = "<group>"; };
+		AA3485C8362DFB027999F68A /* EZAudioFFT.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFFT.h; path = EZAudio/EZAudioFFT.h; sourceTree = "<group>"; };
+		ABBFA98CC39A62EC8489E6E8 /* POPVector.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPVector.mm; path = pop/POPVector.mm; sourceTree = "<group>"; };
+		AD128B4F80962C67386C7BF9 /* POPLayerExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPLayerExtras.mm; path = pop/POPLayerExtras.mm; sourceTree = "<group>"; };
+		B40DC81CE53C6123C425C447 /* EZAudioDevice.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZAudioDevice.m; path = EZAudio/EZAudioDevice.m; sourceTree = "<group>"; };
+		B71D67365F9CD31504EBCF10 /* POPMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPMath.h; path = pop/POPMath.h; sourceTree = "<group>"; };
+		B84C229FAC3E1356F39B44F5 /* POPAnimationExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationExtras.mm; path = pop/POPAnimationExtras.mm; sourceTree = "<group>"; };
+		BD04F3D0E260AF67B3536C89 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE0BCAB269AC1FAEA367A4E0 /* Pods-NVDSP-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NVDSP-dummy.m"; sourceTree = "<group>"; };
+		BF9B795C38F32616FD9FCE70 /* TPCircularBuffer+AudioBufferList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPCircularBuffer+AudioBufferList.h"; sourceTree = "<group>"; };
+		BFCD025BC5BDAFAF815E7669 /* NVLowShelvingFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVLowShelvingFilter.m; path = Filters/NVLowShelvingFilter.m; sourceTree = "<group>"; };
+		C13501C37E33F1E735DBB56B /* TPCircularBuffer.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = TPCircularBuffer.c; sourceTree = "<group>"; };
+		C2FA106E4BCE485291180A22 /* TPCircularBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPCircularBuffer.h; path = EZAudio/TPCircularBuffer.h; sourceTree = "<group>"; };
+		C4132C48836E1EC11592478D /* Pods-pop-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pop-Private.xcconfig"; sourceTree = "<group>"; };
+		C5B12F6459A9DC1524B41A69 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		C5D42F65EE6A079DDD132E04 /* EZAudioFloatData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZAudioFloatData.m; path = EZAudio/EZAudioFloatData.m; sourceTree = "<group>"; };
+		C62311B10E9B5F7D97B264B4 /* Pods-EZAudio.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EZAudio.xcconfig"; sourceTree = "<group>"; };
+		C64F02C97A57DC3A47D7662E /* EZAudioPlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioPlot.h; path = EZAudio/EZAudioPlot.h; sourceTree = "<group>"; };
+		C68D2FB5F9A78D1809994133 /* POPAnimatableProperty.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimatableProperty.mm; path = pop/POPAnimatableProperty.mm; sourceTree = "<group>"; };
+		C7E06F11AC4B4D8C66C98384 /* POPAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAction.h; path = pop/POPAction.h; sourceTree = "<group>"; };
+		CB88334E1A79DE20F379A6B3 /* EZAudio.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZAudio.m; path = EZAudio/EZAudio.m; sourceTree = "<group>"; };
+		D01E35BEC2FC37ED89C41CAC /* POPVector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPVector.h; path = pop/POPVector.h; sourceTree = "<group>"; };
+		D173E9BB098050C1C26884DA /* POPPropertyAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPPropertyAnimationInternal.h; path = pop/POPPropertyAnimationInternal.h; sourceTree = "<group>"; };
+		D278C445167C0682F4AE1078 /* POPSpringAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringAnimation.h; path = pop/POPSpringAnimation.h; sourceTree = "<group>"; };
+		D4F93157CD4D41379BA0E99F /* NVLowShelvingFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVLowShelvingFilter.h; path = Filters/NVLowShelvingFilter.h; sourceTree = "<group>"; };
+		D5DAA545C8A92D74A532325C /* Pods-NVDSP-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NVDSP-prefix.pch"; sourceTree = "<group>"; };
+		DB11148BEE34311BC37B6517 /* AudioFileWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AudioFileWriter.h; path = Novocaine/AudioFileWriter.h; sourceTree = "<group>"; };
+		DB3BEA06BDBB54871CDD077E /* RingBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RingBuffer.h; path = Novocaine/RingBuffer.h; sourceTree = "<group>"; };
+		DC22822CE7EB3383446DE588 /* POPBasicAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPBasicAnimation.h; path = pop/POPBasicAnimation.h; sourceTree = "<group>"; };
+		DDED212372C54BE9E67D2486 /* EZPlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZPlot.h; path = EZAudio/EZPlot.h; sourceTree = "<group>"; };
+		DEBC6BBDB74B546DA84F28BE /* NVBandpassFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVBandpassFilter.h; path = Filters/NVBandpassFilter.h; sourceTree = "<group>"; };
+		DF917D98DD19A2C704DFE20B /* POPAnimationExtras.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationExtras.h; path = pop/POPAnimationExtras.h; sourceTree = "<group>"; };
+		E4FA8016800D0413EEB5FE48 /* EZAudioDisplayLink.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZAudioDisplayLink.m; path = EZAudio/EZAudioDisplayLink.m; sourceTree = "<group>"; };
+		E4FAB926792C70EB1B608055 /* EZMicrophone.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZMicrophone.h; path = EZAudio/EZMicrophone.h; sourceTree = "<group>"; };
+		E639D0BDDD036E8571E91848 /* POPAnimationTracer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationTracer.h; path = pop/POPAnimationTracer.h; sourceTree = "<group>"; };
+		E8BE369D2FF67736EB0E5048 /* EZPlot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZPlot.m; path = EZAudio/EZPlot.m; sourceTree = "<group>"; };
+		E8E08E5022D87794D0FC325B /* NVBandpassQPeakGainFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NVBandpassQPeakGainFilter.h; path = Filters/NVBandpassQPeakGainFilter.h; sourceTree = "<group>"; };
+		E8FFB86688AF06FCE76228A9 /* POPAnimationEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationEvent.h; path = pop/POPAnimationEvent.h; sourceTree = "<group>"; };
+		EAC30C94F844C7C176C1C5BD /* NVBandpassQPeakGainFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVBandpassQPeakGainFilter.m; path = Filters/NVBandpassQPeakGainFilter.m; sourceTree = "<group>"; };
+		EADC9A67A3C96619BBE35EA3 /* POPCGUtils.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPCGUtils.mm; path = pop/POPCGUtils.mm; sourceTree = "<group>"; };
+		EC686C9DC13ED921836F71EB /* EZAudioFFT.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZAudioFFT.m; path = EZAudio/EZAudioFFT.m; sourceTree = "<group>"; };
+		EFD5D57FDA63C5FC4D95B214 /* POPAnimationEvent.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationEvent.mm; path = pop/POPAnimationEvent.mm; sourceTree = "<group>"; };
+		F2C7A4A90F762F009FA953FD /* EZAudioPlotGL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioPlotGL.h; path = EZAudio/EZAudioPlotGL.h; sourceTree = "<group>"; };
+		F318E633CDE3E3F1F97BF45B /* POPCustomAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPCustomAnimation.h; path = pop/POPCustomAnimation.h; sourceTree = "<group>"; };
+		F510EFCB1220E570D071DAA2 /* EZAudioUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZAudioUtilities.m; path = EZAudio/EZAudioUtilities.m; sourceTree = "<group>"; };
+		F5E8DA568A30263C48249924 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F97456BB12FCBE576E92CA22 /* EZAudioPlayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZAudioPlayer.m; path = EZAudio/EZAudioPlayer.m; sourceTree = "<group>"; };
+		FB23FA30FD0B44BEE0C57167 /* POPAnimationRuntime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationRuntime.h; path = pop/POPAnimationRuntime.h; sourceTree = "<group>"; };
+		FC97A7AD1DB9913B503B4FFE /* EZAudioFloatConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFloatConverter.h; path = EZAudio/EZAudioFloatConverter.h; sourceTree = "<group>"; };
+		FD234C2573A1014D782B05CE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		FE84528A321920B857028A6B /* AudioFileWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AudioFileWriter.m; path = Novocaine/AudioFileWriter.m; sourceTree = "<group>"; };
+		FEB46DD43BB01D863E412452 /* NVLowpassFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NVLowpassFilter.m; path = Filters/NVLowpassFilter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0C21C8C1AFDA3D43F369746E /* Frameworks */ = {
+		0A9C6EB15DD1EF7FB03523FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3B4ED189B554A3F961A203E /* Foundation.framework in Frameworks */,
+				CA847F48620B9C8A27D6B8C2 /* Accelerate.framework in Frameworks */,
+				939790955127B67E83E6A6AB /* AudioToolbox.framework in Frameworks */,
+				1D539499E4CC2545EBE526BE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3E88077CAE76F08997A561CC /* Frameworks */ = {
+		448361DBD39936C1D4E7C910 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0008D79F6369F1B5C83868F2 /* Foundation.framework in Frameworks */,
+				8ABA55067ECF67A30D05174E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D03DCF2741B4EE8D583052C /* Frameworks */ = {
+		450EFB73D129B47C47451867 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E4B7122AA9C6E68F1EB524C /* Foundation.framework in Frameworks */,
+				E5CFA7442F5F94EBF2D9665C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		85080075BE624B871B09D737 /* Frameworks */ = {
+		A023BFF57D09070565B3659C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BE451758CD72F4CC4D2278F /* Accelerate.framework in Frameworks */,
-				D6AA31C733761EC6B9F7C9D0 /* AudioToolbox.framework in Frameworks */,
-				9FFBE31E2290D349CE54D453 /* Foundation.framework in Frameworks */,
+				FF690CD08E97495DEB3C6228 /* AVFoundation.framework in Frameworks */,
+				10BB9B25DD6E4AE85795C614 /* Accelerate.framework in Frameworks */,
+				86E9C5E3029D599C417A5596 /* AudioToolbox.framework in Frameworks */,
+				865A1419B9260D341E160096 /* Foundation.framework in Frameworks */,
+				77977846CB8083F7458B4904 /* GLKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D043ECD720DEC371187F2215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				488309806578FECD658220ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D233CA42CCBCD1F9D4EE27EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61641FE9F849BA4A5EAFCEFF /* AudioToolbox.framework in Frameworks */,
+				ED5947E3B91322C8ABC8F5BE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1550DBB98447A24861935CFA /* iOS */ = {
+		22E5C98C67BA6196FB634C1A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				88B445597C63CAF33BC5F63D /* Accelerate.framework */,
-				3B3BC48D90452A7D0F9284F6 /* AudioToolbox.framework */,
-				57C2B2F976DF85EE3F906EFB /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		2690F8ADD8E83FFEFBAB96EE /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5EE12A38B7C2CCC56A7351A3 /* Pods-Novocaine.xcconfig */,
-				3B8EADF61CA681E695D4B066 /* Pods-Novocaine-Private.xcconfig */,
-				26DE1D0AFACEB7B3998F94FF /* Pods-Novocaine-dummy.m */,
-				CE67C0D8D0EA1A4E40333712 /* Pods-Novocaine-prefix.pch */,
+				10ABDCD6CF4F8987C31A7B5E /* Pods-Novocaine.xcconfig */,
+				4EBF61EF6D814F401624B6B6 /* Pods-Novocaine-Private.xcconfig */,
+				837B3989F6001679B9C68740 /* Pods-Novocaine-dummy.m */,
+				0094763493A0E4EAF98AC3C5 /* Pods-Novocaine-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-Novocaine";
 			sourceTree = "<group>";
 		};
-		34145B68A0F388F5B497FE5D /* Support Files */ = {
+		283F7798659D3F44259B67E7 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				3AACA7A7866D5EF6EFDFA300 /* Pods-pop.xcconfig */,
-				4E75BFD02A49303C3E8CDDF1 /* Pods-pop-Private.xcconfig */,
-				51CA4CAF917ED6ECB8DDCDE7 /* Pods-pop-dummy.m */,
-				6601BEC7E68565FD370A4B7B /* Pods-pop-prefix.pch */,
+				A5B748F1D1C55CD5322D4BD0 /* EZAudio.h */,
+				CB88334E1A79DE20F379A6B3 /* EZAudio.m */,
+				1D42C585B0353C94C24DC0EF /* EZAudioDevice.h */,
+				B40DC81CE53C6123C425C447 /* EZAudioDevice.m */,
+				068C9B0806BC6599BFF69BCD /* EZAudioDisplayLink.h */,
+				E4FA8016800D0413EEB5FE48 /* EZAudioDisplayLink.m */,
+				AA3485C8362DFB027999F68A /* EZAudioFFT.h */,
+				EC686C9DC13ED921836F71EB /* EZAudioFFT.m */,
+				93B792503EB5939AC2AB7611 /* EZAudioFile.h */,
+				88066EB3991BF397A97D9760 /* EZAudioFile.m */,
+				FC97A7AD1DB9913B503B4FFE /* EZAudioFloatConverter.h */,
+				76594432145BF1330D6D1BF3 /* EZAudioFloatConverter.m */,
+				5980DBDA479A670646F40588 /* EZAudioFloatData.h */,
+				C5D42F65EE6A079DDD132E04 /* EZAudioFloatData.m */,
+				4434ED350361CEF996B0B66C /* EZAudioPlayer.h */,
+				F97456BB12FCBE576E92CA22 /* EZAudioPlayer.m */,
+				C64F02C97A57DC3A47D7662E /* EZAudioPlot.h */,
+				8ADEC3F558D5F4208CA09A3B /* EZAudioPlot.m */,
+				F2C7A4A90F762F009FA953FD /* EZAudioPlotGL.h */,
+				0AB4CFC78723C55428C716CF /* EZAudioPlotGL.m */,
+				4EF2E14EC71DC85DC553B485 /* EZAudioUtilities.h */,
+				F510EFCB1220E570D071DAA2 /* EZAudioUtilities.m */,
+				E4FAB926792C70EB1B608055 /* EZMicrophone.h */,
+				4C7A6C969768E532BD8D465B /* EZMicrophone.m */,
+				8386B0A9D69B72037B3A831B /* EZOutput.h */,
+				8DD469823BBAE2D7E13AEDB1 /* EZOutput.m */,
+				DDED212372C54BE9E67D2486 /* EZPlot.h */,
+				E8BE369D2FF67736EB0E5048 /* EZPlot.m */,
+				3F5B767B19D77080D0C8645C /* EZRecorder.h */,
+				A3B993FC43FF5D5AEE8990D1 /* EZRecorder.m */,
+				56B2ADC6D5D7425542EDD345 /* TPCircularBuffer.c */,
+				C2FA106E4BCE485291180A22 /* TPCircularBuffer.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		37EE071C4B79CE80B029F9CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD04F3D0E260AF67B3536C89 /* libPods.a */,
+				58122FD038A6B0D4CC7DA6FC /* libPods-EZAudio.a */,
+				7AE20735C98ED4B7DE6162A4 /* libPods-NVDSP.a */,
+				A4A934E6A422AC88C4A16211 /* libPods-Novocaine.a */,
+				638BCCD865B0187FED39DCCB /* libPods-TPCircularBuffer.a */,
+				5EAEF1551663247AB3F3E872 /* libPods-pop.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40D9A6B3AEAE75EDA1193EFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0B770F48B448CFF6CF38D60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4889F11F913240E127BBF6E3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B65A2AE113FF88391E4D1E9 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		49C2713FBDCE3F1FC2378E0B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9129656423B4B3C3C3683860 /* EZAudio */,
+				DE97215753417D143441589E /* NVDSP */,
+				7CC6551C3979ABB448091D10 /* Novocaine */,
+				F8A14735CB49E5DFD35FB8A4 /* TPCircularBuffer */,
+				95F97ADFFAC14F9BD7236D24 /* pop */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4B709B2725A3D6B75C6ED041 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C62311B10E9B5F7D97B264B4 /* Pods-EZAudio.xcconfig */,
+				8F349AE4590EFBEFC234D8B2 /* Pods-EZAudio-Private.xcconfig */,
+				0CD98B6A91DA3A011588C708 /* Pods-EZAudio-dummy.m */,
+				894BA9E602B24E6E7CC3534A /* Pods-EZAudio-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Pods-pop";
+			path = "../Target Support Files/Pods-EZAudio";
 			sourceTree = "<group>";
 		};
-		371A4A4C9E7B5312993D958F /* Novocaine */ = {
+		4DC003D05D8C5F20DD6F1AF2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FB58D0EA7657EE31B28EBC9C /* AudioFileReader.h */,
-				029FF88EC09A24AC400E9884 /* AudioFileReader.mm */,
-				0A70A475CFD11EBCDB3FC8CF /* AudioFileWriter.h */,
-				50D8DC49F8815F2CC6AB04E0 /* AudioFileWriter.m */,
-				D0FA98388C038A469FC15F33 /* Novocaine.h */,
-				1876D7CCA71A5C68A6BF7296 /* Novocaine.m */,
-				053482B1388351AD07944FCC /* RingBuffer.h */,
-				9627393A5E8B1CD59BADD977 /* RingBuffer.mm */,
-				2690F8ADD8E83FFEFBAB96EE /* Support Files */,
+				8E4912F8E04F6E8CC9B084BB /* Pods-TPCircularBuffer.xcconfig */,
+				7EA27AEE3C92CF9CD65B06F5 /* Pods-TPCircularBuffer-Private.xcconfig */,
+				5F22377969B5B9101001AE32 /* Pods-TPCircularBuffer-dummy.m */,
+				60985640EE3A43DD36A6B8DF /* Pods-TPCircularBuffer-prefix.pch */,
 			);
-			path = Novocaine;
+			name = "Support Files";
+			path = "../Target Support Files/Pods-TPCircularBuffer";
 			sourceTree = "<group>";
 		};
-		42558CD0C7CDCC76097D00B9 /* Pods */ = {
+		7B65A2AE113FF88391E4D1E9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C800B00EC4697FD6B89B5937 /* Pods-acknowledgements.markdown */,
-				1C752181FD295D5FA3F5310D /* Pods-acknowledgements.plist */,
-				4A0FA07D780687195427B9D8 /* Pods-dummy.m */,
-				45696B11258AA93406AE8CCA /* Pods-environment.h */,
-				C61F8087F2C82DA70B29B460 /* Pods-resources.sh */,
-				61A1F6B57395858328ECFA86 /* Pods.debug.xcconfig */,
-				44712A38FCB69694F11D3E07 /* Pods.release.xcconfig */,
+				3654C0DD8903C802B736EB20 /* Pods-acknowledgements.markdown */,
+				9DB55D63CA208B24D2F6D0A7 /* Pods-acknowledgements.plist */,
+				A65ADD6F2E809A72827C1C45 /* Pods-dummy.m */,
+				C5B12F6459A9DC1524B41A69 /* Pods-environment.h */,
+				3192619411B0BE8D57A222E2 /* Pods-resources.sh */,
+				03A287BAB94CDD42D1BBC78B /* Pods.debug.xcconfig */,
+				FD234C2573A1014D782B05CE /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		4A0997DA687AE5CB2969AF45 /* Targets Support Files */ = {
+		7CC6551C3979ABB448091D10 /* Novocaine */ = {
 			isa = PBXGroup;
 			children = (
-				42558CD0C7CDCC76097D00B9 /* Pods */,
+				4176C81E0EC27500E2DE6CA6 /* AudioFileReader.h */,
+				4A88ACA9A9D8E296265CE015 /* AudioFileReader.mm */,
+				DB11148BEE34311BC37B6517 /* AudioFileWriter.h */,
+				FE84528A321920B857028A6B /* AudioFileWriter.m */,
+				4FA86C21B905ABA526FAC594 /* Novocaine.h */,
+				200AF4E7FB0A6BF226124175 /* Novocaine.m */,
+				DB3BEA06BDBB54871CDD077E /* RingBuffer.h */,
+				58D19091377AF8068729128A /* RingBuffer.mm */,
+				22E5C98C67BA6196FB634C1A /* Support Files */,
 			);
-			name = "Targets Support Files";
+			path = Novocaine;
 			sourceTree = "<group>";
 		};
-		664CD7326DB9EFDDD716DA35 = {
+		7F4581A44BEF71F727AF2FE4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				25C814A79B1BA059DA6DB316 /* Podfile */,
-				9D02B2BCA30ABC8FC7FD985C /* Frameworks */,
-				9FF4AC93A1028315C4563637 /* Pods */,
-				D8FAFEB60D3DC2CDF571F1F7 /* Products */,
-				4A0997DA687AE5CB2969AF45 /* Targets Support Files */,
+				A83F4BBEB0B9F60074834F8E /* Pods-pop.xcconfig */,
+				C4132C48836E1EC11592478D /* Pods-pop-Private.xcconfig */,
+				548B70F59A4544BD495EF02E /* Pods-pop-dummy.m */,
+				39C51AE6801C5FA2B11417BD /* Pods-pop-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-pop";
+			sourceTree = "<group>";
+		};
+		9129656423B4B3C3C3683860 /* EZAudio */ = {
+			isa = PBXGroup;
+			children = (
+				283F7798659D3F44259B67E7 /* Core */,
+				4B709B2725A3D6B75C6ED041 /* Support Files */,
+			);
+			path = EZAudio;
+			sourceTree = "<group>";
+		};
+		95F97ADFFAC14F9BD7236D24 /* pop */ = {
+			isa = PBXGroup;
+			children = (
+				73D0385CE883B479CDCF8D2E /* FloatConversion.h */,
+				11863C6ADF43A4BF106525F2 /* POP.h */,
+				C7E06F11AC4B4D8C66C98384 /* POPAction.h */,
+				114F94E60FE77E787BCEBCDC /* POPAnimatableProperty.h */,
+				C68D2FB5F9A78D1809994133 /* POPAnimatableProperty.mm */,
+				10CA9907CA38AE7FA081A707 /* POPAnimation.h */,
+				9892FE3007AEA400CB54F98C /* POPAnimation.mm */,
+				E8FFB86688AF06FCE76228A9 /* POPAnimationEvent.h */,
+				EFD5D57FDA63C5FC4D95B214 /* POPAnimationEvent.mm */,
+				A88D633EE0864A1F0DE281D6 /* POPAnimationEventInternal.h */,
+				DF917D98DD19A2C704DFE20B /* POPAnimationExtras.h */,
+				B84C229FAC3E1356F39B44F5 /* POPAnimationExtras.mm */,
+				7FC3907C296BFD0B558E2278 /* POPAnimationInternal.h */,
+				4034BB0F8C88F6C80D5B4124 /* POPAnimationPrivate.h */,
+				FB23FA30FD0B44BEE0C57167 /* POPAnimationRuntime.h */,
+				9A8223FC542EC31ECBA936F2 /* POPAnimationRuntime.mm */,
+				E639D0BDDD036E8571E91848 /* POPAnimationTracer.h */,
+				406D137501C853F7B62D41C4 /* POPAnimationTracer.mm */,
+				302A445F2BC63AD5DE65DB56 /* POPAnimationTracerInternal.h */,
+				55BDC6877282AF960D377D00 /* POPAnimator.h */,
+				69ED7BF5A909329FBE52007F /* POPAnimator.mm */,
+				A1749D6BC65609D48B06EFEA /* POPAnimatorPrivate.h */,
+				DC22822CE7EB3383446DE588 /* POPBasicAnimation.h */,
+				311699F57D26D3FA5B945B25 /* POPBasicAnimation.mm */,
+				94A45268E377F8AE99630700 /* POPBasicAnimationInternal.h */,
+				3F97A067F6E65AF85BAE33C1 /* POPCGUtils.h */,
+				EADC9A67A3C96619BBE35EA3 /* POPCGUtils.mm */,
+				F318E633CDE3E3F1F97BF45B /* POPCustomAnimation.h */,
+				778F50467F7407907FBF0604 /* POPCustomAnimation.mm */,
+				9764BFFC815CA7D44F48923B /* POPDecayAnimation.h */,
+				0CB2EC013D334A7BBC4560A5 /* POPDecayAnimation.mm */,
+				08EE584B3D9C11A0FA2BA788 /* POPDecayAnimationInternal.h */,
+				7846B3CC7220DC75259C181F /* POPDefines.h */,
+				A24A02FB30FF1D1A1D2A11DE /* POPGeometry.h */,
+				95EC73ADF6DA5CAF792854C2 /* POPGeometry.mm */,
+				7F24365B27A13084A35BDBAD /* POPLayerExtras.h */,
+				AD128B4F80962C67386C7BF9 /* POPLayerExtras.mm */,
+				B71D67365F9CD31504EBCF10 /* POPMath.h */,
+				46C9CC90EEC3F0C75712E6E0 /* POPMath.mm */,
+				349C08A3302DCC9B234D4E76 /* POPPropertyAnimation.h */,
+				2270A76F428EEE0F7217B550 /* POPPropertyAnimation.mm */,
+				D173E9BB098050C1C26884DA /* POPPropertyAnimationInternal.h */,
+				D278C445167C0682F4AE1078 /* POPSpringAnimation.h */,
+				3C1EDE8C1AB72C7A617F2301 /* POPSpringAnimation.mm */,
+				75E29C14C51C8CE99E59BD9A /* POPSpringAnimationInternal.h */,
+				824B696218EC3FA794982ACB /* POPSpringSolver.h */,
+				D01E35BEC2FC37ED89C41CAC /* POPVector.h */,
+				ABBFA98CC39A62EC8489E6E8 /* POPVector.mm */,
+				213DDB6C22A94FF892488BB2 /* TransformationMatrix.cpp */,
+				4B7589E8B04DE967AE5977E3 /* TransformationMatrix.h */,
+				8FA46FAA91AE476E22EE7E2F /* UnitBezier.h */,
+				7F4581A44BEF71F727AF2FE4 /* Support Files */,
+			);
+			path = pop;
+			sourceTree = "<group>";
+		};
+		D1513CCDA9A452B05F498AAE = {
+			isa = PBXGroup;
+			children = (
+				F5E8DA568A30263C48249924 /* Podfile */,
+				40D9A6B3AEAE75EDA1193EFD /* Frameworks */,
+				49C2713FBDCE3F1FC2378E0B /* Pods */,
+				37EE071C4B79CE80B029F9CA /* Products */,
+				4889F11F913240E127BBF6E3 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		72C959A3AC6A0A670A957153 /* NVDSP */ = {
+		DE97215753417D143441589E /* NVDSP */ = {
 			isa = PBXGroup;
 			children = (
-				24379211D29616A24C337555 /* NVAllpassFilter.h */,
-				0A31779E32E59F54B650DBEB /* NVAllpassFilter.m */,
-				64F7D93E2BEA5C552BB6BFA1 /* NVBandpassFilter.h */,
-				D20F88E0F3EFC30B94B97671 /* NVBandpassFilter.m */,
-				3F7FCE4FD0BAF85E65E0E6B9 /* NVBandpassQPeakGainFilter.h */,
-				919C7738B878F9AF5C31E713 /* NVBandpassQPeakGainFilter.m */,
-				023B667F6606B8B3FABF8295 /* NVClippingDetection.h */,
-				8C69B56FBDD938B9F0B67A5E /* NVClippingDetection.m */,
-				8AB64946CA7E51C5884A1FB5 /* NVDSP.h */,
-				CD4505DC1F5026D8CF83CC30 /* NVDSP.mm */,
-				B7EF6161433A277BC8D38175 /* NVHighShelvingFilter.h */,
-				388EA3F11D0FC3DA39F8ADA5 /* NVHighShelvingFilter.m */,
-				EAE4EA04E0F2A796C7D5AF69 /* NVHighpassFilter.h */,
-				40F5C9EFEF96D76D97D2C004 /* NVHighpassFilter.m */,
-				4EBFE1D874F206045A10796F /* NVLowShelvingFilter.h */,
-				DA06A0573560E6B87603BE14 /* NVLowShelvingFilter.m */,
-				EFABA43604413F8629444D65 /* NVLowpassFilter.h */,
-				2608282720B6137286440D68 /* NVLowpassFilter.m */,
-				A0577F9902476E6155334DEC /* NVNotchFilter.h */,
-				1544F1C0E5AD2D37AB645630 /* NVNotchFilter.m */,
-				FC9F8E1789EA2BB704B9BBA0 /* NVPeakingEQFilter.h */,
-				3E8DF3C7A6F7FDE2B2B0D072 /* NVPeakingEQFilter.m */,
-				8EB648A2A1350DA82E51ABA8 /* NVSoundLevelMeter.h */,
-				C0B01563DD5651D02785E5FA /* NVSoundLevelMeter.m */,
-				8C8BE7196EA3DE9EEABF7DDE /* Support Files */,
+				0D67F8DB89AA29D84BF464FE /* NVAllpassFilter.h */,
+				873889DEE1B492E39FE96113 /* NVAllpassFilter.m */,
+				DEBC6BBDB74B546DA84F28BE /* NVBandpassFilter.h */,
+				8751100FB0865A807C0F56A8 /* NVBandpassFilter.m */,
+				E8E08E5022D87794D0FC325B /* NVBandpassQPeakGainFilter.h */,
+				EAC30C94F844C7C176C1C5BD /* NVBandpassQPeakGainFilter.m */,
+				8F9667BCF0B897FA63D3FD02 /* NVClippingDetection.h */,
+				49C475FF36ADB651E8BBB4C2 /* NVClippingDetection.m */,
+				9E9909E16D35E40C866ECFA7 /* NVDSP.h */,
+				853DB521B2E73B986FF0F60F /* NVDSP.mm */,
+				66C74E2FF3BB8FD4E471DB71 /* NVHighShelvingFilter.h */,
+				99D1094687D7DBB03D1115CF /* NVHighShelvingFilter.m */,
+				0755C80A0BC4536AD4BA652E /* NVHighpassFilter.h */,
+				91F3422CCF5D09E45A761AE2 /* NVHighpassFilter.m */,
+				D4F93157CD4D41379BA0E99F /* NVLowShelvingFilter.h */,
+				BFCD025BC5BDAFAF815E7669 /* NVLowShelvingFilter.m */,
+				9A2C27916551430C45614723 /* NVLowpassFilter.h */,
+				FEB46DD43BB01D863E412452 /* NVLowpassFilter.m */,
+				27DF3B8411D4DB606C5CD208 /* NVNotchFilter.h */,
+				0CD2859EF90DBDCD84635C82 /* NVNotchFilter.m */,
+				A735EB9744153C7EC1CE0D88 /* NVPeakingEQFilter.h */,
+				6D45CEC4AED0C8BEC40E73CB /* NVPeakingEQFilter.m */,
+				12DB7789DC0378DB05D546B2 /* NVSoundLevelMeter.h */,
+				435EC7393481A94B5B9BF9E6 /* NVSoundLevelMeter.m */,
+				E35BDE316CFC12DDF2B2FE39 /* Support Files */,
 			);
 			path = NVDSP;
 			sourceTree = "<group>";
 		};
-		8C8BE7196EA3DE9EEABF7DDE /* Support Files */ = {
+		E35BDE316CFC12DDF2B2FE39 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				345E57D5304B269560461890 /* Pods-NVDSP.xcconfig */,
-				DAA072A52E089572F1E31A03 /* Pods-NVDSP-Private.xcconfig */,
-				2D0AEF4251EDEA94938588C5 /* Pods-NVDSP-dummy.m */,
-				BF81EA8FD83AF3748E03EE45 /* Pods-NVDSP-prefix.pch */,
+				6C66F52FFD0936A7A7B5BA0B /* Pods-NVDSP.xcconfig */,
+				56364B5699D415A1A7A1230A /* Pods-NVDSP-Private.xcconfig */,
+				BE0BCAB269AC1FAEA367A4E0 /* Pods-NVDSP-dummy.m */,
+				D5DAA545C8A92D74A532325C /* Pods-NVDSP-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-NVDSP";
 			sourceTree = "<group>";
 		};
-		9D02B2BCA30ABC8FC7FD985C /* Frameworks */ = {
+		F0B770F48B448CFF6CF38D60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				1550DBB98447A24861935CFA /* iOS */,
+				A1349E7CB6364EB404553652 /* AVFoundation.framework */,
+				260BA9E507EBF0496D46313E /* Accelerate.framework */,
+				937C7938A8BF265ECFA808D8 /* AudioToolbox.framework */,
+				0126D56C581019635C6EBC01 /* Foundation.framework */,
+				4C7BECC585286CD97737CBEC /* GLKit.framework */,
 			);
-			name = Frameworks;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		9FF4AC93A1028315C4563637 /* Pods */ = {
+		F8A14735CB49E5DFD35FB8A4 /* TPCircularBuffer */ = {
 			isa = PBXGroup;
 			children = (
-				72C959A3AC6A0A670A957153 /* NVDSP */,
-				371A4A4C9E7B5312993D958F /* Novocaine */,
-				BE89E2226CD083E67CE6D2DF /* pop */,
+				C13501C37E33F1E735DBB56B /* TPCircularBuffer.c */,
+				8000A3DFF1EC8FE1AD09EE3E /* TPCircularBuffer.h */,
+				68C736B3A84DE03BA8D28642 /* TPCircularBuffer+AudioBufferList.c */,
+				BF9B795C38F32616FD9FCE70 /* TPCircularBuffer+AudioBufferList.h */,
+				4DC003D05D8C5F20DD6F1AF2 /* Support Files */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		BE89E2226CD083E67CE6D2DF /* pop */ = {
-			isa = PBXGroup;
-			children = (
-				E81E2F28D83D3EA28FC022B2 /* FloatConversion.h */,
-				B2CE698C89C3BDD3107EB17A /* POP.h */,
-				0C3D976A302455D988AF1E29 /* POPAction.h */,
-				CD659FE5F8C8F51305DC22B6 /* POPAnimatableProperty.h */,
-				13042C605330BB4D32AD580B /* POPAnimatableProperty.mm */,
-				F2CCE043DDCB02866A18DCE7 /* POPAnimation.h */,
-				FFC25273AC870EC8F86DDD0B /* POPAnimation.mm */,
-				34EEBE51DB0348B420D2E296 /* POPAnimationEvent.h */,
-				9F3AA333E1930099AC568889 /* POPAnimationEvent.mm */,
-				827C421589773069958FCEBB /* POPAnimationEventInternal.h */,
-				9A2E6AA2058200010099921D /* POPAnimationExtras.h */,
-				3D283144C83B1D3D140BC29D /* POPAnimationExtras.mm */,
-				35CBE4BBFFDCAA525A62BDB4 /* POPAnimationInternal.h */,
-				E41903B4CC3326CE062B771D /* POPAnimationPrivate.h */,
-				34E38F746C687BDBD9B9740C /* POPAnimationRuntime.h */,
-				601D6F55FABA8343C2EDDEBF /* POPAnimationRuntime.mm */,
-				A0143109B2023A44A64B0A07 /* POPAnimationTracer.h */,
-				F8CAAD6D882525D9474346DC /* POPAnimationTracer.mm */,
-				A596F57E14BDC5E695F8F67B /* POPAnimationTracerInternal.h */,
-				BB0EDCB40428C4074AA8190E /* POPAnimator.h */,
-				CADD695D6113169D1DE758BB /* POPAnimator.mm */,
-				874253F8D1F5328C4B220C9D /* POPAnimatorPrivate.h */,
-				D87A41AA7DAE6193889EFC4B /* POPBasicAnimation.h */,
-				4753493C6A801084A40354FD /* POPBasicAnimation.mm */,
-				AB043B14C615546A395914EB /* POPBasicAnimationInternal.h */,
-				B580106885F7F81C9E5DB31D /* POPCGUtils.h */,
-				A7584BECE14147BFE60BD145 /* POPCGUtils.mm */,
-				5257FE1295EDD72910F82F19 /* POPCustomAnimation.h */,
-				1D21A7149893C3C886144420 /* POPCustomAnimation.mm */,
-				EB362F87D555BAA09C599F39 /* POPDecayAnimation.h */,
-				12190D494EAF44A692A4FEE4 /* POPDecayAnimation.mm */,
-				D34F0AA0B6FD5B804CCF4465 /* POPDecayAnimationInternal.h */,
-				470B11F319778E129D88EF3D /* POPDefines.h */,
-				3077CEC918A9F4F572C00D9F /* POPGeometry.h */,
-				4F84984F2AF7FB7B143EF84A /* POPGeometry.mm */,
-				1A471A6ECDFE47B66D7C4018 /* POPLayerExtras.h */,
-				301AE8F9BE83245CA71BC9D7 /* POPLayerExtras.mm */,
-				9890EF676DC9819B6435BB33 /* POPMath.h */,
-				109F57A9EA3B92F807E82587 /* POPMath.mm */,
-				FD2D9974037E69E8AF68FFEF /* POPPropertyAnimation.h */,
-				F594D240B80CD4B60741853D /* POPPropertyAnimation.mm */,
-				F7114DCE3DBB52BF9841A189 /* POPPropertyAnimationInternal.h */,
-				BAF84E34C6A9FE90C8F3EE94 /* POPSpringAnimation.h */,
-				9A1F5A0068EE3B1A34A5CA41 /* POPSpringAnimation.mm */,
-				FE2F3273B24A75B1747769D0 /* POPSpringAnimationInternal.h */,
-				9887C4C29B3C8C0CE7502A0A /* POPSpringSolver.h */,
-				0D1CF019E3B642A3B424F2F0 /* POPVector.h */,
-				BF7D292D0F1D90A50FB07A94 /* POPVector.mm */,
-				8C4B2EAAA51F83DBA85E5955 /* TransformationMatrix.cpp */,
-				28A0534B5C358A2BC0E725A9 /* TransformationMatrix.h */,
-				A83773953875F0D6FCADF452 /* UnitBezier.h */,
-				34145B68A0F388F5B497FE5D /* Support Files */,
-			);
-			path = pop;
-			sourceTree = "<group>";
-		};
-		D8FAFEB60D3DC2CDF571F1F7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				761D70F61BF8F2AC2B2B2CEB /* libPods.a */,
-				00B9933D5C348A5807A27019 /* libPods-NVDSP.a */,
-				855E17B3AA1EAF570F21B945 /* libPods-Novocaine.a */,
-				37F7E90E783426E1014B5B95 /* libPods-pop.a */,
-			);
-			name = Products;
+			path = TPCircularBuffer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		38739CB4DF870A6ABCE44805 /* Headers */ = {
+		5F66066BE69DD60D41596343 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB62CC1B3A88CABC103D386B /* NVAllpassFilter.h in Headers */,
-				265EF5F864947F12903FFEC9 /* NVBandpassFilter.h in Headers */,
-				75B737E974A409E2E08512D6 /* NVBandpassQPeakGainFilter.h in Headers */,
-				C7EDF9123421D25A382654DB /* NVClippingDetection.h in Headers */,
-				9294BABDF35E1784112CAB2E /* NVDSP.h in Headers */,
-				923E3E46E308625B2035365A /* NVHighShelvingFilter.h in Headers */,
-				6A7903FBB575AD1A3668F15D /* NVHighpassFilter.h in Headers */,
-				2569667682D722EF5C8434A5 /* NVLowShelvingFilter.h in Headers */,
-				C3B67C8F08749A2BAD823052 /* NVLowpassFilter.h in Headers */,
-				B5FC62F9EE1455E3631FFECD /* NVNotchFilter.h in Headers */,
-				6F390FA88C525154C2FA8E68 /* NVPeakingEQFilter.h in Headers */,
-				35795A6B40E497FC7FB974DB /* NVSoundLevelMeter.h in Headers */,
+				55576F949B0AB7ADDB4E828A /* AudioFileReader.h in Headers */,
+				4493CF52E75EE63C0F30DB16 /* AudioFileWriter.h in Headers */,
+				F5147BAD0E190E79F65BD639 /* Novocaine.h in Headers */,
+				FBAA6B91D163F6F4FC5D7F5F /* RingBuffer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8024C541D82F9203A2217AEB /* Headers */ = {
+		83F40736B3CF7B676A9B523A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1C8310688EEBE66CB93B42B /* AudioFileReader.h in Headers */,
-				5A0FDC29AB84C85F8E2383BB /* AudioFileWriter.h in Headers */,
-				7082A16C518080491BEC2375 /* Novocaine.h in Headers */,
-				709126F4019AC1E2FB4F37B2 /* RingBuffer.h in Headers */,
+				0A3025BD9ACC627F8CD3042C /* EZAudio.h in Headers */,
+				AD8CAA762A7FF2F2B284CC3A /* EZAudioDevice.h in Headers */,
+				D6CE99A46E550F5B1CD4BBCC /* EZAudioDisplayLink.h in Headers */,
+				0193620BB4B5A74F717F63B3 /* EZAudioFFT.h in Headers */,
+				55D821C35B00D7B69F480BE9 /* EZAudioFile.h in Headers */,
+				C6A153BBBAB2813DE113A6A5 /* EZAudioFloatConverter.h in Headers */,
+				246AB08B2CA60F9EA52C39D8 /* EZAudioFloatData.h in Headers */,
+				2C88FFB187E3C93EE5CCA867 /* EZAudioPlayer.h in Headers */,
+				445E6238DC76B105BCF986DB /* EZAudioPlot.h in Headers */,
+				B01B7BFCA8586AFC5CC2A5E7 /* EZAudioPlotGL.h in Headers */,
+				08CB6813AAC0664994FA1BDD /* EZAudioUtilities.h in Headers */,
+				7F2EF8C040EF3FC19A539EFD /* EZMicrophone.h in Headers */,
+				EDDC5C1A58437A1C4E961C4A /* EZOutput.h in Headers */,
+				3FC33368F5A80A36C79E994A /* EZPlot.h in Headers */,
+				8705838FD2D8CDCBEFC07EC0 /* EZRecorder.h in Headers */,
+				A3284595410CE8A4262765FC /* TPCircularBuffer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E1454639A37936BC9E1715D8 /* Headers */ = {
+		B4E6E8918AC5881589142584 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD618262C61148100143D6A7 /* FloatConversion.h in Headers */,
-				E212741A4F5344B53435DC90 /* POP.h in Headers */,
-				13B50A91EF48F44046D80F98 /* POPAction.h in Headers */,
-				2C2E67B6A7AB9EEAD162CFD9 /* POPAnimatableProperty.h in Headers */,
-				BCDC241619E1A19DDDCC8742 /* POPAnimation.h in Headers */,
-				97A365B5380B9427632CE5CE /* POPAnimationEvent.h in Headers */,
-				1100A74FF3BB842CAD2E1C14 /* POPAnimationEventInternal.h in Headers */,
-				28F93BD5B823F29B995B9439 /* POPAnimationExtras.h in Headers */,
-				017CE289A748936FD3B83486 /* POPAnimationInternal.h in Headers */,
-				AA40A3870DAD949BAEB2D387 /* POPAnimationPrivate.h in Headers */,
-				1B5FD61B26EE556B676D35AB /* POPAnimationRuntime.h in Headers */,
-				6CC1EAB1C7F1D7D250D47FFD /* POPAnimationTracer.h in Headers */,
-				733167C15BBABFCB5682574B /* POPAnimationTracerInternal.h in Headers */,
-				8E9908E6176F2ED289206530 /* POPAnimator.h in Headers */,
-				ACE8EF33491C39CB2468034A /* POPAnimatorPrivate.h in Headers */,
-				44BDD267D150641DC3A40555 /* POPBasicAnimation.h in Headers */,
-				5B21EF0B46B1CC88FF7E1A7E /* POPBasicAnimationInternal.h in Headers */,
-				2F2B9F6FBBC1575DC89DF2D7 /* POPCGUtils.h in Headers */,
-				41F48B57D5D8F756571BC47A /* POPCustomAnimation.h in Headers */,
-				15EC0C75759D50B1BC3DB8B8 /* POPDecayAnimation.h in Headers */,
-				38FB29A73D0A7B1F6C86CA7C /* POPDecayAnimationInternal.h in Headers */,
-				94111BC4BC42F8897FD09BA8 /* POPDefines.h in Headers */,
-				E1F9E504983AB5AED6948AF4 /* POPGeometry.h in Headers */,
-				BE6DEFDBF35FA791D30EF376 /* POPLayerExtras.h in Headers */,
-				D817465D0587C82C849664BD /* POPMath.h in Headers */,
-				0E3011BB1448CF34C999000C /* POPPropertyAnimation.h in Headers */,
-				84063C957C68B64302BF24DB /* POPPropertyAnimationInternal.h in Headers */,
-				7B10C744B2CF0832A9D0AEF4 /* POPSpringAnimation.h in Headers */,
-				4839B1A73B975F084ABD3AA8 /* POPSpringAnimationInternal.h in Headers */,
-				241A1C1A27D4F899B761FB72 /* POPSpringSolver.h in Headers */,
-				CCC17A94FBEB418F68D6B813 /* POPVector.h in Headers */,
-				29A8696B77192BA10198529A /* TransformationMatrix.h in Headers */,
-				2DB9FC470957F2B1BEFBCB9F /* UnitBezier.h in Headers */,
+				773F9A77863A3B30AA9EED3B /* FloatConversion.h in Headers */,
+				7F420279F3C39391BE93BEF1 /* POP.h in Headers */,
+				3B123BBD299EA220FE8F91C2 /* POPAction.h in Headers */,
+				A2A917D671702F46083CD5F3 /* POPAnimatableProperty.h in Headers */,
+				8A3E97E8A00CF6EA87B0796E /* POPAnimation.h in Headers */,
+				4D29D70CE4E7E7A5096C8FC8 /* POPAnimationEvent.h in Headers */,
+				6F21D2DDD7DEF50C9DCAF45F /* POPAnimationEventInternal.h in Headers */,
+				09A8D2E258EBCADC4B908949 /* POPAnimationExtras.h in Headers */,
+				D2E7098CE36F256C770D16D6 /* POPAnimationInternal.h in Headers */,
+				63DCC9D287D1E7A33F3A5F81 /* POPAnimationPrivate.h in Headers */,
+				2B5EC4059944C51D04DF5EDC /* POPAnimationRuntime.h in Headers */,
+				C378D65E6B1C261D50ED4DA8 /* POPAnimationTracer.h in Headers */,
+				9F0F06B14C6D5066EFDD58D4 /* POPAnimationTracerInternal.h in Headers */,
+				87AE60C70A1ECD24D02E8B01 /* POPAnimator.h in Headers */,
+				575DDEAD86FBA2269DCB8744 /* POPAnimatorPrivate.h in Headers */,
+				6F485E89B6D1D743EEA8FCDB /* POPBasicAnimation.h in Headers */,
+				02953B091E314FB5B0D07C33 /* POPBasicAnimationInternal.h in Headers */,
+				82D9E0A843273E5EF25EEEBC /* POPCGUtils.h in Headers */,
+				82B9E7EABF5DB07585908A32 /* POPCustomAnimation.h in Headers */,
+				6B820B3BF50E488CFC515868 /* POPDecayAnimation.h in Headers */,
+				B1458E6B891B2AFEA3E7EBC1 /* POPDecayAnimationInternal.h in Headers */,
+				8815FB8E0B3E80DD3997F4C7 /* POPDefines.h in Headers */,
+				5CD8D050CBB66015971B1F7C /* POPGeometry.h in Headers */,
+				078ADB4BB2BCEFF14802B1F3 /* POPLayerExtras.h in Headers */,
+				058207F129BF8A90067E318F /* POPMath.h in Headers */,
+				E72BB8123FDB3A5F84A4A74C /* POPPropertyAnimation.h in Headers */,
+				6109645887A3ADE2FA66E582 /* POPPropertyAnimationInternal.h in Headers */,
+				E54B8FADBA8AEF9B750FB75E /* POPSpringAnimation.h in Headers */,
+				C099DB32A6D8AE2266394586 /* POPSpringAnimationInternal.h in Headers */,
+				7877DE2F0BC9B638AEEE8047 /* POPSpringSolver.h in Headers */,
+				396B7709248ED05106951FD1 /* POPVector.h in Headers */,
+				D4948EAFBEA8C69C376A7489 /* TransformationMatrix.h in Headers */,
+				623BED8508E5BAF4D7364103 /* UnitBezier.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B50BB7FE6B1405533F1B55F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBDD4BC483E3E2C90CCD17CA /* NVAllpassFilter.h in Headers */,
+				2C659F7182886E3F38908230 /* NVBandpassFilter.h in Headers */,
+				95113FCE5B3E418B01A01747 /* NVBandpassQPeakGainFilter.h in Headers */,
+				482301A06FB83A34EB2CBCDF /* NVClippingDetection.h in Headers */,
+				B2BD10C4C79858DBAB585DE8 /* NVDSP.h in Headers */,
+				7D807FB3E4EFFA40861F98F3 /* NVHighShelvingFilter.h in Headers */,
+				366CE660A1893A878C7D28C8 /* NVHighpassFilter.h in Headers */,
+				C107841FB0E95106CD193639 /* NVLowShelvingFilter.h in Headers */,
+				58F326886057740B51D75FD8 /* NVLowpassFilter.h in Headers */,
+				B7892787C70AD1B652996C85 /* NVNotchFilter.h in Headers */,
+				70979EF09830DCADC490ACB8 /* NVPeakingEQFilter.h in Headers */,
+				53EC0AFEA8637EDEA4443CEA /* NVSoundLevelMeter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6FABE001F98A99EF19460A7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8001BB115DFF27ED2768FD /* TPCircularBuffer+AudioBufferList.h in Headers */,
+				A13B54D5EB8FA3F26F33174B /* TPCircularBuffer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		41AF826FAAC7B888F9DD887C /* Pods-pop */ = {
+		813C1D60E69FD925E7FCEF3A /* Pods-pop */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 539357388D198BC0CCED3728 /* Build configuration list for PBXNativeTarget "Pods-pop" */;
+			buildConfigurationList = 2BFF37F4AC885BF9A6749052 /* Build configuration list for PBXNativeTarget "Pods-pop" */;
 			buildPhases = (
-				1ED6D02BC0C31470A2CC30E2 /* Sources */,
-				0C21C8C1AFDA3D43F369746E /* Frameworks */,
-				E1454639A37936BC9E1715D8 /* Headers */,
+				DACFC9FE278AB6DC2FD7DFDB /* Sources */,
+				450EFB73D129B47C47451867 /* Frameworks */,
+				B4E6E8918AC5881589142584 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -590,35 +847,16 @@
 			);
 			name = "Pods-pop";
 			productName = "Pods-pop";
-			productReference = 37F7E90E783426E1014B5B95 /* libPods-pop.a */;
+			productReference = 5EAEF1551663247AB3F3E872 /* libPods-pop.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		D2515A13227F4D59B248FC23 /* Pods */ = {
+		9A20D3D819323CCA48E0D551 /* Pods-Novocaine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 72159BF4C878682CBB2F78EB /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 34F329F5E0EE78080656F1B0 /* Build configuration list for PBXNativeTarget "Pods-Novocaine" */;
 			buildPhases = (
-				FDB12FBBFAFE8CAFB589A2C8 /* Sources */,
-				5D03DCF2741B4EE8D583052C /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				70433C56BA372A1BE2B1952E /* PBXTargetDependency */,
-				268589871E6D1418810F8874 /* PBXTargetDependency */,
-				75725B9D8F8312ABBF8F73EC /* PBXTargetDependency */,
-			);
-			name = Pods;
-			productName = Pods;
-			productReference = 761D70F61BF8F2AC2B2B2CEB /* libPods.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		E6A2254B28D06F4F099DC988 /* Pods-Novocaine */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 490A13A0D5386593299CB324 /* Build configuration list for PBXNativeTarget "Pods-Novocaine" */;
-			buildPhases = (
-				78E6081AFC7E525B9DFBC69B /* Sources */,
-				85080075BE624B871B09D737 /* Frameworks */,
-				8024C541D82F9203A2217AEB /* Headers */,
+				53CADB7481F550C856CB5C49 /* Sources */,
+				0A9C6EB15DD1EF7FB03523FE /* Frameworks */,
+				5F66066BE69DD60D41596343 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -626,155 +864,393 @@
 			);
 			name = "Pods-Novocaine";
 			productName = "Pods-Novocaine";
-			productReference = 855E17B3AA1EAF570F21B945 /* libPods-Novocaine.a */;
+			productReference = A4A934E6A422AC88C4A16211 /* libPods-Novocaine.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		ECDE5E41D782E24B61175E66 /* Pods-NVDSP */ = {
+		AD13D9044A5D607222BC48E8 /* Pods-EZAudio */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 73C9A1959BC66D3AEAC98C61 /* Build configuration list for PBXNativeTarget "Pods-NVDSP" */;
+			buildConfigurationList = 87E7AC412336BBD98B738338 /* Build configuration list for PBXNativeTarget "Pods-EZAudio" */;
 			buildPhases = (
-				E840A0E16CBE9FDEF2596B6E /* Sources */,
-				3E88077CAE76F08997A561CC /* Frameworks */,
-				38739CB4DF870A6ABCE44805 /* Headers */,
+				D962323494B1A3E246DE0D8B /* Sources */,
+				A023BFF57D09070565B3659C /* Frameworks */,
+				83F40736B3CF7B676A9B523A /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F0E2F0F2D064E89A87EDFF56 /* PBXTargetDependency */,
+				7B6F7FD1B35BC16A2703825B /* PBXTargetDependency */,
+			);
+			name = "Pods-EZAudio";
+			productName = "Pods-EZAudio";
+			productReference = 58122FD038A6B0D4CC7DA6FC /* libPods-EZAudio.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C14EEB59174DA1B91CCBC5DC /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F1FD83CA519C6DF69D60E40 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				5F708933A9878AC2AB85D601 /* Sources */,
+				448361DBD39936C1D4E7C910 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7784FF708E487438C7394474 /* PBXTargetDependency */,
+				F18108ADA9A873FABB489C0A /* PBXTargetDependency */,
+				2DFAC84C9308F4675A4EA1A0 /* PBXTargetDependency */,
+				B6C26EA7EA0064F953D4FE2A /* PBXTargetDependency */,
+				2094E9A2334923B4619286BF /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = BD04F3D0E260AF67B3536C89 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E6BD2F225DDFE13DC10DFF81 /* Pods-TPCircularBuffer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 876AD4120D1CB115710405A0 /* Build configuration list for PBXNativeTarget "Pods-TPCircularBuffer" */;
+			buildPhases = (
+				597488B0D1307D3AF67D6034 /* Sources */,
+				D233CA42CCBCD1F9D4EE27EF /* Frameworks */,
+				C6FABE001F98A99EF19460A7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TPCircularBuffer";
+			productName = "Pods-TPCircularBuffer";
+			productReference = 638BCCD865B0187FED39DCCB /* libPods-TPCircularBuffer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FDF4EA9F6B4338CBC9E12F42 /* Pods-NVDSP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8641B49525CE8C1BBB4AC838 /* Build configuration list for PBXNativeTarget "Pods-NVDSP" */;
+			buildPhases = (
+				1690E24A2EA2EB550677389F /* Sources */,
+				D043ECD720DEC371187F2215 /* Frameworks */,
+				B50BB7FE6B1405533F1B55F0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0DEC3FCBD21A0047EF04E540 /* PBXTargetDependency */,
 			);
 			name = "Pods-NVDSP";
 			productName = "Pods-NVDSP";
-			productReference = 00B9933D5C348A5807A27019 /* libPods-NVDSP.a */;
+			productReference = 7AE20735C98ED4B7DE6162A4 /* libPods-NVDSP.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E730451B1B4BB7A7056159EF /* Project object */ = {
+		45A2747A85CDB0215C81176E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = 25B654A56AD65EEC30A3E2CF /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = F9FDC5F6FA159542E203454D /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 664CD7326DB9EFDDD716DA35;
-			productRefGroup = D8FAFEB60D3DC2CDF571F1F7 /* Products */;
+			mainGroup = D1513CCDA9A452B05F498AAE;
+			productRefGroup = 37EE071C4B79CE80B029F9CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D2515A13227F4D59B248FC23 /* Pods */,
-				ECDE5E41D782E24B61175E66 /* Pods-NVDSP */,
-				E6A2254B28D06F4F099DC988 /* Pods-Novocaine */,
-				41AF826FAAC7B888F9DD887C /* Pods-pop */,
+				C14EEB59174DA1B91CCBC5DC /* Pods */,
+				AD13D9044A5D607222BC48E8 /* Pods-EZAudio */,
+				FDF4EA9F6B4338CBC9E12F42 /* Pods-NVDSP */,
+				9A20D3D819323CCA48E0D551 /* Pods-Novocaine */,
+				E6BD2F225DDFE13DC10DFF81 /* Pods-TPCircularBuffer */,
+				813C1D60E69FD925E7FCEF3A /* Pods-pop */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1ED6D02BC0C31470A2CC30E2 /* Sources */ = {
+		1690E24A2EA2EB550677389F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F74657289D4312F1C3E3060 /* POPAnimatableProperty.mm in Sources */,
-				2EDB0EDA68B623D3835B366A /* POPAnimation.mm in Sources */,
-				AC2BD482BE2BD2C8287C4392 /* POPAnimationEvent.mm in Sources */,
-				72A146B2E09F7484542E7144 /* POPAnimationExtras.mm in Sources */,
-				B446C7DBE22627D05B00C99A /* POPAnimationRuntime.mm in Sources */,
-				AD727C6056DCE0AD162A2D3B /* POPAnimationTracer.mm in Sources */,
-				E80AFF36D63E124FC75FB475 /* POPAnimator.mm in Sources */,
-				DD3623155D92A310C75FCA3A /* POPBasicAnimation.mm in Sources */,
-				26AA2AD42AE3847396C106CA /* POPCGUtils.mm in Sources */,
-				83DDDB5DDA73A5C100184FCC /* POPCustomAnimation.mm in Sources */,
-				EA1FE97E8ACCBA6BD591C244 /* POPDecayAnimation.mm in Sources */,
-				C0E923F73538254AF6721C44 /* POPGeometry.mm in Sources */,
-				B6BF60255A31C97559F07B52 /* POPLayerExtras.mm in Sources */,
-				E522EA6D2A489E7EFAD22565 /* POPMath.mm in Sources */,
-				206DCEF714360ADC1D49F051 /* POPPropertyAnimation.mm in Sources */,
-				32AF13A5244C3B76C02D4031 /* POPSpringAnimation.mm in Sources */,
-				AADA819F5549F727C0E57288 /* POPVector.mm in Sources */,
-				323A63A084FA7877735DA4DA /* Pods-pop-dummy.m in Sources */,
-				483AD109D3D593B1AA270022 /* TransformationMatrix.cpp in Sources */,
+				FDF5964D8063456917B9DD96 /* NVAllpassFilter.m in Sources */,
+				CF3304BCC971EDE4CB5847CB /* NVBandpassFilter.m in Sources */,
+				31475BE41D0FC297415B30AD /* NVBandpassQPeakGainFilter.m in Sources */,
+				2FFAEFC7000E78DF953BC809 /* NVClippingDetection.m in Sources */,
+				2770251F4F386FB62AC7A9F6 /* NVDSP.mm in Sources */,
+				919B6C03BC8AAE3CD60A2562 /* NVHighShelvingFilter.m in Sources */,
+				DC24CEF270F3675C23459406 /* NVHighpassFilter.m in Sources */,
+				31EB526154EC03A1FC703080 /* NVLowShelvingFilter.m in Sources */,
+				5102A8565D60186BE4D79A90 /* NVLowpassFilter.m in Sources */,
+				734B052C6A2781B5B5FABD6C /* NVNotchFilter.m in Sources */,
+				55B244861C7144B0EC0FA9DD /* NVPeakingEQFilter.m in Sources */,
+				B74DEE42005ACEC1862041DD /* NVSoundLevelMeter.m in Sources */,
+				9071BB194AD2E21A269CC944 /* Pods-NVDSP-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		78E6081AFC7E525B9DFBC69B /* Sources */ = {
+		53CADB7481F550C856CB5C49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7489E98A8876FCEEA570C3B6 /* AudioFileReader.mm in Sources */,
-				98BD61F9849367ED2CC4824E /* AudioFileWriter.m in Sources */,
-				492C80BB0FEF31B81EFF4744 /* Novocaine.m in Sources */,
-				47C554C5A37ABC5358174254 /* Pods-Novocaine-dummy.m in Sources */,
-				289681D9B0E5323E8662C51C /* RingBuffer.mm in Sources */,
+				B577303750746F66B7D50725 /* AudioFileReader.mm in Sources */,
+				CA6CC3CA705C3BE6E21A89F5 /* AudioFileWriter.m in Sources */,
+				CFBB6219AF4DFF380E71B8A1 /* Novocaine.m in Sources */,
+				64454DA7C5FC5AA76010C975 /* Pods-Novocaine-dummy.m in Sources */,
+				D13DF83FF16BE174ABFC7B87 /* RingBuffer.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E840A0E16CBE9FDEF2596B6E /* Sources */ = {
+		597488B0D1307D3AF67D6034 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AC0E31C731D7D22D86EACFE /* NVAllpassFilter.m in Sources */,
-				245FCD4CCEF1C25290215B17 /* NVBandpassFilter.m in Sources */,
-				EE064A395E64D6ECC01CC3B4 /* NVBandpassQPeakGainFilter.m in Sources */,
-				650F2EB72CAED038FCAC72EB /* NVClippingDetection.m in Sources */,
-				F95391719260C3C1C89F3EDC /* NVDSP.mm in Sources */,
-				7FA58EC8A97DAF165D2782F5 /* NVHighShelvingFilter.m in Sources */,
-				1B14EC5664CA026FC2038AC6 /* NVHighpassFilter.m in Sources */,
-				FF15A9A296AB53D61F6B4BD5 /* NVLowShelvingFilter.m in Sources */,
-				1DC6AD6D8B682D162B0FA7A6 /* NVLowpassFilter.m in Sources */,
-				F81E17DA69EC1132BA3B642B /* NVNotchFilter.m in Sources */,
-				991544938932EC35B32D1636 /* NVPeakingEQFilter.m in Sources */,
-				0A885259F707542C72086FC5 /* NVSoundLevelMeter.m in Sources */,
-				002F1EB9D30A837013415345 /* Pods-NVDSP-dummy.m in Sources */,
+				14DAB80C0F18A93A21BD3BCC /* Pods-TPCircularBuffer-dummy.m in Sources */,
+				4FDC892ECC64C787788409F4 /* TPCircularBuffer+AudioBufferList.c in Sources */,
+				233CB69C456EE8216EA9236D /* TPCircularBuffer.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FDB12FBBFAFE8CAFB589A2C8 /* Sources */ = {
+		5F708933A9878AC2AB85D601 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D5C4DACD06EB7C19536ABB1 /* Pods-dummy.m in Sources */,
+				C51A56D294CAADC6369939C9 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D962323494B1A3E246DE0D8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1446AF8C953F2966CECE5154 /* EZAudio.m in Sources */,
+				F1C2F52F7AA865FB8EF277E1 /* EZAudioDevice.m in Sources */,
+				8D657D1C3AC5F93DEA8F75CF /* EZAudioDisplayLink.m in Sources */,
+				9FC585DBBEA3F4AE0322167E /* EZAudioFFT.m in Sources */,
+				29515EF6175F7B22848EF9A4 /* EZAudioFile.m in Sources */,
+				340BDD733496FE36B5C8C31E /* EZAudioFloatConverter.m in Sources */,
+				77DB50A3194E37BD664B55C0 /* EZAudioFloatData.m in Sources */,
+				A69930046B961D87DB415090 /* EZAudioPlayer.m in Sources */,
+				BA1944FEB0306F35CA46B443 /* EZAudioPlot.m in Sources */,
+				9C67849C35086F5CC33A7A7C /* EZAudioPlotGL.m in Sources */,
+				20C65D4E8F78DE56B983401B /* EZAudioUtilities.m in Sources */,
+				091E968F84C9EBCABDD0D276 /* EZMicrophone.m in Sources */,
+				BC1864FFB3AAE1836C787B22 /* EZOutput.m in Sources */,
+				797C97A28D6A5AA2255D625A /* EZPlot.m in Sources */,
+				7CB309427669FB3EEAAB5A68 /* EZRecorder.m in Sources */,
+				CF37C17102A1A049A7BDE46E /* Pods-EZAudio-dummy.m in Sources */,
+				A0F01C3C453932A4E95822C6 /* TPCircularBuffer.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DACFC9FE278AB6DC2FD7DFDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74158492E9E26D15B5966F65 /* POPAnimatableProperty.mm in Sources */,
+				36F00A37151893E84D910E83 /* POPAnimation.mm in Sources */,
+				8E2BEF1917697B56FA411EF9 /* POPAnimationEvent.mm in Sources */,
+				CC97EBC87C6F5DD74816618B /* POPAnimationExtras.mm in Sources */,
+				7887C0484C416F91F9F260D8 /* POPAnimationRuntime.mm in Sources */,
+				A9BE562E5B219646B617ABDB /* POPAnimationTracer.mm in Sources */,
+				000E431E200D82C56B3E9440 /* POPAnimator.mm in Sources */,
+				140E5C431CC7D34088E573CE /* POPBasicAnimation.mm in Sources */,
+				5DD85458D00D65970EFA9EE9 /* POPCGUtils.mm in Sources */,
+				F8AF758611464F1C43DA3BD3 /* POPCustomAnimation.mm in Sources */,
+				C50DFCFEAF68DB3F7A51C7A4 /* POPDecayAnimation.mm in Sources */,
+				93D1C2D04B87E6C644020D6D /* POPGeometry.mm in Sources */,
+				AA6BFF1516CD9B0B6F86046D /* POPLayerExtras.mm in Sources */,
+				159D5B1E82A07FA3762CDE17 /* POPMath.mm in Sources */,
+				A31F83AF0385F2463C83578C /* POPPropertyAnimation.mm in Sources */,
+				3968CB4DC8AFF15639BCC71D /* POPSpringAnimation.mm in Sources */,
+				F4D47572346EEC26B0182F6B /* POPVector.mm in Sources */,
+				9349502C23C017BEC5D282BB /* Pods-pop-dummy.m in Sources */,
+				24B81D8043AB3029F4BEEC58 /* TransformationMatrix.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		268589871E6D1418810F8874 /* PBXTargetDependency */ = {
+		0DEC3FCBD21A0047EF04E540 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Novocaine";
-			target = E6A2254B28D06F4F099DC988 /* Pods-Novocaine */;
-			targetProxy = 735CE07DF1DFF44831852497 /* PBXContainerItemProxy */;
+			target = 9A20D3D819323CCA48E0D551 /* Pods-Novocaine */;
+			targetProxy = B66E76613C3D94F20C8621B7 /* PBXContainerItemProxy */;
 		};
-		70433C56BA372A1BE2B1952E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-NVDSP";
-			target = ECDE5E41D782E24B61175E66 /* Pods-NVDSP */;
-			targetProxy = 03B99C21344B81348E3668AE /* PBXContainerItemProxy */;
-		};
-		75725B9D8F8312ABBF8F73EC /* PBXTargetDependency */ = {
+		2094E9A2334923B4619286BF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-pop";
-			target = 41AF826FAAC7B888F9DD887C /* Pods-pop */;
-			targetProxy = C24B0B0ED6A05A47CBC52F36 /* PBXContainerItemProxy */;
+			target = 813C1D60E69FD925E7FCEF3A /* Pods-pop */;
+			targetProxy = FA86B65D41B49AEBEBC973E2 /* PBXContainerItemProxy */;
 		};
-		F0E2F0F2D064E89A87EDFF56 /* PBXTargetDependency */ = {
+		2DFAC84C9308F4675A4EA1A0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Novocaine";
-			target = E6A2254B28D06F4F099DC988 /* Pods-Novocaine */;
-			targetProxy = B3C043920125504888345290 /* PBXContainerItemProxy */;
+			target = 9A20D3D819323CCA48E0D551 /* Pods-Novocaine */;
+			targetProxy = 58DB744BAEC977D5E7D6A1FF /* PBXContainerItemProxy */;
+		};
+		7784FF708E487438C7394474 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-EZAudio";
+			target = AD13D9044A5D607222BC48E8 /* Pods-EZAudio */;
+			targetProxy = D230E8586D422D50A647C566 /* PBXContainerItemProxy */;
+		};
+		7B6F7FD1B35BC16A2703825B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TPCircularBuffer";
+			target = E6BD2F225DDFE13DC10DFF81 /* Pods-TPCircularBuffer */;
+			targetProxy = 353BA0209F9AF6187734AFC8 /* PBXContainerItemProxy */;
+		};
+		B6C26EA7EA0064F953D4FE2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TPCircularBuffer";
+			target = E6BD2F225DDFE13DC10DFF81 /* Pods-TPCircularBuffer */;
+			targetProxy = 6330A9DE36240B6DDB8FD762 /* PBXContainerItemProxy */;
+		};
+		F18108ADA9A873FABB489C0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-NVDSP";
+			target = FDF4EA9F6B4338CBC9E12F42 /* Pods-NVDSP */;
+			targetProxy = A8B19C229C3B4C51F58B452C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2CF132B3F1F51B7B4B283C0B /* Debug */ = {
+		0D225201B8BAF82BA344592E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAA072A52E089572F1E31A03 /* Pods-NVDSP-Private.xcconfig */;
+			baseConfigurationReference = 7EA27AEE3C92CF9CD65B06F5 /* Pods-TPCircularBuffer-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TPCircularBuffer/Pods-TPCircularBuffer-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0D5D2ADB3312742B02132118 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4132C48836E1EC11592478D /* Pods-pop-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-pop/Pods-pop-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		177417991D6F0AAD5A694EF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F349AE4590EFBEFC234D8B2 /* Pods-EZAudio-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-EZAudio/Pods-EZAudio-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1AD25766FB79A163BBE11D56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4132C48836E1EC11592478D /* Pods-pop-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-pop/Pods-pop-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2BD2DAAE3026C928D5BAA2F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56364B5699D415A1A7A1230A /* Pods-NVDSP-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-NVDSP/Pods-NVDSP-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4DF97685EB97DAA657689697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F349AE4590EFBEFC234D8B2 /* Pods-EZAudio-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-EZAudio/Pods-EZAudio-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5FCCBF4CF73AF646DB6A3076 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03A287BAB94CDD42D1BBC78B /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		65E74E2496B2C6B166F58DF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EBF61EF6D814F401624B6B6 /* Pods-Novocaine-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Novocaine/Pods-Novocaine-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		87C1EB600BF36D2EED5B4776 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56364B5699D415A1A7A1230A /* Pods-NVDSP-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-NVDSP/Pods-NVDSP-prefix.pch";
@@ -788,25 +1264,9 @@
 			};
 			name = Debug;
 		};
-		2F47A7746DC3C8FE7A8E9657 /* Debug */ = {
+		88C6211458FCD47596639C6F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B8EADF61CA681E695D4B066 /* Pods-Novocaine-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Novocaine/Pods-Novocaine-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		4CB451336D33A1D371FC21A0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B8EADF61CA681E695D4B066 /* Pods-Novocaine-Private.xcconfig */;
+			baseConfigurationReference = 4EBF61EF6D814F401624B6B6 /* Pods-Novocaine-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-Novocaine/Pods-Novocaine-prefix.pch";
@@ -820,7 +1280,23 @@
 			};
 			name = Release;
 		};
-		57087F18E6A8C85E685A55DF /* Release */ = {
+		8FDAA6EDFAD60C47E6562B38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD234C2573A1014D782B05CE /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AD8CB8D37316964CEB36AF4B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -854,7 +1330,7 @@
 			};
 			name = Release;
 		};
-		80A5A86B0ED66457C33293AF /* Debug */ = {
+		FE5C08F4F8940788D8603A6F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -893,44 +1369,12 @@
 			};
 			name = Debug;
 		};
-		83F11ADB1741E775E358F083 /* Debug */ = {
+		FFC2060321DBB38197ADAC50 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61A1F6B57395858328ECFA86 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 7EA27AEE3C92CF9CD65B06F5 /* Pods-TPCircularBuffer-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		C261568DE6611501F119BBAC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E75BFD02A49303C3E8CDDF1 /* Pods-pop-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-pop/Pods-pop-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		C298DC3554878CEEFA5B1372 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E75BFD02A49303C3E8CDDF1 /* Pods-pop-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-pop/Pods-pop-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TPCircularBuffer/Pods-TPCircularBuffer-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -940,88 +1384,74 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
-		};
-		DA8AE59913067E48DA5284DA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAA072A52E089572F1E31A03 /* Pods-NVDSP-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-NVDSP/Pods-NVDSP-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		F15E3EDD95E6D1072A37A5C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44712A38FCB69694F11D3E07 /* Pods.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		25B654A56AD65EEC30A3E2CF /* Build configuration list for PBXProject "Pods" */ = {
+		2BFF37F4AC885BF9A6749052 /* Build configuration list for PBXNativeTarget "Pods-pop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				80A5A86B0ED66457C33293AF /* Debug */,
-				57087F18E6A8C85E685A55DF /* Release */,
+				1AD25766FB79A163BBE11D56 /* Debug */,
+				0D5D2ADB3312742B02132118 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		490A13A0D5386593299CB324 /* Build configuration list for PBXNativeTarget "Pods-Novocaine" */ = {
+		34F329F5E0EE78080656F1B0 /* Build configuration list for PBXNativeTarget "Pods-Novocaine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F47A7746DC3C8FE7A8E9657 /* Debug */,
-				4CB451336D33A1D371FC21A0 /* Release */,
+				65E74E2496B2C6B166F58DF5 /* Debug */,
+				88C6211458FCD47596639C6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		539357388D198BC0CCED3728 /* Build configuration list for PBXNativeTarget "Pods-pop" */ = {
+		4F1FD83CA519C6DF69D60E40 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C298DC3554878CEEFA5B1372 /* Debug */,
-				C261568DE6611501F119BBAC /* Release */,
+				5FCCBF4CF73AF646DB6A3076 /* Debug */,
+				8FDAA6EDFAD60C47E6562B38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		72159BF4C878682CBB2F78EB /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		8641B49525CE8C1BBB4AC838 /* Build configuration list for PBXNativeTarget "Pods-NVDSP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				83F11ADB1741E775E358F083 /* Debug */,
-				F15E3EDD95E6D1072A37A5C7 /* Release */,
+				87C1EB600BF36D2EED5B4776 /* Debug */,
+				2BD2DAAE3026C928D5BAA2F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		73C9A1959BC66D3AEAC98C61 /* Build configuration list for PBXNativeTarget "Pods-NVDSP" */ = {
+		876AD4120D1CB115710405A0 /* Build configuration list for PBXNativeTarget "Pods-TPCircularBuffer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2CF132B3F1F51B7B4B283C0B /* Debug */,
-				DA8AE59913067E48DA5284DA /* Release */,
+				FFC2060321DBB38197ADAC50 /* Debug */,
+				0D225201B8BAF82BA344592E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87E7AC412336BBD98B738338 /* Build configuration list for PBXNativeTarget "Pods-EZAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177417991D6F0AAD5A694EF8 /* Debug */,
+				4DF97685EB97DAA657689697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9FDC5F6FA159542E203454D /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE5C08F4F8940788D8603A6F /* Debug */,
+				AD8CB8D37316964CEB36AF4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E730451B1B4BB7A7056159EF /* Project object */;
+	rootObject = 45A2747A85CDB0215C81176E /* Project object */;
 }
