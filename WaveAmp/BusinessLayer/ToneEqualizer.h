@@ -8,11 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "AudiogramData.h"
+#import "AudioTypes.h"
 
 @interface ToneEqualizer : NSObject
+
+@property(nonatomic, copy) AudioOutputBlock equalizerBlock;
 
 -(id)init UNAVAILABLE_ATTRIBUTE;
 -(instancetype)initWithAudiogram:(AudiogramData*)audiogramData samplingRate:(Float64)samplingRage;
 
--(void)applyFilters:(float *)buffer numFrames:(UInt32)framesCount numChannels:(UInt32)channels;
 @end

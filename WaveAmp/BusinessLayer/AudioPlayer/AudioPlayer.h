@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-typedef void (^AudioOutputBlock)(float *data, UInt32 numFrames, UInt32 numChannels);
+#import "AudioTypes.h"
 
 @interface AudioPlayer : NSObject
 

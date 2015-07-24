@@ -58,6 +58,11 @@
             [self.eqs addObject:filter];
         }
     }
+    
+    __weak typeof(self) wself = self;
+    self.equalizerBlock = ^void(float *data, UInt32 numFrames, UInt32 numChannels){
+        [wself applyFilters:data numFrames:numFrames numChannels:numChannels];
+    };
 }
 
 -(void)applyFilters:(float *)buffer numFrames:(UInt32)framesCount numChannels:(UInt32)channels

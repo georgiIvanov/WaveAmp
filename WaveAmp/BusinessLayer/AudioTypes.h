@@ -12,6 +12,8 @@
 extern NSString* const kAudiogramKey;
 extern NSTimeInterval const TimerUpdateInterval;
 
+typedef void (^AudioOutputBlock)(float *data, UInt32 numFrames, UInt32 numChannels);
+
 typedef NS_ENUM(int, AudioChannel) {
     kLeftChannel = 0,
     kRightChannel = 1
