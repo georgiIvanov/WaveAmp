@@ -35,7 +35,7 @@
 		FF9DB4E61B53EE36006E4D3F /* Headphones.png in Resources */ = {isa = PBXBuildFile; fileRef = FF9DB4E51B53EE36006E4D3F /* Headphones.png */; };
 		FF9DB4E91B540192006E4D3F /* CommonAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB4E81B540192006E4D3F /* CommonAnimations.m */; };
 		FF9DB4EC1B54FA8E006E4D3F /* AudioTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB4EB1B54FA8E006E4D3F /* AudioTypes.m */; };
-		FF9DB5351B56360E006E4D3F /* AdjustedSpeechViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB5341B56360E006E4D3F /* AdjustedSpeechViewController.mm */; };
+		FF9DB5351B56360E006E4D3F /* AdjustedSpeechViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB5341B56360E006E4D3F /* AdjustedSpeechViewController.m */; };
 		FF9DB5381B563D13006E4D3F /* ToneEqualizer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB5371B563D13006E4D3F /* ToneEqualizer.m */; };
 		FF9DB5411B56887B006E4D3F /* AudioFiles in Resources */ = {isa = PBXBuildFile; fileRef = FF9DB5401B56887B006E4D3F /* AudioFiles */; };
 		FF9DB5441B568918006E4D3F /* SoundFile.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB5431B568918006E4D3F /* SoundFile.m */; };
@@ -120,7 +120,7 @@
 		FF9DB4EA1B54FA6A006E4D3F /* AudioTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioTypes.h; sourceTree = "<group>"; };
 		FF9DB4EB1B54FA8E006E4D3F /* AudioTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioTypes.m; sourceTree = "<group>"; };
 		FF9DB5331B56360E006E4D3F /* AdjustedSpeechViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdjustedSpeechViewController.h; sourceTree = "<group>"; };
-		FF9DB5341B56360E006E4D3F /* AdjustedSpeechViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AdjustedSpeechViewController.mm; sourceTree = "<group>"; };
+		FF9DB5341B56360E006E4D3F /* AdjustedSpeechViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdjustedSpeechViewController.m; sourceTree = "<group>"; };
 		FF9DB5361B563D13006E4D3F /* ToneEqualizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToneEqualizer.h; sourceTree = "<group>"; };
 		FF9DB5371B563D13006E4D3F /* ToneEqualizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToneEqualizer.m; sourceTree = "<group>"; };
 		FF9DB5401B56887B006E4D3F /* AudioFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AudioFiles; sourceTree = "<group>"; };
@@ -291,7 +291,7 @@
 				FF9DB4E21B53E097006E4D3F /* TestInstructionsViewController.h */,
 				FF9DB4E31B53E097006E4D3F /* TestInstructionsViewController.m */,
 				FF9DB5331B56360E006E4D3F /* AdjustedSpeechViewController.h */,
-				FF9DB5341B56360E006E4D3F /* AdjustedSpeechViewController.mm */,
+				FF9DB5341B56360E006E4D3F /* AdjustedSpeechViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -549,8 +549,8 @@
 				FF42B9701B4E35AF00535A7B /* AppDelegate.m in Sources */,
 				FF9DB4EC1B54FA8E006E4D3F /* AudioTypes.m in Sources */,
 				FF481DCD1B5BB91300AF588B /* AudiogramMarkerView.m in Sources */,
-				FF9DB5351B56360E006E4D3F /* AdjustedSpeechViewController.mm in Sources */,
 				FF86FF711B60D75C00C3E093 /* FilePlayer.mm in Sources */,
+				FF9DB5351B56360E006E4D3F /* AdjustedSpeechViewController.m in Sources */,
 				FF42B96D1B4E35AF00535A7B /* main.m in Sources */,
 				FF9DB5511B56A02D006E4D3F /* PlaybackButton.m in Sources */,
 			);

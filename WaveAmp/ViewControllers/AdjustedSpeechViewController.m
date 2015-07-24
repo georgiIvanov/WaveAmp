@@ -7,17 +7,14 @@
 //
 
 #import "AdjustedSpeechViewController.h"
-#import <Novocaine.h>
-#import <AudioFileReader.h>
+#import "FilePlayer.h"
 #import "ToneEqualizer.h"
 #import "SoundFile.h"
 
 @interface AdjustedSpeechViewController () <UIPickerViewDataSource, UIPickerViewDelegate>
 
-@property(nonatomic) Novocaine* audioManager;
+@property(nonatomic) FilePlayer* filePlayer;
 @property(nonatomic) ToneEqualizer* toneEqualizer;
-@property(nonatomic) AudioFileReader* fileReader;
-@property(nonatomic) float duration;
 @property(nonatomic) NSArray* speechFiles;
 
 @end
@@ -28,7 +25,7 @@
 {
     self = [super initWithCoder:coder];
     if (self) {
-        self.audioManager = [Novocaine audioManager];
+        self.filePlayer = [[FilePlayer alloc] init];
     }
     return self;
 }
@@ -40,30 +37,6 @@
     [self.playbackButton setScalingTouchDown:1.7 touchUp:1];
 }
 
--(void)viewWillAppear:(BOOL)animated
-{
-    __weak AdjustedSpeechViewController * wself = self;
-    [self.audioManager setOutputBlock:^(float *data, UInt32 numFrames, UInt32 numChannels) {
-        
-        if(wself.fileReader.currentTime + 0.1 >= wself.duration && wself.fileReader != nil)
-        {
-            wself.fileReader.currentTime = 0;
-            memset(data, 0, numChannels* numFrames * sizeof(float));
-            return;
-        }
-        
-        if(wself.playbackButton.playing)
-        {
-            [wself.fileReader retrieveFreshAudio:data numFrames:numFrames numChannels:numChannels];
-            [wself.toneEqualizer applyFilters:data numFrames:numFrames numChannels:numChannels];
-        }
-        else
-        {
-            memset(data, 0, numChannels* numFrames * sizeof(float));
-        }
-    }];
-}
-
 -(void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
@@ -71,7 +44,6 @@
     {
         [self.playbackButton togglePlayState];
         [self playbackTap:self.playbackButton];
-        self.audioManager.outputBlock = nil;
     }
 }
 
@@ -92,32 +64,25 @@
 -(void)setAudiogramData:(AudiogramData *)audiogramData
 {
     _audiogramData = audiogramData;
-    self.toneEqualizer = [[ToneEqualizer alloc] initWithAudiogram:audiogramData samplingRate:self.audioManager.samplingRate];
+    self.toneEqualizer = [[ToneEqualizer alloc] initWithAudiogram:audiogramData samplingRate:self.filePlayer.samplingRate];
+    self.filePlayer.outputBlock = self.toneEqualizer.equalizerBlock;
 }
 
 -(void)startPlayingFile:(SoundFile*)sf
 {    
-    if(self.fileReader.playing || self.audioManager.playing)
+    if(self.filePlayer.playing)
     {
-        [self.fileReader pause];
-        [self.audioManager pause];
+        [self.filePlayer pause];
     }
     
     NSURL* url = [NSURL URLWithString:sf.path];
-    self.fileReader = [[AudioFileReader alloc]
-                       initWithAudioFileURL:url
-                       samplingRate:self.audioManager.samplingRate
-                       numChannels:self.audioManager.numOutputChannels];
-    self.fileReader.currentTime = 0;
-    self.duration = [self.fileReader getDuration];
-    [self.audioManager play];
-    [self.fileReader play];
+    [self.filePlayer openFileWithURL:url];
+    [self.filePlayer play];
 }
 
 -(void)pausePlayback
 {
-    [self.fileReader pause];
-    [self.audioManager pause];
+    [self.filePlayer pause];
 }
 
 #pragma mark - UIPickerView DataSource
