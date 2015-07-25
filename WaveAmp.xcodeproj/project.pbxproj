@@ -26,6 +26,7 @@
 		FF481DCA1B5BB42C00AF588B /* RightEar.png in Resources */ = {isa = PBXBuildFile; fileRef = FF481DC81B5BB42C00AF588B /* RightEar.png */; };
 		FF481DCD1B5BB91300AF588B /* AudiogramMarkerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF481DCC1B5BB91300AF588B /* AudiogramMarkerView.m */; };
 		FF69D66A1B624C13000BD808 /* DSPHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = FF69D6691B624C13000BD808 /* DSPHelpers.m */; };
+		FF69D66D1B636376000BD808 /* AudioPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = FF69D66C1B636376000BD808 /* AudioPlot.m */; };
 		FF76043F1B53BEDE0024930C /* HearingWave.png in Resources */ = {isa = PBXBuildFile; fileRef = FF76043E1B53BEDE0024930C /* HearingWave.png */; };
 		FF7604431B53C6D20024930C /* UIView+PopAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7604421B53C6D20024930C /* UIView+PopAnimations.m */; };
 		FF86FF631B60B18500C3E093 /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF621B60B18500C3E093 /* AudioPlayer.m */; };
@@ -102,6 +103,8 @@
 		FF481DCC1B5BB91300AF588B /* AudiogramMarkerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiogramMarkerView.m; sourceTree = "<group>"; };
 		FF69D6681B624C13000BD808 /* DSPHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSPHelpers.h; sourceTree = "<group>"; };
 		FF69D6691B624C13000BD808 /* DSPHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSPHelpers.m; sourceTree = "<group>"; };
+		FF69D66B1B636376000BD808 /* AudioPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlot.h; sourceTree = "<group>"; };
+		FF69D66C1B636376000BD808 /* AudioPlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlot.m; sourceTree = "<group>"; };
 		FF76043E1B53BEDE0024930C /* HearingWave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HearingWave.png; sourceTree = "<group>"; };
 		FF7604411B53C6D20024930C /* UIView+PopAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PopAnimations.h"; sourceTree = "<group>"; };
 		FF7604421B53C6D20024930C /* UIView+PopAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PopAnimations.m"; sourceTree = "<group>"; };
@@ -386,6 +389,8 @@
 				FF9DB54D1B569EAA006E4D3F /* BouncyButton.m */,
 				FF9DB54F1B56A02D006E4D3F /* PlaybackButton.h */,
 				FF9DB5501B56A02D006E4D3F /* PlaybackButton.m */,
+				FF69D66B1B636376000BD808 /* AudioPlot.h */,
+				FF69D66C1B636376000BD808 /* AudioPlot.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -559,6 +564,7 @@
 				FF9DB5351B56360E006E4D3F /* AdjustedSpeechViewController.m in Sources */,
 				FF42B96D1B4E35AF00535A7B /* main.m in Sources */,
 				FF9DB5511B56A02D006E4D3F /* PlaybackButton.m in Sources */,
+				FF69D66D1B636376000BD808 /* AudioPlot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
