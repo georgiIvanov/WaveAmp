@@ -162,4 +162,9 @@
         [self pausePlayback];
     }
 }
+
+- (IBAction)checkBoxValueChanged:(BFPaperCheckbox *)sender
+{
+    
+}
 @end

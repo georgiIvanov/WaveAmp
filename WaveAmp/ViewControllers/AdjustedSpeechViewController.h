@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <BFPaperCheckbox.h>
 #import "AudioPlot.h"
 #import "PlaybackButton.h"
 #import "AudiogramData.h"
@@ -18,7 +19,9 @@
 @property (weak, nonatomic) IBOutlet AudioPlot *audioPlot;
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 @property (weak, nonatomic) IBOutlet PlaybackButton *playbackButton;
+@property (weak, nonatomic) IBOutlet BFPaperCheckbox *simulateLossCheckbox;
 
 - (IBAction)playbackTap:(id)sender;
+- (IBAction)checkBoxValueChanged:(BFPaperCheckbox *)sender;
 
 @end
