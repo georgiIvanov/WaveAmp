@@ -57,4 +57,16 @@
     [self.originalPlot clear];
 }
 
+-(void)showAdjustedPlotInFront:(BOOL)adjustedInFront
+{
+    if(adjustedInFront)
+    {
+        [self bringSubviewToFront:self.adjustedPlot];
+    }
+    else
+    {
+        [self sendSubviewToBack:self.adjustedPlot];
+    }
+}
+
 @end

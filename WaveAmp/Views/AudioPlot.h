@@ -21,5 +21,6 @@
 -(void)updateAdjustedSpeechBuffer:(float *)buffer withBufferSize:(UInt32)bufferSize;
 -(void)updateOriginalSpeechBuffer:(float *)buffer withBufferSize:(UInt32)bufferSize;
 -(void)clearPlot;
+-(void)showAdjustedPlotInFront:(BOOL)adjustedInFront;
 
 @end

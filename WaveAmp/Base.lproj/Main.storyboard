@@ -743,7 +743,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
-                                                <color key="value" red="0.55469931852668752" green="0.85098039219999999" blue="0.39024436643422339" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.55469931852668752" green="0.85098039219999999" blue="0.39024436643422339" alpha="0.0" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="color">
                                                 <color key="value" red="0.85098039219999999" green="0.35621982722165069" blue="0.42209989096730377" alpha="1" colorSpace="calibratedRGB"/>
@@ -819,7 +819,7 @@
                                     <constraint firstAttribute="width" constant="40" id="u98-9k-caa"/>
                                 </constraints>
                                 <connections>
-                                    <action selector="checkBoxValueChanged:" destination="lWv-bN-XI1" eventType="valueChanged" id="yDr-2N-iJc"/>
+                                    <action selector="checkBoxValueChanged:" destination="lWv-bN-XI1" eventType="touchUpInside" id="JzT-N6-L6T"/>
                                 </connections>
                             </view>
                         </subviews>

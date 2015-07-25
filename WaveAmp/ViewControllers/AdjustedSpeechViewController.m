@@ -8,15 +8,16 @@
 
 #import "AdjustedSpeechViewController.h"
 #import "FilePlayer.h"
-#import "ToneEqualizer.h"
+#import "SoundModifiersFactory.h"
 #import "SoundFile.h"
 #import "DSPHelpers.h"
 
 @interface AdjustedSpeechViewController () <UIPickerViewDataSource, UIPickerViewDelegate>
 
 @property(nonatomic) FilePlayer* filePlayer;
-@property(nonatomic) ToneEqualizer* toneEqualizer;
+@property(nonatomic) SoundModifier* soundModifier;
 @property(nonatomic) NSArray* speechFiles;
+@property(nonatomic) SoundModType soundModifierType;
 
 @end
 
@@ -26,7 +27,8 @@
 {
     self = [super initWithCoder:coder];
     if (self) {
-        self.filePlayer = [[FilePlayer alloc] init];
+        _filePlayer = [[FilePlayer alloc] init];
+        _soundModifierType = kToneEqualizer;
     }
     return self;
 }
@@ -71,8 +73,8 @@
 -(void)setAudiogramData:(AudiogramData *)audiogramData
 {
     _audiogramData = audiogramData;
-    self.toneEqualizer = [[ToneEqualizer alloc] initWithAudiogram:audiogramData samplingRate:self.filePlayer.samplingRate];
-
+    self.soundModifier = [SoundModifiersFactory soundModifier:self.soundModifierType withAudiogramData:audiogramData samplingRage:self.filePlayer.samplingRate];
+    
     __weak typeof(self) wself = self;
     self.filePlayer.outputBlock = ^void(float *data, UInt32 numFrames, UInt32 numChannels){
         
@@ -81,9 +83,9 @@
         
         [DSPHelpers channelData:&originalSignal fromInterleavedData:data channel:kLeftChannel amplifySignal:2.5f length:numFrames];
         
-        if(wself.toneEqualizer.adjustingSpeech)
+        if(wself.soundModifier.enabled)
         {
-            wself.toneEqualizer.modifierBlock(data, numFrames, numChannels);
+            wself.soundModifier.modifierBlock(data, numFrames, numChannels);
             [DSPHelpers channelData:&adjustedSignal fromInterleavedData:data channel:kLeftChannel amplifySignal:2.5f length:numFrames];
         }
         
@@ -91,7 +93,7 @@
             // TODO: Try updating plots in one CATransaction to prevent
             // occasional flickering of the plot (its less visible on real device than the simulator)
             [wself.audioPlot updateOriginalSpeechBuffer:originalSignal withBufferSize:numFrames];
-            if(wself.toneEqualizer.adjustingSpeech)
+            if(wself.soundModifier.enabled)
             {
                 [wself.audioPlot updateAdjustedSpeechBuffer:adjustedSignal withBufferSize:numFrames];
                 free(adjustedSignal);
@@ -165,6 +167,11 @@
 
 - (IBAction)checkBoxValueChanged:(BFPaperCheckbox *)sender
 {
-    
+    self.soundModifierType = sender.isChecked ? kHearingLoss : kToneEqualizer;
+    self.soundModifier = [SoundModifiersFactory soundModifier:self.soundModifierType
+                                            withAudiogramData:self.audiogramData
+                                                 samplingRage:self.filePlayer.samplingRate];
+    [self.audioPlot clearPlot];
+    [self.audioPlot showAdjustedPlotInFront:sender.isChecked];
 }
 @end
