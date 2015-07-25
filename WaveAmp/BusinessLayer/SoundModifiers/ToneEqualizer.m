@@ -16,7 +16,6 @@
 @interface ToneEqualizer()
 
 @property(nonatomic) NSMutableArray* eqs;
-@property(nonatomic) Float64 samplingRate;
 @property(nonatomic) NVClippingDetection* clippingDetection;
 
 @end
@@ -25,10 +24,9 @@
 
 -(instancetype)initWithAudiogram:(AudiogramData*)audiogramData samplingRate:(Float64)samplingRate
 {
-    self = [super init];
+    self = [super initWithAudiogram:audiogramData samplingRate:samplingRate];
     if (self) {
         self.eqs = [NSMutableArray new];
-        _samplingRate = samplingRate;
         self.clippingDetection = [[NVClippingDetection alloc] initWithSamplingRate:samplingRate];
         [self createFilters:audiogramData];
     }
@@ -49,7 +47,7 @@
         
         if(maxThreshold > 20)
         {
-            NVPeakingEQFilter* filter = [[NVPeakingEQFilter alloc] initWithSamplingRate:_samplingRate];
+            NVPeakingEQFilter* filter = [[NVPeakingEQFilter alloc] initWithSamplingRate:self.samplingRate];
             filter.Q = 3.0f;
             filter.centerFrequency = [ft1.frequency floatValue];
             
@@ -61,6 +59,8 @@
             [self.eqs addObject:filter];
         }
     }
+    
+    self.enabled = self.eqs.count > 0 ? YES : NO;
     
     __weak typeof(self) wself = self;
     self.modifierBlock = ^void(float *data, UInt32 numFrames, UInt32 numChannels){
@@ -76,11 +76,6 @@
     }
     
     [self.clippingDetection counterClipping:buffer numFrames:framesCount numChannels:channels];
-}
-
--(BOOL)adjustingSpeech
-{
-    return self.eqs.count > 0 ? YES : NO;
 }
 
 @end

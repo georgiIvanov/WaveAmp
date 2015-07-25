@@ -11,9 +11,4 @@
 
 @interface ToneEqualizer : SoundModifier
 
-@property(nonatomic, readonly) BOOL adjustingSpeech;
-
--(id)init UNAVAILABLE_ATTRIBUTE;
--(instancetype)initWithAudiogram:(AudiogramData*)audiogramData samplingRate:(Float64)samplingRate;
-
 @end

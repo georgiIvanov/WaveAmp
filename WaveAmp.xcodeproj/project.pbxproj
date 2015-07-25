@@ -31,6 +31,7 @@
 		FF7604431B53C6D20024930C /* UIView+PopAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7604421B53C6D20024930C /* UIView+PopAnimations.m */; };
 		FF7DD90D1B63ACBE008006DD /* ToneEqualizer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7DD90C1B63ACBE008006DD /* ToneEqualizer.m */; };
 		FF7DD9101B63ACD7008006DD /* SoundModifier.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7DD90F1B63ACD7008006DD /* SoundModifier.m */; };
+		FF7DD9131B63ADCB008006DD /* SoundModifiersFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7DD9121B63ADCB008006DD /* SoundModifiersFactory.m */; };
 		FF86FF631B60B18500C3E093 /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF621B60B18500C3E093 /* AudioPlayer.m */; };
 		FF86FF671B60B3F100C3E093 /* PureTonePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF661B60B3F100C3E093 /* PureTonePlayer.m */; };
 		FF86FF6B1B60CE4A00C3E093 /* PureToneAudiometer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF6A1B60CE4A00C3E093 /* PureToneAudiometer.m */; };
@@ -113,6 +114,8 @@
 		FF7DD90C1B63ACBE008006DD /* ToneEqualizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToneEqualizer.m; sourceTree = "<group>"; };
 		FF7DD90E1B63ACD7008006DD /* SoundModifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundModifier.h; sourceTree = "<group>"; };
 		FF7DD90F1B63ACD7008006DD /* SoundModifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundModifier.m; sourceTree = "<group>"; };
+		FF7DD9111B63ADCB008006DD /* SoundModifiersFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundModifiersFactory.h; sourceTree = "<group>"; };
+		FF7DD9121B63ADCB008006DD /* SoundModifiersFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundModifiersFactory.m; sourceTree = "<group>"; };
 		FF86FF611B60B18500C3E093 /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
 		FF86FF621B60B18500C3E093 /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
 		FF86FF641B60B36000C3E093 /* AudioPlayer_protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer_protected.h; sourceTree = "<group>"; };
@@ -362,6 +365,8 @@
 		FF7DD90A1B63ACBE008006DD /* SoundModifiers */ = {
 			isa = PBXGroup;
 			children = (
+				FF7DD9111B63ADCB008006DD /* SoundModifiersFactory.h */,
+				FF7DD9121B63ADCB008006DD /* SoundModifiersFactory.m */,
 				FF7DD90E1B63ACD7008006DD /* SoundModifier.h */,
 				FF7DD90F1B63ACD7008006DD /* SoundModifier.m */,
 				FF7DD90B1B63ACBE008006DD /* ToneEqualizer.h */,
@@ -579,6 +584,7 @@
 				FF42B96D1B4E35AF00535A7B /* main.m in Sources */,
 				FF9DB5511B56A02D006E4D3F /* PlaybackButton.m in Sources */,
 				FF69D66D1B636376000BD808 /* AudioPlot.m in Sources */,
+				FF7DD9131B63ADCB008006DD /* SoundModifiersFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

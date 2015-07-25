@@ -12,6 +12,11 @@
 
 @interface SoundModifier : NSObject
 
+@property(nonatomic) BOOL enabled;
+@property(nonatomic, readonly) Float64 samplingRate;
 @property(nonatomic, copy) AudioOutputBlock modifierBlock;
+
+-(id)init UNAVAILABLE_ATTRIBUTE;
+-(instancetype)initWithAudiogram:(AudiogramData*)audiogramData samplingRate:(Float64)samplingRate;
 
 @end

@@ -10,4 +10,14 @@
 
 @implementation SoundModifier
 
+-(instancetype)initWithAudiogram:(AudiogramData*)audiogramData samplingRate:(Float64)samplingRate;
+{
+    self = [super init];
+    if (self) {
+        _enabled = YES;
+        _samplingRate = samplingRate;
+    }
+    return self;
+}
+
 @end
