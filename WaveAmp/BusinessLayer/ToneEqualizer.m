@@ -10,23 +10,26 @@
 #import "FrequencyThreshold.h"
 #import "AmplitudeMultiplier.h"
 #import <NVPeakingEQFilter.h>
+#import <NVClippingDetection.h>
 #import <AVFoundation/AVFoundation.h>
 
 @interface ToneEqualizer()
 
 @property(nonatomic) NSMutableArray* eqs;
 @property(nonatomic) Float64 samplingRate;
+@property(nonatomic) NVClippingDetection* clippingDetection;
 
 @end
 
 @implementation ToneEqualizer
 
--(instancetype)initWithAudiogram:(AudiogramData*)audiogramData samplingRate:(Float64)samplingRage
+-(instancetype)initWithAudiogram:(AudiogramData*)audiogramData samplingRate:(Float64)samplingRate
 {
     self = [super init];
     if (self) {
         self.eqs = [NSMutableArray new];
-        _samplingRate = samplingRage;
+        _samplingRate = samplingRate;
+        self.clippingDetection = [[NVClippingDetection alloc] initWithSamplingRate:samplingRate];
         [self createFilters:audiogramData];
     }
     return self;
@@ -44,16 +47,16 @@
         
         float maxThreshold = MAX(ft1.thresholdDb.floatValue, ft2.thresholdDb.floatValue);
         
-        if(maxThreshold > 25)
+        if(maxThreshold > 20)
         {
             NVPeakingEQFilter* filter = [[NVPeakingEQFilter alloc] initWithSamplingRate:_samplingRate];
-            filter.Q = 100.0f;
+            filter.Q = 3.0f;
             filter.centerFrequency = [ft1.frequency floatValue];
             
             float baseGain = [AmplitudeMultiplier multiplierForWaveDb:@(10)];
-            float adjustedGain = ([AmplitudeMultiplier multiplierForWaveDb:@(maxThreshold)] - baseGain) * 5;
+            float adjustedGain = ([AmplitudeMultiplier multiplierForWaveDb:@(maxThreshold)] - baseGain) * 6;
             
-            filter.G = adjustedGain + vol;
+            filter.G = MAX(adjustedGain + vol, 3.0f);
             
             [self.eqs addObject:filter];
         }
@@ -71,6 +74,8 @@
     {
         [filter filterData:buffer numFrames:framesCount numChannels:channels];
     }
+    
+    [self.clippingDetection counterClipping:buffer numFrames:framesCount numChannels:channels];
 }
 
 -(BOOL)adjustingSpeech

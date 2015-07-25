@@ -16,6 +16,6 @@
 @property(nonatomic, readonly) BOOL adjustingSpeech;
 
 -(id)init UNAVAILABLE_ATTRIBUTE;
--(instancetype)initWithAudiogram:(AudiogramData*)audiogramData samplingRate:(Float64)samplingRage;
+-(instancetype)initWithAudiogram:(AudiogramData*)audiogramData samplingRate:(Float64)samplingRate;
 
 @end
