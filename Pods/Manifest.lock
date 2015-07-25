@@ -1,4 +1,6 @@
 PODS:
+  - BFPaperCheckbox (1.2.7):
+    - UIColor+BFPaperColors
   - EZAudio (1.1.1):
     - EZAudio/Full (= 1.1.1)
   - EZAudio/Core (1.1.1)
@@ -10,8 +12,10 @@ PODS:
     - Novocaine
   - pop (1.0.7)
   - TPCircularBuffer (0.0.1)
+  - UIColor+BFPaperColors (1.7.1)
 
 DEPENDENCIES:
+  - BFPaperCheckbox (~> 1.2)
   - EZAudio (~> 1.1)
   - Novocaine (~> 0.0)
   - NVDSP (~> 0.0)
@@ -19,10 +23,12 @@ DEPENDENCIES:
   - TPCircularBuffer (~> 0.0)
 
 SPEC CHECKSUMS:
+  BFPaperCheckbox: 55670e5d8dc1e060972b0d1db6380771339451d8
   EZAudio: 63cd1f0d1b1261f76955dab204a10af067ffb689
   Novocaine: 07991e1643369e8b660f361f87f88c797d99a53f
   NVDSP: 25d806aeeaf3ed915f00085909abe7768cb48239
   pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
   TPCircularBuffer: 949e9632b9fb99b7274d7b2296ee22bff5841e35
+  UIColor+BFPaperColors: b1efa4320e2f56c4b14f73232faf967ba0e5b4a2
 
 COCOAPODS: 0.37.2

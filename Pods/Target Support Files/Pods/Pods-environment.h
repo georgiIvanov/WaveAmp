@@ -6,6 +6,12 @@
 // project.
 
 
+// BFPaperCheckbox
+#define COCOAPODS_POD_AVAILABLE_BFPaperCheckbox
+#define COCOAPODS_VERSION_MAJOR_BFPaperCheckbox 1
+#define COCOAPODS_VERSION_MINOR_BFPaperCheckbox 2
+#define COCOAPODS_VERSION_PATCH_BFPaperCheckbox 7
+
 // EZAudio
 #define COCOAPODS_POD_AVAILABLE_EZAudio
 #define COCOAPODS_VERSION_MAJOR_EZAudio 1
@@ -41,6 +47,12 @@
 #define COCOAPODS_VERSION_MAJOR_TPCircularBuffer 0
 #define COCOAPODS_VERSION_MINOR_TPCircularBuffer 0
 #define COCOAPODS_VERSION_PATCH_TPCircularBuffer 1
+
+// UIColor+BFPaperColors
+#define COCOAPODS_POD_AVAILABLE_UIColor_BFPaperColors
+#define COCOAPODS_VERSION_MAJOR_UIColor_BFPaperColors 1
+#define COCOAPODS_VERSION_MINOR_UIColor_BFPaperColors 7
+#define COCOAPODS_VERSION_PATCH_UIColor_BFPaperColors 1
 
 // pop
 #define COCOAPODS_POD_AVAILABLE_pop
