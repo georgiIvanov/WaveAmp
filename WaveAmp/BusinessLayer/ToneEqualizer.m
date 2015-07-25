@@ -73,4 +73,9 @@
     }
 }
 
+-(BOOL)adjustingSpeech
+{
+    return self.eqs.count > 0 ? YES : NO;
+}
+
 @end

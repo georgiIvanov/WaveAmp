@@ -10,6 +10,7 @@
 #import "FilePlayer.h"
 #import "ToneEqualizer.h"
 #import "SoundFile.h"
+#import "DSPHelpers.h"
 
 @interface AdjustedSpeechViewController () <UIPickerViewDataSource, UIPickerViewDelegate>
 
@@ -35,6 +36,10 @@
         
     [self loadSpeechPaths];
     [self.playbackButton setScalingTouchDown:1.7 touchUp:1];
+    
+    self.audioPlot.plotType = EZPlotTypeRolling;
+    self.audioPlot.shouldFill = YES;
+    self.audioPlot.shouldMirror = YES;
 }
 
 -(void)viewWillDisappear:(BOOL)animated
@@ -45,6 +50,8 @@
         [self.playbackButton togglePlayState];
         [self playbackTap:self.playbackButton];
     }
+    
+    [self.audioPlot clearPlot];
 }
 
 
@@ -65,7 +72,34 @@
 {
     _audiogramData = audiogramData;
     self.toneEqualizer = [[ToneEqualizer alloc] initWithAudiogram:audiogramData samplingRate:self.filePlayer.samplingRate];
-    self.filePlayer.outputBlock = self.toneEqualizer.equalizerBlock;
+
+    __weak typeof(self) wself = self;
+    self.filePlayer.outputBlock = ^void(float *data, UInt32 numFrames, UInt32 numChannels){
+        
+        float* originalSignal;
+        float* adjustedSignal;
+        
+        [DSPHelpers channelData:&originalSignal fromInterleavedData:data channel:kLeftChannel amplifySignal:2.5f length:numFrames];
+        
+        if(wself.toneEqualizer.adjustingSpeech)
+        {
+            wself.toneEqualizer.equalizerBlock(data, numFrames, numChannels);
+            [DSPHelpers channelData:&adjustedSignal fromInterleavedData:data channel:kLeftChannel amplifySignal:2.5f length:numFrames];
+        }
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            // TODO: Try updating plots in one CATransaction to prevent
+            // occasional flickering of the plot (its less visible on real device than the simulator)
+            [wself.audioPlot updateOriginalSpeechBuffer:originalSignal withBufferSize:numFrames];
+            if(wself.toneEqualizer.adjustingSpeech)
+            {
+                [wself.audioPlot updateAdjustedSpeechBuffer:adjustedSignal withBufferSize:numFrames];
+                free(adjustedSignal);
+            }
+            free(originalSignal);
+        });
+        
+    };
 }
 
 -(void)startPlayingFile:(SoundFile*)sf

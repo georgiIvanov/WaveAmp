@@ -754,6 +754,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8zE-KU-q5q" userLabel="Audio Plot Container" customClass="AudioPlot">
+                                <rect key="frame" x="0.0" y="20" width="600" height="253"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RyR-0h-uKq" userLabel="AdjustedSpeech" customClass="EZAudioPlot">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="253"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                                <color key="value" red="0.55469931852668752" green="0.85098039219999999" blue="0.39024436643422339" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.85098039219999999" green="0.35621982722165069" blue="0.42209989096730377" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zkg-h2-gcW" userLabel="OriginalSpeech" customClass="EZAudioPlot">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="253"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.46911652918701929" green="0.89330843452804232" blue="0.88469115105532015" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Zkg-h2-gcW" secondAttribute="trailing" id="545-zh-yEI"/>
+                                    <constraint firstAttribute="trailing" secondItem="RyR-0h-uKq" secondAttribute="trailing" id="BSZ-cv-6kl"/>
+                                    <constraint firstItem="RyR-0h-uKq" firstAttribute="leading" secondItem="8zE-KU-q5q" secondAttribute="leading" id="SNy-sz-dWD"/>
+                                    <constraint firstItem="Zkg-h2-gcW" firstAttribute="top" secondItem="8zE-KU-q5q" secondAttribute="top" id="Ubg-yn-GOU"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zkg-h2-gcW" secondAttribute="bottom" id="aHj-0b-gZo"/>
+                                    <constraint firstItem="Zkg-h2-gcW" firstAttribute="leading" secondItem="8zE-KU-q5q" secondAttribute="leading" id="dIr-hS-sPZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="RyR-0h-uKq" secondAttribute="bottom" id="ePX-b3-q8n"/>
+                                    <constraint firstItem="RyR-0h-uKq" firstAttribute="top" secondItem="8zE-KU-q5q" secondAttribute="top" id="t0O-7G-ZO8"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="adjustedPlot" destination="RyR-0h-uKq" id="baF-Ox-1GE"/>
+                                    <outlet property="originalPlot" destination="Zkg-h2-gcW" id="7h8-zU-BMI"/>
+                                </connections>
+                            </view>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JCb-o6-aTW">
                                 <rect key="frame" x="0.0" y="233" width="600" height="162"/>
                                 <connections>
@@ -777,6 +821,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8zE-KU-q5q" secondAttribute="trailing" id="A7P-GF-lad"/>
+                            <constraint firstItem="8zE-KU-q5q" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" id="MOX-AJ-phv"/>
                             <constraint firstItem="8nn-3d-4b5" firstAttribute="top" secondItem="JCb-o6-aTW" secondAttribute="bottom" constant="33" id="Nn0-bF-Ocy">
                                 <variation key="heightClass=compact" constant="10"/>
                             </constraint>
@@ -785,11 +831,14 @@
                             <constraint firstItem="yeg-M1-mCf" firstAttribute="top" secondItem="8nn-3d-4b5" secondAttribute="bottom" constant="43" id="cw4-oE-mR6">
                                 <variation key="heightClass=compact" constant="20"/>
                             </constraint>
+                            <constraint firstItem="8zE-KU-q5q" firstAttribute="top" secondItem="glf-In-mfr" secondAttribute="bottom" id="q4V-TD-Up4"/>
                             <constraint firstAttribute="trailing" secondItem="JCb-o6-aTW" secondAttribute="trailing" id="rji-Ev-TOp"/>
+                            <constraint firstItem="JCb-o6-aTW" firstAttribute="top" secondItem="8zE-KU-q5q" secondAttribute="bottom" constant="-40" id="zdO-FP-2qK"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Adjusted Speech" id="hCP-bd-kuV"/>
                     <connections>
+                        <outlet property="audioPlot" destination="8zE-KU-q5q" id="0Gi-zJ-McJ"/>
                         <outlet property="pickerView" destination="JCb-o6-aTW" id="57u-Rb-2l3"/>
                         <outlet property="playbackButton" destination="8nn-3d-4b5" id="Mwa-eo-oMk"/>
                     </connections>

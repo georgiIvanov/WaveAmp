@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AudioPlot.h"
 #import "PlaybackButton.h"
 #import "AudiogramData.h"
 
@@ -14,6 +15,7 @@
 
 @property(nonatomic) AudiogramData* audiogramData;
 
+@property (weak, nonatomic) IBOutlet AudioPlot *audioPlot;
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 @property (weak, nonatomic) IBOutlet PlaybackButton *playbackButton;
 
