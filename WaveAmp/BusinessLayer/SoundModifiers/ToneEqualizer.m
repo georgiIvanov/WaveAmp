@@ -7,15 +7,16 @@
 //
 
 #import "ToneEqualizer.h"
+#import "ToneEqualizer_protected.h"
 #import "FrequencyThreshold.h"
 #import "AmplitudeMultiplier.h"
+
 #import <NVPeakingEQFilter.h>
 #import <NVClippingDetection.h>
 #import <AVFoundation/AVFoundation.h>
 
 @interface ToneEqualizer()
 
-@property(nonatomic) NSMutableArray* eqs;
 @property(nonatomic) NVClippingDetection* clippingDetection;
 
 @end
@@ -35,8 +36,6 @@
 
 -(void)createFilters:(AudiogramData*)ad
 {
-    float vol = [[AVAudioSession sharedInstance] outputVolume];
-    
     // TODO: create equalizers for each channel
     for (int i = 0; i < ad.leftEar.count; i++)
     {
@@ -47,14 +46,7 @@
         
         if(maxThreshold > 20)
         {
-            NVPeakingEQFilter* filter = [[NVPeakingEQFilter alloc] initWithSamplingRate:self.samplingRate];
-            filter.Q = 3.0f;
-            filter.centerFrequency = [ft1.frequency floatValue];
-            
-            float baseGain = [AmplitudeMultiplier multiplierForWaveDb:@(10)];
-            float adjustedGain = ([AmplitudeMultiplier multiplierForWaveDb:@(maxThreshold)] - baseGain) * 6;
-            
-            filter.G = MAX(adjustedGain + vol, 3.0f);
+            NVPeakingEQFilter* filter = [self createFilterForFrequency:[ft1.frequency floatValue] withThreshold:maxThreshold];
             
             [self.eqs addObject:filter];
         }
@@ -66,6 +58,21 @@
     self.modifierBlock = ^void(float *data, UInt32 numFrames, UInt32 numChannels){
         [wself applyFilters:data numFrames:numFrames numChannels:numChannels];
     };
+}
+
+-(NVPeakingEQFilter*)createFilterForFrequency:(float)frequency withThreshold:(float)threshold
+{
+    float vol = [[AVAudioSession sharedInstance] outputVolume];
+    
+    NVPeakingEQFilter* filter = [[NVPeakingEQFilter alloc] initWithSamplingRate:self.samplingRate];
+    filter.Q = 3.0f;
+    filter.centerFrequency = frequency;
+    
+    float baseGain = [AmplitudeMultiplier multiplierForWaveDb:@(10)];
+    float adjustedGain = ([AmplitudeMultiplier multiplierForWaveDb:@(threshold)] - baseGain) * 6;
+    
+    filter.G = MAX(adjustedGain + vol, 3.0f);
+    return filter;
 }
 
 -(void)applyFilters:(float *)buffer numFrames:(UInt32)framesCount numChannels:(UInt32)channels

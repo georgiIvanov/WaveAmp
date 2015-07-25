@@ -8,6 +8,7 @@
 
 #import "SoundModifiersFactory.h"
 #import "ToneEqualizer.h"
+#import "HearingLossSimulator.h"
 
 @implementation SoundModifiersFactory
 
@@ -19,7 +20,7 @@
             result = [[ToneEqualizer alloc] initWithAudiogram:audiogramData samplingRate:samplingRate];
             break;
         case kHearingLoss:
-            
+            result = [[HearingLossSimulator alloc] initWithAudiogram:audiogramData samplingRate:samplingRate];
             break;
         default:
             [NSException raise:@"Invalid sound modifier type chosen" format:@"Invalid options of %d were set.", soundMod];
