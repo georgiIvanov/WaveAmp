@@ -63,7 +63,7 @@
     }
     
     __weak typeof(self) wself = self;
-    self.equalizerBlock = ^void(float *data, UInt32 numFrames, UInt32 numChannels){
+    self.modifierBlock = ^void(float *data, UInt32 numFrames, UInt32 numChannels){
         [wself applyFilters:data numFrames:numFrames numChannels:numChannels];
     };
 }

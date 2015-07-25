@@ -7,12 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AudiogramData.h"
-#import "AudioTypes.h"
+#import "SoundModifier.h"
 
-@interface ToneEqualizer : NSObject
+@interface ToneEqualizer : SoundModifier
 
-@property(nonatomic, copy) AudioOutputBlock equalizerBlock;
 @property(nonatomic, readonly) BOOL adjustingSpeech;
 
 -(id)init UNAVAILABLE_ATTRIBUTE;

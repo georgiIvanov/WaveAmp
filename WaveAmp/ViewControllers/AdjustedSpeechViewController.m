@@ -83,7 +83,7 @@
         
         if(wself.toneEqualizer.adjustingSpeech)
         {
-            wself.toneEqualizer.equalizerBlock(data, numFrames, numChannels);
+            wself.toneEqualizer.modifierBlock(data, numFrames, numChannels);
             [DSPHelpers channelData:&adjustedSignal fromInterleavedData:data channel:kLeftChannel amplifySignal:2.5f length:numFrames];
         }
         
