@@ -53,4 +53,9 @@
     return _audioManager.playing;
 }
 
+-(void)dealloc
+{
+    _audioManager.outputBlock = nil;
+}
+
 @end

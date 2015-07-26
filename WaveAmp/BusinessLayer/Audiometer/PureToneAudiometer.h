@@ -12,8 +12,8 @@
 
 @interface PureToneAudiometer : NSObject
 
-@property(nonatomic) id<ToneAudiometerDelegate> delegate;
-@property(nonatomic) id<AudiometerPlayerDelegate> playerDelegate;
+@property(nonatomic, weak) id<ToneAudiometerDelegate> delegate;
+@property(nonatomic, weak) id<AudiometerPlayerDelegate> playerDelegate;
 
 @property(nonatomic) NSArray* frequencies;
 @property(nonatomic) float currentFrequency;

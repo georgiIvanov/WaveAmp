@@ -23,7 +23,7 @@
 
 -(void)play
 {
-    __weak PureTonePlayer * wself = self;
+    __weak PureTonePlayer* wself = self;
     __block float phase = 0.0;
     [self.audioManager setOutputBlock:^(float *data, UInt32 numFrames, UInt32 numChannels)
      {
@@ -48,8 +48,9 @@
              }
          }
          
-         [self handOverOutput];
+         [wself handOverOutput];
      }];
+    [self.audioManager play];
 }
 
 -(void)testingFrequency:(float)frequency
