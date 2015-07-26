@@ -30,7 +30,7 @@
             return;
         }
         
-        if(_fileReader.playing)
+        if(wself.fileReader.playing)
         {
             [wself.fileReader retrieveFreshAudio:data numFrames:numFrames numChannels:numChannels];
             if(wself.outputBlock)
@@ -44,7 +44,6 @@
         }
     }];
     
-    [self.fileReader play];
     [self.audioManager play];
 }
 

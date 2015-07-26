@@ -225,22 +225,23 @@
     
     if (self.callbackTimer)
     {
+        __block typeof(self) wself = self;
         UInt32 numSamplesPerCallback = (UInt32)( self.latency * self.samplingRate );
         dispatch_source_set_timer(self.callbackTimer, dispatch_walltime(NULL, 0), self.latency*NSEC_PER_SEC, 0);
         dispatch_source_set_event_handler(self.callbackTimer, ^{
             
             
-            if (self.readerBlock) {
+            if (wself.readerBlock) {
                 // Suck some audio down from our ring buffer
-                [self retrieveFreshAudio:self.holdingBuffer numFrames:numSamplesPerCallback numChannels:self.numChannels];
+                [wself retrieveFreshAudio:wself.holdingBuffer numFrames:numSamplesPerCallback numChannels:wself.numChannels];
             
                 // Call out with the audio that we've got.
-                self.readerBlock(self.holdingBuffer, numSamplesPerCallback, self.numChannels);
+                wself.readerBlock(wself.holdingBuffer, numSamplesPerCallback, wself.numChannels);
             }
 
             // Asynchronously fill up the buffer (if it needs filling)
             dispatch_async(dispatch_get_main_queue(), ^{
-                [self bufferNewAudio];
+                [wself bufferNewAudio];
             });
             
          });
