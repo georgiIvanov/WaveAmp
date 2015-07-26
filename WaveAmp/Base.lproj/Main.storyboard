@@ -966,9 +966,26 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDn-SG-rFy">
+                                <rect key="frame" x="16" y="25" width="37" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                </variation>
+                                <connections>
+                                    <action selector="cancelTap:" destination="nKs-FR-rZ0" eventType="touchUpInside" id="aQ8-eF-sAw"/>
+                                    <action selector="stopTestTap:" destination="5TN-az-DWC" eventType="touchUpInside" id="u4u-9e-rxt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="LDn-SG-rFy" firstAttribute="top" secondItem="Bva-aN-sRD" secondAttribute="bottom" constant="5" id="4lv-gA-WOf">
+                                <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                            </constraint>
                             <constraint firstItem="g5D-qF-6D0" firstAttribute="width" secondItem="gAV-d2-g6y" secondAttribute="width" id="CMy-YN-u9A"/>
                             <constraint firstItem="gAV-d2-g6y" firstAttribute="leading" secondItem="g5D-qF-6D0" secondAttribute="trailing" constant="26" id="JVY-pU-NlZ"/>
                             <constraint firstItem="Kgs-k9-MQo" firstAttribute="top" secondItem="Bva-aN-sRD" secondAttribute="bottom" constant="139" id="LGp-sS-w7P">
@@ -981,6 +998,7 @@
                             <constraint firstItem="fso-Mc-5b6" firstAttribute="top" secondItem="g5D-qF-6D0" secondAttribute="bottom" constant="30" id="bin-Dl-Mjl">
                                 <variation key="heightClass=regular-widthClass=regular" constant="50"/>
                             </constraint>
+                            <constraint firstItem="LDn-SG-rFy" firstAttribute="leading" secondItem="0Kb-lB-Rt1" secondAttribute="leading" constant="16" id="eC2-RS-R5W"/>
                             <constraint firstItem="g5D-qF-6D0" firstAttribute="leading" secondItem="0Kb-lB-Rt1" secondAttribute="leading" constant="20" id="iu7-v0-SiG"/>
                             <constraint firstAttribute="trailing" secondItem="ADh-S3-MXw" secondAttribute="trailing" id="nNp-L9-pFc"/>
                             <constraint firstItem="ADh-S3-MXw" firstAttribute="leading" secondItem="0Kb-lB-Rt1" secondAttribute="leading" id="q3L-aM-0e4"/>
@@ -992,6 +1010,7 @@
                         <outlet property="instructionsContainer" destination="ADh-S3-MXw" id="DRS-Hs-18u"/>
                         <outlet property="leftButton" destination="g5D-qF-6D0" id="nVy-yz-bb6"/>
                         <outlet property="rightButton" destination="gAV-d2-g6y" id="Fuc-2f-mz3"/>
+                        <outlet property="stopTestButton" destination="LDn-SG-rFy" id="cMF-42-Ff5"/>
                         <outlet property="testNumberLabel" destination="Kgs-k9-MQo" id="D2S-Gb-Z5q"/>
                         <outletCollection property="testUI" destination="Kgs-k9-MQo" id="yam-S0-shA"/>
                         <outletCollection property="testUI" destination="g5D-qF-6D0" id="FCX-cp-71H"/>

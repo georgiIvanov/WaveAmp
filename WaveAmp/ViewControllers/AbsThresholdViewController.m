@@ -35,6 +35,7 @@
     
     [self setupViewsForInstructions];
     self.testNumberLabel.text = @"Tests will start soon.";
+    self.stopTestButton.hidden = YES;
 }
 
 -(void)setupViewsForInstructions
@@ -76,6 +77,8 @@
 {
     // TODO: use sound meter to measure output volume
 //    HearingExamSoundMeter* soundMeter = [[HearingExamSoundMeter alloc] init];
+    
+    self.stopTestButton.hidden = NO;
     
     [self.hearingExam start];
     [self.pureTonePlayer play];
@@ -124,5 +127,10 @@
 
 - (IBAction)buttonReleased:(UIButton *)sender {
     [self.hearingExam buttonReleasedForChannel:(int)sender.tag];
+}
+
+- (IBAction)stopTestTap:(id)sender {
+    [self.pureTonePlayer pause];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end
