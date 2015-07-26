@@ -24,15 +24,20 @@
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="27"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="32"/>
+                                        </variation>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HearingWave.png" translatesAutoresizingMaskIntoConstraints="NO" id="lOe-Bh-Qcl">
                                         <rect key="frame" x="172" y="112" width="243" height="168"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="168" id="OFy-Ha-Yu0">
                                                 <variation key="heightClass=compact" constant="118"/>
+                                                <variation key="heightClass=regular-widthClass=regular" constant="198"/>
                                             </constraint>
                                             <constraint firstAttribute="width" constant="243" id="h3K-bX-u8u">
                                                 <variation key="heightClass=compact" constant="193"/>
+                                                <variation key="heightClass=regular-widthClass=regular" constant="273"/>
                                             </constraint>
                                         </constraints>
                                     </imageView>
@@ -40,8 +45,12 @@
                                         <rect key="frame" x="218" y="330" width="150" height="40"/>
                                         <color key="backgroundColor" red="0.49373882479999998" green="0.75859391779999996" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="k6a-DH-co5"/>
-                                            <constraint firstAttribute="width" constant="150" id="q1x-27-Smx"/>
+                                            <constraint firstAttribute="height" constant="40" id="k6a-DH-co5">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                            </constraint>
+                                            <constraint firstAttribute="width" constant="150" id="q1x-27-Smx">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="280"/>
+                                            </constraint>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                         <state key="normal" title="Take Hearing Test">
@@ -53,6 +62,9 @@
                                                 <integer key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                        </variation>
                                         <connections>
                                             <action selector="hearingTestTap:" destination="gUi-f9-8tM" eventType="touchUpInside" id="PFL-dQ-uA8"/>
                                         </connections>
@@ -84,6 +96,9 @@
                                         <state key="normal" title="Retake Test">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        </variation>
                                         <connections>
                                             <action selector="hearingTestTap:" destination="gUi-f9-8tM" eventType="touchUpInside" id="qzC-ZP-bDz"/>
                                         </connections>
@@ -297,7 +312,7 @@
                                             <constraint firstAttribute="height" constant="20" id="6ch-hT-xtq"/>
                                             <constraint firstAttribute="width" constant="20" id="Htv-xu-3XA"/>
                                         </constraints>
-                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                             <rect key="frame" x="30" y="29" width="25" height="25"/>
                                         </variation>
                                         <connections>
@@ -310,9 +325,6 @@
                                             <constraint firstAttribute="height" constant="20" id="Jag-0J-BXZ"/>
                                             <constraint firstAttribute="width" constant="20" id="JvC-vU-hmM"/>
                                         </constraints>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="30" y="29" width="25" height="25"/>
-                                        </variation>
                                         <connections>
                                             <outlet property="topConstraint" destination="pnj-id-rn1" id="PsJ-Zc-hDD"/>
                                         </connections>
@@ -323,7 +335,7 @@
                                             <constraint firstAttribute="width" constant="20" id="56c-ZH-N4j"/>
                                             <constraint firstAttribute="height" constant="20" id="lIT-z8-C90"/>
                                         </constraints>
-                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                             <rect key="frame" x="30" y="29" width="25" height="25"/>
                                         </variation>
                                         <connections>
@@ -336,9 +348,6 @@
                                             <constraint firstAttribute="width" constant="20" id="6cc-OS-nSb"/>
                                             <constraint firstAttribute="height" constant="20" id="JFO-aD-sJQ"/>
                                         </constraints>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="30" y="29" width="25" height="25"/>
-                                        </variation>
                                         <connections>
                                             <outlet property="topConstraint" destination="3tU-h3-iQb" id="ONy-6L-0ud"/>
                                         </connections>
@@ -349,7 +358,7 @@
                                             <constraint firstAttribute="height" constant="20" id="ITI-iA-w8L"/>
                                             <constraint firstAttribute="width" constant="20" id="MGB-fY-lrV"/>
                                         </constraints>
-                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                             <rect key="frame" x="30" y="29" width="25" height="25"/>
                                         </variation>
                                         <connections>
@@ -362,9 +371,6 @@
                                             <constraint firstAttribute="height" constant="20" id="dco-MR-Riy"/>
                                             <constraint firstAttribute="width" constant="20" id="hdn-GO-yKL"/>
                                         </constraints>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="30" y="29" width="25" height="25"/>
-                                        </variation>
                                         <connections>
                                             <outlet property="topConstraint" destination="qlY-UH-Vgp" id="YOT-T5-5EI"/>
                                         </connections>
@@ -375,7 +381,7 @@
                                             <constraint firstAttribute="width" constant="20" id="eRW-et-Soo"/>
                                             <constraint firstAttribute="height" constant="20" id="qyI-Jk-Gkg"/>
                                         </constraints>
-                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                             <rect key="frame" x="30" y="29" width="25" height="25"/>
                                         </variation>
                                         <connections>
@@ -388,9 +394,6 @@
                                             <constraint firstAttribute="width" constant="20" id="iXB-s5-pqt"/>
                                             <constraint firstAttribute="height" constant="20" id="jDi-Ck-GxR"/>
                                         </constraints>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="30" y="29" width="25" height="25"/>
-                                        </variation>
                                         <connections>
                                             <outlet property="topConstraint" destination="yW7-Y2-VCp" id="j5l-Sp-WvV"/>
                                         </connections>
@@ -401,7 +404,7 @@
                                             <constraint firstAttribute="height" constant="20" id="BqQ-F4-W7C"/>
                                             <constraint firstAttribute="width" constant="20" id="CcF-TV-NLa"/>
                                         </constraints>
-                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                             <rect key="frame" x="30" y="29" width="25" height="25"/>
                                         </variation>
                                         <connections>
@@ -414,9 +417,6 @@
                                             <constraint firstAttribute="height" constant="20" id="DaV-7S-veO"/>
                                             <constraint firstAttribute="width" constant="20" id="Ux7-cD-xyb"/>
                                         </constraints>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="30" y="29" width="25" height="25"/>
-                                        </variation>
                                         <connections>
                                             <outlet property="topConstraint" destination="SX7-qw-XkJ" id="TLe-Mh-7gD"/>
                                         </connections>
@@ -427,7 +427,7 @@
                                             <constraint firstAttribute="height" constant="20" id="bKo-tt-leS"/>
                                             <constraint firstAttribute="width" constant="20" id="xR9-G3-mUb"/>
                                         </constraints>
-                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                             <rect key="frame" x="30" y="29" width="25" height="25"/>
                                         </variation>
                                         <connections>
@@ -440,9 +440,6 @@
                                             <constraint firstAttribute="height" constant="20" id="3lv-dX-361"/>
                                             <constraint firstAttribute="width" constant="20" id="lJH-rF-hYz"/>
                                         </constraints>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="30" y="29" width="25" height="25"/>
-                                        </variation>
                                         <connections>
                                             <outlet property="topConstraint" destination="tbw-6j-rjY" id="8o7-AO-7bn"/>
                                         </connections>
@@ -453,7 +450,7 @@
                                             <constraint firstAttribute="width" constant="20" id="0fi-2A-WpZ"/>
                                             <constraint firstAttribute="height" constant="20" id="puL-tc-SII"/>
                                         </constraints>
-                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                             <rect key="frame" x="30" y="29" width="25" height="25"/>
                                         </variation>
                                         <connections>
@@ -466,9 +463,6 @@
                                             <constraint firstAttribute="height" constant="20" id="adp-BW-Lx8"/>
                                             <constraint firstAttribute="width" constant="20" id="mOA-HT-W2V"/>
                                         </constraints>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="30" y="29" width="25" height="25"/>
-                                        </variation>
                                         <connections>
                                             <outlet property="topConstraint" destination="JP6-UL-iDc" id="ZLl-Fs-hcU"/>
                                         </connections>
@@ -479,7 +473,7 @@
                                             <constraint firstAttribute="height" constant="20" id="0cR-7D-1RP"/>
                                             <constraint firstAttribute="width" constant="20" id="m4k-I8-l4h"/>
                                         </constraints>
-                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                             <rect key="frame" x="30" y="29" width="25" height="25"/>
                                         </variation>
                                         <connections>
@@ -492,9 +486,6 @@
                                             <constraint firstAttribute="height" constant="20" id="D8y-Um-Fgr"/>
                                             <constraint firstAttribute="width" constant="20" id="MM5-HU-IWX"/>
                                         </constraints>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="30" y="29" width="25" height="25"/>
-                                        </variation>
                                         <connections>
                                             <outlet property="topConstraint" destination="cUE-ed-Gke" id="dxQ-BQ-afJ"/>
                                         </connections>
@@ -576,7 +567,9 @@
                                     <constraint firstAttribute="trailing" secondItem="QNo-OV-52n" secondAttribute="trailing" constant="5" id="a62-fb-xea">
                                         <variation key="heightClass=regular-widthClass=regular" constant="10"/>
                                     </constraint>
-                                    <constraint firstItem="6bR-ja-Gdc" firstAttribute="top" secondItem="GHh-Uk-t72" secondAttribute="top" id="bme-yH-OF6"/>
+                                    <constraint firstItem="6bR-ja-Gdc" firstAttribute="top" secondItem="GHh-Uk-t72" secondAttribute="top" id="bme-yH-OF6">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                    </constraint>
                                     <constraint firstItem="xpC-cb-bAZ" firstAttribute="centerX" secondItem="xPR-9R-RTN" secondAttribute="centerX" id="c0d-ZA-3WY"/>
                                     <constraint firstItem="Rln-Og-HX8" firstAttribute="leading" secondItem="Mek-zv-w0v" secondAttribute="trailing" constant="20" id="cC3-pD-Ieb">
                                         <variation key="heightClass=compact" constant="40"/>
@@ -614,7 +607,7 @@
                                     </constraint>
                                     <constraint firstItem="In3-4P-QZo" firstAttribute="centerX" secondItem="vnw-1S-xdj" secondAttribute="centerX" id="gqC-jJ-1HW"/>
                                     <constraint firstItem="QNo-OV-52n" firstAttribute="top" secondItem="GHh-Uk-t72" secondAttribute="top" constant="-3" id="h5S-Mm-E6n">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="5"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="10"/>
                                     </constraint>
                                     <constraint firstAttribute="bottom" secondItem="jCg-bh-Pcr" secondAttribute="bottom" id="hDJ-E1-87O"/>
                                     <constraint firstItem="Pb2-GM-ZMm" firstAttribute="centerX" secondItem="4DF-bV-Vze" secondAttribute="centerX" constant="1" id="jMA-cf-A5G">
@@ -658,6 +651,7 @@
                                     </constraint>
                                     <constraint firstItem="Dtb-e0-mmC" firstAttribute="top" secondItem="GHh-Uk-t72" secondAttribute="top" constant="25" id="xqg-qV-OpB">
                                         <variation key="heightClass=compact" constant="20"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="40"/>
                                     </constraint>
                                     <constraint firstItem="Pb2-GM-ZMm" firstAttribute="top" secondItem="GHh-Uk-t72" secondAttribute="top" constant="58" id="yJH-0a-P6N">
                                         <variation key="heightClass=compact" constant="46"/>
@@ -787,15 +781,17 @@
                                 </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nn-3d-4b5" customClass="PlaybackButton">
-                                <rect key="frame" x="310" y="428" width="80" height="80"/>
+                                <rect key="frame" x="260" y="428" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="4jh-dM-2pw">
                                         <variation key="heightClass=compact" constant="50"/>
                                         <variation key="heightClass=compact-widthClass=regular" constant="60"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="100"/>
                                     </constraint>
                                     <constraint firstAttribute="height" constant="80" id="cUA-ON-hoy">
                                         <variation key="heightClass=compact" constant="50"/>
                                         <variation key="heightClass=compact-widthClass=regular" constant="60"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="100"/>
                                     </constraint>
                                 </constraints>
                                 <state key="normal" image="Play.png">
@@ -806,17 +802,24 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simulate Hearing Loss" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5We-jH-5TE">
-                                <rect key="frame" x="20" y="428" width="270" height="18"/>
+                                <rect key="frame" x="20" y="428" width="220" height="18"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rfT-gc-h7v" customClass="BFPaperCheckbox">
-                                <rect key="frame" x="135" y="454" width="40" height="40"/>
+                                <rect key="frame" x="110" y="454" width="40" height="40"/>
                                 <color key="backgroundColor" red="0.88174070919973724" green="0.90211640211640209" blue="0.89309504669807505" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="L2n-zX-w5d"/>
-                                    <constraint firstAttribute="width" constant="40" id="u98-9k-caa"/>
+                                    <constraint firstAttribute="height" constant="40" id="L2n-zX-w5d">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="40" id="u98-9k-caa">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                    </constraint>
                                 </constraints>
                                 <connections>
                                     <action selector="checkBoxValueChanged:" destination="lWv-bN-XI1" eventType="touchUpInside" id="JzT-N6-L6T"/>
@@ -832,7 +835,10 @@
                             <constraint firstItem="8nn-3d-4b5" firstAttribute="top" secondItem="JCb-o6-aTW" secondAttribute="bottom" constant="33" id="Nn0-bF-Ocy">
                                 <variation key="heightClass=compact" constant="0.0"/>
                             </constraint>
-                            <constraint firstAttribute="centerX" secondItem="8nn-3d-4b5" secondAttribute="centerX" constant="-50" id="Nug-p3-HrX"/>
+                            <constraint firstAttribute="centerX" secondItem="8nn-3d-4b5" secondAttribute="centerX" id="Nug-p3-HrX">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="-70"/>
+                            </constraint>
                             <constraint firstItem="JCb-o6-aTW" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" id="QkC-oe-7G6"/>
                             <constraint firstItem="rfT-gc-h7v" firstAttribute="top" secondItem="5We-jH-5TE" secondAttribute="bottom" constant="8" id="UGu-ft-tsf"/>
                             <constraint firstItem="yeg-M1-mCf" firstAttribute="top" secondItem="8nn-3d-4b5" secondAttribute="bottom" constant="43" id="cw4-oE-mR6">
@@ -957,7 +963,9 @@
                             <constraint firstItem="ADh-S3-MXw" firstAttribute="top" secondItem="0Kb-lB-Rt1" secondAttribute="top" id="QyJ-PG-vy1"/>
                             <constraint firstAttribute="bottom" secondItem="ADh-S3-MXw" secondAttribute="bottom" id="VH8-2K-TD4"/>
                             <constraint firstItem="gAV-d2-g6y" firstAttribute="bottom" secondItem="g5D-qF-6D0" secondAttribute="bottom" id="VdU-Jt-EhK"/>
-                            <constraint firstItem="fso-Mc-5b6" firstAttribute="top" secondItem="g5D-qF-6D0" secondAttribute="bottom" constant="30" id="bin-Dl-Mjl"/>
+                            <constraint firstItem="fso-Mc-5b6" firstAttribute="top" secondItem="g5D-qF-6D0" secondAttribute="bottom" constant="30" id="bin-Dl-Mjl">
+                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                            </constraint>
                             <constraint firstItem="g5D-qF-6D0" firstAttribute="leading" secondItem="0Kb-lB-Rt1" secondAttribute="leading" constant="20" id="iu7-v0-SiG"/>
                             <constraint firstAttribute="trailing" secondItem="ADh-S3-MXw" secondAttribute="trailing" id="nNp-L9-pFc"/>
                             <constraint firstItem="ADh-S3-MXw" firstAttribute="leading" secondItem="0Kb-lB-Rt1" secondAttribute="leading" id="q3L-aM-0e4"/>
@@ -991,23 +999,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hpu-xG-6gg">
-                                <rect key="frame" x="16" y="20" width="48" height="30"/>
-                                <state key="normal" title="Cancel">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="cancelTap:" destination="nKs-FR-rZ0" eventType="touchUpInside" id="j4J-NZ-gj2"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Headphones.png" translatesAutoresizingMaskIntoConstraints="NO" id="byO-pe-QfP">
                                 <rect key="frame" x="180" y="-4" width="240" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="AAe-FF-uYJ">
                                         <variation key="heightClass=compact" constant="110"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="220"/>
                                     </constraint>
                                     <constraint firstAttribute="width" constant="240" id="UF0-6B-jek">
                                         <variation key="heightClass=compact" constant="150"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="260"/>
                                     </constraint>
                                 </constraints>
                             </imageView>
@@ -1015,19 +1016,30 @@
                                 <rect key="frame" x="140" y="226" width="320" height="240"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="Rqt-67-rbc"/>
-                                    <constraint firstAttribute="height" constant="240" id="tje-yK-gbF"/>
+                                    <constraint firstAttribute="width" constant="320" id="Rqt-67-rbc">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="350"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="240" id="tje-yK-gbF">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="280"/>
+                                    </constraint>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                </variation>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wK4-hd-qci">
                                 <rect key="frame" x="247" y="471" width="107" height="36"/>
                                 <color key="backgroundColor" red="0.49373882479999998" green="0.75859391779999996" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="107" id="TJH-vR-kkZ"/>
-                                    <constraint firstAttribute="height" constant="36" id="egx-uX-gex"/>
+                                    <constraint firstAttribute="width" constant="107" id="TJH-vR-kkZ">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="137"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="36" id="egx-uX-gex">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="66"/>
+                                    </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                 <state key="normal" title="Next">
@@ -1039,8 +1051,23 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                </variation>
                                 <connections>
                                     <action selector="nextButtonTap:" destination="nKs-FR-rZ0" eventType="touchUpInside" id="GQZ-48-Xc7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hpu-xG-6gg">
+                                <rect key="frame" x="16" y="20" width="48" height="30"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                </variation>
+                                <connections>
+                                    <action selector="cancelTap:" destination="nKs-FR-rZ0" eventType="touchUpInside" id="j4J-NZ-gj2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1052,6 +1079,7 @@
                             <constraint firstAttribute="centerY" secondItem="V3S-sI-Qhd" secondAttribute="centerY" constant="-45.5" id="S9C-Hl-YSH"/>
                             <constraint firstItem="V3S-sI-Qhd" firstAttribute="top" secondItem="byO-pe-QfP" secondAttribute="bottom" constant="30" id="VxB-cJ-u58">
                                 <variation key="heightClass=compact" constant="5"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
                             </constraint>
                             <constraint firstAttribute="centerX" secondItem="wK4-hd-qci" secondAttribute="centerX" id="Zbq-Hc-UXp"/>
                             <constraint firstAttribute="centerX" secondItem="V3S-sI-Qhd" secondAttribute="centerX" id="yda-SJ-Qsh"/>
