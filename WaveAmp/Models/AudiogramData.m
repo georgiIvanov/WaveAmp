@@ -66,6 +66,22 @@
     return [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
+-(BOOL)isWithinNormalLoss
+{
+    for (int i = 0; i < self.leftEar.count; i++)
+    {
+        FrequencyThreshold* ft1 = (FrequencyThreshold*)self.leftEar[i];
+        FrequencyThreshold* ft2 = (FrequencyThreshold*)self.rightEar[i];
+        
+        if([ft1.thresholdDb integerValue] > 20 || [ft2.thresholdDb integerValue] > 20)
+        {
+            return NO;
+        }
+    }
+    
+    return YES;
+}
+
 +(instancetype)loadAudiogram
 {
     NSData* data = [[NSUserDefaults standardUserDefaults] objectForKey:kAudiogramKey];

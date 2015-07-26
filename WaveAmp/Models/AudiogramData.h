@@ -20,5 +20,6 @@
 
 -(instancetype)initWithThresholds:(NSArray*)thresholds;
 -(BOOL)saveAudiogram;
+-(BOOL)isWithinNormalLoss;
 
 @end

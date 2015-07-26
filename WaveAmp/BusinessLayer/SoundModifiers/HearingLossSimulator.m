@@ -22,7 +22,7 @@
 
 -(instancetype)initWithAudiogram:(AudiogramData*)audiogramData samplingRate:(Float64)samplingRate
 {
-    AudiogramData* usedAudiogram = audiogramData != nil ? audiogramData : [AudiogramData audiogramMildLoss];
+    AudiogramData* usedAudiogram = audiogramData != nil && ![audiogramData isWithinNormalLoss] ? audiogramData : [AudiogramData audiogramMildLoss];
     
     self = [super initWithAudiogram:usedAudiogram samplingRate:samplingRate];
     if (self) {        
