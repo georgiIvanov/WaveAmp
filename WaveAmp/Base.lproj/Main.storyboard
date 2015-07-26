@@ -825,11 +825,25 @@
                                     <action selector="checkBoxValueChanged:" destination="lWv-bN-XI1" eventType="touchUpInside" id="JzT-N6-L6T"/>
                                 </connections>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Playback Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASH-tI-t6n">
+                                <rect key="frame" x="451" y="30" width="119" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="22"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="5We-jH-5TE" firstAttribute="centerX" secondItem="rfT-gc-h7v" secondAttribute="centerX" id="5I5-1g-jpq"/>
                             <constraint firstAttribute="trailing" secondItem="8zE-KU-q5q" secondAttribute="trailing" id="A7P-GF-lad"/>
+                            <constraint firstItem="8zE-KU-q5q" firstAttribute="trailing" secondItem="ASH-tI-t6n" secondAttribute="trailing" constant="30" id="H0w-xu-3nR">
+                                <variation key="heightClass=regular-widthClass=regular" constant="45"/>
+                            </constraint>
+                            <constraint firstItem="ASH-tI-t6n" firstAttribute="top" secondItem="8zE-KU-q5q" secondAttribute="top" constant="10" id="JfD-Kw-sC0">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
                             <constraint firstItem="5We-jH-5TE" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" constant="20" id="MBX-hC-AEh"/>
                             <constraint firstItem="8zE-KU-q5q" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" id="MOX-AJ-phv"/>
                             <constraint firstItem="8nn-3d-4b5" firstAttribute="top" secondItem="JCb-o6-aTW" secondAttribute="bottom" constant="33" id="Nn0-bF-Ocy">
@@ -858,6 +872,7 @@
                         <outlet property="audioPlot" destination="8zE-KU-q5q" id="0Gi-zJ-McJ"/>
                         <outlet property="pickerView" destination="JCb-o6-aTW" id="57u-Rb-2l3"/>
                         <outlet property="playbackButton" destination="8nn-3d-4b5" id="Mwa-eo-oMk"/>
+                        <outlet property="playbackStatus" destination="ASH-tI-t6n" id="Bbi-Gw-hUW"/>
                         <outlet property="simulateLossCheckbox" destination="rfT-gc-h7v" id="V5q-56-NFe"/>
                     </connections>
                 </viewController>

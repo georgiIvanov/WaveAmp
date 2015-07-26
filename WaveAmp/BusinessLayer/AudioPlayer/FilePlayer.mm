@@ -66,7 +66,7 @@
 
 -(BOOL)playing
 {
-    BOOL isPlaying = self.fileReader.playing | self.audioManager.playing;
+    BOOL isPlaying = self.fileReader.playing & self.audioManager.playing;
     return isPlaying;
 }
 

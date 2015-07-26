@@ -7,6 +7,7 @@
 //
 
 #import "AdjustedSpeechViewController.h"
+#import "CommonAnimations.h"
 #import "FilePlayer.h"
 #import "SoundModifiersFactory.h"
 #import "SoundFile.h"
@@ -38,6 +39,7 @@
         
     [self loadSpeechPaths];
     [self.playbackButton setScalingTouchDown:1.7 touchUp:1];
+    [self showPlaybackStatus];
     
     self.audioPlot.plotType = EZPlotTypeRolling;
     self.audioPlot.shouldFill = YES;
@@ -114,11 +116,40 @@
     NSURL* url = [NSURL URLWithString:sf.path];
     [self.filePlayer openFileWithURL:url];
     [self.filePlayer play];
+    [self showPlaybackStatus];
 }
 
 -(void)pausePlayback
 {
     [self.filePlayer pause];
+    [self showPlaybackStatus];
+}
+
+-(void)showPlaybackStatus
+{
+    NSString* text;
+    
+    if(self.filePlayer.playing == NO)
+    {
+        text = @"";
+    }
+    else if(self.simulateLossCheckbox.isChecked)
+    {
+        text = @"Simulated Loss";
+    }
+    else if(self.audiogramData == nil || [self.audiogramData isWithinNormalLoss])
+    {
+        text = @"Normal";
+    }
+    else
+    {
+        text = @"Amplified speech";
+    }
+    
+    [CommonAnimations animate:self.playbackStatus
+                  withNewText:text
+                     duration:0.3
+              completionBlock:nil];
 }
 
 #pragma mark - UIPickerView DataSource
@@ -173,5 +204,6 @@
                                                  samplingRage:self.filePlayer.samplingRate];
     [self.audioPlot clearPlot];
     [self.audioPlot showAdjustedPlotInFront:sender.isChecked];
+    [self showPlaybackStatus];
 }
 @end

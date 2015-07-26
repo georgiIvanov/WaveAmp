@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 @property (weak, nonatomic) IBOutlet PlaybackButton *playbackButton;
 @property (weak, nonatomic) IBOutlet BFPaperCheckbox *simulateLossCheckbox;
+@property (weak, nonatomic) IBOutlet UILabel *playbackStatus;
 
 - (IBAction)playbackTap:(id)sender;
 - (IBAction)checkBoxValueChanged:(BFPaperCheckbox *)sender;
