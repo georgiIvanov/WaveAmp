@@ -17,6 +17,7 @@
 		FF0A48491B4FEC7E0021B149 /* FrequencyThreshold.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A48481B4FEC7E0021B149 /* FrequencyThreshold.m */; };
 		FF0A484C1B5031A10021B149 /* ExamPunchCard.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A484B1B5031A10021B149 /* ExamPunchCard.m */; };
 		FF2619C81B661B770069907D /* BasicArrowDown.png in Resources */ = {isa = PBXBuildFile; fileRef = FF2619C71B661B770069907D /* BasicArrowDown.png */; };
+		FF2619CB1B661FA30069907D /* DrawerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2619CA1B661FA30069907D /* DrawerButton.m */; };
 		FF42B96D1B4E35AF00535A7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B96C1B4E35AF00535A7B /* main.m */; };
 		FF42B9701B4E35AF00535A7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B96F1B4E35AF00535A7B /* AppDelegate.m */; };
 		FF42B9761B4E35AF00535A7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9741B4E35AF00535A7B /* Main.storyboard */; };
@@ -90,6 +91,8 @@
 		FF0A484A1B5031A10021B149 /* ExamPunchCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExamPunchCard.h; sourceTree = "<group>"; };
 		FF0A484B1B5031A10021B149 /* ExamPunchCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExamPunchCard.m; sourceTree = "<group>"; };
 		FF2619C71B661B770069907D /* BasicArrowDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BasicArrowDown.png; sourceTree = "<group>"; };
+		FF2619C91B661FA30069907D /* DrawerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerButton.h; sourceTree = "<group>"; };
+		FF2619CA1B661FA30069907D /* DrawerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerButton.m; sourceTree = "<group>"; };
 		FF42B9671B4E35AF00535A7B /* WaveAmp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveAmp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF42B96B1B4E35AF00535A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF42B96C1B4E35AF00535A7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -419,6 +422,8 @@
 				FF9DB5501B56A02D006E4D3F /* PlaybackButton.m */,
 				FF69D66B1B636376000BD808 /* AudioPlot.h */,
 				FF69D66C1B636376000BD808 /* AudioPlot.m */,
+				FF2619C91B661FA30069907D /* DrawerButton.h */,
+				FF2619CA1B661FA30069907D /* DrawerButton.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -576,6 +581,7 @@
 				FF86FF6B1B60CE4A00C3E093 /* PureToneAudiometer.m in Sources */,
 				FF9DB5441B568918006E4D3F /* SoundFile.m in Sources */,
 				FF7DD9101B63ACD7008006DD /* SoundModifier.m in Sources */,
+				FF2619CB1B661FA30069907D /* DrawerButton.m in Sources */,
 				FF86FF631B60B18500C3E093 /* AudioPlayer.m in Sources */,
 				FFCE737C1B525D4400F52920 /* TestsAppDelegate.m in Sources */,
 				FF0A48421B4FB44E0021B149 /* AmplitudeMultiplier.m in Sources */,
