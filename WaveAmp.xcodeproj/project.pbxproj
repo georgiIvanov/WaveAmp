@@ -16,6 +16,7 @@
 		FF0A48451B4FB75B0021B149 /* HearingExamSoundMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A48441B4FB75B0021B149 /* HearingExamSoundMeter.m */; };
 		FF0A48491B4FEC7E0021B149 /* FrequencyThreshold.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A48481B4FEC7E0021B149 /* FrequencyThreshold.m */; };
 		FF0A484C1B5031A10021B149 /* ExamPunchCard.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A484B1B5031A10021B149 /* ExamPunchCard.m */; };
+		FF2619C81B661B770069907D /* BasicArrowDown.png in Resources */ = {isa = PBXBuildFile; fileRef = FF2619C71B661B770069907D /* BasicArrowDown.png */; };
 		FF42B96D1B4E35AF00535A7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B96C1B4E35AF00535A7B /* main.m */; };
 		FF42B9701B4E35AF00535A7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B96F1B4E35AF00535A7B /* AppDelegate.m */; };
 		FF42B9761B4E35AF00535A7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9741B4E35AF00535A7B /* Main.storyboard */; };
@@ -88,6 +89,7 @@
 		FF0A48481B4FEC7E0021B149 /* FrequencyThreshold.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrequencyThreshold.m; sourceTree = "<group>"; };
 		FF0A484A1B5031A10021B149 /* ExamPunchCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExamPunchCard.h; sourceTree = "<group>"; };
 		FF0A484B1B5031A10021B149 /* ExamPunchCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExamPunchCard.m; sourceTree = "<group>"; };
+		FF2619C71B661B770069907D /* BasicArrowDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BasicArrowDown.png; sourceTree = "<group>"; };
 		FF42B9671B4E35AF00535A7B /* WaveAmp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveAmp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF42B96B1B4E35AF00535A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF42B96C1B4E35AF00535A7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -345,6 +347,7 @@
 		FF76043D1B53BE1D0024930C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FF2619C71B661B770069907D /* BasicArrowDown.png */,
 				FF481DC71B5BB42C00AF588B /* LeftEar.png */,
 				FF481DC81B5BB42C00AF588B /* RightEar.png */,
 				FF9DB5451B569A95006E4D3F /* Pause.png */,
@@ -503,6 +506,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF42B9761B4E35AF00535A7B /* Main.storyboard in Resources */,
+				FF2619C81B661B770069907D /* BasicArrowDown.png in Resources */,
 				FF9DB5481B569A95006E4D3F /* Play.png in Resources */,
 				FF9DB4E61B53EE36006E4D3F /* Headphones.png in Resources */,
 				FF481DCA1B5BB42C00AF588B /* RightEar.png in Resources */,
