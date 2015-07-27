@@ -7,6 +7,7 @@ PODS:
   - EZAudio/Full (1.1.1):
     - EZAudio/Core
     - TPCircularBuffer (~> 0.0)
+  - HMSegmentedControl (1.5.2)
   - Novocaine (0.0.1)
   - NVDSP (0.0.1):
     - Novocaine
@@ -17,6 +18,7 @@ PODS:
 DEPENDENCIES:
   - BFPaperCheckbox (~> 1.2)
   - EZAudio (~> 1.1)
+  - HMSegmentedControl (~> 1.5)
   - Novocaine (~> 0.0)
   - NVDSP (~> 0.0)
   - pop (~> 1.0)
@@ -25,6 +27,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   BFPaperCheckbox: 55670e5d8dc1e060972b0d1db6380771339451d8
   EZAudio: 63cd1f0d1b1261f76955dab204a10af067ffb689
+  HMSegmentedControl: 83b9686022d2176fb6457d2bdb61e5d6393fed7d
   Novocaine: 07991e1643369e8b660f361f87f88c797d99a53f
   NVDSP: 25d806aeeaf3ed915f00085909abe7768cb48239
   pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
