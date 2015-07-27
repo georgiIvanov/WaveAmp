@@ -21,7 +21,6 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-    [self setupGestures];
     [self.audiogramView setupView];
     self.audiogramData = [AudiogramData loadAudiogram];
     
@@ -75,26 +74,6 @@
     }
 }
 
--(void)setupGestures
-{
-    // !!!: gesture for setting some of the audiogramdata presets
-    UILongPressGestureRecognizer* longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressWithThreeFingersAction:)];
-#if TARGET_IPHONE_SIMULATOR
-    longPress.numberOfTouchesRequired = 2;
-#else
-    longPress.numberOfTouchesRequired = 3;
-#endif
-    [self.view addGestureRecognizer:longPress];
-}
-
--(void)longPressWithThreeFingersAction:(UILongPressGestureRecognizer*)sender
-{
-    if(sender.state == UIGestureRecognizerStateBegan)
-    {
-        [self displayAudiogramPresets];
-    }
-}
-
 -(void)setupSegmentedControlTitles:(BOOL)hasSavedAudiogram
 {
     NSString* first = hasSavedAudiogram ? @"Saved" : @"None";
@@ -119,53 +98,6 @@
     [self setupSegmentedControlTitles:(self.audiogramData != nil)];
 }
 
--(void)displayAudiogramPresets
-{
-    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Audiogram Data"
-                                                                   message:@"Load a preset audiogram."
-                                                            preferredStyle:UIAlertControllerStyleActionSheet];
-    UIAlertAction* alertAction;
-    
-    
-    AudiogramData* ad = [AudiogramData loadAudiogram];
-    if(ad)
-    {
-        alertAction = [UIAlertAction actionWithTitle:@"Original" style:UIAlertActionStyleDefault
-                                                       handler:^(UIAlertAction * action) {
-                                                           self.audiogramData = [AudiogramData loadAudiogram];
-                                                       }];
-        [alert addAction:alertAction];
-    }
-    
-    alertAction = [UIAlertAction actionWithTitle:@"Normal Loss" style:UIAlertActionStyleDefault
-                                                          handler:^(UIAlertAction * action) {
-                                                              self.audiogramData = [AudiogramData audiogramNormalLoss];
-                                                          }];
-    [alert addAction:alertAction];
-    
-    alertAction = [UIAlertAction actionWithTitle:@"Mild Loss" style:UIAlertActionStyleDefault
-                                                   handler:^(UIAlertAction * action) {
-                                                       self.audiogramData = [AudiogramData audiogramMildLoss];
-                                                   }];
-    
-    [alert addAction:alertAction];
-    
-    alertAction = [UIAlertAction actionWithTitle:@"Severe Loss" style:UIAlertActionStyleDefault
-                                         handler:^(UIAlertAction * action) {
-                                             self.audiogramData = [AudiogramData audiogramSevereLoss];
-                                         }];
-    
-    [alert addAction:alertAction];
-    
-    if (alert.popoverPresentationController) {
-        alert.popoverPresentationController.sourceView = self.noContentView;
-        CGRect srcRect = CGRectMake(self.noContentView.frame.origin.x, self.noContentView.frame.origin.y, self.noContentView.frame.size.width, self.noContentView.frame.size.height * 0.6);
-        alert.popoverPresentationController.sourceRect = srcRect;
-    }
-    
-    [self presentViewController:alert animated:YES completion:nil];
-}
-
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if([segue.identifier isEqualToString:@"AbsThresholdSegue"])
@@ -184,6 +116,23 @@
 
 - (IBAction)segmentedControlChangedValue:(HMSegmentedControl*)sender
 {
-    
+    switch(sender.selectedSegmentIndex)
+    {
+        case 0:
+            self.audiogramData = [AudiogramData loadAudiogram];
+            break;
+        case 1:
+            self.audiogramData = [AudiogramData audiogramNormalLoss];
+            break;
+        case 2:
+            self.audiogramData = [AudiogramData audiogramMildLoss];
+            break;
+        case 3:
+            self.audiogramData = [AudiogramData audiogramSevereLoss];
+            break;
+        default:
+            self.audiogramData = [AudiogramData loadAudiogram];
+            break;
+    }
 }
 @end
