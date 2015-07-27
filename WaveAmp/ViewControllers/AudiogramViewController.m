@@ -94,7 +94,7 @@
 
 -(void)examIsSuccessfullyCompleted
 {
-    self.audiogramData = [AudiogramData loadAudiogram];
+    [self.audiogramPresets setSelectedSegmentIndex:0 animated:YES];
     [self setupSegmentedControlTitles:(self.audiogramData != nil)];
 }
 
