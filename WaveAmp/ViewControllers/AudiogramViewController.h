@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <HMSegmentedControl.h>
+
 #import "AudiogramData.h"
 #import "AudiogramView.h"
+#import "DrawerButton.h"
 
 @interface AudiogramViewController : UIViewController
 
@@ -19,8 +22,11 @@
 @property (weak, nonatomic) IBOutlet UIButton *hearingTestButton;
 @property (weak, nonatomic) IBOutlet UIButton *retakeTestButton;
 @property (weak, nonatomic) IBOutlet AudiogramView *audiogramView;
+@property (weak, nonatomic) IBOutlet HMSegmentedControl *audiogramPresets;
+@property (weak, nonatomic) IBOutlet DrawerButton *drawerButton;
 
 
 - (IBAction)hearingTestTap:(id)sender;
+- (IBAction)segmentedControlChangedValue:(id)sender;
 
 @end

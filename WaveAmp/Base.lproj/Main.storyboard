@@ -689,24 +689,63 @@
                                     <outletCollection property="leftMarkers" destination="oK9-86-sE5" id="T6v-Gm-yNe"/>
                                 </connections>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSb-ym-d82" customClass="DrawerButton">
+                                <rect key="frame" x="210" y="469" width="180" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="CP6-zi-576"/>
+                                    <constraint firstAttribute="height" constant="40" id="FQP-N7-4S7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="-12" maxX="0.0" maxY="0.0"/>
+                                <inset key="titleEdgeInsets" minX="-140" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="110" minY="40" maxX="110" maxY="0.0"/>
+                                <state key="normal" title="Load Audiogram" image="BasicArrowDown.png">
+                                    <color key="titleColor" red="0.68958336302328316" green="0.67488071877164646" blue="0.69047619047619047" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <outlet property="drawerConstraint" destination="t8h-Go-oQc" id="AqJ-QH-1Kt"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7F-69-XVe" customClass="HMSegmentedControl">
+                                <rect key="frame" x="0.0" y="511" width="600" height="40"/>
+                                <color key="backgroundColor" red="0.88888888888888884" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="t8h-Go-oQc">
+                                        <variation key="heightClass=compact" constant="0.0"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="40"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                    </constraint>
+                                </constraints>
+                                <connections>
+                                    <action selector="segmentedControlChangedValue:" destination="gUi-f9-8tM" eventType="valueChanged" id="SML-hu-aN8"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="GHh-Uk-t72" secondAttribute="trailing" id="1ei-98-Bqy"/>
+                            <constraint firstItem="g7F-69-XVe" firstAttribute="leading" secondItem="cuJ-xo-9EO" secondAttribute="leading" id="3uP-jT-sIx"/>
                             <constraint firstItem="GHh-Uk-t72" firstAttribute="leading" secondItem="cuJ-xo-9EO" secondAttribute="leading" id="7r2-80-znt"/>
                             <constraint firstItem="AJe-Fn-6Hh" firstAttribute="top" secondItem="LSq-9H-3hD" secondAttribute="bottom" constant="51" id="9Z5-xf-XEF">
                                 <variation key="heightClass=compact" constant="5"/>
                             </constraint>
+                            <constraint firstItem="AJe-Fn-6Hh" firstAttribute="top" secondItem="g7F-69-XVe" secondAttribute="bottom" id="HxR-yr-DwS"/>
+                            <constraint firstAttribute="centerX" secondItem="zSb-ym-d82" secondAttribute="centerX" id="K2f-Dk-aZg"/>
                             <constraint firstItem="AJe-Fn-6Hh" firstAttribute="top" secondItem="GHh-Uk-t72" secondAttribute="bottom" id="dG8-vy-O1P"/>
                             <constraint firstItem="LSq-9H-3hD" firstAttribute="leading" secondItem="cuJ-xo-9EO" secondAttribute="leading" constant="7" id="hR6-1k-o8N"/>
+                            <constraint firstItem="g7F-69-XVe" firstAttribute="top" secondItem="zSb-ym-d82" secondAttribute="bottom" constant="2" id="pcK-XQ-KyD"/>
                             <constraint firstAttribute="trailing" secondItem="LSq-9H-3hD" secondAttribute="trailing" constant="7" id="rMC-NM-HYP"/>
+                            <constraint firstAttribute="trailing" secondItem="g7F-69-XVe" secondAttribute="trailing" id="rs3-YW-jl6"/>
                             <constraint firstItem="LSq-9H-3hD" firstAttribute="top" secondItem="W8L-RC-4tv" secondAttribute="bottom" id="sZl-S8-G2A"/>
                             <constraint firstItem="GHh-Uk-t72" firstAttribute="top" secondItem="W8L-RC-4tv" secondAttribute="bottom" id="uhm-zF-AHp"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Audiogram" id="4ek-G7-wwF"/>
                     <connections>
+                        <outlet property="audiogramPresets" destination="g7F-69-XVe" id="BJJ-VJ-lhQ"/>
                         <outlet property="audiogramView" destination="GHh-Uk-t72" id="l8Q-qQ-ZzB"/>
+                        <outlet property="drawerButton" destination="zSb-ym-d82" id="1Cx-2c-ySy"/>
                         <outlet property="hearingTestButton" destination="4XS-Og-nZP" id="oQg-eK-Rhv"/>
                         <outlet property="noContentView" destination="LSq-9H-3hD" id="R49-vD-ej5"/>
                         <outlet property="retakeTestButton" destination="QNo-OV-52n" id="6HK-Ta-ai0"/>
@@ -1134,6 +1173,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BasicArrowDown.png" width="143" height="73"/>
         <image name="Headphones.png" width="512" height="331"/>
         <image name="HearingWave.png" width="512" height="360"/>
         <image name="LeftEar.png" width="512" height="512"/>

@@ -24,6 +24,37 @@
     [self setupGestures];
     [self.audiogramView setupView];
     self.audiogramData = [AudiogramData loadAudiogram];
+    
+    self.audiogramPresets.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocationDown;
+    [self setupSegmentedControlTitles:(self.audiogramData != nil)];
+    [self.drawerButton setupButton:self.audiogramPresets];
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self.drawerButton closeView];
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.drawerButton closeView];
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self.drawerButton closeView];
+}
+
+-(void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
+{
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    
+    [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+        [self.drawerButton closeView];
+    } completion:nil];
 }
 
 -(void)setupContentViews
@@ -64,6 +95,13 @@
     }
 }
 
+-(void)setupSegmentedControlTitles:(BOOL)hasSavedAudiogram
+{
+    NSString* first = hasSavedAudiogram ? @"Saved" : @"None";
+    NSArray* titles = @[first, @"Normal", @"Mild", @"Severe"];
+    [self.audiogramPresets setSectionTitles:titles];
+}
+
 -(void)setAudiogramData:(AudiogramData *)audiogramData
 {
     _audiogramData = audiogramData;
@@ -78,6 +116,7 @@
 -(void)examIsSuccessfullyCompleted
 {
     self.audiogramData = [AudiogramData loadAudiogram];
+    [self setupSegmentedControlTitles:(self.audiogramData != nil)];
 }
 
 -(void)displayAudiogramPresets
@@ -141,5 +180,10 @@
 - (IBAction)hearingTestTap:(id)sender
 {
     [self performSegueWithIdentifier:@"AbsThresholdSegue" sender:self];
+}
+
+- (IBAction)segmentedControlChangedValue:(HMSegmentedControl*)sender
+{
+    
 }
 @end
