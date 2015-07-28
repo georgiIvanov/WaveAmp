@@ -816,7 +816,7 @@
                             <constraint firstItem="GHh-Uk-t72" firstAttribute="top" secondItem="W8L-RC-4tv" secondAttribute="bottom" id="uhm-zF-AHp"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Audiogram" id="4ek-G7-wwF"/>
+                    <tabBarItem key="tabBarItem" title="Audiogram" image="AudiogramIcon.png" id="4ek-G7-wwF"/>
                     <connections>
                         <outlet property="audiogramPresets" destination="g7F-69-XVe" id="BJJ-VJ-lhQ"/>
                         <outlet property="audiogramView" destination="GHh-Uk-t72" id="l8Q-qQ-ZzB"/>
@@ -984,7 +984,7 @@
                             <constraint firstItem="JCb-o6-aTW" firstAttribute="top" secondItem="8zE-KU-q5q" secondAttribute="bottom" constant="-40" id="zdO-FP-2qK"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Adjusted Speech" id="hCP-bd-kuV"/>
+                    <tabBarItem key="tabBarItem" title="Adjusted Speech" image="AdjustedSpeechIcon.png" id="hCP-bd-kuV"/>
                     <connections>
                         <outlet property="audioPlot" destination="8zE-KU-q5q" id="0Gi-zJ-McJ"/>
                         <outlet property="pickerView" destination="JCb-o6-aTW" id="57u-Rb-2l3"/>
@@ -1251,6 +1251,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AdjustedSpeechIcon.png" width="30" height="30"/>
+        <image name="AudiogramIcon.png" width="30" height="30"/>
         <image name="BasicArrowDown.png" width="143" height="73"/>
         <image name="Headphones.png" width="512" height="331"/>
         <image name="HearingWave.png" width="512" height="360"/>
