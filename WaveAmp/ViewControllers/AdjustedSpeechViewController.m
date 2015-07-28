@@ -80,8 +80,8 @@
     __weak typeof(self) wself = self;
     self.filePlayer.outputBlock = ^void(float *data, UInt32 numFrames, UInt32 numChannels){
         
-        float* originalSignal;
-        float* adjustedSignal;
+        float* originalSignal = NULL;
+        float* adjustedSignal = NULL;
         
         [DSPHelpers channelData:&originalSignal fromInterleavedData:data channel:kLeftChannel amplifySignal:2.5f length:numFrames];
         
@@ -94,8 +94,12 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             // TODO: Try updating plots in one CATransaction to prevent
             // occasional flickering of the plot (its less visible on real device than the simulator)
-            [wself.audioPlot updateOriginalSpeechBuffer:originalSignal withBufferSize:numFrames];
-            if(wself.soundModifier.enabled)
+            if(originalSignal != NULL)
+            {
+                [wself.audioPlot updateOriginalSpeechBuffer:originalSignal withBufferSize:numFrames];
+            }
+            
+            if(wself.soundModifier.enabled && adjustedSignal != NULL)
             {
                 [wself.audioPlot updateAdjustedSpeechBuffer:adjustedSignal withBufferSize:numFrames];
                 free(adjustedSignal);
