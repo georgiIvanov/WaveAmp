@@ -25,6 +25,7 @@
     self.audiogramData = [AudiogramData loadAudiogram];
     
     self.audiogramPresets.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocationDown;
+    self.audiogramPresets.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5];
     [self setupSegmentedControlTitles:(self.audiogramData != nil)];
     [self.drawerButton setupButton:self.audiogramPresets];
 }
@@ -95,6 +96,7 @@
 -(void)examIsSuccessfullyCompleted
 {
     [self.audiogramPresets setSelectedSegmentIndex:0 animated:YES];
+    [self segmentedControlChangedValue:self.audiogramPresets];
     [self setupSegmentedControlTitles:(self.audiogramData != nil)];
 }
 
