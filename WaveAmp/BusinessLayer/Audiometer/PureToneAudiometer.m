@@ -57,7 +57,7 @@
 -(void)start
 {
     self.testIndex = -1;
-    self.nextTest = -1.0f; // starting test without delay for testing purposes
+    self.nextTest = 2.0f; // starting test without delay for testing purposes
     self.testSignalLength = 0.0f;
     self.timer = [NSTimer scheduledTimerWithTimeInterval:TimerUpdateInterval target:self selector:@selector(update:) userInfo:nil repeats:YES];
     self.thresholds = [[NSMutableArray alloc] initWithCapacity:self.frequencies.count * 2];
@@ -88,14 +88,14 @@
     
     if(_testSignalLength <= 0)
     {
-        _currentFrequency = 0;
+        self.currentFrequency = 0;
     }
     
     _testSignalLength -= TimerUpdateInterval;
     if (_testSignalLength <= 0 && _nextTest < 0)
     {
         _testSignalLength = arc4random() % (_testsInterval.length - _testsInterval.location) + _testsInterval.location;
-        _nextTest = (_testSignalLength + arc4random() % 2) + 0.5f;// + 2;
+        _nextTest = (_testSignalLength + arc4random() % 2) + 2;
         [self nextSignal];
     }
 }

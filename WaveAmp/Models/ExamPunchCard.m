@@ -75,7 +75,9 @@ const int CorrectAnswersFull = 2;
         return YES;
     }
     
-    if(_correctAnswersLimit == CorrectAnswersShort && [self.currentIntensity integerValue] == [AmplitudeMultiplier minIntensity].integerValue)
+    if(_correctAnswersLimit == CorrectAnswersShort &&
+       [self.currentIntensity integerValue] == [AmplitudeMultiplier minIntensity].integerValue &&
+       isAccurate == YES)
     {
         // in short mode if user hears the min intensity he passes the punch card
         return YES;
