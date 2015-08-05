@@ -39,7 +39,7 @@
 #define kOutputBus 0
 #define kDefaultDevice 999999
 
-
+//#define LOG_DEBUG_INFO
 
 static Novocaine *audioManager = nil;
 
@@ -470,7 +470,9 @@ static Novocaine *audioManager = nil;
     
 	if (outputFormat.mFormatFlags & kAudioFormatFlagIsNonInterleaved) {
         // The audio is non-interleaved
+#ifdef LOG_DEBUG_INFO
         printf("Not interleaved!\n");
+#endif
         self.isInterleaved = NO;
         
         // allocate an AudioBufferList plus enough space for array of AudioBuffers
@@ -786,8 +788,9 @@ void sessionPropertyListener(void *                  inClientData,
     CFStringRef route;
     CheckError( AudioSessionGetProperty(kAudioSessionProperty_AudioRoute, &propertySize, &route), "Couldn't check the audio route");
     self.inputRoute = (NSString *)route;
+#ifdef LOG_DEBUG_INFO
     NSLog(@"AudioRoute: %@", self.inputRoute);
-    
+#endif
     
     // Check if there's input available.
     // TODO: check if checking for available input is redundant.
@@ -798,8 +801,9 @@ void sessionPropertyListener(void *                  inClientData,
                                         &size, 
                                         &isInputAvailable), "Couldn't check if input is available");
     self.inputAvailable = (BOOL)isInputAvailable;
+#ifdef LOG_DEBUG_INFO
     NSLog(@"Input available? %d", self.inputAvailable);
-    
+#endif
 }
 
 
@@ -817,24 +821,27 @@ void sessionPropertyListener(void *                  inClientData,
     CheckError( AudioSessionGetProperty(kAudioSessionProperty_CurrentHardwareInputNumberChannels, &size, &newNumChannels), "Checking number of input channels");
     self.numInputChannels = newNumChannels;
     //    self.numInputChannels = 1;
+#ifdef LOG_DEBUG_INFO
     NSLog(@"We've got %lu input channels", self.numInputChannels);
-    
+#endif
     
     // Check the number of input channels.
     // Find the number of channels
     CheckError( AudioSessionGetProperty(kAudioSessionProperty_CurrentHardwareOutputNumberChannels, &size, &newNumChannels), "Checking number of output channels");
     self.numOutputChannels = newNumChannels;
     //    self.numOutputChannels = 1;
+#ifdef LOG_DEBUG_INFO
     NSLog(@"We've got %lu output channels", self.numOutputChannels);
-    
+#endif
     
     // Get the hardware sampling rate. This is settable, but here we're only reading.
     Float64 currentSamplingRate;
     size = sizeof(currentSamplingRate);
     CheckError( AudioSessionGetProperty(kAudioSessionProperty_CurrentHardwareSampleRate, &size, &currentSamplingRate), "Checking hardware sampling rate");
     self.samplingRate = currentSamplingRate;
+#ifdef LOG_DEBUG_INFO
     NSLog(@"Current sampling rate: %f", self.samplingRate);
-	
+#endif
 }
 
 void sessionInterruptionListener(void *inClientData, UInt32 inInterruption) {
