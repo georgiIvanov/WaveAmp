@@ -11,11 +11,6 @@
 
 @interface BouncyButton()
 
-- (void)setup;
-- (void)scaleToSmall;
-- (void)scaleToFullSize;
-- (void)scaleToDefault;
-
 @property(nonatomic, assign) CGFloat touchDownXScale;
 @property(nonatomic, assign) CGFloat touchDownYScale;
 @property(nonatomic, assign) CGFloat touchUpXScale;
@@ -63,15 +58,15 @@
 {
     [self setScalingTouchDown:1.2 touchUp:1];
     
-    [self addTarget:self action:@selector(scaleToSmall)
+    [self addTarget:self action:@selector(animationOnTouch)
    forControlEvents:UIControlEventTouchDown | UIControlEventTouchDragEnter];
-    [self addTarget:self action:@selector(scaleToFullSize)
+    [self addTarget:self action:@selector(animationOnTouchUp)
    forControlEvents:UIControlEventTouchUpInside];
-    [self addTarget:self action:@selector(scaleToDefault)
+    [self addTarget:self action:@selector(animationOnCancelTouch)
    forControlEvents:UIControlEventTouchDragExit | UIControlEventTouchCancel];
 }
 
-- (void)scaleToSmall
+- (void)animationOnTouch
 {
     if(self.bounce == NO)
     {
@@ -85,10 +80,11 @@
                                                                  _touchDownYScale ? _touchDownYScale : 0.95f
                                                                  )];
     scaleAnimation.duration = 0.1f;
-    [self.layer pop_addAnimation:scaleAnimation forKey:@"layerScaleSmallAnimation"];
+    
+    [self applyAnimation:scaleAnimation withName:@"layerScaleSmallAnimation"];
 }
 
-- (void)scaleToFullSize
+- (void)animationOnTouchUp
 {
     if(self.bounce == NO)
     {
@@ -104,10 +100,11 @@
                                                                  )];
     scaleAnimation.springBounciness = 8.0f;
     scaleAnimation.springSpeed = 15;
-    [self.layer pop_addAnimation:scaleAnimation forKey:@"layerScaleSpringAnimation"];
+    
+    [self applyAnimation:scaleAnimation withName:@"layerScaleSpringAnimation"];
 }
 
-- (void)scaleToDefault
+- (void)animationOnCancelTouch
 {
     if(self.bounce == NO)
     {
@@ -116,7 +113,17 @@
     
     POPBasicAnimation *scaleAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
     scaleAnimation.toValue = [NSValue valueWithCGSize:CGSizeMake(1.f, 1.f)];
-    [self.layer pop_addAnimation:scaleAnimation forKey:@"layerScaleDefaultAnimation"];
+    
+    [self applyAnimation:scaleAnimation withName:@"layerScaleDefaultAnimation"];
+}
+
+-(void)applyAnimation:(POPAnimation*)animation withName:(NSString*)name
+{
+    [self.layer pop_addAnimation:animation forKey:name];
+    
+    for (UIView* view in self.outerElements) {
+        [view.layer pop_addAnimation:animation forKey:name];
+    }
 }
 
 @end
