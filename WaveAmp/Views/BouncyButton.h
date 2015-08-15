@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseButton.h"
 
-@interface BouncyButton : UIButton
+@interface BouncyButton : BaseButton
 
 -(void)setScalingTouchDownX:(CGFloat)xDown downY:(CGFloat)yDown touchUpX:(CGFloat)xUp upY:(CGFloat)yUp;
 -(void)setScalingTouchDown:(CGFloat)down touchUp:(CGFloat)up;

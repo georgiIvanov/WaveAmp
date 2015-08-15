@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HPS-WT-VF7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HPS-WT-VF7">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="HelveticaNeue.ttc">
@@ -37,6 +36,9 @@
         </mutableArray>
         <mutableArray key="OpenSans-Light.ttf">
             <string>OpenSans-Light</string>
+        </mutableArray>
+        <mutableArray key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
         </mutableArray>
         <mutableArray key="OpenSans-Semibold.ttf">
             <string>OpenSans-Semibold</string>
@@ -131,7 +133,7 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNo-OV-52n">
-                                        <rect key="frame" x="514" y="-3" width="81" height="30"/>
+                                        <rect key="frame" x="515" y="-3" width="80" height="30"/>
                                         <state key="normal" title="Retake Test">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -320,7 +322,7 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frequency (Hz)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bR-ja-Gdc">
-                                        <rect key="frame" x="252" y="0.0" width="118" height="21"/>
+                                        <rect key="frame" x="254" y="0.0" width="115" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -340,7 +342,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dB" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4DF-bV-Vze">
-                                        <rect key="frame" x="3" y="0.0" width="21" height="21"/>
+                                        <rect key="frame" x="3" y="0.0" width="22" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -870,6 +872,40 @@
             </objects>
             <point key="canvasLocation" x="438" y="1002"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="t50-Vk-TFu">
+            <objects>
+                <viewController id="pl0-CP-hor" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BQM-6B-av3"/>
+                        <viewControllerLayoutGuide type="bottom" id="WxU-ai-Wtu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Op-MF-cFm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ZH-9D-Pj6">
+                                <rect key="frame" x="261" y="96" width="78" height="30"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                <state key="normal" title="Dummy VC">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5CI-a0-IK5">
+                                <rect key="frame" x="180" y="181" width="240" height="184"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">To make size classes work for fonts we need to use system font with the correct size and in runtime swap with the desired font. However if the needed font is not referenced somewhere in the storyboard - we can't instantiate it, cuz its not in the bundle, even if its set in "Copy Bundle Resources".                 Thank you Apple.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="96D-Js-i0G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="438" y="1702"/>
+        </scene>
         <!--Adjusted Speech-->
         <scene sceneID="gf4-0j-gta">
             <objects>
@@ -883,10 +919,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8zE-KU-q5q" userLabel="Audio Plot Container" customClass="AudioPlot">
-                                <rect key="frame" x="0.0" y="20" width="600" height="199"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="253"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RyR-0h-uKq" userLabel="AdjustedSpeech" customClass="EZAudioPlot">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="199"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="253"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
@@ -898,7 +934,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zkg-h2-gcW" userLabel="OriginalSpeech" customClass="EZAudioPlot">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="199"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="253"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
@@ -927,7 +963,7 @@
                                 </connections>
                             </view>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JCb-o6-aTW">
-                                <rect key="frame" x="0.0" y="179" width="600" height="216"/>
+                                <rect key="frame" x="0.0" y="233" width="600" height="162"/>
                                 <connections>
                                     <outlet property="dataSource" destination="lWv-bN-XI1" id="TlV-Hx-pen"/>
                                     <outlet property="delegate" destination="lWv-bN-XI1" id="eUM-h7-OYF"/>
@@ -1088,6 +1124,7 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="roundedness">
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans"/>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -1111,6 +1148,7 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="roundedness">
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans"/>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -1123,7 +1161,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDn-SG-rFy">
-                                <rect key="frame" x="16" y="25" width="36" height="33"/>
+                                <rect key="frame" x="16" y="25" width="37" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Stop">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
