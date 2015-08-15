@@ -11,5 +11,6 @@
 @interface BaseButton : UIButton
 
 @property(nonatomic) IBInspectable NSString* fontName;
+@property(nonatomic) IBOutletCollection(UIView) NSArray* outerElements;
 
 @end

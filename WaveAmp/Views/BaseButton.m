@@ -10,15 +10,6 @@
 
 @implementation BaseButton
 
-- (instancetype)initWithCoder:(NSCoder *)coder
-{
-    self = [super initWithCoder:coder];
-    if (self) {
-        
-    }
-    return self;
-}
-
 -(void)layoutSubviews
 {
     [super layoutSubviews];
@@ -37,12 +28,36 @@
     }
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+-(void)setHidden:(BOOL)hidden
+{
+    for (UIView* view in self.outerElements)
+    {
+        view.hidden = hidden;
+    }
+    super.hidden = hidden;
 }
-*/
+
+-(void)setAlpha:(CGFloat)alpha
+{
+    for (UIView* view in self.outerElements)
+    {
+        view.alpha = alpha;
+    }
+    super.alpha = alpha;
+}
+
+-(void)setHighlighted:(BOOL)highlighted
+{
+    [super setHighlighted:highlighted];
+    
+    float alpha = highlighted ? 0.18f : 1.0f;
+    float duration = highlighted ? 0.04f : 0.3f;
+    for (UIView* view in self.outerElements)
+    {
+        [UIView animateWithDuration:duration animations:^{
+            view.alpha = alpha;
+        }];
+    }
+}
 
 @end
