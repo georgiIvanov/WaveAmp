@@ -39,9 +39,11 @@
 		FF7DD9101B63ACD7008006DD /* SoundModifier.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7DD90F1B63ACD7008006DD /* SoundModifier.m */; };
 		FF7DD9131B63ADCB008006DD /* SoundModifiersFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7DD9121B63ADCB008006DD /* SoundModifiersFactory.m */; };
 		FF7DD9161B63B549008006DD /* HearingLossSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7DD9151B63B549008006DD /* HearingLossSimulator.m */; };
+		FF84486E1B7F19EA00A06D6B /* TestCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = FF84486D1B7F19EA00A06D6B /* TestCircle.png */; };
 		FF8448731B7F220600A06D6B /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF8448711B7F1BD400A06D6B /* OpenSans-Light.ttf */; };
 		FF8448741B7F220600A06D6B /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF8448701B7F1BBE00A06D6B /* OpenSans-Regular.ttf */; };
 		FF8448751B7F220600A06D6B /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF8448721B7F1C1300A06D6B /* OpenSans-Semibold.ttf */; };
+		FF8448771B7F27AF00A06D6B /* CloseIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8448761B7F27AF00A06D6B /* CloseIcon.png */; };
 		FF86FF631B60B18500C3E093 /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF621B60B18500C3E093 /* AudioPlayer.m */; };
 		FF86FF671B60B3F100C3E093 /* PureTonePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF661B60B3F100C3E093 /* PureTonePlayer.m */; };
 		FF86FF6B1B60CE4A00C3E093 /* PureToneAudiometer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF6A1B60CE4A00C3E093 /* PureToneAudiometer.m */; };
@@ -136,9 +138,11 @@
 		FF7DD9141B63B549008006DD /* HearingLossSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HearingLossSimulator.h; sourceTree = "<group>"; };
 		FF7DD9151B63B549008006DD /* HearingLossSimulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HearingLossSimulator.m; sourceTree = "<group>"; };
 		FF7DD9171B63BDE8008006DD /* ToneEqualizer_protected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToneEqualizer_protected.h; sourceTree = "<group>"; };
+		FF84486D1B7F19EA00A06D6B /* TestCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TestCircle.png; sourceTree = "<group>"; };
 		FF8448701B7F1BBE00A06D6B /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		FF8448711B7F1BD400A06D6B /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
 		FF8448721B7F1C1300A06D6B /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		FF8448761B7F27AF00A06D6B /* CloseIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseIcon.png; sourceTree = "<group>"; };
 		FF86FF611B60B18500C3E093 /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
 		FF86FF621B60B18500C3E093 /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
 		FF86FF641B60B36000C3E093 /* AudioPlayer_protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer_protected.h; sourceTree = "<group>"; };
@@ -365,6 +369,8 @@
 		FF76043D1B53BE1D0024930C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FF8448761B7F27AF00A06D6B /* CloseIcon.png */,
+				FF84486D1B7F19EA00A06D6B /* TestCircle.png */,
 				FF2619D01B676AA00069907D /* AdjustedSpeechIcon.png */,
 				FF2619D11B676AA00069907D /* AdjustedSpeechIcon@2x.png */,
 				FF2619CE1B6768250069907D /* AudiogramIcon@2x.png */,
@@ -550,10 +556,12 @@
 				FF42B9761B4E35AF00535A7B /* Main.storyboard in Resources */,
 				FF2619C81B661B770069907D /* BasicArrowDown.png in Resources */,
 				FF2619CD1B6767A50069907D /* AudiogramIcon.png in Resources */,
+				FF84486E1B7F19EA00A06D6B /* TestCircle.png in Resources */,
 				FF9DB5481B569A95006E4D3F /* Play.png in Resources */,
 				FF9DB4E61B53EE36006E4D3F /* Headphones.png in Resources */,
 				FF481DCA1B5BB42C00AF588B /* RightEar.png in Resources */,
 				FF2619CF1B6768250069907D /* AudiogramIcon@2x.png in Resources */,
+				FF8448771B7F27AF00A06D6B /* CloseIcon.png in Resources */,
 				FF42B97B1B4E35AF00535A7B /* LaunchScreen.xib in Resources */,
 				FF2619D31B676AA00069907D /* AdjustedSpeechIcon@2x.png in Resources */,
 				FF9DB5411B56887B006E4D3F /* AudioFiles in Resources */,
