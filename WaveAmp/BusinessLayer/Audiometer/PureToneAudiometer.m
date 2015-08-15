@@ -31,13 +31,17 @@
     self = [super init];
     if (self) {
         
-        if(examOptions & kFullLengthExam)
+        if(examOptions == kFullLengthExam)
         {
             self.frequencies = @[@(1000), @(2000), @(3000), @(4000), @(6000), @(8000), @(1000), @(500), @(250)];
         }
-        else if(examOptions & kShortExam)
+        else if(examOptions == kShortExam)
         {
             self.frequencies = @[@(1000), @(2000), @(3000), @(4000), @(6000), @(8000), @(500), @(250)];
+        }
+        else if(examOptions == kDebugExam)
+        {
+            self.frequencies = @[@(1000)];
         }
         
         _options = examOptions;

@@ -48,11 +48,15 @@ const int CorrectAnswersFull = 2;
         // the volume should be increased until the user hears the tone
         _ascending = YES;
         
-        if(options & kFullLengthExam)
+        if(options == kFullLengthExam)
         {
             self.correctAnswersLimit = CorrectAnswersFull;
         }
-        else if(options & kShortExam)
+        else if(options == kShortExam)
+        {
+            self.correctAnswersLimit = CorrectAnswersShort;
+        }
+        else if(options == kDebugExam)
         {
             self.correctAnswersLimit = CorrectAnswersShort;
         }
