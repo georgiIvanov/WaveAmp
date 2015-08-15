@@ -46,6 +46,8 @@
 		FF8448771B7F27AF00A06D6B /* CloseIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8448761B7F27AF00A06D6B /* CloseIcon.png */; };
 		FF84487A1B7F28C400A06D6B /* RoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8448791B7F28C400A06D6B /* RoundedButton.m */; };
 		FF8448851B7F9F9600A06D6B /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8448841B7F9F9600A06D6B /* BaseButton.m */; };
+		FF84488B1B7FA42400A06D6B /* LeftArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8448891B7FA42400A06D6B /* LeftArrow.png */; };
+		FF84488C1B7FA42400A06D6B /* RightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = FF84488A1B7FA42400A06D6B /* RightArrow.png */; };
 		FF86FF631B60B18500C3E093 /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF621B60B18500C3E093 /* AudioPlayer.m */; };
 		FF86FF671B60B3F100C3E093 /* PureTonePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF661B60B3F100C3E093 /* PureTonePlayer.m */; };
 		FF86FF6B1B60CE4A00C3E093 /* PureToneAudiometer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF6A1B60CE4A00C3E093 /* PureToneAudiometer.m */; };
@@ -149,6 +151,8 @@
 		FF8448791B7F28C400A06D6B /* RoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundedButton.m; sourceTree = "<group>"; };
 		FF8448831B7F9F9600A06D6B /* BaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseButton.h; sourceTree = "<group>"; };
 		FF8448841B7F9F9600A06D6B /* BaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseButton.m; sourceTree = "<group>"; };
+		FF8448891B7FA42400A06D6B /* LeftArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeftArrow.png; sourceTree = "<group>"; };
+		FF84488A1B7FA42400A06D6B /* RightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RightArrow.png; sourceTree = "<group>"; };
 		FF86FF611B60B18500C3E093 /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
 		FF86FF621B60B18500C3E093 /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
 		FF86FF641B60B36000C3E093 /* AudioPlayer_protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer_protected.h; sourceTree = "<group>"; };
@@ -375,6 +379,8 @@
 		FF76043D1B53BE1D0024930C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FF8448891B7FA42400A06D6B /* LeftArrow.png */,
+				FF84488A1B7FA42400A06D6B /* RightArrow.png */,
 				FF8448761B7F27AF00A06D6B /* CloseIcon.png */,
 				FF84486D1B7F19EA00A06D6B /* TestCircle.png */,
 				FF2619D01B676AA00069907D /* AdjustedSpeechIcon.png */,
@@ -563,8 +569,10 @@
 				FF8448731B7F220600A06D6B /* OpenSans-Light.ttf in Resources */,
 				FF8448741B7F220600A06D6B /* OpenSans-Regular.ttf in Resources */,
 				FF8448751B7F220600A06D6B /* OpenSans-Semibold.ttf in Resources */,
+				FF84488B1B7FA42400A06D6B /* LeftArrow.png in Resources */,
 				FF42B9761B4E35AF00535A7B /* Main.storyboard in Resources */,
 				FF2619C81B661B770069907D /* BasicArrowDown.png in Resources */,
+				FF84488C1B7FA42400A06D6B /* RightArrow.png in Resources */,
 				FF2619CD1B6767A50069907D /* AudiogramIcon.png in Resources */,
 				FF84486E1B7F19EA00A06D6B /* TestCircle.png in Resources */,
 				FF9DB5481B569A95006E4D3F /* Play.png in Resources */,
