@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BouncyButton.h"
+#import "BaseButton.h"
 
-@interface RoundedButton : BouncyButton
+@interface RoundedButton : BaseButton
 
 @property(nonatomic) IBInspectable float roundedness;
 

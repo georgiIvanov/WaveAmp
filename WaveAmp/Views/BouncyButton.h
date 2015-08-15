@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseButton.h"
+#import "RoundedButton.h"
 
-@interface BouncyButton : BaseButton
+@interface BouncyButton : RoundedButton
+
+@property(nonatomic) IBInspectable BOOL bounce;
 
 -(void)setScalingTouchDownX:(CGFloat)xDown downY:(CGFloat)yDown touchUpX:(CGFloat)xUp upY:(CGFloat)yUp;
 -(void)setScalingTouchDown:(CGFloat)down touchUp:(CGFloat)up;

@@ -73,6 +73,11 @@
 
 - (void)scaleToSmall
 {
+    if(self.bounce == NO)
+    {
+        return;
+    }
+    
     [self.layer pop_removeAllAnimations];
     POPBasicAnimation *scaleAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
     scaleAnimation.toValue = [NSValue valueWithCGSize:CGSizeMake(
@@ -85,6 +90,11 @@
 
 - (void)scaleToFullSize
 {
+    if(self.bounce == NO)
+    {
+        return;
+    }
+    
     [self.layer pop_removeAllAnimations];
     POPSpringAnimation *scaleAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
     scaleAnimation.velocity = [NSValue valueWithCGSize:CGSizeMake(3.f, 3.f)];
@@ -99,6 +109,11 @@
 
 - (void)scaleToDefault
 {
+    if(self.bounce == NO)
+    {
+        return;
+    }
+    
     POPBasicAnimation *scaleAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
     scaleAnimation.toValue = [NSValue valueWithCGSize:CGSizeMake(1.f, 1.f)];
     [self.layer pop_addAnimation:scaleAnimation forKey:@"layerScaleDefaultAnimation"];
