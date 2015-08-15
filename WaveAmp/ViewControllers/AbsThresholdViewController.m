@@ -34,7 +34,7 @@
     self.hearingExam.playerDelegate = self.pureTonePlayer;
     
     [self setupViewsForInstructions];
-    self.testNumberLabel.text = @"Tests will start soon.";
+    self.testNumberLabel.text = @"Starting soon";
     self.stopTestButton.hidden = YES;
 }
 
@@ -89,14 +89,14 @@
 -(void)startingTest:(int)number
 {
     [CommonAnimations animate:self.testNumberLabel
-                  withNewText:[NSString stringWithFormat:@"Test %d of %lu", number, (unsigned long)self.hearingExam.frequencies.count]
+                  withNewText:[NSString stringWithFormat:@"%d of %lu", number, (unsigned long)self.hearingExam.frequencies.count]
                      duration:0.2f
               completionBlock:nil];
 }
 
 -(void)testsAreOver:(AudiogramData *)audiogramData
 {
-    self.testNumberLabel.text = @"Tests are completed.\nWell done!";
+    self.testNumberLabel.text = @"Well done!";
     
     [self.pureTonePlayer pause];
     [audiogramData saveAudiogram];
