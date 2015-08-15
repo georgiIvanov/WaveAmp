@@ -78,7 +78,12 @@
     // TODO: use sound meter to measure output volume
 //    HearingExamSoundMeter* soundMeter = [[HearingExamSoundMeter alloc] init];
     
+    self.stopTestButton.alpha = 0;
     self.stopTestButton.hidden = NO;
+    [UIView animateWithDuration:0.2f
+                     animations:^{
+                         self.stopTestButton.alpha = 1;
+                     }];
     
     [self.hearingExam start];
     [self.pureTonePlayer play];
