@@ -44,6 +44,7 @@
 		FF8448741B7F220600A06D6B /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF8448701B7F1BBE00A06D6B /* OpenSans-Regular.ttf */; };
 		FF8448751B7F220600A06D6B /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF8448721B7F1C1300A06D6B /* OpenSans-Semibold.ttf */; };
 		FF8448771B7F27AF00A06D6B /* CloseIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8448761B7F27AF00A06D6B /* CloseIcon.png */; };
+		FF84487A1B7F28C400A06D6B /* RoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8448791B7F28C400A06D6B /* RoundedButton.m */; };
 		FF86FF631B60B18500C3E093 /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF621B60B18500C3E093 /* AudioPlayer.m */; };
 		FF86FF671B60B3F100C3E093 /* PureTonePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF661B60B3F100C3E093 /* PureTonePlayer.m */; };
 		FF86FF6B1B60CE4A00C3E093 /* PureToneAudiometer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF6A1B60CE4A00C3E093 /* PureToneAudiometer.m */; };
@@ -143,6 +144,8 @@
 		FF8448711B7F1BD400A06D6B /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
 		FF8448721B7F1C1300A06D6B /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 		FF8448761B7F27AF00A06D6B /* CloseIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseIcon.png; sourceTree = "<group>"; };
+		FF8448781B7F28C400A06D6B /* RoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundedButton.h; sourceTree = "<group>"; };
+		FF8448791B7F28C400A06D6B /* RoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundedButton.m; sourceTree = "<group>"; };
 		FF86FF611B60B18500C3E093 /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
 		FF86FF621B60B18500C3E093 /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
 		FF86FF641B60B36000C3E093 /* AudioPlayer_protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer_protected.h; sourceTree = "<group>"; };
@@ -459,6 +462,8 @@
 				FF69D66C1B636376000BD808 /* AudioPlot.m */,
 				FF2619C91B661FA30069907D /* DrawerButton.h */,
 				FF2619CA1B661FA30069907D /* DrawerButton.m */,
+				FF8448781B7F28C400A06D6B /* RoundedButton.h */,
+				FF8448791B7F28C400A06D6B /* RoundedButton.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -625,6 +630,7 @@
 				FF7DD90D1B63ACBE008006DD /* ToneEqualizer.m in Sources */,
 				FF0A483F1B4E44A80021B149 /* AudiogramViewController.m in Sources */,
 				FF7604431B53C6D20024930C /* UIView+PopAnimations.m in Sources */,
+				FF84487A1B7F28C400A06D6B /* RoundedButton.m in Sources */,
 				FF0A48451B4FB75B0021B149 /* HearingExamSoundMeter.m in Sources */,
 				FF0A48321B4E3D870021B149 /* TabBarViewController.m in Sources */,
 				FF86FF6B1B60CE4A00C3E093 /* PureToneAudiometer.m in Sources */,
