@@ -57,21 +57,24 @@
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LSq-9H-3hD" userLabel="NoContent">
                                 <rect key="frame" x="7" y="20" width="586" height="480"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal audiogram is currently unavailable" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLP-hP-hfM">
-                                        <rect key="frame" x="0.0" y="50" width="586" height="32"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal audiogram is currently unavailable" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLP-hP-hfM" customClass="BaseLabel">
+                                        <rect key="frame" x="0.0" y="53" width="586" height="32"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="27"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans"/>
+                                        </userDefinedRuntimeAttributes>
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="32"/>
                                         </variation>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HearingWave.png" translatesAutoresizingMaskIntoConstraints="NO" id="lOe-Bh-Qcl">
-                                        <rect key="frame" x="172" y="112" width="243" height="168"/>
+                                        <rect key="frame" x="172" y="115" width="243" height="190"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="168" id="OFy-Ha-Yu0">
-                                                <variation key="heightClass=compact" constant="118"/>
-                                                <variation key="heightClass=regular-widthClass=regular" constant="198"/>
+                                            <constraint firstAttribute="height" constant="190" id="OFy-Ha-Yu0">
+                                                <variation key="heightClass=compact" constant="150"/>
+                                                <variation key="heightClass=regular-widthClass=regular" constant="250"/>
                                             </constraint>
                                             <constraint firstAttribute="width" constant="243" id="h3K-bX-u8u">
                                                 <variation key="heightClass=compact" constant="193"/>
@@ -79,9 +82,9 @@
                                             </constraint>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4XS-Og-nZP">
-                                        <rect key="frame" x="218" y="330" width="150" height="40"/>
-                                        <color key="backgroundColor" red="0.49373882479999998" green="0.75859391779999996" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4XS-Og-nZP" customClass="RoundedButton">
+                                        <rect key="frame" x="218" y="355" width="150" height="40"/>
+                                        <color key="backgroundColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="k6a-DH-co5">
                                                 <variation key="heightClass=regular-widthClass=regular" constant="70"/>
@@ -92,13 +95,14 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                         <state key="normal" title="Take Hearing Test">
-                                            <color key="titleColor" red="0.97870651522176755" green="0.97741345477272945" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.2901960784" green="0.78039215689999997" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="roundedness">
+                                                <real key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans"/>
                                         </userDefinedRuntimeAttributes>
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
@@ -108,34 +112,42 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.97662222777823804" green="1" blue="0.89454235849585306" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="lOe-Bh-Qcl" firstAttribute="top" secondItem="gLP-hP-hfM" secondAttribute="bottom" constant="30" id="6Mm-TE-fQT">
                                         <variation key="heightClass=compact" constant="10"/>
+                                        <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
                                     </constraint>
                                     <constraint firstItem="gLP-hP-hfM" firstAttribute="leading" secondItem="LSq-9H-3hD" secondAttribute="leading" id="BJQ-gh-rWU"/>
                                     <constraint firstAttribute="centerX" secondItem="4XS-Og-nZP" secondAttribute="centerX" id="CDc-ab-9Tt"/>
-                                    <constraint firstAttribute="centerY" secondItem="lOe-Bh-Qcl" secondAttribute="centerY" constant="44" id="CPz-zP-3lS">
-                                        <variation key="heightClass=compact" constant="0.0"/>
+                                    <constraint firstAttribute="centerY" secondItem="lOe-Bh-Qcl" secondAttribute="centerY" constant="30" id="CPz-zP-3lS">
+                                        <variation key="heightClass=compact" constant="20"/>
+                                        <variation key="heightClass=compact-widthClass=compact" constant="20"/>
                                     </constraint>
                                     <constraint firstAttribute="centerX" secondItem="gLP-hP-hfM" secondAttribute="centerX" id="DQn-E1-kma"/>
                                     <constraint firstAttribute="trailing" secondItem="gLP-hP-hfM" secondAttribute="trailing" id="N7S-38-tYb"/>
                                     <constraint firstAttribute="centerX" secondItem="lOe-Bh-Qcl" secondAttribute="centerX" id="Zgp-1R-9WJ"/>
                                     <constraint firstItem="4XS-Og-nZP" firstAttribute="top" secondItem="lOe-Bh-Qcl" secondAttribute="bottom" constant="50" id="qUU-2Z-FiQ">
                                         <variation key="heightClass=compact" constant="10"/>
+                                        <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
                                     </constraint>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GHh-Uk-t72" customClass="AudiogramView">
                                 <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNo-OV-52n">
-                                        <rect key="frame" x="515" y="-3" width="80" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNo-OV-52n" customClass="BaseButton">
+                                        <rect key="frame" x="505" y="-4" width="90" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Retake Test">
+                                            <color key="titleColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans"/>
+                                        </userDefinedRuntimeAttributes>
                                         <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         </variation>
                                         <connections>
                                             <action selector="hearingTestTap:" destination="gUi-f9-8tM" eventType="touchUpInside" id="qzC-ZP-bDz"/>
@@ -144,7 +156,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pb2-GM-ZMm">
                                         <rect key="frame" x="5" y="58" width="19" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
@@ -153,7 +165,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlX-By-yrN">
                                         <rect key="frame" x="5" y="99" width="19" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
@@ -162,7 +174,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AuO-e8-4h0">
                                         <rect key="frame" x="5" y="140" width="19" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
@@ -171,7 +183,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ub3-0E-mSV">
                                         <rect key="frame" x="5" y="181" width="19" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
@@ -180,7 +192,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4h-MO-OFJ">
                                         <rect key="frame" x="5" y="222" width="19" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
@@ -189,7 +201,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3N-3s-LsO">
                                         <rect key="frame" x="5" y="263" width="19" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
@@ -198,7 +210,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="70" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rst-I5-vAa">
                                         <rect key="frame" x="5" y="304" width="19" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
@@ -207,7 +219,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czy-1C-keT">
                                         <rect key="frame" x="5" y="345" width="19" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
@@ -216,7 +228,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="90" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lte-MK-bEz">
                                         <rect key="frame" x="5" y="386" width="19" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
@@ -225,7 +237,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="250" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dtb-e0-mmC">
                                         <rect key="frame" x="60" y="25" width="29" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=compact">
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
@@ -237,7 +249,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ax3-y6-7Lg">
                                         <rect key="frame" x="109" y="25" width="29" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=compact">
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
@@ -249,7 +261,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnw-1S-xdj">
                                         <rect key="frame" x="158" y="25" width="38" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=compact">
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
@@ -261,7 +273,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPR-9R-RTN">
                                         <rect key="frame" x="216" y="25" width="38" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=compact">
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
@@ -273,7 +285,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mek-zv-w0v">
                                         <rect key="frame" x="274" y="25" width="38" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=compact">
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
@@ -285,7 +297,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rln-Og-HX8">
                                         <rect key="frame" x="332" y="25" width="38" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=compact">
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
@@ -297,7 +309,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sm7-Zw-dXX">
                                         <rect key="frame" x="390" y="25" width="38" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=compact">
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
@@ -309,7 +321,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhG-H9-1Xu">
                                         <rect key="frame" x="448" y="25" width="38" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=compact">
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
@@ -318,31 +330,43 @@
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                         </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frequency (Hz)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bR-ja-Gdc">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frequency (Hz)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bR-ja-Gdc" customClass="BaseLabel">
                                         <rect key="frame" x="254" y="0.0" width="115" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        </variation>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gmg-Y1-pZ7" userLabel="HorizontalSeparator">
-                                        <rect key="frame" x="0.0" y="44" width="600" height="1"/>
-                                        <color key="backgroundColor" red="0.11904761904761907" green="0.11904761904761907" blue="0.11904761904761907" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="0.0" y="46" width="600" height="1"/>
+                                        <color key="backgroundColor" red="0.99607843139999996" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="vo9-6a-iXv"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jCg-bh-Pcr" userLabel="VerticalSeparator">
                                         <rect key="frame" x="27" y="25" width="1" height="506"/>
-                                        <color key="backgroundColor" red="0.11904761899999999" green="0.11904761899999999" blue="0.11904761899999999" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.99607843139999996" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="1" id="02A-cc-4u0"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dB" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4DF-bV-Vze">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dB" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4DF-bV-Vze" customClass="BaseLabel">
                                         <rect key="frame" x="3" y="0.0" width="22" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        </variation>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LeftEar.png" translatesAutoresizingMaskIntoConstraints="NO" id="lg4-Io-3Fk" userLabel="L250" customClass="AudiogramMarkerView">
                                         <rect key="frame" x="64" y="32" width="20" height="20"/>
@@ -548,20 +572,26 @@
                                                     <outlet property="topConstraint" destination="Ib9-mb-FzN" id="72Y-5J-CVq"/>
                                                 </connections>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left Ear" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6E0-gZ-cp2">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left Ear" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6E0-gZ-cp2" customClass="BaseLabel">
                                                 <rect key="frame" x="39" y="12" width="50" height="18"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <variation key="heightClass=regular-widthClass=regular">
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                                 </variation>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right Ear" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oF5-ke-njn">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right Ear" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oF5-ke-njn" customClass="BaseLabel">
                                                 <rect key="frame" x="150" y="12" width="60" height="18"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <variation key="heightClass=regular-widthClass=regular">
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                                 </variation>
@@ -599,7 +629,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="rst-I5-vAa" firstAttribute="top" secondItem="GHh-Uk-t72" secondAttribute="top" constant="304" id="0Rp-N4-Qbn">
                                         <variation key="heightClass=compact" constant="234"/>
@@ -680,9 +710,6 @@
                                         <variation key="heightClass=regular-widthClass=regular" constant="10"/>
                                     </constraint>
                                     <constraint firstAttribute="centerX" secondItem="byR-60-MSk" secondAttribute="centerX" id="aQ6-rh-Lsj"/>
-                                    <constraint firstItem="6bR-ja-Gdc" firstAttribute="top" secondItem="GHh-Uk-t72" secondAttribute="top" id="bme-yH-OF6">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="10"/>
-                                    </constraint>
                                     <constraint firstItem="xpC-cb-bAZ" firstAttribute="centerX" secondItem="xPR-9R-RTN" secondAttribute="centerX" id="c0d-ZA-3WY"/>
                                     <constraint firstItem="Rln-Og-HX8" firstAttribute="leading" secondItem="Mek-zv-w0v" secondAttribute="trailing" constant="20" id="cC3-pD-Ieb">
                                         <variation key="heightClass=compact" constant="40"/>
@@ -719,17 +746,17 @@
                                         <variation key="heightClass=regular-widthClass=regular" constant="45"/>
                                     </constraint>
                                     <constraint firstItem="In3-4P-QZo" firstAttribute="centerX" secondItem="vnw-1S-xdj" secondAttribute="centerX" id="gqC-jJ-1HW"/>
-                                    <constraint firstItem="QNo-OV-52n" firstAttribute="top" secondItem="GHh-Uk-t72" secondAttribute="top" constant="-3" id="h5S-Mm-E6n">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="10"/>
-                                    </constraint>
                                     <constraint firstAttribute="bottom" secondItem="jCg-bh-Pcr" secondAttribute="bottom" id="hDJ-E1-87O"/>
                                     <constraint firstItem="Pb2-GM-ZMm" firstAttribute="centerX" secondItem="4DF-bV-Vze" secondAttribute="centerX" constant="1" id="jMA-cf-A5G">
                                         <variation key="heightClass=compact" constant="-3"/>
                                     </constraint>
                                     <constraint firstItem="DxQ-is-dHf" firstAttribute="top" secondItem="GHh-Uk-t72" secondAttribute="top" constant="32" id="kFZ-vW-27O"/>
                                     <constraint firstItem="tBv-wg-VY5" firstAttribute="top" secondItem="GHh-Uk-t72" secondAttribute="top" constant="32" id="lQw-ex-vQ0"/>
+                                    <constraint firstItem="4DF-bV-Vze" firstAttribute="top" secondItem="GHh-Uk-t72" secondAttribute="top" id="mFc-mi-nXO">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                    </constraint>
                                     <constraint firstItem="oK9-86-sE5" firstAttribute="top" secondItem="GHh-Uk-t72" secondAttribute="top" constant="32" id="mKq-Mo-7ss"/>
-                                    <constraint firstItem="Gmg-Y1-pZ7" firstAttribute="top" secondItem="Dtb-e0-mmC" secondAttribute="bottom" constant="-2" id="pLQ-h8-vox">
+                                    <constraint firstItem="Gmg-Y1-pZ7" firstAttribute="top" secondItem="Dtb-e0-mmC" secondAttribute="bottom" id="pLQ-h8-vox">
                                         <variation key="heightClass=regular-widthClass=regular" constant="5"/>
                                     </constraint>
                                     <constraint firstItem="lg4-Io-3Fk" firstAttribute="centerX" secondItem="Dtb-e0-mmC" secondAttribute="centerX" id="plK-Xv-t4E"/>
@@ -753,7 +780,10 @@
                                     </constraint>
                                     <constraint firstItem="AuO-e8-4h0" firstAttribute="centerX" secondItem="DlX-By-yrN" secondAttribute="centerX" id="voy-uZ-aQP"/>
                                     <constraint firstItem="ax3-y6-7Lg" firstAttribute="centerY" secondItem="vnw-1S-xdj" secondAttribute="centerY" id="wNS-v8-jMY"/>
-                                    <constraint firstAttribute="centerX" secondItem="6bR-ja-Gdc" secondAttribute="centerX" constant="-11" id="xHP-ek-0wT"/>
+                                    <constraint firstItem="6bR-ja-Gdc" firstAttribute="centerY" secondItem="QNo-OV-52n" secondAttribute="centerY" constant="-1.5" id="waf-gO-0q5"/>
+                                    <constraint firstAttribute="centerX" secondItem="6bR-ja-Gdc" secondAttribute="centerX" constant="-11" id="xHP-ek-0wT">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="-3"/>
+                                    </constraint>
                                     <constraint firstItem="w4h-MO-OFJ" firstAttribute="top" secondItem="GHh-Uk-t72" secondAttribute="top" constant="222" id="xaJ-XZ-RV6">
                                         <variation key="heightClass=compact" constant="172"/>
                                         <variation key="heightClass=regular-widthClass=regular" constant="322"/>
@@ -813,7 +843,7 @@
                                 <inset key="titleEdgeInsets" minX="-140" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="110" minY="40" maxX="110" maxY="0.0"/>
                                 <state key="normal" title="Load Audiogram" image="BasicArrowDown.png">
-                                    <color key="titleColor" red="0.68958336302328316" green="0.67488071877164646" blue="0.69047619047619047" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -857,13 +887,16 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="vDividerColor">
                                         <color key="value" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="background">
+                                        <color key="value" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="segmentedControlChangedValue:" destination="gUi-f9-8tM" eventType="valueChanged" id="SML-hu-aN8"/>
                                 </connections>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.2901960784" green="0.78039215689999997" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="GHh-Uk-t72" secondAttribute="trailing" id="1ei-98-Bqy"/>
                             <constraint firstItem="g7F-69-XVe" firstAttribute="leading" secondItem="cuJ-xo-9EO" secondAttribute="leading" id="3uP-jT-sIx"/>
@@ -874,8 +907,9 @@
                             <constraint firstItem="AJe-Fn-6Hh" firstAttribute="top" secondItem="g7F-69-XVe" secondAttribute="bottom" id="HxR-yr-DwS"/>
                             <constraint firstAttribute="centerX" secondItem="zSb-ym-d82" secondAttribute="centerX" id="K2f-Dk-aZg"/>
                             <constraint firstItem="AJe-Fn-6Hh" firstAttribute="top" secondItem="GHh-Uk-t72" secondAttribute="bottom" id="dG8-vy-O1P"/>
+                            <constraint firstItem="GHh-Uk-t72" firstAttribute="top" secondItem="W8L-RC-4tv" secondAttribute="bottom" id="fEv-rJ-Xrp"/>
                             <constraint firstItem="LSq-9H-3hD" firstAttribute="leading" secondItem="cuJ-xo-9EO" secondAttribute="leading" constant="7" id="hR6-1k-o8N"/>
-                            <constraint firstItem="g7F-69-XVe" firstAttribute="top" secondItem="zSb-ym-d82" secondAttribute="bottom" constant="2" id="pcK-XQ-KyD"/>
+                            <constraint firstItem="g7F-69-XVe" firstAttribute="top" secondItem="zSb-ym-d82" secondAttribute="bottom" constant="3" id="pcK-XQ-KyD"/>
                             <constraint firstAttribute="trailing" secondItem="LSq-9H-3hD" secondAttribute="trailing" constant="7" id="rMC-NM-HYP"/>
                             <constraint firstAttribute="trailing" secondItem="g7F-69-XVe" secondAttribute="trailing" id="rs3-YW-jl6"/>
                             <constraint firstItem="LSq-9H-3hD" firstAttribute="top" secondItem="W8L-RC-4tv" secondAttribute="bottom" id="sZl-S8-G2A"/>
@@ -1588,7 +1622,7 @@
         <image name="BasicArrowDown.png" width="143" height="73"/>
         <image name="CloseIcon.png" width="512" height="512"/>
         <image name="Headphones.png" width="512" height="331"/>
-        <image name="HearingWave.png" width="512" height="360"/>
+        <image name="HearingWave.png" width="1024" height="1024"/>
         <image name="LeftArrow.png" width="256" height="256"/>
         <image name="LeftEar.png" width="512" height="512"/>
         <image name="Play.png" width="1024" height="1024"/>
