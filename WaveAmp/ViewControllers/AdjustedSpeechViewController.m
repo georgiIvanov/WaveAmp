@@ -60,6 +60,17 @@
     [self.audioPlot clearPlot];
 }
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    // TODO: use another checkbox
+    // the first time this checkbox draws on iPad its a bit off
+    // switching states like this helps to fix this
+    [self.simulateLossCheckbox switchStatesAnimated:NO];
+    [self.simulateLossCheckbox switchStatesAnimated:NO];
+}
+
 
 -(void)loadSpeechPaths
 {
@@ -141,7 +152,7 @@
     
     if(self.filePlayer.playing == NO)
     {
-        text = @" ";
+        text = @"Paused";
     }
     else if(self.simulateLossCheckbox.isChecked)
     {

@@ -962,6 +962,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1D-q5-CjI">
+                                <rect key="frame" x="0.0" y="310" width="600" height="250"/>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8zE-KU-q5q" userLabel="Audio Plot Container" customClass="AudioPlot">
                                 <rect key="frame" x="0.0" y="62" width="600" height="211"/>
                                 <subviews>
@@ -985,7 +989,7 @@
                                                 <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                                <color key="value" red="0.46911652918701929" green="0.89330843452804232" blue="0.88469115105532015" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.24313725489999999" green="0.73333333329999995" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
@@ -1009,41 +1013,20 @@
                                     <outlet property="originalPlot" destination="Zkg-h2-gcW" id="7h8-zU-BMI"/>
                                 </connections>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nn-3d-4b5" customClass="PlaybackButton">
-                                <rect key="frame" x="260" y="428" width="80" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="4jh-dM-2pw">
-                                        <variation key="heightClass=compact" constant="50"/>
-                                        <variation key="heightClass=compact-widthClass=regular" constant="60"/>
-                                        <variation key="heightClass=regular-widthClass=regular" constant="100"/>
-                                    </constraint>
-                                    <constraint firstAttribute="height" constant="80" id="cUA-ON-hoy">
-                                        <variation key="heightClass=compact" constant="50"/>
-                                        <variation key="heightClass=compact-widthClass=regular" constant="60"/>
-                                        <variation key="heightClass=regular-widthClass=regular" constant="100"/>
-                                    </constraint>
-                                </constraints>
-                                <state key="normal" image="Play.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bounce" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="playbackTap:" destination="lWv-bN-XI1" eventType="touchUpInside" id="WoZ-ar-wgB"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simulate Hearing Loss" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5We-jH-5TE">
-                                <rect key="frame" x="20" y="428" width="220" height="18"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simulate Hearing Loss" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5We-jH-5TE" customClass="BaseLabel">
+                                <rect key="frame" x="20" y="345" width="165" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.60392156862745094" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans"/>
+                                </userDefinedRuntimeAttributes>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="27"/>
                                 </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rfT-gc-h7v" customClass="BFPaperCheckbox">
-                                <rect key="frame" x="110" y="454" width="40" height="40"/>
+                                <rect key="frame" x="285" y="336" width="40" height="40"/>
                                 <color key="backgroundColor" red="0.88174070919973724" green="0.90211640211640209" blue="0.89309504669807505" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="L2n-zX-w5d">
@@ -1120,40 +1103,68 @@
                                     <constraint firstAttribute="trailing" secondItem="pZ5-cA-gKZ" secondAttribute="trailing" id="q9N-CE-T9X"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nn-3d-4b5" customClass="PlaybackButton">
+                                <rect key="frame" x="260" y="428" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="4jh-dM-2pw">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="80" id="cUA-ON-hoy">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" image="Play.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bounce" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playbackTap:" destination="lWv-bN-XI1" eventType="touchUpInside" id="WoZ-ar-wgB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99607843137254903" green="0.99607843137254903" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="jOx-QM-wh1" firstAttribute="top" secondItem="ASH-tI-t6n" secondAttribute="bottom" constant="7" id="1Vz-SS-Ttn">
                                 <variation key="heightClass=compact-widthClass=compact" constant="4"/>
                             </constraint>
+                            <constraint firstItem="U1D-q5-CjI" firstAttribute="top" secondItem="i4a-4f-o4Y" secondAttribute="bottom" constant="-15" id="2jg-wN-zDY"/>
                             <constraint firstAttribute="centerX" secondItem="ASH-tI-t6n" secondAttribute="centerX" id="3kO-c8-pjp"/>
-                            <constraint firstItem="5We-jH-5TE" firstAttribute="centerX" secondItem="rfT-gc-h7v" secondAttribute="centerX" id="5I5-1g-jpq"/>
                             <constraint firstAttribute="trailing" secondItem="i4a-4f-o4Y" secondAttribute="trailing" id="95v-HD-psc"/>
                             <constraint firstAttribute="trailing" secondItem="8zE-KU-q5q" secondAttribute="trailing" id="A7P-GF-lad"/>
+                            <constraint firstItem="5We-jH-5TE" firstAttribute="centerY" secondItem="rfT-gc-h7v" secondAttribute="centerY" id="Ar9-nk-6au">
+                                <variation key="heightClass=regular-widthClass=regular" constant="-2"/>
+                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="jOx-QM-wh1" secondAttribute="trailing" constant="20" id="BOQ-Fc-FMf"/>
+                            <constraint firstItem="U1D-q5-CjI" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" id="Bab-zq-gAl"/>
+                            <constraint firstAttribute="trailing" secondItem="U1D-q5-CjI" secondAttribute="trailing" id="FAj-eU-Q7k"/>
                             <constraint firstItem="i4a-4f-o4Y" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" id="I7D-C1-ISL"/>
                             <constraint firstItem="8zE-KU-q5q" firstAttribute="top" secondItem="jOx-QM-wh1" secondAttribute="bottom" constant="4" id="K4D-bI-lBO"/>
-                            <constraint firstItem="5We-jH-5TE" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" constant="20" id="MBX-hC-AEh"/>
+                            <constraint firstItem="5We-jH-5TE" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" constant="20" id="MBX-hC-AEh">
+                                <variation key="heightClass=regular" constant="180"/>
+                                <variation key="widthClass=compact" constant="20"/>
+                                <variation key="widthClass=regular" constant="250"/>
+                            </constraint>
                             <constraint firstItem="8zE-KU-q5q" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" id="MOX-AJ-phv"/>
                             <constraint firstAttribute="centerX" secondItem="8nn-3d-4b5" secondAttribute="centerX" id="Nug-p3-HrX">
                                 <variation key="heightClass=compact" constant="0.0"/>
-                                <variation key="heightClass=regular-widthClass=compact" constant="-70"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                             </constraint>
-                            <constraint firstItem="rfT-gc-h7v" firstAttribute="top" secondItem="5We-jH-5TE" secondAttribute="bottom" constant="8" id="UGu-ft-tsf">
-                                <variation key="heightClass=compact" constant="0.0"/>
-                                <variation key="heightClass=compact-widthClass=regular" constant="8"/>
-                            </constraint>
+                            <constraint firstItem="5We-jH-5TE" firstAttribute="top" secondItem="i4a-4f-o4Y" secondAttribute="bottom" constant="20" id="UZR-ix-hKh"/>
                             <constraint firstItem="ASH-tI-t6n" firstAttribute="top" secondItem="glf-In-mfr" secondAttribute="bottom" constant="6" id="ZoK-oQ-GjJ">
                                 <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="yeg-M1-mCf" firstAttribute="top" secondItem="8nn-3d-4b5" secondAttribute="bottom" constant="43" id="cw4-oE-mR6">
                                 <variation key="heightClass=compact" constant="5"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
                             </constraint>
-                            <constraint firstItem="8nn-3d-4b5" firstAttribute="leading" secondItem="5We-jH-5TE" secondAttribute="trailing" constant="20" id="i8w-Xg-Iih"/>
+                            <constraint firstAttribute="bottom" secondItem="U1D-q5-CjI" secondAttribute="bottom" constant="40" id="dLE-ky-9hL"/>
                             <constraint firstItem="i4a-4f-o4Y" firstAttribute="top" secondItem="8zE-KU-q5q" secondAttribute="bottom" id="jiE-DK-lIt"/>
                             <constraint firstItem="jOx-QM-wh1" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" constant="20" id="rh0-fi-XVc"/>
-                            <constraint firstItem="5We-jH-5TE" firstAttribute="top" secondItem="8nn-3d-4b5" secondAttribute="top" id="shU-0b-EBR">
-                                <variation key="heightClass=compact" constant="-5"/>
+                            <constraint firstItem="rfT-gc-h7v" firstAttribute="leading" secondItem="5We-jH-5TE" secondAttribute="trailing" constant="100" id="tXW-9t-QzL">
+                                <variation key="heightClass=compact-widthClass=compact" constant="40"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="80"/>
                             </constraint>
                         </constraints>
                     </view>
@@ -1300,8 +1311,9 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans-Light"/>
                                         </userDefinedRuntimeAttributes>
-                                        <variation key="heightClass=regular-widthClass=regular">
+                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                             <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                            <rect key="frame" x="127" y="193" width="148" height="72"/>
                                         </variation>
                                     </label>
                                 </subviews>
