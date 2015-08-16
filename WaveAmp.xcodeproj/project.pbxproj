@@ -45,11 +45,11 @@
 		FF8448751B7F220600A06D6B /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF8448721B7F1C1300A06D6B /* OpenSans-Semibold.ttf */; };
 		FF8448771B7F27AF00A06D6B /* CloseIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8448761B7F27AF00A06D6B /* CloseIcon.png */; };
 		FF84487A1B7F28C400A06D6B /* RoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8448791B7F28C400A06D6B /* RoundedButton.m */; };
-		FF8448851B7F9F9600A06D6B /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8448841B7F9F9600A06D6B /* BaseButton.m */; };
-		FF8448881B7FA20A00A06D6B /* BaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8448871B7FA20A00A06D6B /* BaseLabel.m */; };
 		FF84488B1B7FA42400A06D6B /* LeftArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8448891B7FA42400A06D6B /* LeftArrow.png */; };
 		FF84488C1B7FA42400A06D6B /* RightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = FF84488A1B7FA42400A06D6B /* RightArrow.png */; };
-		FF84488F1B805FC100A06D6B /* BaseTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF84488E1B805FC100A06D6B /* BaseTextView.m */; };
+		FF8448971B809F5D00A06D6B /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8448921B809F5D00A06D6B /* BaseButton.m */; };
+		FF8448981B809F5D00A06D6B /* BaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8448941B809F5D00A06D6B /* BaseLabel.m */; };
+		FF8448991B809F5D00A06D6B /* BaseTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8448961B809F5D00A06D6B /* BaseTextView.m */; };
 		FF86FF631B60B18500C3E093 /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF621B60B18500C3E093 /* AudioPlayer.m */; };
 		FF86FF671B60B3F100C3E093 /* PureTonePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF661B60B3F100C3E093 /* PureTonePlayer.m */; };
 		FF86FF6B1B60CE4A00C3E093 /* PureToneAudiometer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF6A1B60CE4A00C3E093 /* PureToneAudiometer.m */; };
@@ -151,14 +151,14 @@
 		FF8448761B7F27AF00A06D6B /* CloseIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseIcon.png; sourceTree = "<group>"; };
 		FF8448781B7F28C400A06D6B /* RoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundedButton.h; sourceTree = "<group>"; };
 		FF8448791B7F28C400A06D6B /* RoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundedButton.m; sourceTree = "<group>"; };
-		FF8448831B7F9F9600A06D6B /* BaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseButton.h; sourceTree = "<group>"; };
-		FF8448841B7F9F9600A06D6B /* BaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseButton.m; sourceTree = "<group>"; };
-		FF8448861B7FA20A00A06D6B /* BaseLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLabel.h; sourceTree = "<group>"; };
-		FF8448871B7FA20A00A06D6B /* BaseLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLabel.m; sourceTree = "<group>"; };
 		FF8448891B7FA42400A06D6B /* LeftArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeftArrow.png; sourceTree = "<group>"; };
 		FF84488A1B7FA42400A06D6B /* RightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RightArrow.png; sourceTree = "<group>"; };
-		FF84488D1B805FC100A06D6B /* BaseTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTextView.h; sourceTree = "<group>"; };
-		FF84488E1B805FC100A06D6B /* BaseTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTextView.m; sourceTree = "<group>"; };
+		FF8448911B809F5D00A06D6B /* BaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseButton.h; sourceTree = "<group>"; };
+		FF8448921B809F5D00A06D6B /* BaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseButton.m; sourceTree = "<group>"; };
+		FF8448931B809F5D00A06D6B /* BaseLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLabel.h; sourceTree = "<group>"; };
+		FF8448941B809F5D00A06D6B /* BaseLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLabel.m; sourceTree = "<group>"; };
+		FF8448951B809F5D00A06D6B /* BaseTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTextView.h; sourceTree = "<group>"; };
+		FF8448961B809F5D00A06D6B /* BaseTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTextView.m; sourceTree = "<group>"; };
 		FF86FF611B60B18500C3E093 /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
 		FF86FF621B60B18500C3E093 /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
 		FF86FF641B60B36000C3E093 /* AudioPlayer_protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer_protected.h; sourceTree = "<group>"; };
@@ -441,6 +441,19 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		FF8448901B809F5D00A06D6B /* BaseViews */ = {
+			isa = PBXGroup;
+			children = (
+				FF8448911B809F5D00A06D6B /* BaseButton.h */,
+				FF8448921B809F5D00A06D6B /* BaseButton.m */,
+				FF8448931B809F5D00A06D6B /* BaseLabel.h */,
+				FF8448941B809F5D00A06D6B /* BaseLabel.m */,
+				FF8448951B809F5D00A06D6B /* BaseTextView.h */,
+				FF8448961B809F5D00A06D6B /* BaseTextView.m */,
+			);
+			path = BaseViews;
+			sourceTree = "<group>";
+		};
 		FF86FF601B60B15400C3E093 /* AudioPlayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -468,12 +481,7 @@
 		FF9DB54B1B569E74006E4D3F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FF8448831B7F9F9600A06D6B /* BaseButton.h */,
-				FF8448841B7F9F9600A06D6B /* BaseButton.m */,
-				FF8448861B7FA20A00A06D6B /* BaseLabel.h */,
-				FF8448871B7FA20A00A06D6B /* BaseLabel.m */,
-				FF84488D1B805FC100A06D6B /* BaseTextView.h */,
-				FF84488E1B805FC100A06D6B /* BaseTextView.m */,
+				FF8448901B809F5D00A06D6B /* BaseViews */,
 				FF481DC31B5BB27900AF588B /* Audiogram */,
 				FF9DB54C1B569EAA006E4D3F /* BouncyButton.h */,
 				FF9DB54D1B569EAA006E4D3F /* BouncyButton.m */,
@@ -648,14 +656,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF84488F1B805FC100A06D6B /* BaseTextView.m in Sources */,
+				FF8448991B809F5D00A06D6B /* BaseTextView.m in Sources */,
 				FF9DB4E91B540192006E4D3F /* CommonAnimations.m in Sources */,
 				FF86FF671B60B3F100C3E093 /* PureTonePlayer.m in Sources */,
 				FF7DD90D1B63ACBE008006DD /* ToneEqualizer.m in Sources */,
 				FF0A483F1B4E44A80021B149 /* AudiogramViewController.m in Sources */,
 				FF7604431B53C6D20024930C /* UIView+PopAnimations.m in Sources */,
 				FF84487A1B7F28C400A06D6B /* RoundedButton.m in Sources */,
-				FF8448851B7F9F9600A06D6B /* BaseButton.m in Sources */,
+				FF8448971B809F5D00A06D6B /* BaseButton.m in Sources */,
 				FF0A48451B4FB75B0021B149 /* HearingExamSoundMeter.m in Sources */,
 				FF0A48321B4E3D870021B149 /* TabBarViewController.m in Sources */,
 				FF86FF6B1B60CE4A00C3E093 /* PureToneAudiometer.m in Sources */,
@@ -676,7 +684,7 @@
 				FFCE73831B52AC6E00F52920 /* AudiogramData.m in Sources */,
 				FF42B9701B4E35AF00535A7B /* AppDelegate.m in Sources */,
 				FF9DB4EC1B54FA8E006E4D3F /* AudioTypes.m in Sources */,
-				FF8448881B7FA20A00A06D6B /* BaseLabel.m in Sources */,
+				FF8448981B809F5D00A06D6B /* BaseLabel.m in Sources */,
 				FF481DCD1B5BB91300AF588B /* AudiogramMarkerView.m in Sources */,
 				FF86FF711B60D75C00C3E093 /* FilePlayer.mm in Sources */,
 				FF9DB5351B56360E006E4D3F /* AdjustedSpeechViewController.m in Sources */,
