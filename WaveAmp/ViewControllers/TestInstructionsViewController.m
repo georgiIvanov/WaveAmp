@@ -47,10 +47,6 @@
               completionBlock:nil];
 }
 
-- (IBAction)cancelTap:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-
 - (IBAction)nextButtonTap:(id)sender {
     
     if(self.stringIndex == self.instructionStrings.count - 1)

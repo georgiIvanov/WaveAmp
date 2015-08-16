@@ -21,7 +21,6 @@
 @property (weak, nonatomic) IBOutlet UITextView *instructionsText;
 
 
-- (IBAction)cancelTap:(id)sender;
 - (IBAction)nextButtonTap:(id)sender;
 
 
