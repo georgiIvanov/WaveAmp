@@ -135,7 +135,7 @@
     
     if(self.filePlayer.playing == NO)
     {
-        text = @"";
+        text = @" ";
     }
     else if(self.simulateLossCheckbox.isChecked)
     {

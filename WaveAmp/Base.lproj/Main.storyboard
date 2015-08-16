@@ -30,7 +30,6 @@
             <string>HelveticaNeue-Light</string>
             <string>HelveticaNeue-Light</string>
             <string>HelveticaNeue-Light</string>
-            <string>HelveticaNeue-Light</string>
         </mutableArray>
         <mutableArray key="OpenSans-Light.ttf">
             <string>OpenSans-Light</string>
@@ -936,10 +935,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8zE-KU-q5q" userLabel="Audio Plot Container" customClass="AudioPlot">
-                                <rect key="frame" x="0.0" y="20" width="600" height="253"/>
+                                <rect key="frame" x="0.0" y="62" width="600" height="211"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RyR-0h-uKq" userLabel="AdjustedSpeech" customClass="EZAudioPlot">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="253"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="211"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
@@ -951,7 +950,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zkg-h2-gcW" userLabel="OriginalSpeech" customClass="EZAudioPlot">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="253"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="211"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
@@ -1003,6 +1002,9 @@
                                 <state key="normal" image="Play.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bounce" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="playbackTap:" destination="lWv-bN-XI1" eventType="touchUpInside" id="WoZ-ar-wgB"/>
                                 </connections>
@@ -1014,14 +1016,6 @@
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Playback Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASH-tI-t6n">
-                                <rect key="frame" x="451" y="30" width="119" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="22"/>
                                 </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rfT-gc-h7v" customClass="BFPaperCheckbox">
@@ -1039,17 +1033,36 @@
                                     <action selector="checkBoxValueChanged:" destination="lWv-bN-XI1" eventType="touchUpInside" id="JzT-N6-L6T"/>
                                 </connections>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jOx-QM-wh1" userLabel="TopHorizontalSeparator">
+                                <rect key="frame" x="20" y="57" width="560" height="1"/>
+                                <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="4X6-UC-V3a"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Playback Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASH-tI-t6n" customClass="BaseLabel">
+                                <rect key="frame" x="229" y="26" width="143" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans-Light"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                </variation>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.99607843137254903" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="jOx-QM-wh1" firstAttribute="top" secondItem="ASH-tI-t6n" secondAttribute="bottom" constant="7" id="1Vz-SS-Ttn">
+                                <variation key="heightClass=compact-widthClass=compact" constant="4"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="ASH-tI-t6n" secondAttribute="centerX" id="3kO-c8-pjp"/>
                             <constraint firstItem="5We-jH-5TE" firstAttribute="centerX" secondItem="rfT-gc-h7v" secondAttribute="centerX" id="5I5-1g-jpq"/>
                             <constraint firstAttribute="trailing" secondItem="8zE-KU-q5q" secondAttribute="trailing" id="A7P-GF-lad"/>
-                            <constraint firstItem="8zE-KU-q5q" firstAttribute="trailing" secondItem="ASH-tI-t6n" secondAttribute="trailing" constant="30" id="H0w-xu-3nR">
-                                <variation key="heightClass=regular-widthClass=regular" constant="45"/>
-                            </constraint>
-                            <constraint firstItem="ASH-tI-t6n" firstAttribute="top" secondItem="8zE-KU-q5q" secondAttribute="top" constant="10" id="JfD-Kw-sC0">
-                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
-                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="jOx-QM-wh1" secondAttribute="trailing" constant="20" id="BOQ-Fc-FMf"/>
+                            <constraint firstItem="8zE-KU-q5q" firstAttribute="top" secondItem="jOx-QM-wh1" secondAttribute="bottom" constant="4" id="K4D-bI-lBO"/>
                             <constraint firstItem="5We-jH-5TE" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" constant="20" id="MBX-hC-AEh"/>
                             <constraint firstItem="8zE-KU-q5q" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" id="MOX-AJ-phv"/>
                             <constraint firstItem="8nn-3d-4b5" firstAttribute="top" secondItem="JCb-o6-aTW" secondAttribute="bottom" constant="33" id="Nn0-bF-Ocy">
@@ -1064,11 +1077,14 @@
                                 <variation key="heightClass=compact" constant="0.0"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="8"/>
                             </constraint>
+                            <constraint firstItem="ASH-tI-t6n" firstAttribute="top" secondItem="glf-In-mfr" secondAttribute="bottom" constant="6" id="ZoK-oQ-GjJ">
+                                <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                            </constraint>
                             <constraint firstItem="yeg-M1-mCf" firstAttribute="top" secondItem="8nn-3d-4b5" secondAttribute="bottom" constant="43" id="cw4-oE-mR6">
                                 <variation key="heightClass=compact" constant="5"/>
                             </constraint>
                             <constraint firstItem="8nn-3d-4b5" firstAttribute="leading" secondItem="5We-jH-5TE" secondAttribute="trailing" constant="20" id="i8w-Xg-Iih"/>
-                            <constraint firstItem="8zE-KU-q5q" firstAttribute="top" secondItem="glf-In-mfr" secondAttribute="bottom" id="q4V-TD-Up4"/>
+                            <constraint firstItem="jOx-QM-wh1" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" constant="20" id="rh0-fi-XVc"/>
                             <constraint firstAttribute="trailing" secondItem="JCb-o6-aTW" secondAttribute="trailing" id="rji-Ev-TOp"/>
                             <constraint firstItem="5We-jH-5TE" firstAttribute="top" secondItem="8nn-3d-4b5" secondAttribute="top" id="shU-0b-EBR">
                                 <variation key="heightClass=compact" constant="-5"/>
