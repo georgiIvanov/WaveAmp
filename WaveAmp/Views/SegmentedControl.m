@@ -62,7 +62,7 @@
         self.backgroundColor = _background;
     }
     
-    self.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocationDown;
+    self.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocationUp;
     self.selectionStyle = HMSegmentedControlSelectionStyleBox;
 }
 

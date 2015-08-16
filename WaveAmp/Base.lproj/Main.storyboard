@@ -29,7 +29,6 @@
             <string>HelveticaNeue-Light</string>
             <string>HelveticaNeue-Light</string>
             <string>HelveticaNeue-Light</string>
-            <string>HelveticaNeue-Light</string>
         </mutableArray>
         <mutableArray key="OpenSans-Light.ttf">
             <string>OpenSans-Light</string>
@@ -338,8 +337,9 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans"/>
                                         </userDefinedRuntimeAttributes>
-                                        <variation key="heightClass=regular-widthClass=regular">
+                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <rect key="frame" x="346" y="10" width="132" height="24"/>
                                         </variation>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gmg-Y1-pZ7" userLabel="HorizontalSeparator">
@@ -832,19 +832,18 @@
                                     <outletCollection property="leftMarkers" destination="oK9-86-sE5" id="T6v-Gm-yNe"/>
                                 </connections>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSb-ym-d82" customClass="DrawerButton">
-                                <rect key="frame" x="210" y="469" width="180" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSb-ym-d82" customClass="DrawerButton">
+                                <rect key="frame" x="210" y="468" width="180" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="CP6-zi-576"/>
                                     <constraint firstAttribute="height" constant="40" id="FQP-N7-4S7"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <color key="tintColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="-12" maxX="0.0" maxY="0.0"/>
                                 <inset key="titleEdgeInsets" minX="-140" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="110" minY="40" maxX="110" maxY="0.0"/>
                                 <state key="normal" title="Load Audiogram" image="BasicArrowDown.png">
                                     <color key="titleColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans"/>
@@ -997,8 +996,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1D-q5-CjI">
-                                <rect key="frame" x="0.0" y="310" width="600" height="250"/>
-                                <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="0.0" y="310" width="600" height="290"/>
+                                <color key="backgroundColor" red="0.2901960784" green="0.78039215689999997" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8zE-KU-q5q" userLabel="Audio Plot Container" customClass="AudioPlot">
                                 <rect key="frame" x="0.0" y="62" width="600" height="211"/>
@@ -1038,40 +1037,13 @@
                                     <constraint firstItem="Zkg-h2-gcW" firstAttribute="leading" secondItem="8zE-KU-q5q" secondAttribute="leading" id="dIr-hS-sPZ"/>
                                     <constraint firstAttribute="bottom" secondItem="RyR-0h-uKq" secondAttribute="bottom" id="ePX-b3-q8n"/>
                                     <constraint firstAttribute="height" constant="211" id="qgg-T8-ryp">
-                                        <variation key="heightClass=compact-widthClass=compact" constant="100"/>
+                                        <variation key="heightClass=compact" constant="80"/>
                                     </constraint>
                                     <constraint firstItem="RyR-0h-uKq" firstAttribute="top" secondItem="8zE-KU-q5q" secondAttribute="top" id="t0O-7G-ZO8"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="adjustedPlot" destination="RyR-0h-uKq" id="baF-Ox-1GE"/>
                                     <outlet property="originalPlot" destination="Zkg-h2-gcW" id="7h8-zU-BMI"/>
-                                </connections>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simulate Hearing Loss" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5We-jH-5TE" customClass="BaseLabel">
-                                <rect key="frame" x="20" y="345" width="165" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.60392156862745094" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans"/>
-                                </userDefinedRuntimeAttributes>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="27"/>
-                                </variation>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rfT-gc-h7v" customClass="BFPaperCheckbox">
-                                <rect key="frame" x="285" y="336" width="40" height="40"/>
-                                <color key="backgroundColor" red="0.88174070919973724" green="0.90211640211640209" blue="0.89309504669807505" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="L2n-zX-w5d">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
-                                    </constraint>
-                                    <constraint firstAttribute="width" constant="40" id="u98-9k-caa">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
-                                    </constraint>
-                                </constraints>
-                                <connections>
-                                    <action selector="checkBoxValueChanged:" destination="lWv-bN-XI1" eventType="touchUpInside" id="JzT-N6-L6T"/>
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jOx-QM-wh1" userLabel="TopHorizontalSeparator">
@@ -1126,7 +1098,7 @@
                                         </connections>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.2901960784" green="0.78039215689999997" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="pZ5-cA-gKZ" secondAttribute="bottom" constant="1" id="522-JB-Ybq"/>
                                     <constraint firstItem="pZ5-cA-gKZ" firstAttribute="leading" secondItem="i4a-4f-o4Y" secondAttribute="leading" id="OPc-U5-vBp"/>
@@ -1157,6 +1129,47 @@
                                     <action selector="playbackTap:" destination="lWv-bN-XI1" eventType="touchUpInside" id="WoZ-ar-wgB"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GJG-dh-0gX">
+                                <rect key="frame" x="125" y="330" width="350" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simulate Hearing Loss" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5We-jH-5TE" customClass="BaseLabel">
+                                        <rect key="frame" x="0.0" y="14" width="165" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="27"/>
+                                        </variation>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rfT-gc-h7v" customClass="BFPaperCheckbox">
+                                        <rect key="frame" x="205" y="5" width="40" height="40"/>
+                                        <color key="backgroundColor" red="0.88174070919973724" green="0.90211640211640209" blue="0.89309504669807505" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="L2n-zX-w5d">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                            </constraint>
+                                            <constraint firstAttribute="width" constant="40" id="u98-9k-caa">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                            </constraint>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="checkBoxValueChanged:" destination="lWv-bN-XI1" eventType="touchUpInside" id="JzT-N6-L6T"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="5We-jH-5TE" firstAttribute="leading" secondItem="GJG-dh-0gX" secondAttribute="leading" id="4yo-Yx-AFz"/>
+                                    <constraint firstAttribute="centerY" secondItem="5We-jH-5TE" secondAttribute="centerY" constant="0.5" id="bjh-Fz-xG6"/>
+                                    <constraint firstAttribute="height" constant="50" id="gqE-G8-4z2"/>
+                                    <constraint firstItem="5We-jH-5TE" firstAttribute="centerY" secondItem="rfT-gc-h7v" secondAttribute="centerY" constant="-0.5" id="l1m-ee-XlO"/>
+                                    <constraint firstAttribute="width" constant="350" id="nXC-3N-DCt"/>
+                                    <constraint firstItem="rfT-gc-h7v" firstAttribute="leading" secondItem="5We-jH-5TE" secondAttribute="trailing" constant="40" id="vbR-si-Y5T"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.99607843137254903" green="0.99607843137254903" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1165,27 +1178,24 @@
                             </constraint>
                             <constraint firstItem="U1D-q5-CjI" firstAttribute="top" secondItem="i4a-4f-o4Y" secondAttribute="bottom" constant="-15" id="2jg-wN-zDY"/>
                             <constraint firstAttribute="centerX" secondItem="ASH-tI-t6n" secondAttribute="centerX" id="3kO-c8-pjp"/>
+                            <constraint firstAttribute="centerX" secondItem="GJG-dh-0gX" secondAttribute="centerX" id="4fr-XY-Y9z">
+                                <variation key="heightClass=compact" constant="-30"/>
+                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="i4a-4f-o4Y" secondAttribute="trailing" id="95v-HD-psc"/>
                             <constraint firstAttribute="trailing" secondItem="8zE-KU-q5q" secondAttribute="trailing" id="A7P-GF-lad"/>
-                            <constraint firstItem="5We-jH-5TE" firstAttribute="centerY" secondItem="rfT-gc-h7v" secondAttribute="centerY" id="Ar9-nk-6au">
-                                <variation key="heightClass=regular-widthClass=regular" constant="-2"/>
-                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="jOx-QM-wh1" secondAttribute="trailing" constant="20" id="BOQ-Fc-FMf"/>
                             <constraint firstItem="U1D-q5-CjI" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" id="Bab-zq-gAl"/>
+                            <constraint firstItem="GJG-dh-0gX" firstAttribute="top" secondItem="i4a-4f-o4Y" secondAttribute="bottom" constant="5" id="Brc-KW-g5N">
+                                <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="U1D-q5-CjI" secondAttribute="trailing" id="FAj-eU-Q7k"/>
                             <constraint firstItem="i4a-4f-o4Y" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" id="I7D-C1-ISL"/>
                             <constraint firstItem="8zE-KU-q5q" firstAttribute="top" secondItem="jOx-QM-wh1" secondAttribute="bottom" constant="4" id="K4D-bI-lBO"/>
-                            <constraint firstItem="5We-jH-5TE" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" constant="20" id="MBX-hC-AEh">
-                                <variation key="heightClass=regular" constant="180"/>
-                                <variation key="widthClass=compact" constant="20"/>
-                                <variation key="widthClass=regular" constant="250"/>
-                            </constraint>
                             <constraint firstItem="8zE-KU-q5q" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" id="MOX-AJ-phv"/>
                             <constraint firstAttribute="centerX" secondItem="8nn-3d-4b5" secondAttribute="centerX" id="Nug-p3-HrX">
                                 <variation key="heightClass=compact" constant="0.0"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                             </constraint>
-                            <constraint firstItem="5We-jH-5TE" firstAttribute="top" secondItem="i4a-4f-o4Y" secondAttribute="bottom" constant="20" id="UZR-ix-hKh"/>
                             <constraint firstItem="ASH-tI-t6n" firstAttribute="top" secondItem="glf-In-mfr" secondAttribute="bottom" constant="6" id="ZoK-oQ-GjJ">
                                 <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
                             </constraint>
@@ -1193,13 +1203,9 @@
                                 <variation key="heightClass=compact" constant="5"/>
                                 <variation key="heightClass=regular-widthClass=regular" constant="100"/>
                             </constraint>
-                            <constraint firstAttribute="bottom" secondItem="U1D-q5-CjI" secondAttribute="bottom" constant="40" id="dLE-ky-9hL"/>
+                            <constraint firstAttribute="bottom" secondItem="U1D-q5-CjI" secondAttribute="bottom" id="dLE-ky-9hL"/>
                             <constraint firstItem="i4a-4f-o4Y" firstAttribute="top" secondItem="8zE-KU-q5q" secondAttribute="bottom" id="jiE-DK-lIt"/>
                             <constraint firstItem="jOx-QM-wh1" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" constant="20" id="rh0-fi-XVc"/>
-                            <constraint firstItem="rfT-gc-h7v" firstAttribute="leading" secondItem="5We-jH-5TE" secondAttribute="trailing" constant="100" id="tXW-9t-QzL">
-                                <variation key="heightClass=compact-widthClass=compact" constant="40"/>
-                                <variation key="heightClass=regular-widthClass=compact" constant="80"/>
-                            </constraint>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Adjusted Speech" image="AdjustedSpeechIcon.png" id="hCP-bd-kuV"/>

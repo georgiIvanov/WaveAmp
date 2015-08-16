@@ -38,6 +38,7 @@
     [super viewDidLoad];
     
     [self.speechFilePicker viewControllerDidLoad];
+    self.simulateLossCheckbox.checkmarkColor = [UIColor colorWithRed:0.996 green:1 blue:1 alpha:1];
     
     [self loadSpeechPaths];
     [self.playbackButton setScalingTouchDown:1.7 touchUp:1];
