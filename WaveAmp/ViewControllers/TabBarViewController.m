@@ -23,6 +23,8 @@
 {
     [super viewDidLoad];
     
+    [[UITabBar appearance] setTintColor:[UIColor colorWithRed:0.29 green:0.78 blue:0.624 alpha:1]];
+    
     for (UIViewController* vc in self.viewControllers)
     {
         if([vc isKindOfClass:[AudiogramViewController class]])

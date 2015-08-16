@@ -1389,7 +1389,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Headphones.png" translatesAutoresizingMaskIntoConstraints="NO" id="byO-pe-QfP">
-                                <rect key="frame" x="180" y="-4" width="240" height="200"/>
+                                <rect key="frame" x="180" y="-14" width="240" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="AAe-FF-uYJ">
                                         <variation key="heightClass=compact" constant="110"/>
@@ -1402,7 +1402,7 @@
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3S-sI-Qhd" customClass="BaseTextView">
-                                <rect key="frame" x="140" y="226" width="320" height="240"/>
+                                <rect key="frame" x="140" y="216" width="320" height="260"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="Rqt-67-rbc">
@@ -1429,19 +1429,19 @@
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wK4-hd-qci" customClass="BouncyButton">
                                 <rect key="frame" x="242" y="474" width="117" height="46"/>
-                                <color key="backgroundColor" red="0.49373882479999998" green="0.75859391779999996" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="117" id="TJH-vR-kkZ">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="170"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="180"/>
                                     </constraint>
                                     <constraint firstAttribute="height" constant="46" id="egx-uX-gex">
                                         <variation key="heightClass=regular-widthClass=regular" constant="70"/>
                                     </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <inset key="titleEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="-4" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Next">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.20784313730000001" green="0.68627450980000004" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1490,8 +1490,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AdjustedSpeechIcon.png" width="30" height="30"/>
-        <image name="AudiogramIcon.png" width="30" height="30"/>
+        <image name="AdjustedSpeechIcon.png" width="51" height="30"/>
+        <image name="AudiogramIcon.png" width="51" height="30"/>
         <image name="BasicArrowDown.png" width="143" height="73"/>
         <image name="CloseIcon.png" width="512" height="512"/>
         <image name="Headphones.png" width="512" height="331"/>
