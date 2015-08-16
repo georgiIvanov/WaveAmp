@@ -32,10 +32,12 @@
         if(self.drawerConstraint.constant)
         {
             self.drawerConstraint.constant = 0;
+            [self rotateImage:NO];
         }
         else
         {
             self.drawerConstraint.constant = self.originalConstraint;
+            [self rotateImage:YES];
         }
         
         [self.controlledView layoutIfNeeded];
@@ -70,6 +72,15 @@
 -(BOOL)isOpen
 {
     return self.drawerConstraint.constant != 0;
+}
+
+-(void)rotateImage:(BOOL)isDown
+{
+    int direction = isDown ? -1 : 1;
+    CGFloat radians = atan2f(self.imageView.transform.b, self.imageView.transform.a);
+    CGFloat degrees = radians * (180 / M_PI) * direction;
+    CGAffineTransform transform = CGAffineTransformMakeRotation(( 180 + degrees) * M_PI/180);
+    self.imageView.transform = transform;
 }
 
 @end
