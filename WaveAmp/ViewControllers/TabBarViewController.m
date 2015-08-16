@@ -9,6 +9,7 @@
 #import "TabBarViewController.h"
 #import "AudiogramViewController.h"
 #import "AdjustedSpeechViewController.h"
+#import "ViewConstants.h"
 
 @interface TabBarViewController()
 
@@ -23,7 +24,7 @@
 {
     [super viewDidLoad];
     
-    [[UITabBar appearance] setTintColor:[UIColor colorWithRed:0.29 green:0.78 blue:0.624 alpha:1]];
+    [[UITabBar appearance] setTintColor:GreenTint];
     
     for (UIViewController* vc in self.viewControllers)
     {

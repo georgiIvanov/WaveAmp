@@ -13,7 +13,7 @@
 #import "SoundFile.h"
 #import "DSPHelpers.h"
 
-@interface AdjustedSpeechViewController () <UIPickerViewDataSource, UIPickerViewDelegate>
+@interface AdjustedSpeechViewController ()
 
 @property(nonatomic) FilePlayer* filePlayer;
 @property(nonatomic) SoundModifier* soundModifier;
@@ -36,7 +36,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-        
+    
+    [self.speechFilePicker viewControllerDidLoad];
+    
     [self loadSpeechPaths];
     [self.playbackButton setScalingTouchDown:1.7 touchUp:1];
     [self showPlaybackStatus];
@@ -63,13 +65,17 @@
 {
     NSArray* filePaths = [[NSBundle mainBundle] pathsForResourcesOfType:@"wav" inDirectory:@"AudioFiles"];
     NSMutableArray* speechFiles = [[NSMutableArray alloc] initWithCapacity:filePaths.count];
+    NSMutableArray* names = [[NSMutableArray alloc] initWithCapacity:filePaths.count];
     
     for (NSString* path in filePaths)
     {
         SoundFile* sf = [[SoundFile alloc] initWithPath:path];
         [speechFiles addObject:sf];
+        [names addObject:sf.name];
     }
+    
     self.speechFiles = speechFiles;
+    [self.speechFilePicker setSectionTitles:names];
 }
 
 -(void)setAudiogramData:(AudiogramData *)audiogramData
@@ -156,42 +162,23 @@
               completionBlock:nil];
 }
 
-#pragma mark - UIPickerView DataSource
+#pragma UI Actions
 
--(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
-{
-    return 1;
-}
 
--(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
-{
-    return self.speechFiles.count;
-}
-
--(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
-{
-    SoundFile* soundFile = self.speechFiles[row];
-    return soundFile.name;
-}
-
-#pragma mark - UIPickerView DataSource
-
--(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+- (IBAction)segmentedControlChangedValue:(HMSegmentedControl*)sender
 {
     if(self.playbackButton.playing)
     {
-        SoundFile* sf = self.speechFiles[row];
+        SoundFile* sf = self.speechFiles[sender.selectedSegmentIndex];
         [self startPlayingFile:sf];
     }
 }
-
-#pragma UI Actions
 
 - (IBAction)playbackTap:(id)sender
 {
     if(self.playbackButton.playing)
     {
-        SoundFile* sf = self.speechFiles[[self.pickerView selectedRowInComponent:0]];
+        SoundFile* sf = self.speechFiles[self.speechFilePicker.selectedSegmentIndex];
         [self startPlayingFile:sf];
     }
     else

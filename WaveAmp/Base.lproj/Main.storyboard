@@ -816,20 +816,48 @@
                                     <color key="titleColor" red="0.68958336302328316" green="0.67488071877164646" blue="0.69047619047619047" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="23"/>
+                                </variation>
                                 <connections>
                                     <outlet property="drawerConstraint" destination="t8h-Go-oQc" id="AqJ-QH-1Kt"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7F-69-XVe" customClass="HMSegmentedControl">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7F-69-XVe" customClass="SegmentedControl">
                                 <rect key="frame" x="0.0" y="511" width="600" height="40"/>
-                                <color key="backgroundColor" red="0.88888888888888884" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.54195804195804198" green="0.95454545454545348" blue="1" alpha="0.35000000000000003" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="t8h-Go-oQc">
                                         <variation key="heightClass=compact" constant="0.0"/>
                                         <variation key="heightClass=compact-widthClass=regular" constant="40"/>
-                                        <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="80"/>
                                     </constraint>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSizePad">
+                                        <real key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
+                                        <color key="value" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans-Light"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectionColor">
+                                        <color key="value" red="0.2901960784" green="0.78039215689999997" blue="0.62352941179999999" alpha="0.5" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="verticalDivider" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="vDividerWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="vDividerColor">
+                                        <color key="value" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="segmentedControlChangedValue:" destination="gUi-f9-8tM" eventType="valueChanged" id="SML-hu-aN8"/>
                                 </connections>
@@ -971,6 +999,9 @@
                                     <constraint firstAttribute="bottom" secondItem="Zkg-h2-gcW" secondAttribute="bottom" id="aHj-0b-gZo"/>
                                     <constraint firstItem="Zkg-h2-gcW" firstAttribute="leading" secondItem="8zE-KU-q5q" secondAttribute="leading" id="dIr-hS-sPZ"/>
                                     <constraint firstAttribute="bottom" secondItem="RyR-0h-uKq" secondAttribute="bottom" id="ePX-b3-q8n"/>
+                                    <constraint firstAttribute="height" constant="211" id="qgg-T8-ryp">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="100"/>
+                                    </constraint>
                                     <constraint firstItem="RyR-0h-uKq" firstAttribute="top" secondItem="8zE-KU-q5q" secondAttribute="top" id="t0O-7G-ZO8"/>
                                 </constraints>
                                 <connections>
@@ -978,13 +1009,6 @@
                                     <outlet property="originalPlot" destination="Zkg-h2-gcW" id="7h8-zU-BMI"/>
                                 </connections>
                             </view>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JCb-o6-aTW">
-                                <rect key="frame" x="0.0" y="233" width="600" height="162"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="lWv-bN-XI1" id="TlV-Hx-pen"/>
-                                    <outlet property="delegate" destination="lWv-bN-XI1" id="eUM-h7-OYF"/>
-                                </connections>
-                            </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nn-3d-4b5" customClass="PlaybackButton">
                                 <rect key="frame" x="260" y="428" width="80" height="80"/>
                                 <constraints>
@@ -1052,6 +1076,50 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 </variation>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i4a-4f-o4Y" userLabel="PickerWrapper">
+                                <rect key="frame" x="0.0" y="273" width="600" height="52"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pZ5-cA-gKZ" customClass="SegmentedControl">
+                                        <rect key="frame" x="0.0" y="1" width="600" height="50"/>
+                                        <color key="backgroundColor" red="0.98431372549019602" green="0.98431372549019602" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
+                                                <color key="value" red="0.60392156862745094" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans-Light"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSizePad">
+                                                <real key="value" value="37"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="verticalDivider" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="vDividerWidth">
+                                                <real key="value" value="1.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="vDividerColor">
+                                                <color key="value" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectionColor">
+                                                <color key="value" red="0.20784313730000001" green="0.68627450980000004" blue="0.50588235290000005" alpha="0.5" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="segmentedControlChangedValue:" destination="lWv-bN-XI1" eventType="valueChanged" id="vhN-DK-HD1"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="pZ5-cA-gKZ" secondAttribute="bottom" constant="1" id="522-JB-Ybq"/>
+                                    <constraint firstItem="pZ5-cA-gKZ" firstAttribute="leading" secondItem="i4a-4f-o4Y" secondAttribute="leading" id="OPc-U5-vBp"/>
+                                    <constraint firstAttribute="height" constant="52" id="PV3-Ya-NuK">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                                    </constraint>
+                                    <constraint firstItem="pZ5-cA-gKZ" firstAttribute="top" secondItem="i4a-4f-o4Y" secondAttribute="top" constant="1" id="XbJ-F0-0Dh"/>
+                                    <constraint firstAttribute="trailing" secondItem="pZ5-cA-gKZ" secondAttribute="trailing" id="q9N-CE-T9X"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.99607843137254903" green="0.99607843137254903" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1060,19 +1128,17 @@
                             </constraint>
                             <constraint firstAttribute="centerX" secondItem="ASH-tI-t6n" secondAttribute="centerX" id="3kO-c8-pjp"/>
                             <constraint firstItem="5We-jH-5TE" firstAttribute="centerX" secondItem="rfT-gc-h7v" secondAttribute="centerX" id="5I5-1g-jpq"/>
+                            <constraint firstAttribute="trailing" secondItem="i4a-4f-o4Y" secondAttribute="trailing" id="95v-HD-psc"/>
                             <constraint firstAttribute="trailing" secondItem="8zE-KU-q5q" secondAttribute="trailing" id="A7P-GF-lad"/>
                             <constraint firstAttribute="trailing" secondItem="jOx-QM-wh1" secondAttribute="trailing" constant="20" id="BOQ-Fc-FMf"/>
+                            <constraint firstItem="i4a-4f-o4Y" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" id="I7D-C1-ISL"/>
                             <constraint firstItem="8zE-KU-q5q" firstAttribute="top" secondItem="jOx-QM-wh1" secondAttribute="bottom" constant="4" id="K4D-bI-lBO"/>
                             <constraint firstItem="5We-jH-5TE" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" constant="20" id="MBX-hC-AEh"/>
                             <constraint firstItem="8zE-KU-q5q" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" id="MOX-AJ-phv"/>
-                            <constraint firstItem="8nn-3d-4b5" firstAttribute="top" secondItem="JCb-o6-aTW" secondAttribute="bottom" constant="33" id="Nn0-bF-Ocy">
-                                <variation key="heightClass=compact" constant="0.0"/>
-                            </constraint>
                             <constraint firstAttribute="centerX" secondItem="8nn-3d-4b5" secondAttribute="centerX" id="Nug-p3-HrX">
                                 <variation key="heightClass=compact" constant="0.0"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="-70"/>
                             </constraint>
-                            <constraint firstItem="JCb-o6-aTW" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" id="QkC-oe-7G6"/>
                             <constraint firstItem="rfT-gc-h7v" firstAttribute="top" secondItem="5We-jH-5TE" secondAttribute="bottom" constant="8" id="UGu-ft-tsf">
                                 <variation key="heightClass=compact" constant="0.0"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="8"/>
@@ -1084,21 +1150,20 @@
                                 <variation key="heightClass=compact" constant="5"/>
                             </constraint>
                             <constraint firstItem="8nn-3d-4b5" firstAttribute="leading" secondItem="5We-jH-5TE" secondAttribute="trailing" constant="20" id="i8w-Xg-Iih"/>
+                            <constraint firstItem="i4a-4f-o4Y" firstAttribute="top" secondItem="8zE-KU-q5q" secondAttribute="bottom" id="jiE-DK-lIt"/>
                             <constraint firstItem="jOx-QM-wh1" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" constant="20" id="rh0-fi-XVc"/>
-                            <constraint firstAttribute="trailing" secondItem="JCb-o6-aTW" secondAttribute="trailing" id="rji-Ev-TOp"/>
                             <constraint firstItem="5We-jH-5TE" firstAttribute="top" secondItem="8nn-3d-4b5" secondAttribute="top" id="shU-0b-EBR">
                                 <variation key="heightClass=compact" constant="-5"/>
                             </constraint>
-                            <constraint firstItem="JCb-o6-aTW" firstAttribute="top" secondItem="8zE-KU-q5q" secondAttribute="bottom" constant="-40" id="zdO-FP-2qK"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Adjusted Speech" image="AdjustedSpeechIcon.png" id="hCP-bd-kuV"/>
                     <connections>
                         <outlet property="audioPlot" destination="8zE-KU-q5q" id="0Gi-zJ-McJ"/>
-                        <outlet property="pickerView" destination="JCb-o6-aTW" id="57u-Rb-2l3"/>
                         <outlet property="playbackButton" destination="8nn-3d-4b5" id="Mwa-eo-oMk"/>
                         <outlet property="playbackStatus" destination="ASH-tI-t6n" id="Bbi-Gw-hUW"/>
                         <outlet property="simulateLossCheckbox" destination="rfT-gc-h7v" id="V5q-56-NFe"/>
+                        <outlet property="speechFilePicker" destination="pZ5-cA-gKZ" id="t5a-ek-FPe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B0b-EJ-1kz" userLabel="First Responder" sceneMemberID="firstResponder"/>

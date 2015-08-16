@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseButton.h"
 
-@interface DrawerButton : UIButton
+@interface DrawerButton : BaseButton
 
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint* drawerConstraint;
 @property(nonatomic, readonly) BOOL isOpen;

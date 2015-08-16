@@ -24,8 +24,8 @@
     [self.audiogramView setupView];
     self.audiogramData = [AudiogramData loadAudiogram];
     
-    self.audiogramPresets.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocationDown;
-    self.audiogramPresets.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5];
+    [self.audiogramPresets viewControllerDidLoad];
+    
     [self setupSegmentedControlTitles:(self.audiogramData != nil)];
     [self.drawerButton setupButton:self.audiogramPresets];
 }

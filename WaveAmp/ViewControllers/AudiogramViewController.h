@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <HMSegmentedControl.h>
 
+#import "SegmentedControl.h"
 #import "AudiogramData.h"
 #import "AudiogramView.h"
 #import "DrawerButton.h"
@@ -22,7 +22,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *hearingTestButton;
 @property (weak, nonatomic) IBOutlet UIButton *retakeTestButton;
 @property (weak, nonatomic) IBOutlet AudiogramView *audiogramView;
-@property (weak, nonatomic) IBOutlet HMSegmentedControl *audiogramPresets;
+@property (weak, nonatomic) IBOutlet SegmentedControl *audiogramPresets;
 @property (weak, nonatomic) IBOutlet DrawerButton *drawerButton;
 
 
