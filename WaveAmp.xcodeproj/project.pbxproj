@@ -51,6 +51,7 @@
 		FF8448981B809F5D00A06D6B /* BaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8448941B809F5D00A06D6B /* BaseLabel.m */; };
 		FF8448991B809F5D00A06D6B /* BaseTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8448961B809F5D00A06D6B /* BaseTextView.m */; };
 		FF84489C1B80A69300A06D6B /* ViewConstants.mm in Sources */ = {isa = PBXBuildFile; fileRef = FF84489B1B80A69300A06D6B /* ViewConstants.mm */; };
+		FF8448A21B80B3D800A06D6B /* SegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8448A11B80B3D800A06D6B /* SegmentedControl.m */; };
 		FF86FF631B60B18500C3E093 /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF621B60B18500C3E093 /* AudioPlayer.m */; };
 		FF86FF671B60B3F100C3E093 /* PureTonePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF661B60B3F100C3E093 /* PureTonePlayer.m */; };
 		FF86FF6B1B60CE4A00C3E093 /* PureToneAudiometer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF6A1B60CE4A00C3E093 /* PureToneAudiometer.m */; };
@@ -162,6 +163,8 @@
 		FF8448961B809F5D00A06D6B /* BaseTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTextView.m; sourceTree = "<group>"; };
 		FF84489A1B80A69300A06D6B /* ViewConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewConstants.h; sourceTree = "<group>"; };
 		FF84489B1B80A69300A06D6B /* ViewConstants.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewConstants.mm; sourceTree = "<group>"; };
+		FF8448A01B80B3D800A06D6B /* SegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentedControl.h; sourceTree = "<group>"; };
+		FF8448A11B80B3D800A06D6B /* SegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentedControl.m; sourceTree = "<group>"; };
 		FF86FF611B60B18500C3E093 /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
 		FF86FF621B60B18500C3E093 /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
 		FF86FF641B60B36000C3E093 /* AudioPlayer_protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer_protected.h; sourceTree = "<group>"; };
@@ -498,6 +501,8 @@
 				FF2619CA1B661FA30069907D /* DrawerButton.m */,
 				FF8448781B7F28C400A06D6B /* RoundedButton.h */,
 				FF8448791B7F28C400A06D6B /* RoundedButton.m */,
+				FF8448A01B80B3D800A06D6B /* SegmentedControl.h */,
+				FF8448A11B80B3D800A06D6B /* SegmentedControl.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -664,6 +669,7 @@
 				FF8448991B809F5D00A06D6B /* BaseTextView.m in Sources */,
 				FF9DB4E91B540192006E4D3F /* CommonAnimations.m in Sources */,
 				FF86FF671B60B3F100C3E093 /* PureTonePlayer.m in Sources */,
+				FF8448A21B80B3D800A06D6B /* SegmentedControl.m in Sources */,
 				FF7DD90D1B63ACBE008006DD /* ToneEqualizer.m in Sources */,
 				FF0A483F1B4E44A80021B149 /* AudiogramViewController.m in Sources */,
 				FF7604431B53C6D20024930C /* UIView+PopAnimations.m in Sources */,
