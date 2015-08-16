@@ -50,6 +50,7 @@
 		FF8448971B809F5D00A06D6B /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8448921B809F5D00A06D6B /* BaseButton.m */; };
 		FF8448981B809F5D00A06D6B /* BaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8448941B809F5D00A06D6B /* BaseLabel.m */; };
 		FF8448991B809F5D00A06D6B /* BaseTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8448961B809F5D00A06D6B /* BaseTextView.m */; };
+		FF84489C1B80A69300A06D6B /* ViewConstants.mm in Sources */ = {isa = PBXBuildFile; fileRef = FF84489B1B80A69300A06D6B /* ViewConstants.mm */; };
 		FF86FF631B60B18500C3E093 /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF621B60B18500C3E093 /* AudioPlayer.m */; };
 		FF86FF671B60B3F100C3E093 /* PureTonePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF661B60B3F100C3E093 /* PureTonePlayer.m */; };
 		FF86FF6B1B60CE4A00C3E093 /* PureToneAudiometer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF6A1B60CE4A00C3E093 /* PureToneAudiometer.m */; };
@@ -159,6 +160,8 @@
 		FF8448941B809F5D00A06D6B /* BaseLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLabel.m; sourceTree = "<group>"; };
 		FF8448951B809F5D00A06D6B /* BaseTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTextView.h; sourceTree = "<group>"; };
 		FF8448961B809F5D00A06D6B /* BaseTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTextView.m; sourceTree = "<group>"; };
+		FF84489A1B80A69300A06D6B /* ViewConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewConstants.h; sourceTree = "<group>"; };
+		FF84489B1B80A69300A06D6B /* ViewConstants.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewConstants.mm; sourceTree = "<group>"; };
 		FF86FF611B60B18500C3E093 /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
 		FF86FF621B60B18500C3E093 /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
 		FF86FF641B60B36000C3E093 /* AudioPlayer_protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer_protected.h; sourceTree = "<group>"; };
@@ -483,6 +486,8 @@
 			children = (
 				FF8448901B809F5D00A06D6B /* BaseViews */,
 				FF481DC31B5BB27900AF588B /* Audiogram */,
+				FF84489A1B80A69300A06D6B /* ViewConstants.h */,
+				FF84489B1B80A69300A06D6B /* ViewConstants.mm */,
 				FF9DB54C1B569EAA006E4D3F /* BouncyButton.h */,
 				FF9DB54D1B569EAA006E4D3F /* BouncyButton.m */,
 				FF9DB54F1B56A02D006E4D3F /* PlaybackButton.h */,
@@ -692,6 +697,7 @@
 				FF9DB5511B56A02D006E4D3F /* PlaybackButton.m in Sources */,
 				FF69D66D1B636376000BD808 /* AudioPlot.m in Sources */,
 				FF7DD9131B63ADCB008006DD /* SoundModifiersFactory.m in Sources */,
+				FF84489C1B80A69300A06D6B /* ViewConstants.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
