@@ -21,6 +21,7 @@
 @property(nonatomic) int currentPunchCardIndex;
 @property(nonatomic) NSMutableArray* thresholds;
 @property(nonatomic) ExamOptions options;
+@property(nonatomic) BOOL userAnswered;
 
 @end
 
@@ -45,9 +46,10 @@
         }
         
         _options = examOptions;
-        self.currentFrequency = 0;
-        self.testsInterval = NSMakeRange(2, 3);
-        self.punchCards = [NSMutableArray new];
+        _userAnswered = NO;
+        _currentFrequency = 0;
+        _testsInterval = NSMakeRange(2, 3);
+        _punchCards = [NSMutableArray new];
     }
     return self;
 }
@@ -130,6 +132,8 @@
         [self pickAnEarToTestNext];
         [self.delegate startingTest:_testIndex + 1];
     }
+    
+    self.userAnswered = NO;
 }
 
 -(void)pickAnEarToTestNext
@@ -177,11 +181,20 @@
 
 -(void)buttonHeldForChannel:(AudioChannel)channel
 {
+    if(self.userAnswered)
+    {
+        // accept only one button hold per signal
+        // to prevent mashing buttons or guessing
+        return;
+    }
+    
     ExamPunchCard* pc = [self currentPunchCard];
     if(pc.channel == channel && self.testSignalLength > 0)
     {
         pc.wasAcknowledged = YES;
     }
+    
+    self.userAnswered = YES;
 }
 
 -(void)buttonReleasedForChannel:(AudioChannel)channel
