@@ -11,6 +11,7 @@
 #import "ToneEqualizer_protected.h"
 #import "HearingLossSimulator.h"
 #import "AmplitudeMultiplier.h"
+#import "FrequencyThreshold.h"
 
 @interface HearingLossSimulator()
 
@@ -27,10 +28,39 @@
     self = [super initWithAudiogram:usedAudiogram samplingRate:samplingRate];
     if (self) {        
         self.lowPassFilter = [[NVLowpassFilter alloc] initWithSamplingRate:samplingRate];
-        self.lowPassFilter.cornerFrequency = 500.0f;
+        self.lowPassFilter.cornerFrequency = [self findCornerFrequency:usedAudiogram];
         self.lowPassFilter.Q = 0.8f;
     }
     return self;
+}
+
+-(int)findCornerFrequency:(AudiogramData*)audiogramData
+{
+    int left = 0;
+    int right = 0;
+    
+    for (int i = 0; i < audiogramData.leftEar.count; i++)
+    {
+        FrequencyThreshold* ft1 = (FrequencyThreshold*)audiogramData.leftEar[i];
+        FrequencyThreshold* ft2 = (FrequencyThreshold*)audiogramData.rightEar[i];
+        
+        if([ft1.thresholdDb integerValue] > 20)
+        {
+            left = [ft1.thresholdDb floatValue];
+        }
+        
+        if([ft2.thresholdDb integerValue] > 20)
+        {
+            right = [ft2.thresholdDb floatValue];
+        }
+        
+        if(left > 20 || right > 20)
+        {
+            return MAX([ft1.frequency intValue], [ft2.frequency intValue]);
+        }
+    }
+    
+    return 500;
 }
 
 -(NVPeakingEQFilter *)createFilterForFrequency:(float)frequency withThreshold:(float)threshold
