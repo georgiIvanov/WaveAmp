@@ -1,7 +1,7 @@
 WaveAmp
 =======
 <p align="center">
-[![](http://i.imgur.com/kZ5vsnL.png)](http://i.imgur.com/kZ5vsnL.png)
+<img src="http://i.imgur.com/kZ5vsnL.png" alt="WaveAmp icon"/>
 </p>
 WaveAmp is an experimental project for detecting hearing loss and amplifying the frequencies of normal speech to the user's hearing threshold. 
 
