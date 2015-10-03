@@ -1,8 +1,8 @@
 WaveAmp
 =======
-
+<p align="center">
 [![](http://i.imgur.com/kZ5vsnL.png)](http://i.imgur.com/kZ5vsnL.png)
-
+</p>
 WaveAmp is an experimental project for detecting hearing loss and amplifying the frequencies of normal speech to the user's hearing threshold. 
 
 App Features:
@@ -14,7 +14,7 @@ App Features:
 Credits
 =======
 
-Created by [Georgi Ivanov](http://georgi-ivanov.com), in cooperation with [Securax Ltd.](http://www.zoiper.com/en). 
+Created by [Georgi Ivanov](http://georgi-ivanov.com), in cooperation with [Securax Ltd.](http://www.zoiper.com/en)
 
 License
 =======
