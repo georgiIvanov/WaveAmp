@@ -8,20 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import <BFPaperCheckbox.h>
+#import "PlaybackViewController.h"
 #import "SegmentedControl.h"
-#import "AudioPlot.h"
 #import "PlaybackButton.h"
-#import "AudiogramData.h"
 
-@interface AdjustedSpeechViewController : UIViewController
+@interface AdjustedSpeechViewController : PlaybackViewController
 
-@property(nonatomic) AudiogramData* audiogramData;
-
-@property (weak, nonatomic) IBOutlet AudioPlot *audioPlot;
 @property (weak, nonatomic) IBOutlet SegmentedControl *speechFilePicker;
 @property (weak, nonatomic) IBOutlet PlaybackButton *playbackButton;
 @property (weak, nonatomic) IBOutlet BFPaperCheckbox *simulateLossCheckbox;
-@property (weak, nonatomic) IBOutlet UILabel *playbackStatus;
 
 - (IBAction)segmentedControlChangedValue:(HMSegmentedControl*)sender;
 - (IBAction)playbackTap:(id)sender;

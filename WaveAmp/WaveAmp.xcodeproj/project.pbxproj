@@ -27,6 +27,7 @@
 		FF3BFDE21BD8CDED0003630E /* MoreIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDE01BD8CDED0003630E /* MoreIcon.png */; settings = {ASSET_TAGS = (); }; };
 		FF3BFDE31BD8CDED0003630E /* MoreIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDE11BD8CDED0003630E /* MoreIcon@2x.png */; settings = {ASSET_TAGS = (); }; };
 		FF3BFDE61BD8D1620003630E /* AudioPlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3BFDE51BD8D1620003630E /* AudioPlotViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FF3BFDEA1BD8D76E0003630E /* PlaybackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3BFDE91BD8D76E0003630E /* PlaybackViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FF42B96D1B4E35AF00535A7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B96C1B4E35AF00535A7B /* main.m */; };
 		FF42B9701B4E35AF00535A7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B96F1B4E35AF00535A7B /* AppDelegate.m */; };
 		FF42B9761B4E35AF00535A7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9741B4E35AF00535A7B /* Main.storyboard */; };
@@ -124,6 +125,8 @@
 		FF3BFDE11BD8CDED0003630E /* MoreIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MoreIcon@2x.png"; sourceTree = "<group>"; };
 		FF3BFDE41BD8D1620003630E /* AudioPlotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlotViewController.h; sourceTree = "<group>"; };
 		FF3BFDE51BD8D1620003630E /* AudioPlotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlotViewController.m; sourceTree = "<group>"; };
+		FF3BFDE81BD8D76E0003630E /* PlaybackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaybackViewController.h; sourceTree = "<group>"; };
+		FF3BFDE91BD8D76E0003630E /* PlaybackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaybackViewController.m; sourceTree = "<group>"; };
 		FF42B9671B4E35AF00535A7B /* WaveAmp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveAmp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF42B96B1B4E35AF00535A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF42B96C1B4E35AF00535A7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -296,6 +299,15 @@
 			path = TabbarIcons;
 			sourceTree = "<group>";
 		};
+		FF3BFDE71BD8D7610003630E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FF3BFDE81BD8D76E0003630E /* PlaybackViewController.h */,
+				FF3BFDE91BD8D76E0003630E /* PlaybackViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		FF42B95E1B4E35AF00535A7B = {
 			isa = PBXGroup;
 			children = (
@@ -367,6 +379,7 @@
 		FF42B9901B4E35D400535A7B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				FF3BFDE71BD8D7610003630E /* Base */,
 				FF0A48301B4E3D870021B149 /* TabBarViewController.h */,
 				FF0A48311B4E3D870021B149 /* TabBarViewController.m */,
 				FF0A48361B4E3F560021B149 /* AbsThresholdViewController.h */,
@@ -692,6 +705,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF8448991B809F5D00A06D6B /* BaseTextView.m in Sources */,
+				FF3BFDEA1BD8D76E0003630E /* PlaybackViewController.m in Sources */,
 				FF9DB4E91B540192006E4D3F /* CommonAnimations.m in Sources */,
 				FF86FF671B60B3F100C3E093 /* PureTonePlayer.m in Sources */,
 				FF8448A21B80B3D800A06D6B /* SegmentedControl.m in Sources */,
