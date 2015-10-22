@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HPS-WT-VF7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HPS-WT-VF7">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -42,6 +43,25 @@
         </mutableArray>
     </customFonts>
     <scenes>
+        <!--More-->
+        <scene sceneID="3kB-zI-Avn">
+            <objects>
+                <viewController id="qPD-Gb-CV1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eda-Eq-8Da"/>
+                        <viewControllerLayoutGuide type="bottom" id="nSB-j8-KnO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NgO-Nv-yi5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.2901960784" green="0.78039215689999997" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="More" image="MoreIcon.png" id="zLP-18-Jqd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JEv-Xh-AqP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="456" y="266"/>
+        </scene>
         <!--Audiogram-->
         <scene sceneID="woI-Gt-aSM">
             <objects>
@@ -331,7 +351,7 @@
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                         </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Frequency (Hz)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bR-ja-Gdc" customClass="BaseLabel">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frequency (Hz)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bR-ja-Gdc" customClass="BaseLabel">
                                         <rect key="frame" x="252" y="0.0" width="118" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -361,7 +381,7 @@
                                             <constraint firstAttribute="width" constant="1" id="02A-cc-4u0"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="dB" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4DF-bV-Vze" customClass="BaseLabel">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dB" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4DF-bV-Vze" customClass="BaseLabel">
                                         <rect key="frame" x="3" y="0.0" width="21" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -964,7 +984,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEC-R6-7XY">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="398" y="99" width="45" height="24"/>
@@ -988,7 +1008,7 @@
             </objects>
             <point key="canvasLocation" x="438" y="1702"/>
         </scene>
-        <!--Adjusted Speech-->
+        <!--Adjusted Audio-->
         <scene sceneID="gf4-0j-gta">
             <objects>
                 <viewController id="lWv-bN-XI1" customClass="AdjustedSpeechViewController" sceneMemberID="viewController">
@@ -1001,55 +1021,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1D-q5-CjI">
-                                <rect key="frame" x="0.0" y="310" width="600" height="290"/>
+                                <rect key="frame" x="0.0" y="309" width="600" height="291"/>
                                 <color key="backgroundColor" red="0.2901960784" green="0.78039215689999997" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8zE-KU-q5q" userLabel="Audio Plot Container" customClass="AudioPlot">
-                                <rect key="frame" x="0.0" y="62" width="600" height="211"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RyR-0h-uKq" userLabel="AdjustedSpeech" customClass="EZAudioPlot">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="211"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
-                                                <color key="value" red="0.55469931852668752" green="0.85098039219999999" blue="0.39024436643422339" alpha="0.0" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                                <color key="value" red="0.85098039219999999" green="0.35621982722165069" blue="0.42209989096730377" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zkg-h2-gcW" userLabel="OriginalSpeech" customClass="EZAudioPlot">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="211"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
-                                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                                <color key="value" red="0.24313725489999999" green="0.73333333329999995" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Zkg-h2-gcW" secondAttribute="trailing" id="545-zh-yEI"/>
-                                    <constraint firstAttribute="trailing" secondItem="RyR-0h-uKq" secondAttribute="trailing" id="BSZ-cv-6kl"/>
-                                    <constraint firstItem="RyR-0h-uKq" firstAttribute="leading" secondItem="8zE-KU-q5q" secondAttribute="leading" id="SNy-sz-dWD"/>
-                                    <constraint firstItem="Zkg-h2-gcW" firstAttribute="top" secondItem="8zE-KU-q5q" secondAttribute="top" id="Ubg-yn-GOU"/>
-                                    <constraint firstAttribute="bottom" secondItem="Zkg-h2-gcW" secondAttribute="bottom" id="aHj-0b-gZo"/>
-                                    <constraint firstItem="Zkg-h2-gcW" firstAttribute="leading" secondItem="8zE-KU-q5q" secondAttribute="leading" id="dIr-hS-sPZ"/>
-                                    <constraint firstAttribute="bottom" secondItem="RyR-0h-uKq" secondAttribute="bottom" id="ePX-b3-q8n"/>
-                                    <constraint firstAttribute="height" priority="900" constant="211" id="qgg-T8-ryp">
-                                        <variation key="heightClass=compact" constant="80"/>
-                                    </constraint>
-                                    <constraint firstItem="RyR-0h-uKq" firstAttribute="top" secondItem="8zE-KU-q5q" secondAttribute="top" id="t0O-7G-ZO8"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="adjustedPlot" destination="RyR-0h-uKq" id="baF-Ox-1GE"/>
-                                    <outlet property="originalPlot" destination="Zkg-h2-gcW" id="7h8-zU-BMI"/>
-                                </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jOx-QM-wh1" userLabel="TopHorizontalSeparator">
                                 <rect key="frame" x="20" y="57" width="560" height="1"/>
@@ -1058,7 +1031,7 @@
                                     <constraint firstAttribute="height" constant="1" id="4X6-UC-V3a"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Playback Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASH-tI-t6n" customClass="BaseLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Playback Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASH-tI-t6n" customClass="BaseLabel">
                                 <rect key="frame" x="228" y="26" width="144" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
@@ -1074,7 +1047,7 @@
                                 </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i4a-4f-o4Y" userLabel="PickerWrapper">
-                                <rect key="frame" x="0.0" y="273" width="600" height="52"/>
+                                <rect key="frame" x="0.0" y="272" width="600" height="52"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pZ5-cA-gKZ" customClass="SegmentedControl">
                                         <rect key="frame" x="0.0" y="1" width="600" height="50"/>
@@ -1137,7 +1110,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GJG-dh-0gX">
-                                <rect key="frame" x="125" y="330" width="350" height="50"/>
+                                <rect key="frame" x="125" y="329" width="350" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simulate Hearing Loss" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5We-jH-5TE" customClass="BaseLabel">
                                         <rect key="frame" x="0.0" y="14" width="165" height="21"/>
@@ -1177,6 +1150,17 @@
                                     <constraint firstItem="rfT-gc-h7v" firstAttribute="leading" secondItem="5We-jH-5TE" secondAttribute="trailing" constant="40" id="vbR-si-Y5T"/>
                                 </constraints>
                             </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OiB-Dh-eWL">
+                                <rect key="frame" x="0.0" y="62" width="600" height="211"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="900" constant="211" id="xJP-cz-ykK">
+                                        <variation key="heightClass=compact" constant="80"/>
+                                    </constraint>
+                                </constraints>
+                                <connections>
+                                    <segue destination="SEa-mb-gia" kind="embed" identifier="AudioPlotSegue" id="oPp-z5-Fa3"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="0.99607843137254903" green="0.99607843137254903" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1189,23 +1173,24 @@
                                 <variation key="heightClass=compact" constant="-30"/>
                             </constraint>
                             <constraint firstAttribute="trailing" secondItem="i4a-4f-o4Y" secondAttribute="trailing" id="95v-HD-psc"/>
-                            <constraint firstAttribute="trailing" secondItem="8zE-KU-q5q" secondAttribute="trailing" id="A7P-GF-lad"/>
                             <constraint firstAttribute="trailing" secondItem="jOx-QM-wh1" secondAttribute="trailing" constant="20" id="BOQ-Fc-FMf"/>
                             <constraint firstItem="U1D-q5-CjI" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" id="Bab-zq-gAl"/>
                             <constraint firstItem="GJG-dh-0gX" firstAttribute="top" secondItem="i4a-4f-o4Y" secondAttribute="bottom" constant="5" id="Brc-KW-g5N">
                                 <variation key="heightClass=regular-widthClass=regular" constant="30"/>
                             </constraint>
                             <constraint firstAttribute="trailing" secondItem="U1D-q5-CjI" secondAttribute="trailing" id="FAj-eU-Q7k"/>
+                            <constraint firstItem="OiB-Dh-eWL" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" id="GMr-Z2-rBq"/>
                             <constraint firstItem="i4a-4f-o4Y" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" id="I7D-C1-ISL"/>
-                            <constraint firstItem="8zE-KU-q5q" firstAttribute="top" secondItem="jOx-QM-wh1" secondAttribute="bottom" constant="4" id="K4D-bI-lBO"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GJG-dh-0gX" secondAttribute="trailing" id="KvR-rQ-pBQ"/>
-                            <constraint firstItem="8zE-KU-q5q" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" id="MOX-AJ-phv"/>
+                            <constraint firstItem="pZ5-cA-gKZ" firstAttribute="top" secondItem="OiB-Dh-eWL" secondAttribute="bottom" id="MoK-pS-ALl"/>
                             <constraint firstAttribute="centerX" secondItem="8nn-3d-4b5" secondAttribute="centerX" id="Nug-p3-HrX">
                                 <variation key="heightClass=compact" constant="0.0"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="GJG-dh-0gX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8tV-w8-PnK" secondAttribute="leading" id="Rd5-Vh-4hQ"/>
                             <constraint firstItem="yeg-M1-mCf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8nn-3d-4b5" secondAttribute="bottom" id="SNv-hH-8VC"/>
+                            <constraint firstItem="OiB-Dh-eWL" firstAttribute="top" secondItem="jOx-QM-wh1" secondAttribute="bottom" constant="4" id="Uof-Oe-eF2"/>
+                            <constraint firstAttribute="trailing" secondItem="OiB-Dh-eWL" secondAttribute="trailing" id="Wpl-Gr-U0J"/>
                             <constraint firstItem="ASH-tI-t6n" firstAttribute="top" secondItem="glf-In-mfr" secondAttribute="bottom" constant="6" id="ZoK-oQ-GjJ">
                                 <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
                             </constraint>
@@ -1215,14 +1200,12 @@
                                 <variation key="heightClass=regular-widthClass=regular" constant="100"/>
                             </constraint>
                             <constraint firstAttribute="bottom" secondItem="U1D-q5-CjI" secondAttribute="bottom" id="dLE-ky-9hL"/>
-                            <constraint firstItem="i4a-4f-o4Y" firstAttribute="top" secondItem="8zE-KU-q5q" secondAttribute="bottom" id="jiE-DK-lIt"/>
                             <constraint firstItem="8nn-3d-4b5" firstAttribute="top" relation="greaterThanOrEqual" secondItem="GJG-dh-0gX" secondAttribute="bottom" id="mXi-hd-v9p"/>
                             <constraint firstItem="jOx-QM-wh1" firstAttribute="leading" secondItem="8tV-w8-PnK" secondAttribute="leading" constant="20" id="rh0-fi-XVc"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Adjusted Speech" image="AdjustedSpeechIcon.png" id="hCP-bd-kuV"/>
+                    <tabBarItem key="tabBarItem" title="Adjusted Audio" image="AdjustedSpeechIcon.png" id="hCP-bd-kuV"/>
                     <connections>
-                        <outlet property="audioPlot" destination="8zE-KU-q5q" id="0Gi-zJ-McJ"/>
                         <outlet property="playbackButton" destination="8nn-3d-4b5" id="Mwa-eo-oMk"/>
                         <outlet property="playbackStatus" destination="ASH-tI-t6n" id="Bbi-Gw-hUW"/>
                         <outlet property="simulateLossCheckbox" destination="rfT-gc-h7v" id="V5q-56-NFe"/>
@@ -1231,7 +1214,80 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B0b-EJ-1kz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="450" y="266"/>
+            <point key="canvasLocation" x="-1102" y="1002"/>
+        </scene>
+        <!--Hearing Aid-->
+        <scene sceneID="b1P-lB-4of">
+            <objects>
+                <viewController id="WnK-Ao-9fP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ozF-WW-IqL"/>
+                        <viewControllerLayoutGuide type="bottom" id="z9K-EN-OS2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sjp-7l-G7i">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Playback Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nxn-c7-b05" customClass="BaseLabel">
+                                <rect key="frame" x="228" y="26" width="144" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans-Light"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                </variation>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Itp-V5-AG6" userLabel="TopHorizontalSeparator">
+                                <rect key="frame" x="20" y="57" width="560" height="1"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="HE1-hc-XNX"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CDE-6I-wGr">
+                                <rect key="frame" x="0.0" y="273" width="600" height="328"/>
+                                <color key="backgroundColor" red="0.2901960784" green="0.78039215689999997" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gBr-y6-wvI">
+                                <rect key="frame" x="0.0" y="62" width="600" height="211"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="900" constant="211" id="njN-iu-0AK">
+                                        <variation key="heightClass=compact" constant="80"/>
+                                    </constraint>
+                                </constraints>
+                                <connections>
+                                    <segue destination="SEa-mb-gia" kind="embed" identifier="AudioPlotSegue" id="WRG-cV-eUn"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gBr-y6-wvI" firstAttribute="top" secondItem="Itp-V5-AG6" secondAttribute="bottom" constant="4" id="71G-hD-oON"/>
+                            <constraint firstItem="gBr-y6-wvI" firstAttribute="leading" secondItem="Sjp-7l-G7i" secondAttribute="leading" id="BDZ-H7-cpA"/>
+                            <constraint firstAttribute="trailing" secondItem="Itp-V5-AG6" secondAttribute="trailing" constant="20" id="EWE-MP-9KI"/>
+                            <constraint firstItem="Nxn-c7-b05" firstAttribute="centerX" secondItem="Sjp-7l-G7i" secondAttribute="centerX" id="FeL-mU-FOS"/>
+                            <constraint firstItem="Nxn-c7-b05" firstAttribute="top" secondItem="ozF-WW-IqL" secondAttribute="bottom" constant="6" id="VVY-rp-bdd">
+                                <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="CDE-6I-wGr" firstAttribute="top" secondItem="gBr-y6-wvI" secondAttribute="bottom" id="Yqt-Ff-i9j"/>
+                            <constraint firstItem="CDE-6I-wGr" firstAttribute="leading" secondItem="Sjp-7l-G7i" secondAttribute="leading" id="Ysl-gT-rUz"/>
+                            <constraint firstAttribute="trailing" secondItem="CDE-6I-wGr" secondAttribute="trailing" id="ZvK-Zp-GuS"/>
+                            <constraint firstAttribute="trailing" secondItem="gBr-y6-wvI" secondAttribute="trailing" id="ocr-QU-iOn"/>
+                            <constraint firstItem="Itp-V5-AG6" firstAttribute="top" secondItem="Nxn-c7-b05" secondAttribute="bottom" constant="7" id="qOX-Yc-STe">
+                                <variation key="heightClass=compact-widthClass=compact" constant="4"/>
+                            </constraint>
+                            <constraint firstItem="z9K-EN-OS2" firstAttribute="top" secondItem="CDE-6I-wGr" secondAttribute="bottom" constant="-50" id="sRs-XE-RuS"/>
+                            <constraint firstItem="Itp-V5-AG6" firstAttribute="leading" secondItem="Sjp-7l-G7i" secondAttribute="leading" constant="20" id="zNh-3V-DEq"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hearing Aid" image="HearingIcon.png" id="Mmd-id-atC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m9a-PP-h4b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-344" y="1002"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="LfO-Zi-EZ4">
@@ -1246,6 +1302,8 @@
                     <connections>
                         <segue destination="gUi-f9-8tM" kind="relationship" relationship="viewControllers" id="BUd-OQ-ujQ"/>
                         <segue destination="lWv-bN-XI1" kind="relationship" relationship="viewControllers" id="mFg-EP-7XN"/>
+                        <segue destination="WnK-Ao-9fP" kind="relationship" relationship="viewControllers" id="Qdg-Hi-Jaf"/>
+                        <segue destination="qPD-Gb-CV1" kind="relationship" relationship="viewControllers" id="7lh-PP-tvx"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ErR-NH-j1I" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1333,7 +1391,7 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TestCircle.png" translatesAutoresizingMaskIntoConstraints="NO" id="6Zj-IC-I8A">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Test" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kgs-k9-MQo" customClass="BaseLabel">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kgs-k9-MQo" customClass="BaseLabel">
                                         <rect key="frame" x="80" y="29" width="90" height="59"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="49"/>
                                         <color key="textColor" red="0.99607843137254903" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1358,7 +1416,7 @@
                                             </constraint>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="3 of 8" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmm-15-9eo" customClass="BaseLabel">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 of 8" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmm-15-9eo" customClass="BaseLabel">
                                         <rect key="frame" x="80" y="115" width="91" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <color key="textColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1638,6 +1696,60 @@
             </objects>
             <point key="canvasLocation" x="1179" y="1702"/>
         </scene>
+        <!--Audio Plot View Controller-->
+        <scene sceneID="rr8-nS-jYX">
+            <objects>
+                <viewController id="SEa-mb-gia" customClass="AudioPlotViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kGy-BS-jZW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="211"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vUY-61-uzw" userLabel="AdjustedSpeech" customClass="EZAudioPlot">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="211"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" red="0.55469931849999998" green="0.85098039219999999" blue="0.39024436639999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.85098039219999999" green="0.35621982720000001" blue="0.422099891" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hYf-BH-2HO" userLabel="OriginalSpeech" customClass="EZAudioPlot">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="211"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.24313725489999999" green="0.73333333329999995" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hYf-BH-2HO" secondAttribute="trailing" id="2IE-2g-XWG"/>
+                            <constraint firstItem="vUY-61-uzw" firstAttribute="leading" secondItem="kGy-BS-jZW" secondAttribute="leading" id="LJs-A9-KJP"/>
+                            <constraint firstAttribute="trailing" secondItem="vUY-61-uzw" secondAttribute="trailing" id="MuJ-iH-f3u"/>
+                            <constraint firstItem="hYf-BH-2HO" firstAttribute="top" secondItem="kGy-BS-jZW" secondAttribute="top" id="WWU-Bo-DJc"/>
+                            <constraint firstItem="hYf-BH-2HO" firstAttribute="leading" secondItem="kGy-BS-jZW" secondAttribute="leading" id="Xxv-CA-Ldw"/>
+                            <constraint firstItem="vUY-61-uzw" firstAttribute="top" secondItem="kGy-BS-jZW" secondAttribute="top" id="hFW-Df-mSp"/>
+                            <constraint firstAttribute="bottom" secondItem="hYf-BH-2HO" secondAttribute="bottom" id="lv2-Ks-Xnc"/>
+                            <constraint firstAttribute="bottom" secondItem="vUY-61-uzw" secondAttribute="bottom" id="qpj-fh-cNc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="adjustedPlot" destination="vUY-61-uzw" id="Uuw-Zz-5IV"/>
+                        <outlet property="originalPlot" destination="hYf-BH-2HO" id="Nxc-Ar-nQf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KpT-8i-W31" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-722" y="1597.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="AdjustedSpeechIcon.png" width="51" height="30"/>
@@ -1645,12 +1757,17 @@
         <image name="BasicArrowDown.png" width="143" height="73"/>
         <image name="CloseIcon.png" width="512" height="512"/>
         <image name="Headphones.png" width="512" height="331"/>
+        <image name="HearingIcon.png" width="51" height="30"/>
         <image name="HearingWave.png" width="1024" height="1024"/>
         <image name="LeftArrow.png" width="256" height="256"/>
         <image name="LeftEar.png" width="512" height="512"/>
+        <image name="MoreIcon.png" width="51" height="30"/>
         <image name="Play.png" width="1024" height="1024"/>
         <image name="RightArrow.png" width="256" height="256"/>
         <image name="RightEar.png" width="512" height="512"/>
         <image name="TestCircle.png" width="860" height="860"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="WRG-cV-eUn"/>
+    </inferredMetricsTieBreakers>
 </document>
