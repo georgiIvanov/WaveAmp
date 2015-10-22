@@ -1219,7 +1219,7 @@
         <!--Hearing Aid-->
         <scene sceneID="b1P-lB-4of">
             <objects>
-                <viewController id="WnK-Ao-9fP" sceneMemberID="viewController">
+                <viewController id="WnK-Ao-9fP" customClass="HearingAidViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ozF-WW-IqL"/>
                         <viewControllerLayoutGuide type="bottom" id="z9K-EN-OS2"/>
@@ -1249,7 +1249,32 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CDE-6I-wGr">
                                 <rect key="frame" x="0.0" y="273" width="600" height="328"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ex-ER-QH6" customClass="BouncyButton">
+                                        <rect key="frame" x="260" y="155" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="900" constant="80" id="160-uo-CYc">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="50"/>
+                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                            </constraint>
+                                            <constraint firstAttribute="width" secondItem="9Ex-ER-QH6" secondAttribute="height" multiplier="1:1" id="Qq7-6Q-nTR"/>
+                                        </constraints>
+                                        <state key="normal" image="Microphone.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="bounce" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="microphoneTap:" destination="WnK-Ao-9fP" eventType="touchUpInside" id="0NW-pX-7Q5"/>
+                                            <action selector="playbackTap:" destination="lWv-bN-XI1" eventType="touchUpInside" id="5w0-0Q-aO3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="0.2901960784" green="0.78039215689999997" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="9Ex-ER-QH6" firstAttribute="centerX" secondItem="CDE-6I-wGr" secondAttribute="centerX" id="GTU-fM-Ty2"/>
+                                </constraints>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gBr-y6-wvI">
                                 <rect key="frame" x="0.0" y="62" width="600" height="211"/>
@@ -1275,6 +1300,11 @@
                             <constraint firstItem="CDE-6I-wGr" firstAttribute="top" secondItem="gBr-y6-wvI" secondAttribute="bottom" id="Yqt-Ff-i9j"/>
                             <constraint firstItem="CDE-6I-wGr" firstAttribute="leading" secondItem="Sjp-7l-G7i" secondAttribute="leading" id="Ysl-gT-rUz"/>
                             <constraint firstAttribute="trailing" secondItem="CDE-6I-wGr" secondAttribute="trailing" id="ZvK-Zp-GuS"/>
+                            <constraint firstItem="z9K-EN-OS2" firstAttribute="top" secondItem="9Ex-ER-QH6" secondAttribute="bottom" constant="43" id="aUV-UR-D85">
+                                <variation key="heightClass=compact" constant="10"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="5"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="gBr-y6-wvI" secondAttribute="trailing" id="ocr-QU-iOn"/>
                             <constraint firstItem="Itp-V5-AG6" firstAttribute="top" secondItem="Nxn-c7-b05" secondAttribute="bottom" constant="7" id="qOX-Yc-STe">
                                 <variation key="heightClass=compact-widthClass=compact" constant="4"/>
@@ -1284,6 +1314,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Hearing Aid" image="HearingIcon.png" id="Mmd-id-atC"/>
+                    <connections>
+                        <outlet property="microphoneButton" destination="9Ex-ER-QH6" id="E5B-0s-1IA"/>
+                        <outlet property="playbackStatus" destination="Nxn-c7-b05" id="UiR-yJ-Jra"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m9a-PP-h4b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1761,6 +1795,7 @@
         <image name="HearingWave.png" width="1024" height="1024"/>
         <image name="LeftArrow.png" width="256" height="256"/>
         <image name="LeftEar.png" width="512" height="512"/>
+        <image name="Microphone.png" width="512" height="512"/>
         <image name="MoreIcon.png" width="51" height="30"/>
         <image name="Play.png" width="1024" height="1024"/>
         <image name="RightArrow.png" width="256" height="256"/>

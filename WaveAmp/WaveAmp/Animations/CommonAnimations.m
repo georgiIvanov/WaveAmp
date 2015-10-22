@@ -21,4 +21,14 @@
                     completion:completion];
 }
 
++(void)animate:(UIButton*)button withNewImage:(NSString*)imageName options:(UIViewAnimationOptions)options duration:(float)duration
+{
+    [UIView transitionWithView:button
+                      duration:duration
+                       options:options
+                    animations:^{
+                        [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+                    } completion:nil];
+}
+
 @end

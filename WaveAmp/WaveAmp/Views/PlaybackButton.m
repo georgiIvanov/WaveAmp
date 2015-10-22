@@ -7,6 +7,7 @@
 //
 
 #import "PlaybackButton.h"
+#import "CommonAnimations.h"
 
 @implementation PlaybackButton
 
@@ -35,12 +36,10 @@
         imageName = @"Play";
     }
     
-    [UIView transitionWithView:self
-                      duration:0.12
-                       options:UIViewAnimationOptionTransitionCrossDissolve
-                    animations:^{
-                        [self setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
-                    } completion:nil];
+    [CommonAnimations animate:self
+                 withNewImage:imageName
+                      options:UIViewAnimationOptionTransitionCrossDissolve
+                     duration:0.12f];
 }
 
 @end

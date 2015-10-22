@@ -11,5 +11,6 @@
 @interface CommonAnimations : NSObject
 
 +(void)animate:(UILabel*)label withNewText:(NSString*)newText duration:(float)duration completionBlock:(void (^)(BOOL finished))completion;
++(void)animate:(UIButton*)button withNewImage:(NSString*)imageName options:(UIViewAnimationOptions)options duration:(float)duration;
 
 @end

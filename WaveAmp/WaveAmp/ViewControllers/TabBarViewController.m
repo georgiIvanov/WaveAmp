@@ -10,11 +10,13 @@
 #import "AudiogramViewController.h"
 #import "AdjustedSpeechViewController.h"
 #import "ViewConstants.h"
+#import "HearingAidViewController.h"
 
 @interface TabBarViewController()
 
 @property(nonatomic, weak) AudiogramViewController* audiogramVc;
 @property(nonatomic, weak) AdjustedSpeechViewController* adjustedSpeechVc;
+@property(nonatomic, weak) HearingAidViewController* hearingAidVc;
 
 @end
 
@@ -32,15 +34,20 @@
         {
             self.audiogramVc = (AudiogramViewController*)vc;
         }
-        if([vc isKindOfClass:[AdjustedSpeechViewController class]])
+        else if([vc isKindOfClass:[AdjustedSpeechViewController class]])
         {
             self.adjustedSpeechVc = (AdjustedSpeechViewController*)vc;
+        }
+        else if([vc isKindOfClass:[HearingAidViewController class]])
+        {
+            self.hearingAidVc = (HearingAidViewController*)vc;
         }
     }
     
     __weak typeof(self) wself = self;
     self.audiogramVc.audiogramUpdated = ^(AudiogramData* ad){
         wself.adjustedSpeechVc.audiogramData = ad;
+        wself.hearingAidVc.audiogramData = ad;
     };
 }
 

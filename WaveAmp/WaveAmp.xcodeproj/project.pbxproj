@@ -28,8 +28,11 @@
 		FF3BFDE31BD8CDED0003630E /* MoreIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDE11BD8CDED0003630E /* MoreIcon@2x.png */; settings = {ASSET_TAGS = (); }; };
 		FF3BFDE61BD8D1620003630E /* AudioPlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3BFDE51BD8D1620003630E /* AudioPlotViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FF3BFDEA1BD8D76E0003630E /* PlaybackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3BFDE91BD8D76E0003630E /* PlaybackViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FF3BFDED1BD8F2260003630E /* HearingAidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3BFDEC1BD8F2260003630E /* HearingAidViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FF3BFDF01BD8F2CC0003630E /* MicrophonePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3BFDEF1BD8F2CC0003630E /* MicrophonePlayer.m */; settings = {ASSET_TAGS = (); }; };
 		FF3BFDF31BD90BCB0003630E /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3BFDF21BD90BCB0003630E /* AudioPlayer.m */; settings = {ASSET_TAGS = (); }; };
+		FF3BFDF61BD934780003630E /* Microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDF41BD934780003630E /* Microphone.png */; settings = {ASSET_TAGS = (); }; };
+		FF3BFDF71BD934780003630E /* MicrophoneMuted.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDF51BD934780003630E /* MicrophoneMuted.png */; settings = {ASSET_TAGS = (); }; };
 		FF42B96D1B4E35AF00535A7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B96C1B4E35AF00535A7B /* main.m */; };
 		FF42B9701B4E35AF00535A7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B96F1B4E35AF00535A7B /* AppDelegate.m */; };
 		FF42B9761B4E35AF00535A7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9741B4E35AF00535A7B /* Main.storyboard */; };
@@ -129,10 +132,14 @@
 		FF3BFDE51BD8D1620003630E /* AudioPlotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlotViewController.m; sourceTree = "<group>"; };
 		FF3BFDE81BD8D76E0003630E /* PlaybackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaybackViewController.h; sourceTree = "<group>"; };
 		FF3BFDE91BD8D76E0003630E /* PlaybackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaybackViewController.m; sourceTree = "<group>"; };
+		FF3BFDEB1BD8F2260003630E /* HearingAidViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HearingAidViewController.h; sourceTree = "<group>"; };
+		FF3BFDEC1BD8F2260003630E /* HearingAidViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HearingAidViewController.m; sourceTree = "<group>"; };
 		FF3BFDEE1BD8F2CC0003630E /* MicrophonePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MicrophonePlayer.h; sourceTree = "<group>"; };
 		FF3BFDEF1BD8F2CC0003630E /* MicrophonePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MicrophonePlayer.m; sourceTree = "<group>"; };
 		FF3BFDF11BD90B080003630E /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
 		FF3BFDF21BD90BCB0003630E /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
+		FF3BFDF41BD934780003630E /* Microphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Microphone.png; sourceTree = "<group>"; };
+		FF3BFDF51BD934780003630E /* MicrophoneMuted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MicrophoneMuted.png; sourceTree = "<group>"; };
 		FF42B9671B4E35AF00535A7B /* WaveAmp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveAmp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF42B96B1B4E35AF00535A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF42B96C1B4E35AF00535A7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -396,6 +403,8 @@
 				FF9DB4E31B53E097006E4D3F /* TestInstructionsViewController.m */,
 				FF9DB5331B56360E006E4D3F /* AdjustedSpeechViewController.h */,
 				FF9DB5341B56360E006E4D3F /* AdjustedSpeechViewController.m */,
+				FF3BFDEB1BD8F2260003630E /* HearingAidViewController.h */,
+				FF3BFDEC1BD8F2260003630E /* HearingAidViewController.m */,
 				FF3BFDE41BD8D1620003630E /* AudioPlotViewController.h */,
 				FF3BFDE51BD8D1620003630E /* AudioPlotViewController.m */,
 			);
@@ -447,6 +456,8 @@
 				FF9DB5461B569A95006E4D3F /* Play.png */,
 				FF9DB4E51B53EE36006E4D3F /* Headphones.png */,
 				FF76043E1B53BEDE0024930C /* HearingWave.png */,
+				FF3BFDF41BD934780003630E /* Microphone.png */,
+				FF3BFDF51BD934780003630E /* MicrophoneMuted.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -642,6 +653,7 @@
 				FF8448731B7F220600A06D6B /* OpenSans-Light.ttf in Resources */,
 				FF3BFDDC1BD8CC770003630E /* AudiogramIcon.png in Resources */,
 				FF8448741B7F220600A06D6B /* OpenSans-Regular.ttf in Resources */,
+				FF3BFDF61BD934780003630E /* Microphone.png in Resources */,
 				FF3BFDDB1BD8CC770003630E /* AdjustedSpeechIcon@2x.png in Resources */,
 				FF8448751B7F220600A06D6B /* OpenSans-Semibold.ttf in Resources */,
 				FF3BFDE21BD8CDED0003630E /* MoreIcon.png in Resources */,
@@ -650,6 +662,7 @@
 				FF2619C81B661B770069907D /* BasicArrowDown.png in Resources */,
 				FF84488C1B7FA42400A06D6B /* RightArrow.png in Resources */,
 				FF84486E1B7F19EA00A06D6B /* TestCircle.png in Resources */,
+				FF3BFDF71BD934780003630E /* MicrophoneMuted.png in Resources */,
 				FF3BFDDE1BD8CC770003630E /* HearingIcon.png in Resources */,
 				FF9DB5481B569A95006E4D3F /* Play.png in Resources */,
 				FF9DB4E61B53EE36006E4D3F /* Headphones.png in Resources */,
@@ -730,6 +743,7 @@
 				FF9DB5441B568918006E4D3F /* SoundFile.m in Sources */,
 				FF7DD9101B63ACD7008006DD /* SoundModifier.m in Sources */,
 				FF2619CB1B661FA30069907D /* DrawerButton.m in Sources */,
+				FF3BFDED1BD8F2260003630E /* HearingAidViewController.m in Sources */,
 				FF86FF631B60B18500C3E093 /* NovocainePlayer.m in Sources */,
 				FFCE737C1B525D4400F52920 /* TestsAppDelegate.m in Sources */,
 				FF0A48421B4FB44E0021B149 /* AmplitudeMultiplier.m in Sources */,
