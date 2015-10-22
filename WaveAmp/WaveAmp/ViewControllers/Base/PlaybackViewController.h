@@ -19,14 +19,12 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *playbackStatus;
 
-@property(nonatomic) FilePlayer* filePlayer;
+@property(nonatomic) AudioPlayer* audioPlayer;
 @property(nonatomic) SoundModifier* soundModifier;
 @property(nonatomic) SoundModType soundModifierType;
 @property(nonatomic) AudiogramData* audiogramData;
 @property(nonatomic, weak) AudioPlotViewController* audioPlotViewController;
 
 -(void)showPlaybackStatus:(BOOL)shouldSimulateLoss;
--(void)startPlayingFile:(SoundFile*)sf;
--(void)pausePlayback;
 
 @end

@@ -17,18 +17,36 @@
 
 @implementation PlaybackViewController
 
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        self.soundModifierType = kToneEqualizer;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.audioPlotViewController.plotType = EZPlotTypeRolling;
+    self.audioPlotViewController.shouldFill = YES;
+    self.audioPlotViewController.shouldMirror = YES;
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self.audioPlotViewController clearPlot];
 }
 
 -(void)setAudiogramData:(AudiogramData *)audiogramData
 {
     _audiogramData = audiogramData;
-    self.soundModifier = [SoundModifiersFactory soundModifier:self.soundModifierType withAudiogramData:audiogramData samplingRage:self.filePlayer.samplingRate];
+    self.soundModifier = [SoundModifiersFactory soundModifier:self.soundModifierType withAudiogramData:audiogramData samplingRage:self.audioPlayer.samplingRate];
     
     __weak typeof(self) wself = self;
-    self.filePlayer.outputBlock = ^void(float *data, UInt32 numFrames, UInt32 numChannels){
+    self.audioPlayer.outputBlock = ^void(float *data, UInt32 numFrames, UInt32 numChannels){
         
         float* originalSignal = NULL;
         float* adjustedSignal = NULL;
@@ -60,28 +78,11 @@
     };
 }
 
--(void)startPlayingFile:(SoundFile*)sf
-{
-    if(self.filePlayer.playing)
-    {
-        [self.filePlayer pause];
-    }
-    
-    NSURL* url = [NSURL URLWithString:sf.path];
-    [self.filePlayer openFileWithURL:url];
-    [self.filePlayer play];
-}
-
--(void)pausePlayback
-{
-    [self.filePlayer pause];
-}
-
 -(void)showPlaybackStatus:(BOOL)shouldSimulateLoss
 {
     NSString* text;
     
-    if(self.filePlayer.playing == NO)
+    if(self.audioPlayer.playing == NO)
     {
         text = @"Paused";
     }

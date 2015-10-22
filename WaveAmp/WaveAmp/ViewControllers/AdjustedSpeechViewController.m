@@ -15,6 +15,7 @@
 @interface AdjustedSpeechViewController ()
 
 @property(nonatomic) NSArray* speechFiles;
+@property(nonatomic) FilePlayer* filePlayer;
 
 @end
 
@@ -25,7 +26,7 @@
     self = [super initWithCoder:coder];
     if (self) {
         self.filePlayer = [[FilePlayer alloc] init];
-        self.soundModifierType = kToneEqualizer;
+        super.audioPlayer = self.filePlayer;
     }
     return self;
 }
@@ -39,10 +40,6 @@
     [self loadSpeechPaths];
     [self.playbackButton setScalingTouchDown:1.7 touchUp:1];
     [self showPlaybackStatus:self.simulateLossCheckbox.isChecked];
-    
-    self.audioPlotViewController.plotType = EZPlotTypeRolling;
-    self.audioPlotViewController.shouldFill = YES;
-    self.audioPlotViewController.shouldMirror = YES;
 }
 
 -(void)viewWillDisappear:(BOOL)animated
@@ -53,8 +50,6 @@
         [self.playbackButton togglePlayState];
         [self playbackTap:self.playbackButton];
     }
-    
-    [self.audioPlotViewController clearPlot];
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -90,13 +85,21 @@
 
 -(void)startPlayingFile:(SoundFile*)sf
 {
-    [super startPlayingFile:sf];
+    if(self.filePlayer.playing)
+    {
+        [self.filePlayer pause];
+    }
+    
+    NSURL* url = [NSURL URLWithString:sf.path];
+    [self.filePlayer openFileWithURL:url];
+    [self.filePlayer play];
+    
     [self showPlaybackStatus:self.simulateLossCheckbox.isChecked];
 }
 
 -(void)pausePlayback
 {
-    [super pausePlayback];
+    [self.filePlayer pause];
     [self showPlaybackStatus:self.simulateLossCheckbox.isChecked];
 }
 
