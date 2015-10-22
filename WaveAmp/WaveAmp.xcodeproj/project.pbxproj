@@ -26,6 +26,7 @@
 		FF3BFDDF1BD8CC770003630E /* HearingIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDD91BD8CC770003630E /* HearingIcon@2x.png */; settings = {ASSET_TAGS = (); }; };
 		FF3BFDE21BD8CDED0003630E /* MoreIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDE01BD8CDED0003630E /* MoreIcon.png */; settings = {ASSET_TAGS = (); }; };
 		FF3BFDE31BD8CDED0003630E /* MoreIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDE11BD8CDED0003630E /* MoreIcon@2x.png */; settings = {ASSET_TAGS = (); }; };
+		FF3BFDE61BD8D1620003630E /* AudioPlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3BFDE51BD8D1620003630E /* AudioPlotViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FF42B96D1B4E35AF00535A7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B96C1B4E35AF00535A7B /* main.m */; };
 		FF42B9701B4E35AF00535A7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B96F1B4E35AF00535A7B /* AppDelegate.m */; };
 		FF42B9761B4E35AF00535A7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9741B4E35AF00535A7B /* Main.storyboard */; };
@@ -36,7 +37,6 @@
 		FF481DCA1B5BB42C00AF588B /* RightEar.png in Resources */ = {isa = PBXBuildFile; fileRef = FF481DC81B5BB42C00AF588B /* RightEar.png */; };
 		FF481DCD1B5BB91300AF588B /* AudiogramMarkerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF481DCC1B5BB91300AF588B /* AudiogramMarkerView.m */; };
 		FF69D66A1B624C13000BD808 /* DSPHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = FF69D6691B624C13000BD808 /* DSPHelpers.m */; };
-		FF69D66D1B636376000BD808 /* AudioPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = FF69D66C1B636376000BD808 /* AudioPlot.m */; };
 		FF76043F1B53BEDE0024930C /* HearingWave.png in Resources */ = {isa = PBXBuildFile; fileRef = FF76043E1B53BEDE0024930C /* HearingWave.png */; };
 		FF7604431B53C6D20024930C /* UIView+PopAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7604421B53C6D20024930C /* UIView+PopAnimations.m */; };
 		FF7DD90D1B63ACBE008006DD /* ToneEqualizer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7DD90C1B63ACBE008006DD /* ToneEqualizer.m */; };
@@ -122,6 +122,8 @@
 		FF3BFDD91BD8CC770003630E /* HearingIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HearingIcon@2x.png"; sourceTree = "<group>"; };
 		FF3BFDE01BD8CDED0003630E /* MoreIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MoreIcon.png; sourceTree = "<group>"; };
 		FF3BFDE11BD8CDED0003630E /* MoreIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MoreIcon@2x.png"; sourceTree = "<group>"; };
+		FF3BFDE41BD8D1620003630E /* AudioPlotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlotViewController.h; sourceTree = "<group>"; };
+		FF3BFDE51BD8D1620003630E /* AudioPlotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlotViewController.m; sourceTree = "<group>"; };
 		FF42B9671B4E35AF00535A7B /* WaveAmp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveAmp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF42B96B1B4E35AF00535A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF42B96C1B4E35AF00535A7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -140,8 +142,6 @@
 		FF481DCC1B5BB91300AF588B /* AudiogramMarkerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiogramMarkerView.m; sourceTree = "<group>"; };
 		FF69D6681B624C13000BD808 /* DSPHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSPHelpers.h; sourceTree = "<group>"; };
 		FF69D6691B624C13000BD808 /* DSPHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSPHelpers.m; sourceTree = "<group>"; };
-		FF69D66B1B636376000BD808 /* AudioPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlot.h; sourceTree = "<group>"; };
-		FF69D66C1B636376000BD808 /* AudioPlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlot.m; sourceTree = "<group>"; };
 		FF76043E1B53BEDE0024930C /* HearingWave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HearingWave.png; sourceTree = "<group>"; };
 		FF7604411B53C6D20024930C /* UIView+PopAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PopAnimations.h"; sourceTree = "<group>"; };
 		FF7604421B53C6D20024930C /* UIView+PopAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PopAnimations.m"; sourceTree = "<group>"; };
@@ -377,6 +377,8 @@
 				FF9DB4E31B53E097006E4D3F /* TestInstructionsViewController.m */,
 				FF9DB5331B56360E006E4D3F /* AdjustedSpeechViewController.h */,
 				FF9DB5341B56360E006E4D3F /* AdjustedSpeechViewController.m */,
+				FF3BFDE41BD8D1620003630E /* AudioPlotViewController.h */,
+				FF3BFDE51BD8D1620003630E /* AudioPlotViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -515,8 +517,6 @@
 				FF9DB54D1B569EAA006E4D3F /* BouncyButton.m */,
 				FF9DB54F1B56A02D006E4D3F /* PlaybackButton.h */,
 				FF9DB5501B56A02D006E4D3F /* PlaybackButton.m */,
-				FF69D66B1B636376000BD808 /* AudioPlot.h */,
-				FF69D66C1B636376000BD808 /* AudioPlot.m */,
 				FF2619C91B661FA30069907D /* DrawerButton.h */,
 				FF2619CA1B661FA30069907D /* DrawerButton.m */,
 				FF8448781B7F28C400A06D6B /* RoundedButton.h */,
@@ -710,6 +710,7 @@
 				FFCE737C1B525D4400F52920 /* TestsAppDelegate.m in Sources */,
 				FF0A48421B4FB44E0021B149 /* AmplitudeMultiplier.m in Sources */,
 				FF0A484C1B5031A10021B149 /* ExamPunchCard.m in Sources */,
+				FF3BFDE61BD8D1620003630E /* AudioPlotViewController.m in Sources */,
 				FF481DC61B5BB27900AF588B /* AudiogramView.m in Sources */,
 				FF0A48491B4FEC7E0021B149 /* FrequencyThreshold.m in Sources */,
 				FF0A48381B4E3F560021B149 /* AbsThresholdViewController.m in Sources */,
@@ -726,7 +727,6 @@
 				FF9DB5351B56360E006E4D3F /* AdjustedSpeechViewController.m in Sources */,
 				FF42B96D1B4E35AF00535A7B /* main.m in Sources */,
 				FF9DB5511B56A02D006E4D3F /* PlaybackButton.m in Sources */,
-				FF69D66D1B636376000BD808 /* AudioPlot.m in Sources */,
 				FF7DD9131B63ADCB008006DD /* SoundModifiersFactory.m in Sources */,
 				FF84489C1B80A69300A06D6B /* ViewConstants.mm in Sources */,
 			);

@@ -1,14 +1,18 @@
 //
-//  AudioPlot.m
+//  AudioPlotViewController.m
 //  WaveAmp
 //
-//  Created by Georgi Ivanov on 7/25/15.
-//  Copyright (c) 2015 GeorgiIvanov. All rights reserved.
+//  Created by Georgi Ivanov on 10/22/15.
+//  Copyright © 2015 GeorgiIvanov. All rights reserved.
 //
 
-#import "AudioPlot.h"
+#import "AudioPlotViewController.h"
 
-@implementation AudioPlot
+@interface AudioPlotViewController ()
+
+@end
+
+@implementation AudioPlotViewController
 
 - (instancetype)initWithCoder:(NSCoder *)coder
 {
@@ -61,11 +65,11 @@
 {
     if(adjustedInFront)
     {
-        [self bringSubviewToFront:self.adjustedPlot];
+        [self.view bringSubviewToFront:self.adjustedPlot];
     }
     else
     {
-        [self sendSubviewToBack:self.adjustedPlot];
+        [self.view sendSubviewToBack:self.adjustedPlot];
     }
 }
 

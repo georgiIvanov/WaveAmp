@@ -1,15 +1,15 @@
 //
-//  AudioPlot.h
+//  AudioPlotViewController.h
 //  WaveAmp
 //
-//  Created by Georgi Ivanov on 7/25/15.
-//  Copyright (c) 2015 GeorgiIvanov. All rights reserved.
+//  Created by Georgi Ivanov on 10/22/15.
+//  Copyright © 2015 GeorgiIvanov. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <EZAudioPlot.h>
 
-@interface AudioPlot : UIView
+@interface AudioPlotViewController : UIViewController
 
 @property(nonatomic) EZPlotType plotType;
 @property(nonatomic) BOOL shouldFill;
