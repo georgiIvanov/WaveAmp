@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import <Novocaine.h>
 
-@interface AudioPlayer()
+@interface NovocainePlayer()
 
 @property(nonatomic, readonly) Novocaine* audioManager;
 

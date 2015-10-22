@@ -2,8 +2,8 @@
 //  AudioPlayer.h
 //  WaveAmp
 //
-//  Created by Georgi Ivanov on 7/23/15.
-//  Copyright (c) 2015 GeorgiIvanov. All rights reserved.
+//  Created by Georgi Ivanov on 10/22/15.
+//  Copyright © 2015 GeorgiIvanov. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -17,6 +17,5 @@
 
 -(void)play;
 -(void)pause;
--(void)handOverOutput;
 
 @end

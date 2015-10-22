@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 GeorgiIvanov. All rights reserved.
 //
 
-#import "AudioPlayer.h"
+#import "NovocainePlayer.h"
 
-@interface FilePlayer : AudioPlayer
+@interface FilePlayer : NovocainePlayer
 
 @property(nonatomic) float duration;
 

@@ -8,7 +8,7 @@
 
 #import "PureTonePlayer.h"
 #import <AVFoundation/AVFoundation.h>
-#import "AudioPlayer_protected.h"
+#import "NovocainePlayer_protected.h"
 
 @implementation PureTonePlayer
 
@@ -47,8 +47,6 @@
                  phase = -1;
              }
          }
-         
-         [wself handOverOutput];
      }];
     [self.audioManager play];
 }

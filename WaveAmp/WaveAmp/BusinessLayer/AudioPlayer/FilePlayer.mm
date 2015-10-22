@@ -7,7 +7,7 @@
 //
 
 #import "FilePlayer.h"
-#import "AudioPlayer_protected.h"
+#import "NovocainePlayer_protected.h"
 #import <AudioFileReader.h>
 
 @interface FilePlayer()
