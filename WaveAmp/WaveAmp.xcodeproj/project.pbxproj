@@ -18,10 +18,14 @@
 		FF0A484C1B5031A10021B149 /* ExamPunchCard.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A484B1B5031A10021B149 /* ExamPunchCard.m */; };
 		FF2619C81B661B770069907D /* BasicArrowDown.png in Resources */ = {isa = PBXBuildFile; fileRef = FF2619C71B661B770069907D /* BasicArrowDown.png */; };
 		FF2619CB1B661FA30069907D /* DrawerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2619CA1B661FA30069907D /* DrawerButton.m */; };
-		FF2619CD1B6767A50069907D /* AudiogramIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF2619CC1B6767A50069907D /* AudiogramIcon.png */; };
-		FF2619CF1B6768250069907D /* AudiogramIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF2619CE1B6768250069907D /* AudiogramIcon@2x.png */; };
-		FF2619D21B676AA00069907D /* AdjustedSpeechIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF2619D01B676AA00069907D /* AdjustedSpeechIcon.png */; };
-		FF2619D31B676AA00069907D /* AdjustedSpeechIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF2619D11B676AA00069907D /* AdjustedSpeechIcon@2x.png */; };
+		FF3BFDDA1BD8CC770003630E /* AdjustedSpeechIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDD41BD8CC770003630E /* AdjustedSpeechIcon.png */; settings = {ASSET_TAGS = (); }; };
+		FF3BFDDB1BD8CC770003630E /* AdjustedSpeechIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDD51BD8CC770003630E /* AdjustedSpeechIcon@2x.png */; settings = {ASSET_TAGS = (); }; };
+		FF3BFDDC1BD8CC770003630E /* AudiogramIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDD61BD8CC770003630E /* AudiogramIcon.png */; settings = {ASSET_TAGS = (); }; };
+		FF3BFDDD1BD8CC770003630E /* AudiogramIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDD71BD8CC770003630E /* AudiogramIcon@2x.png */; settings = {ASSET_TAGS = (); }; };
+		FF3BFDDE1BD8CC770003630E /* HearingIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDD81BD8CC770003630E /* HearingIcon.png */; settings = {ASSET_TAGS = (); }; };
+		FF3BFDDF1BD8CC770003630E /* HearingIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDD91BD8CC770003630E /* HearingIcon@2x.png */; settings = {ASSET_TAGS = (); }; };
+		FF3BFDE21BD8CDED0003630E /* MoreIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDE01BD8CDED0003630E /* MoreIcon.png */; settings = {ASSET_TAGS = (); }; };
+		FF3BFDE31BD8CDED0003630E /* MoreIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDE11BD8CDED0003630E /* MoreIcon@2x.png */; settings = {ASSET_TAGS = (); }; };
 		FF42B96D1B4E35AF00535A7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B96C1B4E35AF00535A7B /* main.m */; };
 		FF42B9701B4E35AF00535A7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B96F1B4E35AF00535A7B /* AppDelegate.m */; };
 		FF42B9761B4E35AF00535A7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9741B4E35AF00535A7B /* Main.storyboard */; };
@@ -110,10 +114,14 @@
 		FF2619C71B661B770069907D /* BasicArrowDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BasicArrowDown.png; sourceTree = "<group>"; };
 		FF2619C91B661FA30069907D /* DrawerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerButton.h; sourceTree = "<group>"; };
 		FF2619CA1B661FA30069907D /* DrawerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerButton.m; sourceTree = "<group>"; };
-		FF2619CC1B6767A50069907D /* AudiogramIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AudiogramIcon.png; sourceTree = "<group>"; };
-		FF2619CE1B6768250069907D /* AudiogramIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AudiogramIcon@2x.png"; sourceTree = "<group>"; };
-		FF2619D01B676AA00069907D /* AdjustedSpeechIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AdjustedSpeechIcon.png; sourceTree = "<group>"; };
-		FF2619D11B676AA00069907D /* AdjustedSpeechIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AdjustedSpeechIcon@2x.png"; sourceTree = "<group>"; };
+		FF3BFDD41BD8CC770003630E /* AdjustedSpeechIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AdjustedSpeechIcon.png; sourceTree = "<group>"; };
+		FF3BFDD51BD8CC770003630E /* AdjustedSpeechIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AdjustedSpeechIcon@2x.png"; sourceTree = "<group>"; };
+		FF3BFDD61BD8CC770003630E /* AudiogramIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AudiogramIcon.png; sourceTree = "<group>"; };
+		FF3BFDD71BD8CC770003630E /* AudiogramIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AudiogramIcon@2x.png"; sourceTree = "<group>"; };
+		FF3BFDD81BD8CC770003630E /* HearingIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HearingIcon.png; sourceTree = "<group>"; };
+		FF3BFDD91BD8CC770003630E /* HearingIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HearingIcon@2x.png"; sourceTree = "<group>"; };
+		FF3BFDE01BD8CDED0003630E /* MoreIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MoreIcon.png; sourceTree = "<group>"; };
+		FF3BFDE11BD8CDED0003630E /* MoreIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MoreIcon@2x.png"; sourceTree = "<group>"; };
 		FF42B9671B4E35AF00535A7B /* WaveAmp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveAmp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF42B96B1B4E35AF00535A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF42B96C1B4E35AF00535A7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -273,6 +281,21 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		FF3BFDD31BD8CC770003630E /* TabbarIcons */ = {
+			isa = PBXGroup;
+			children = (
+				FF3BFDE01BD8CDED0003630E /* MoreIcon.png */,
+				FF3BFDE11BD8CDED0003630E /* MoreIcon@2x.png */,
+				FF3BFDD41BD8CC770003630E /* AdjustedSpeechIcon.png */,
+				FF3BFDD51BD8CC770003630E /* AdjustedSpeechIcon@2x.png */,
+				FF3BFDD61BD8CC770003630E /* AudiogramIcon.png */,
+				FF3BFDD71BD8CC770003630E /* AudiogramIcon@2x.png */,
+				FF3BFDD81BD8CC770003630E /* HearingIcon.png */,
+				FF3BFDD91BD8CC770003630E /* HearingIcon@2x.png */,
+			);
+			path = TabbarIcons;
+			sourceTree = "<group>";
+		};
 		FF42B95E1B4E35AF00535A7B = {
 			isa = PBXGroup;
 			children = (
@@ -391,14 +414,11 @@
 		FF76043D1B53BE1D0024930C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FF3BFDD31BD8CC770003630E /* TabbarIcons */,
 				FF8448891B7FA42400A06D6B /* LeftArrow.png */,
 				FF84488A1B7FA42400A06D6B /* RightArrow.png */,
 				FF8448761B7F27AF00A06D6B /* CloseIcon.png */,
 				FF84486D1B7F19EA00A06D6B /* TestCircle.png */,
-				FF2619D01B676AA00069907D /* AdjustedSpeechIcon.png */,
-				FF2619D11B676AA00069907D /* AdjustedSpeechIcon@2x.png */,
-				FF2619CE1B6768250069907D /* AudiogramIcon@2x.png */,
-				FF2619CC1B6767A50069907D /* AudiogramIcon.png */,
 				FF2619C71B661B770069907D /* BasicArrowDown.png */,
 				FF481DC71B5BB42C00AF588B /* LeftEar.png */,
 				FF481DC81B5BB42C00AF588B /* RightEar.png */,
@@ -595,27 +615,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF3BFDDA1BD8CC770003630E /* AdjustedSpeechIcon.png in Resources */,
 				FF8448731B7F220600A06D6B /* OpenSans-Light.ttf in Resources */,
+				FF3BFDDC1BD8CC770003630E /* AudiogramIcon.png in Resources */,
 				FF8448741B7F220600A06D6B /* OpenSans-Regular.ttf in Resources */,
+				FF3BFDDB1BD8CC770003630E /* AdjustedSpeechIcon@2x.png in Resources */,
 				FF8448751B7F220600A06D6B /* OpenSans-Semibold.ttf in Resources */,
+				FF3BFDE21BD8CDED0003630E /* MoreIcon.png in Resources */,
 				FF84488B1B7FA42400A06D6B /* LeftArrow.png in Resources */,
 				FF42B9761B4E35AF00535A7B /* Main.storyboard in Resources */,
 				FF2619C81B661B770069907D /* BasicArrowDown.png in Resources */,
 				FF84488C1B7FA42400A06D6B /* RightArrow.png in Resources */,
-				FF2619CD1B6767A50069907D /* AudiogramIcon.png in Resources */,
 				FF84486E1B7F19EA00A06D6B /* TestCircle.png in Resources */,
+				FF3BFDDE1BD8CC770003630E /* HearingIcon.png in Resources */,
 				FF9DB5481B569A95006E4D3F /* Play.png in Resources */,
 				FF9DB4E61B53EE36006E4D3F /* Headphones.png in Resources */,
+				FF3BFDDD1BD8CC770003630E /* AudiogramIcon@2x.png in Resources */,
 				FF481DCA1B5BB42C00AF588B /* RightEar.png in Resources */,
-				FF2619CF1B6768250069907D /* AudiogramIcon@2x.png in Resources */,
 				FF8448771B7F27AF00A06D6B /* CloseIcon.png in Resources */,
+				FF3BFDE31BD8CDED0003630E /* MoreIcon@2x.png in Resources */,
 				FF42B97B1B4E35AF00535A7B /* LaunchScreen.xib in Resources */,
-				FF2619D31B676AA00069907D /* AdjustedSpeechIcon@2x.png in Resources */,
 				FF9DB5411B56887B006E4D3F /* AudioFiles in Resources */,
 				FF42B9781B4E35AF00535A7B /* Images.xcassets in Resources */,
 				FF76043F1B53BEDE0024930C /* HearingWave.png in Resources */,
 				FF481DC91B5BB42C00AF588B /* LeftEar.png in Resources */,
-				FF2619D21B676AA00069907D /* AdjustedSpeechIcon.png in Resources */,
+				FF3BFDDF1BD8CC770003630E /* HearingIcon@2x.png in Resources */,
 				FF9DB5471B569A95006E4D3F /* Pause.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
