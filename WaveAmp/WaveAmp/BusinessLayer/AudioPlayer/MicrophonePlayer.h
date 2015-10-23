@@ -11,6 +11,6 @@
 
 @interface MicrophonePlayer : AudioPlayer
 
--(void)setInputDevice:(EZAudioDevice*)inputDevice;
+@property(nonatomic) EZAudioDevice* currentInputDevice;
 
 @end
