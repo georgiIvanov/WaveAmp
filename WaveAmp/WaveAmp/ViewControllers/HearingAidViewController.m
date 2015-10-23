@@ -40,50 +40,56 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self showPlaybackStatus:NO];
+    [self showPlaybackStatusWithSimulatedLoss:NO];
 }
 
 -(void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    if(_microphonePlayer.playing)
-    {
-        [self microphoneTap:self.microphoneButton];
-    }
+
+    [self buttonStartPlaying:YES];
+    [self.microphonePlayer pause];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)buttonStartPlaying:(BOOL)startPlaying
+{
+    NSString* newImage = nil;
+    if (startPlaying)
+    {
+        newImage = @"Microphone";
+    }
+    else
+    {
+        newImage = @"MicrophoneMuted";
+    }
+    
+    [self showPlaybackStatusWithSimulatedLoss:NO];
+    [CommonAnimations animate:self.microphoneButton
+                 withNewImage:newImage
+                      options:UIViewAnimationOptionTransitionCrossDissolve
+                     duration:0.12f];
 }
 
 #pragma mark - UI Ations
 
 - (IBAction)microphoneTap:(UIButton*)sender
 {
-    if(!self.audioDevices.usingHeadphones && sender)
+    if(!self.audioDevices.usingHeadphones)
     {
         [self.deviceStateLabel addStretchAnimationBounciness:10 velocity:CGPointMake(2, 2)];
         return;
     }
     
-    NSString* newImage = nil;
-    if (self.microphonePlayer.playing)
+    [self buttonStartPlaying:self.microphonePlayer.playing];
+    
+    if(self.microphonePlayer.playing)
     {
         [self.microphonePlayer pause];
-        newImage = @"Microphone";
     }
     else
     {
         [self.microphonePlayer play];
-        newImage = @"MicrophoneMuted";
-    }
-    
-    [self showPlaybackStatus:NO];
-    [CommonAnimations animate:self.microphoneButton
-                 withNewImage:newImage
-                      options:UIViewAnimationOptionTransitionCrossDissolve
-                     duration:0.12f];
+    }    
 }
 
 - (IBAction)switchInputSourceTap:(SpinningButton *)sender {
@@ -111,9 +117,25 @@
     {
         if(self.microphonePlayer.playing)
         {
-            [self microphoneTap:nil];
+            [self.microphonePlayer pause];
+            [self buttonStartPlaying:YES];
         }
         self.deviceStateLabel.text = @"Please plugin headphones.";
+    }
+}
+
+-(void)applicationInterrupted
+{
+    [self.microphonePlayer pause];
+    [self buttonStartPlaying:NO];
+}
+
+-(void)interruptionEndedShouldResume:(BOOL)shouldResume
+{
+    if(shouldResume && self.audioDevices.usingHeadphones)
+    {
+        [self.microphonePlayer play];
+        [self buttonStartPlaying:YES];
     }
 }
 

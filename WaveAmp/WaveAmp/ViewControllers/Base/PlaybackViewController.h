@@ -25,6 +25,6 @@
 @property(nonatomic) AudiogramData* audiogramData;
 @property(nonatomic, weak) AudioPlotViewController* audioPlotViewController;
 
--(void)showPlaybackStatus:(BOOL)shouldSimulateLoss;
+-(void)showPlaybackStatusWithSimulatedLoss:(BOOL)shouldSimulateLoss;
 
 @end

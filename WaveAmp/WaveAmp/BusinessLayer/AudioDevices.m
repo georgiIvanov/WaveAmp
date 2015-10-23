@@ -22,6 +22,7 @@
         _selectedInputDevice = 0;
         NSNotificationCenter* defaultCenter = [NSNotificationCenter defaultCenter];
         [defaultCenter addObserver:self selector:@selector(audioRouteChanged:) name:AVAudioSessionRouteChangeNotification object:nil];
+        [defaultCenter addObserver:self selector:@selector(audioInterrupted:) name:AVAudioSessionInterruptionNotification object:nil];
         
         NSArray* devices = [EZAudioDevice inputDevices];
         for (int i = 0; i < devices.count; i++)
@@ -92,11 +93,38 @@
     [self.delegate headphonesArePluggedIn:headphonesPlugged];
 }
 
+-(void)onApplicationInterrupt
+{
+    [self.delegate applicationInterrupted];
+}
+
+-(void)onApplicationInterruptionEndWithOptionKey:(NSNumber*)option
+{
+    BOOL shouldResume = [option unsignedIntegerValue] == AVAudioSessionInterruptionOptionShouldResume ? YES : NO;
+    [self.delegate interruptionEndedShouldResume:shouldResume];
+}
+
 #pragma mark - Notifications
 
 -(void)audioRouteChanged:(NSNotification*)notification
 {
     [self checkForHeadphones];
+}
+
+-(void)audioInterrupted:(NSNotification*)notification
+{
+    NSDictionary* dict = notification.userInfo;
+    NSNumber* interruptionType = [dict objectForKey:AVAudioSessionInterruptionTypeKey];
+    
+    if([interruptionType unsignedIntegerValue] == AVAudioSessionInterruptionTypeBegan)
+    {
+        [self onApplicationInterrupt];
+    }
+    else if ([interruptionType unsignedIntegerValue] == AVAudioSessionInterruptionTypeEnded)
+    {
+        NSNumber* option = [dict objectForKey:AVAudioSessionInterruptionOptionKey];
+        [self onApplicationInterruptionEndWithOptionKey:option];
+    }
 }
 
 @end

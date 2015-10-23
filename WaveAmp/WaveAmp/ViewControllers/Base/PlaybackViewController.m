@@ -78,7 +78,7 @@
     };
 }
 
--(void)showPlaybackStatus:(BOOL)shouldSimulateLoss
+-(void)showPlaybackStatusWithSimulatedLoss:(BOOL)shouldSimulateLoss
 {
     NSString* text;
     

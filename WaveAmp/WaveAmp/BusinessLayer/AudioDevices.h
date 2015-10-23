@@ -12,6 +12,8 @@
 @protocol AudioDevicesDelegate <NSObject>
 
 -(void)headphonesArePluggedIn:(BOOL)usingHeadphones;
+-(void)applicationInterrupted;
+-(void)interruptionEndedShouldResume:(BOOL)shouldResume;
 
 @end
 

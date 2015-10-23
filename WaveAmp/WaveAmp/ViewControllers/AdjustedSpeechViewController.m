@@ -39,7 +39,7 @@
     
     [self loadSpeechPaths];
     [self.playbackButton setScalingTouchDown:1.7 touchUp:1];
-    [self showPlaybackStatus:self.simulateLossCheckbox.isChecked];
+    [self showPlaybackStatusWithSimulatedLoss:self.simulateLossCheckbox.isChecked];
 }
 
 -(void)viewWillDisappear:(BOOL)animated
@@ -94,13 +94,13 @@
     [self.filePlayer openFileWithURL:url];
     [self.filePlayer play];
     
-    [self showPlaybackStatus:self.simulateLossCheckbox.isChecked];
+    [self showPlaybackStatusWithSimulatedLoss:self.simulateLossCheckbox.isChecked];
 }
 
 -(void)pausePlayback
 {
     [self.filePlayer pause];
-    [self showPlaybackStatus:self.simulateLossCheckbox.isChecked];
+    [self showPlaybackStatusWithSimulatedLoss:self.simulateLossCheckbox.isChecked];
 }
 
 #pragma mark - UI Actions
@@ -136,6 +136,6 @@
                                                  samplingRage:self.filePlayer.samplingRate];
     [self.audioPlotViewController clearPlot];
     [self.audioPlotViewController showAdjustedPlotInFront:sender.isChecked];
-    [self showPlaybackStatus:sender.isChecked];
+    [self showPlaybackStatusWithSimulatedLoss:sender.isChecked];
 }
 @end
