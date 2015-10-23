@@ -9,8 +9,9 @@
 #import "HearingAidViewController.h"
 #import "AudioDevices.h"
 #import "CommonAnimations.h"
+#import "UIView+PopAnimations.h"
 
-@interface HearingAidViewController ()
+@interface HearingAidViewController () <AudioDevicesDelegate>
 
 @property(nonatomic) MicrophonePlayer* microphonePlayer;
 @property(nonatomic) AudioDevices* audioDevices;
@@ -25,15 +26,15 @@
     if (self) {
         _microphonePlayer = [[MicrophonePlayer alloc] init];
         super.audioPlayer = _microphonePlayer;
-        self.audioDevices = [[AudioDevices alloc] init];
-        [self.microphonePlayer setInputDevice:self.audioDevices.currentInputDevice];
     }
     return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.audioDevices = [[AudioDevices alloc] initWithCurrentAudioDevice:self.microphonePlayer.currentInputDevice];
+    self.audioDevices.delegate = self;
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -60,6 +61,12 @@
 
 - (IBAction)microphoneTap:(UIButton*)sender
 {
+    if(!self.audioDevices.usingHeadphones && sender)
+    {
+        [self.deviceStateLabel addStretchAnimationBounciness:10 velocity:CGPointMake(2, 2)];
+        return;
+    }
+    
     NSString* newImage = nil;
     if (self.microphonePlayer.playing)
     {
@@ -73,9 +80,41 @@
     }
     
     [self showPlaybackStatus:NO];
-    [CommonAnimations animate:sender
+    [CommonAnimations animate:self.microphoneButton
                  withNewImage:newImage
                       options:UIViewAnimationOptionTransitionCrossDissolve
                      duration:0.12f];
 }
+
+- (IBAction)switchInputSourceTap:(SpinningButton *)sender {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        EZAudioDevice* nextDevice = [self.audioDevices nextInputDevice];
+        self.microphonePlayer.currentInputDevice = nextDevice;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.deviceStateLabel.text = nextDevice.name;
+        });
+    });
+    
+}
+
+#pragma mark - AudioDevices Delegate
+
+-(void)headphonesArePluggedIn:(BOOL)usingHeadphones
+{
+    self.switchButton.enabled = usingHeadphones;
+    if(usingHeadphones)
+    {
+        self.microphonePlayer.currentInputDevice = self.audioDevices.currentInputDevice;
+        self.deviceStateLabel.text = self.audioDevices.currentInputDevice.name;
+    }
+    else
+    {
+        if(self.microphonePlayer.playing)
+        {
+            [self microphoneTap:nil];
+        }
+        self.deviceStateLabel.text = @"Please plugin headphones.";
+    }
+}
+
 @end

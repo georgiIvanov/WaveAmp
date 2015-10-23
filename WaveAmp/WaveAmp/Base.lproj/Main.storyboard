@@ -31,6 +31,7 @@
             <string>HelveticaNeue-Light</string>
             <string>HelveticaNeue-Light</string>
             <string>HelveticaNeue-Light</string>
+            <string>HelveticaNeue-Light</string>
         </mutableArray>
         <mutableArray key="OpenSans-Light.ttf">
             <string>OpenSans-Light</string>
@@ -1270,7 +1271,7 @@
                                             <action selector="playbackTap:" destination="lWv-bN-XI1" eventType="touchUpInside" id="5w0-0Q-aO3"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeJ-rR-I0k">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeJ-rR-I0k" customClass="SpinningButton">
                                         <rect key="frame" x="14" y="14" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="M9o-cd-p5q">
@@ -1279,13 +1280,38 @@
                                             <constraint firstAttribute="width" secondItem="aeJ-rR-I0k" secondAttribute="height" multiplier="1:1" id="trX-ou-fly"/>
                                         </constraints>
                                         <state key="normal" image="SwitchButton.png"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rotations">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="switchInputSourceTap:" destination="WnK-Ao-9fP" eventType="touchUpInside" id="HjY-4c-JdF"/>
+                                        </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input Device" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQK-2B-mNl" customClass="BaseLabel">
+                                        <rect key="frame" x="255" y="28" width="91" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="27"/>
+                                        </variation>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.2901960784" green="0.78039215689999997" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="XQK-2B-mNl" firstAttribute="centerY" secondItem="aeJ-rR-I0k" secondAttribute="centerY" id="FO8-n3-erM"/>
                                     <constraint firstItem="9Ex-ER-QH6" firstAttribute="centerX" secondItem="CDE-6I-wGr" secondAttribute="centerX" id="GTU-fM-Ty2"/>
                                     <constraint firstItem="aeJ-rR-I0k" firstAttribute="leading" secondItem="CDE-6I-wGr" secondAttribute="leading" constant="14" id="epJ-MC-uJD"/>
                                     <constraint firstItem="aeJ-rR-I0k" firstAttribute="top" secondItem="CDE-6I-wGr" secondAttribute="top" constant="14" id="se3-9w-C3S"/>
+                                    <constraint firstItem="XQK-2B-mNl" firstAttribute="centerX" secondItem="CDE-6I-wGr" secondAttribute="centerX" id="sef-E9-P7h"/>
                                 </constraints>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gBr-y6-wvI">
@@ -1327,8 +1353,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Hearing Aid" image="HearingIcon.png" id="Mmd-id-atC"/>
                     <connections>
+                        <outlet property="deviceStateLabel" destination="XQK-2B-mNl" id="OMW-Vt-aVL"/>
                         <outlet property="microphoneButton" destination="9Ex-ER-QH6" id="E5B-0s-1IA"/>
                         <outlet property="playbackStatus" destination="Nxn-c7-b05" id="UiR-yJ-Jra"/>
+                        <outlet property="switchButton" destination="aeJ-rR-I0k" id="3Hu-hK-loL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m9a-PP-h4b" userLabel="First Responder" sceneMemberID="firstResponder"/>
