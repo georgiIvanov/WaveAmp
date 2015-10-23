@@ -1270,10 +1270,22 @@
                                             <action selector="playbackTap:" destination="lWv-bN-XI1" eventType="touchUpInside" id="5w0-0Q-aO3"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeJ-rR-I0k">
+                                        <rect key="frame" x="14" y="14" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="M9o-cd-p5q">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                                            </constraint>
+                                            <constraint firstAttribute="width" secondItem="aeJ-rR-I0k" secondAttribute="height" multiplier="1:1" id="trX-ou-fly"/>
+                                        </constraints>
+                                        <state key="normal" image="SwitchButton.png"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.2901960784" green="0.78039215689999997" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="9Ex-ER-QH6" firstAttribute="centerX" secondItem="CDE-6I-wGr" secondAttribute="centerX" id="GTU-fM-Ty2"/>
+                                    <constraint firstItem="aeJ-rR-I0k" firstAttribute="leading" secondItem="CDE-6I-wGr" secondAttribute="leading" constant="14" id="epJ-MC-uJD"/>
+                                    <constraint firstItem="aeJ-rR-I0k" firstAttribute="top" secondItem="CDE-6I-wGr" secondAttribute="top" constant="14" id="se3-9w-C3S"/>
                                 </constraints>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gBr-y6-wvI">
@@ -1800,6 +1812,7 @@
         <image name="Play.png" width="1024" height="1024"/>
         <image name="RightArrow.png" width="256" height="256"/>
         <image name="RightEar.png" width="512" height="512"/>
+        <image name="SwitchButton.png" width="512" height="512"/>
         <image name="TestCircle.png" width="860" height="860"/>
     </resources>
     <inferredMetricsTieBreakers>

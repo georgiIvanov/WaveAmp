@@ -50,4 +50,24 @@
     [constraint pop_addAnimation:layoutAnimation forKey:@"constraintAnimation"];
     
 }
+
+-(void)spinViewWithRotations:(CGFloat)rotations bounciness:(CGFloat)bounciness speed:(CGFloat)speed onCompleted:(OnCompletedAnimation)onCompleted
+{
+    POPSpringAnimation* spinAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerRotation];
+    spinAnimation.springBounciness = bounciness;
+    spinAnimation.springSpeed = speed;
+    spinAnimation.toValue = @(M_PI * rotations);
+    
+    if(onCompleted)
+    {
+        OnCompletedAnimation block = (__bridge OnCompletedAnimation)Block_copy((__bridge void *)onCompleted);
+        spinAnimation.completionBlock = ^(POPAnimation* animation, BOOL finished){
+            block(finished);
+            Block_release((__bridge void *)block);
+        };
+    }
+    
+    [self.layer pop_addAnimation:spinAnimation forKey:@"spinAnimation"];
+    
+}
 @end

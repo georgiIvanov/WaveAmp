@@ -17,7 +17,6 @@
 		FF0A48491B4FEC7E0021B149 /* FrequencyThreshold.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A48481B4FEC7E0021B149 /* FrequencyThreshold.m */; };
 		FF0A484C1B5031A10021B149 /* ExamPunchCard.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A484B1B5031A10021B149 /* ExamPunchCard.m */; };
 		FF2619C81B661B770069907D /* BasicArrowDown.png in Resources */ = {isa = PBXBuildFile; fileRef = FF2619C71B661B770069907D /* BasicArrowDown.png */; };
-		FF2619CB1B661FA30069907D /* DrawerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2619CA1B661FA30069907D /* DrawerButton.m */; };
 		FF3BFDDA1BD8CC770003630E /* AdjustedSpeechIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDD41BD8CC770003630E /* AdjustedSpeechIcon.png */; settings = {ASSET_TAGS = (); }; };
 		FF3BFDDB1BD8CC770003630E /* AdjustedSpeechIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDD51BD8CC770003630E /* AdjustedSpeechIcon@2x.png */; settings = {ASSET_TAGS = (); }; };
 		FF3BFDDC1BD8CC770003630E /* AudiogramIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDD61BD8CC770003630E /* AudiogramIcon.png */; settings = {ASSET_TAGS = (); }; };
@@ -34,6 +33,12 @@
 		FF3BFDF61BD934780003630E /* Microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDF41BD934780003630E /* Microphone.png */; settings = {ASSET_TAGS = (); }; };
 		FF3BFDF71BD934780003630E /* MicrophoneMuted.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDF51BD934780003630E /* MicrophoneMuted.png */; settings = {ASSET_TAGS = (); }; };
 		FF3BFDFA1BDA12F90003630E /* AudioDevices.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3BFDF91BDA12F90003630E /* AudioDevices.m */; settings = {ASSET_TAGS = (); }; };
+		FF3BFDFC1BDA33DB0003630E /* SwitchButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDFB1BDA33DB0003630E /* SwitchButton.png */; settings = {ASSET_TAGS = (); }; };
+		FF3BFE061BDA35EC0003630E /* BouncyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3BFDFF1BDA35EC0003630E /* BouncyButton.m */; settings = {ASSET_TAGS = (); }; };
+		FF3BFE071BDA35EC0003630E /* DrawerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3BFE011BDA35EC0003630E /* DrawerButton.m */; settings = {ASSET_TAGS = (); }; };
+		FF3BFE081BDA35EC0003630E /* PlaybackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3BFE031BDA35EC0003630E /* PlaybackButton.m */; settings = {ASSET_TAGS = (); }; };
+		FF3BFE091BDA35EC0003630E /* RoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3BFE051BDA35EC0003630E /* RoundedButton.m */; settings = {ASSET_TAGS = (); }; };
+		FF3BFE0C1BDA36390003630E /* SpinningButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3BFE0B1BDA36390003630E /* SpinningButton.m */; settings = {ASSET_TAGS = (); }; };
 		FF42B96D1B4E35AF00535A7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B96C1B4E35AF00535A7B /* main.m */; };
 		FF42B9701B4E35AF00535A7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B96F1B4E35AF00535A7B /* AppDelegate.m */; };
 		FF42B9761B4E35AF00535A7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9741B4E35AF00535A7B /* Main.storyboard */; };
@@ -55,7 +60,6 @@
 		FF8448741B7F220600A06D6B /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF8448701B7F1BBE00A06D6B /* OpenSans-Regular.ttf */; };
 		FF8448751B7F220600A06D6B /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF8448721B7F1C1300A06D6B /* OpenSans-Semibold.ttf */; };
 		FF8448771B7F27AF00A06D6B /* CloseIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8448761B7F27AF00A06D6B /* CloseIcon.png */; };
-		FF84487A1B7F28C400A06D6B /* RoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8448791B7F28C400A06D6B /* RoundedButton.m */; };
 		FF84488B1B7FA42400A06D6B /* LeftArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8448891B7FA42400A06D6B /* LeftArrow.png */; };
 		FF84488C1B7FA42400A06D6B /* RightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = FF84488A1B7FA42400A06D6B /* RightArrow.png */; };
 		FF8448971B809F5D00A06D6B /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8448921B809F5D00A06D6B /* BaseButton.m */; };
@@ -76,8 +80,6 @@
 		FF9DB5441B568918006E4D3F /* SoundFile.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB5431B568918006E4D3F /* SoundFile.m */; };
 		FF9DB5471B569A95006E4D3F /* Pause.png in Resources */ = {isa = PBXBuildFile; fileRef = FF9DB5451B569A95006E4D3F /* Pause.png */; };
 		FF9DB5481B569A95006E4D3F /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = FF9DB5461B569A95006E4D3F /* Play.png */; };
-		FF9DB54E1B569EAA006E4D3F /* BouncyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB54D1B569EAA006E4D3F /* BouncyButton.m */; };
-		FF9DB5511B56A02D006E4D3F /* PlaybackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB5501B56A02D006E4D3F /* PlaybackButton.m */; };
 		FFCE73741B52580700F52920 /* PunchCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE73731B52580700F52920 /* PunchCardTests.m */; };
 		FFCE73781B525A5600F52920 /* AmplitudeMultiplierTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE73771B525A5600F52920 /* AmplitudeMultiplierTests.m */; };
 		FFCE737B1B525D2C00F52920 /* TestsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE737A1B525D2C00F52920 /* TestsAppDelegate.m */; };
@@ -119,8 +121,6 @@
 		FF0A484A1B5031A10021B149 /* ExamPunchCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExamPunchCard.h; sourceTree = "<group>"; };
 		FF0A484B1B5031A10021B149 /* ExamPunchCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExamPunchCard.m; sourceTree = "<group>"; };
 		FF2619C71B661B770069907D /* BasicArrowDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BasicArrowDown.png; sourceTree = "<group>"; };
-		FF2619C91B661FA30069907D /* DrawerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerButton.h; sourceTree = "<group>"; };
-		FF2619CA1B661FA30069907D /* DrawerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerButton.m; sourceTree = "<group>"; };
 		FF3BFDD41BD8CC770003630E /* AdjustedSpeechIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AdjustedSpeechIcon.png; sourceTree = "<group>"; };
 		FF3BFDD51BD8CC770003630E /* AdjustedSpeechIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AdjustedSpeechIcon@2x.png"; sourceTree = "<group>"; };
 		FF3BFDD61BD8CC770003630E /* AudiogramIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AudiogramIcon.png; sourceTree = "<group>"; };
@@ -143,6 +143,17 @@
 		FF3BFDF51BD934780003630E /* MicrophoneMuted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MicrophoneMuted.png; sourceTree = "<group>"; };
 		FF3BFDF81BDA12F90003630E /* AudioDevices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioDevices.h; sourceTree = "<group>"; };
 		FF3BFDF91BDA12F90003630E /* AudioDevices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioDevices.m; sourceTree = "<group>"; };
+		FF3BFDFB1BDA33DB0003630E /* SwitchButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SwitchButton.png; sourceTree = "<group>"; };
+		FF3BFDFE1BDA35EC0003630E /* BouncyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncyButton.h; sourceTree = "<group>"; };
+		FF3BFDFF1BDA35EC0003630E /* BouncyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncyButton.m; sourceTree = "<group>"; };
+		FF3BFE001BDA35EC0003630E /* DrawerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerButton.h; sourceTree = "<group>"; };
+		FF3BFE011BDA35EC0003630E /* DrawerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerButton.m; sourceTree = "<group>"; };
+		FF3BFE021BDA35EC0003630E /* PlaybackButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaybackButton.h; sourceTree = "<group>"; };
+		FF3BFE031BDA35EC0003630E /* PlaybackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaybackButton.m; sourceTree = "<group>"; };
+		FF3BFE041BDA35EC0003630E /* RoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundedButton.h; sourceTree = "<group>"; };
+		FF3BFE051BDA35EC0003630E /* RoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundedButton.m; sourceTree = "<group>"; };
+		FF3BFE0A1BDA36390003630E /* SpinningButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinningButton.h; sourceTree = "<group>"; };
+		FF3BFE0B1BDA36390003630E /* SpinningButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinningButton.m; sourceTree = "<group>"; };
 		FF42B9671B4E35AF00535A7B /* WaveAmp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveAmp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF42B96B1B4E35AF00535A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF42B96C1B4E35AF00535A7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -178,8 +189,6 @@
 		FF8448711B7F1BD400A06D6B /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
 		FF8448721B7F1C1300A06D6B /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 		FF8448761B7F27AF00A06D6B /* CloseIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseIcon.png; sourceTree = "<group>"; };
-		FF8448781B7F28C400A06D6B /* RoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundedButton.h; sourceTree = "<group>"; };
-		FF8448791B7F28C400A06D6B /* RoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundedButton.m; sourceTree = "<group>"; };
 		FF8448891B7FA42400A06D6B /* LeftArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeftArrow.png; sourceTree = "<group>"; };
 		FF84488A1B7FA42400A06D6B /* RightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RightArrow.png; sourceTree = "<group>"; };
 		FF8448911B809F5D00A06D6B /* BaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseButton.h; sourceTree = "<group>"; };
@@ -216,10 +225,6 @@
 		FF9DB5431B568918006E4D3F /* SoundFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundFile.m; sourceTree = "<group>"; };
 		FF9DB5451B569A95006E4D3F /* Pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pause.png; sourceTree = "<group>"; };
 		FF9DB5461B569A95006E4D3F /* Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Play.png; sourceTree = "<group>"; };
-		FF9DB54C1B569EAA006E4D3F /* BouncyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncyButton.h; sourceTree = "<group>"; };
-		FF9DB54D1B569EAA006E4D3F /* BouncyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncyButton.m; sourceTree = "<group>"; };
-		FF9DB54F1B56A02D006E4D3F /* PlaybackButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaybackButton.h; sourceTree = "<group>"; };
-		FF9DB5501B56A02D006E4D3F /* PlaybackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaybackButton.m; sourceTree = "<group>"; };
 		FFCE73731B52580700F52920 /* PunchCardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PunchCardTests.m; sourceTree = "<group>"; };
 		FFCE73771B525A5600F52920 /* AmplitudeMultiplierTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmplitudeMultiplierTests.m; sourceTree = "<group>"; };
 		FFCE73791B525D2C00F52920 /* TestsAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestsAppDelegate.h; sourceTree = "<group>"; };
@@ -324,6 +329,23 @@
 				FF3BFDE91BD8D76E0003630E /* PlaybackViewController.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		FF3BFDFD1BDA35EC0003630E /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				FF3BFDFE1BDA35EC0003630E /* BouncyButton.h */,
+				FF3BFDFF1BDA35EC0003630E /* BouncyButton.m */,
+				FF3BFE001BDA35EC0003630E /* DrawerButton.h */,
+				FF3BFE011BDA35EC0003630E /* DrawerButton.m */,
+				FF3BFE021BDA35EC0003630E /* PlaybackButton.h */,
+				FF3BFE031BDA35EC0003630E /* PlaybackButton.m */,
+				FF3BFE041BDA35EC0003630E /* RoundedButton.h */,
+				FF3BFE051BDA35EC0003630E /* RoundedButton.m */,
+				FF3BFE0A1BDA36390003630E /* SpinningButton.h */,
+				FF3BFE0B1BDA36390003630E /* SpinningButton.m */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 		FF42B95E1B4E35AF00535A7B = {
@@ -461,6 +483,7 @@
 				FF9DB5461B569A95006E4D3F /* Play.png */,
 				FF9DB4E51B53EE36006E4D3F /* Headphones.png */,
 				FF76043E1B53BEDE0024930C /* HearingWave.png */,
+				FF3BFDFB1BDA33DB0003630E /* SwitchButton.png */,
 				FF3BFDF41BD934780003630E /* Microphone.png */,
 				FF3BFDF51BD934780003630E /* MicrophoneMuted.png */,
 			);
@@ -550,16 +573,9 @@
 			children = (
 				FF8448901B809F5D00A06D6B /* BaseViews */,
 				FF481DC31B5BB27900AF588B /* Audiogram */,
+				FF3BFDFD1BDA35EC0003630E /* Buttons */,
 				FF84489A1B80A69300A06D6B /* ViewConstants.h */,
 				FF84489B1B80A69300A06D6B /* ViewConstants.mm */,
-				FF9DB54C1B569EAA006E4D3F /* BouncyButton.h */,
-				FF9DB54D1B569EAA006E4D3F /* BouncyButton.m */,
-				FF9DB54F1B56A02D006E4D3F /* PlaybackButton.h */,
-				FF9DB5501B56A02D006E4D3F /* PlaybackButton.m */,
-				FF2619C91B661FA30069907D /* DrawerButton.h */,
-				FF2619CA1B661FA30069907D /* DrawerButton.m */,
-				FF8448781B7F28C400A06D6B /* RoundedButton.h */,
-				FF8448791B7F28C400A06D6B /* RoundedButton.m */,
 				FF8448A01B80B3D800A06D6B /* SegmentedControl.h */,
 				FF8448A11B80B3D800A06D6B /* SegmentedControl.m */,
 			);
@@ -682,6 +698,7 @@
 				FF481DC91B5BB42C00AF588B /* LeftEar.png in Resources */,
 				FF3BFDDF1BD8CC770003630E /* HearingIcon@2x.png in Resources */,
 				FF9DB5471B569A95006E4D3F /* Pause.png in Resources */,
+				FF3BFDFC1BDA33DB0003630E /* SwitchButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -734,31 +751,33 @@
 			files = (
 				FF8448991B809F5D00A06D6B /* BaseTextView.m in Sources */,
 				FF3BFDEA1BD8D76E0003630E /* PlaybackViewController.m in Sources */,
+				FF3BFE091BDA35EC0003630E /* RoundedButton.m in Sources */,
 				FF9DB4E91B540192006E4D3F /* CommonAnimations.m in Sources */,
 				FF86FF671B60B3F100C3E093 /* PureTonePlayer.m in Sources */,
 				FF8448A21B80B3D800A06D6B /* SegmentedControl.m in Sources */,
 				FF7DD90D1B63ACBE008006DD /* ToneEqualizer.m in Sources */,
 				FF0A483F1B4E44A80021B149 /* AudiogramViewController.m in Sources */,
 				FF7604431B53C6D20024930C /* UIView+PopAnimations.m in Sources */,
-				FF84487A1B7F28C400A06D6B /* RoundedButton.m in Sources */,
+				FF3BFE071BDA35EC0003630E /* DrawerButton.m in Sources */,
 				FF8448971B809F5D00A06D6B /* BaseButton.m in Sources */,
 				FF0A48451B4FB75B0021B149 /* HearingExamSoundMeter.m in Sources */,
 				FF0A48321B4E3D870021B149 /* TabBarViewController.m in Sources */,
 				FF86FF6B1B60CE4A00C3E093 /* PureToneAudiometer.m in Sources */,
 				FF9DB5441B568918006E4D3F /* SoundFile.m in Sources */,
+				FF3BFE061BDA35EC0003630E /* BouncyButton.m in Sources */,
 				FF7DD9101B63ACD7008006DD /* SoundModifier.m in Sources */,
-				FF2619CB1B661FA30069907D /* DrawerButton.m in Sources */,
+				FF3BFE0C1BDA36390003630E /* SpinningButton.m in Sources */,
 				FF3BFDED1BD8F2260003630E /* HearingAidViewController.m in Sources */,
 				FF86FF631B60B18500C3E093 /* NovocainePlayer.m in Sources */,
 				FFCE737C1B525D4400F52920 /* TestsAppDelegate.m in Sources */,
 				FF0A48421B4FB44E0021B149 /* AmplitudeMultiplier.m in Sources */,
+				FF3BFE081BDA35EC0003630E /* PlaybackButton.m in Sources */,
 				FF0A484C1B5031A10021B149 /* ExamPunchCard.m in Sources */,
 				FF3BFDE61BD8D1620003630E /* AudioPlotViewController.m in Sources */,
 				FF481DC61B5BB27900AF588B /* AudiogramView.m in Sources */,
 				FF0A48491B4FEC7E0021B149 /* FrequencyThreshold.m in Sources */,
 				FF0A48381B4E3F560021B149 /* AbsThresholdViewController.m in Sources */,
 				FF3BFDFA1BDA12F90003630E /* AudioDevices.m in Sources */,
-				FF9DB54E1B569EAA006E4D3F /* BouncyButton.m in Sources */,
 				FF9DB4E41B53E097006E4D3F /* TestInstructionsViewController.m in Sources */,
 				FF7DD9161B63B549008006DD /* HearingLossSimulator.m in Sources */,
 				FF69D66A1B624C13000BD808 /* DSPHelpers.m in Sources */,
@@ -771,7 +790,6 @@
 				FF9DB5351B56360E006E4D3F /* AdjustedSpeechViewController.m in Sources */,
 				FF42B96D1B4E35AF00535A7B /* main.m in Sources */,
 				FF3BFDF31BD90BCB0003630E /* AudioPlayer.m in Sources */,
-				FF9DB5511B56A02D006E4D3F /* PlaybackButton.m in Sources */,
 				FF7DD9131B63ADCB008006DD /* SoundModifiersFactory.m in Sources */,
 				FF84489C1B80A69300A06D6B /* ViewConstants.mm in Sources */,
 				FF3BFDF01BD8F2CC0003630E /* MicrophonePlayer.m in Sources */,
@@ -911,7 +929,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = WaveAmp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
