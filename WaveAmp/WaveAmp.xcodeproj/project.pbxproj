@@ -33,6 +33,7 @@
 		FF3BFDF31BD90BCB0003630E /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3BFDF21BD90BCB0003630E /* AudioPlayer.m */; settings = {ASSET_TAGS = (); }; };
 		FF3BFDF61BD934780003630E /* Microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDF41BD934780003630E /* Microphone.png */; settings = {ASSET_TAGS = (); }; };
 		FF3BFDF71BD934780003630E /* MicrophoneMuted.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDF51BD934780003630E /* MicrophoneMuted.png */; settings = {ASSET_TAGS = (); }; };
+		FF3BFDFA1BDA12F90003630E /* AudioDevices.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3BFDF91BDA12F90003630E /* AudioDevices.m */; settings = {ASSET_TAGS = (); }; };
 		FF42B96D1B4E35AF00535A7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B96C1B4E35AF00535A7B /* main.m */; };
 		FF42B9701B4E35AF00535A7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B96F1B4E35AF00535A7B /* AppDelegate.m */; };
 		FF42B9761B4E35AF00535A7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9741B4E35AF00535A7B /* Main.storyboard */; };
@@ -140,6 +141,8 @@
 		FF3BFDF21BD90BCB0003630E /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
 		FF3BFDF41BD934780003630E /* Microphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Microphone.png; sourceTree = "<group>"; };
 		FF3BFDF51BD934780003630E /* MicrophoneMuted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MicrophoneMuted.png; sourceTree = "<group>"; };
+		FF3BFDF81BDA12F90003630E /* AudioDevices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioDevices.h; sourceTree = "<group>"; };
+		FF3BFDF91BDA12F90003630E /* AudioDevices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioDevices.m; sourceTree = "<group>"; };
 		FF42B9671B4E35AF00535A7B /* WaveAmp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveAmp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF42B96B1B4E35AF00535A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF42B96C1B4E35AF00535A7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -278,6 +281,8 @@
 				FF9DB4EB1B54FA8E006E4D3F /* AudioTypes.m */,
 				FF69D6681B624C13000BD808 /* DSPHelpers.h */,
 				FF69D6691B624C13000BD808 /* DSPHelpers.m */,
+				FF3BFDF81BDA12F90003630E /* AudioDevices.h */,
+				FF3BFDF91BDA12F90003630E /* AudioDevices.m */,
 			);
 			path = BusinessLayer;
 			sourceTree = "<group>";
@@ -752,6 +757,7 @@
 				FF481DC61B5BB27900AF588B /* AudiogramView.m in Sources */,
 				FF0A48491B4FEC7E0021B149 /* FrequencyThreshold.m in Sources */,
 				FF0A48381B4E3F560021B149 /* AbsThresholdViewController.m in Sources */,
+				FF3BFDFA1BDA12F90003630E /* AudioDevices.m in Sources */,
 				FF9DB54E1B569EAA006E4D3F /* BouncyButton.m in Sources */,
 				FF9DB4E41B53E097006E4D3F /* TestInstructionsViewController.m in Sources */,
 				FF7DD9161B63B549008006DD /* HearingLossSimulator.m in Sources */,
@@ -905,6 +911,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				INFOPLIST_FILE = WaveAmp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

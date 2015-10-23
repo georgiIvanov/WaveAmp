@@ -7,7 +7,10 @@
 //
 
 #import "AudioPlayer.h"
+#import <EZAudioDevice.h>
 
 @interface MicrophonePlayer : AudioPlayer
+
+-(void)setInputDevice:(EZAudioDevice*)inputDevice;
 
 @end

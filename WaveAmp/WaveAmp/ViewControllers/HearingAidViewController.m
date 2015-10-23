@@ -7,11 +7,13 @@
 //
 
 #import "HearingAidViewController.h"
+#import "AudioDevices.h"
 #import "CommonAnimations.h"
 
 @interface HearingAidViewController ()
 
 @property(nonatomic) MicrophonePlayer* microphonePlayer;
+@property(nonatomic) AudioDevices* audioDevices;
 
 @end
 
@@ -23,6 +25,8 @@
     if (self) {
         _microphonePlayer = [[MicrophonePlayer alloc] init];
         super.audioPlayer = _microphonePlayer;
+        self.audioDevices = [[AudioDevices alloc] init];
+        [self.microphonePlayer setInputDevice:self.audioDevices.currentInputDevice];
     }
     return self;
 }

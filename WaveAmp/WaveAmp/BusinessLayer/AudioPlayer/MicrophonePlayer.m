@@ -43,6 +43,10 @@
     [self.output stopPlayback];
 }
 
+-(void)setInputDevice:(EZAudioDevice *)inputDevice
+{
+    self.microphone.device = inputDevice;
+}
 
 #pragma mark - Microphone Delegate
 
