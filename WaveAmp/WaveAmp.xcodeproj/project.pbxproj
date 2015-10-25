@@ -89,6 +89,7 @@
 		FFCE73831B52AC6E00F52920 /* AudiogramData.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE73821B52AC6E00F52920 /* AudiogramData.m */; };
 		FFCE73851B52BC1400F52920 /* AudiogramDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE73841B52BC1400F52920 /* AudiogramDataTests.m */; };
 		FFCE73861B52BC1B00F52920 /* AudiogramData.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE73821B52AC6E00F52920 /* AudiogramData.m */; };
+		FFECC0521BDCD0DF0007DA70 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFECC0511BDCD0DF0007DA70 /* ModalViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -232,6 +233,9 @@
 		FFCE73811B52AC6E00F52920 /* AudiogramData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiogramData.h; sourceTree = "<group>"; };
 		FFCE73821B52AC6E00F52920 /* AudiogramData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiogramData.m; sourceTree = "<group>"; };
 		FFCE73841B52BC1400F52920 /* AudiogramDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiogramDataTests.m; sourceTree = "<group>"; };
+		FFECC0501BDCD0DF0007DA70 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		FFECC0511BDCD0DF0007DA70 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		FFECC0531BDCD65C0007DA70 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,6 +329,8 @@
 		FF3BFDE71BD8D7610003630E /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				FFECC0501BDCD0DF0007DA70 /* ModalViewController.h */,
+				FFECC0511BDCD0DF0007DA70 /* ModalViewController.m */,
 				FF3BFDE81BD8D76E0003630E /* PlaybackViewController.h */,
 				FF3BFDE91BD8D76E0003630E /* PlaybackViewController.m */,
 			);
@@ -530,6 +536,7 @@
 		FF8448901B809F5D00A06D6B /* BaseViews */ = {
 			isa = PBXGroup;
 			children = (
+				FFECC0531BDCD65C0007DA70 /* BaseView.h */,
 				FF8448911B809F5D00A06D6B /* BaseButton.h */,
 				FF8448921B809F5D00A06D6B /* BaseButton.m */,
 				FF8448931B809F5D00A06D6B /* BaseLabel.h */,
@@ -781,6 +788,7 @@
 				FF9DB4E41B53E097006E4D3F /* TestInstructionsViewController.m in Sources */,
 				FF7DD9161B63B549008006DD /* HearingLossSimulator.m in Sources */,
 				FF69D66A1B624C13000BD808 /* DSPHelpers.m in Sources */,
+				FFECC0521BDCD0DF0007DA70 /* ModalViewController.m in Sources */,
 				FFCE73831B52AC6E00F52920 /* AudiogramData.m in Sources */,
 				FF42B9701B4E35AF00535A7B /* AppDelegate.m in Sources */,
 				FF9DB4EC1B54FA8E006E4D3F /* AudioTypes.m in Sources */,

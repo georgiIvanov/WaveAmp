@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="HelveticaNeue.ttc">
@@ -35,6 +36,8 @@
         </mutableArray>
         <mutableArray key="OpenSans-Light.ttf">
             <string>OpenSans-Light</string>
+            <string>OpenSans-Light</string>
+            <string>OpenSans-Light</string>
         </mutableArray>
         <mutableArray key="OpenSans-Regular.ttf">
             <string>OpenSans</string>
@@ -47,7 +50,7 @@
         <!--More-->
         <scene sceneID="3kB-zI-Avn">
             <objects>
-                <viewController id="qPD-Gb-CV1" sceneMemberID="viewController">
+                <viewController id="qPD-Gb-CV1" customClass="ModalViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eda-Eq-8Da"/>
                         <viewControllerLayoutGuide type="bottom" id="nSB-j8-KnO"/>
@@ -55,13 +58,92 @@
                     <view key="view" contentMode="scaleToFill" id="NgO-Nv-yi5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disclaimer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iah-nX-SXL" customClass="BaseLabel">
+                                <rect key="frame" x="253" y="40" width="94" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans-Light"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                </variation>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qN9-tC-xLV" customClass="BaseTextView">
+                                <rect key="frame" x="20" y="118" width="560" height="280"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="Mg7-sY-6Jg">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="200"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="400"/>
+                                    </constraint>
+                                </constraints>
+                                <string key="text">This App is not intended to diagnose, prevent, monitor or treat a medical condition. This App is not intended to be used for medical purpose. If you suspect you have hearing problems, please consult with a qualified healthcare professional. Use this App at your own risk. The creator does not take any responsibility for direct or indirect damage that could result from its use. </string>
+                                <color key="textColor" red="0.20784313730000001" green="0.68627450980000004" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="centerVertically" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                </variation>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0G-Sn-XSI" customClass="RoundedButton">
+                                <rect key="frame" x="-50" y="30" width="110" height="45"/>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.73333333329999995" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="iik-BY-BoP">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="65"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="110" id="zcX-hL-KKL">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="180"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="titleEdgeInsets" minX="50" minY="-3" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="27" minY="7" maxX="57" maxY="7"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="roundedness">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                </variation>
+                                <connections>
+                                    <action selector="cancelTap:" destination="nKs-FR-rZ0" eventType="touchUpInside" id="GHL-Hr-OlD"/>
+                                    <action selector="dismissButtonTap:" destination="qPD-Gb-CV1" eventType="touchUpInside" id="3Kb-p6-a3J"/>
+                                    <action selector="stopTestTap:" destination="5TN-az-DWC" eventType="touchUpInside" id="YWD-Nl-3Rq"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.2901960784" green="0.78039215689999997" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qN9-tC-xLV" firstAttribute="top" secondItem="iah-nX-SXL" secondAttribute="bottom" constant="54" id="Omm-nH-2N2"/>
+                            <constraint firstAttribute="trailing" secondItem="qN9-tC-xLV" secondAttribute="trailing" constant="20" id="TR2-Yq-uzR"/>
+                            <constraint firstItem="u0G-Sn-XSI" firstAttribute="leading" secondItem="NgO-Nv-yi5" secondAttribute="leading" constant="-50" id="W7z-IL-410"/>
+                            <constraint firstItem="iah-nX-SXL" firstAttribute="top" secondItem="eda-Eq-8Da" secondAttribute="bottom" constant="20" id="eIm-DU-9W4"/>
+                            <constraint firstItem="u0G-Sn-XSI" firstAttribute="centerY" secondItem="iah-nX-SXL" secondAttribute="centerY" id="gPI-Jl-gIE"/>
+                            <constraint firstItem="qN9-tC-xLV" firstAttribute="leading" secondItem="NgO-Nv-yi5" secondAttribute="leading" constant="20" id="h5W-Me-GQC"/>
+                            <constraint firstItem="iah-nX-SXL" firstAttribute="centerX" secondItem="NgO-Nv-yi5" secondAttribute="centerX" id="vZC-PV-iD0"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="More" image="MoreIcon.png" id="zLP-18-Jqd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JEv-Xh-AqP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="456" y="266"/>
+            <point key="canvasLocation" x="396" y="-444"/>
         </scene>
         <!--Audiogram-->
         <scene sceneID="woI-Gt-aSM">
@@ -1377,12 +1459,97 @@
                         <segue destination="gUi-f9-8tM" kind="relationship" relationship="viewControllers" id="BUd-OQ-ujQ"/>
                         <segue destination="lWv-bN-XI1" kind="relationship" relationship="viewControllers" id="mFg-EP-7XN"/>
                         <segue destination="WnK-Ao-9fP" kind="relationship" relationship="viewControllers" id="Qdg-Hi-Jaf"/>
-                        <segue destination="qPD-Gb-CV1" kind="relationship" relationship="viewControllers" id="7lh-PP-tvx"/>
+                        <segue destination="eH4-jp-zFc" kind="relationship" relationship="viewControllers" id="vmJ-Bd-wg3"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ErR-NH-j1I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-330" y="266"/>
+        </scene>
+        <!--More-->
+        <scene sceneID="XYR-I6-8Kr">
+            <objects>
+                <tableViewController id="eH4-jp-zFc" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="50" sectionHeaderHeight="18" sectionFooterHeight="18" id="DxJ-ce-xkP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.2901960784" green="0.78039215689999997" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="separatorColor" red="0.2901960784" green="0.78039215689999997" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.2901960784" green="0.78039215689999997" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection id="zvr-sv-Ok0">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="ggg-zh-W0v">
+                                        <rect key="frame" x="0.0" y="35" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ggg-zh-W0v" id="QS8-xZ-UOg">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="License" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pdt-yA-7PE" customClass="BaseLabel">
+                                                    <rect key="frame" x="20" y="10" width="58" height="24"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="17"/>
+                                                    <color key="textColor" red="0.14830659539090912" green="0.44491978607272437" blue="0.080419580419580416" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans-Light"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="22"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Pdt-yA-7PE" firstAttribute="leading" secondItem="QS8-xZ-UOg" secondAttribute="leadingMargin" constant="12" id="Qq5-de-bEl"/>
+                                                <constraint firstItem="Pdt-yA-7PE" firstAttribute="centerY" secondItem="QS8-xZ-UOg" secondAttribute="centerY" id="idx-6L-GDn"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="fcn-BO-fci" kind="presentation" id="OX4-Fl-PIJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="LPc-e3-ud9">
+                                        <rect key="frame" x="0.0" y="79" width="600" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LPc-e3-ud9" id="7lk-1g-77k">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="49"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disclaimer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnt-yk-hps" customClass="BaseLabel">
+                                                    <rect key="frame" x="20" y="13" width="80" height="24"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="17"/>
+                                                    <color key="textColor" red="0.14830659539999999" green="0.44491978609999999" blue="0.080419580419999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans-Light"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="22"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="lnt-yk-hps" firstAttribute="centerY" secondItem="7lk-1g-77k" secondAttribute="centerY" id="VdF-K0-r1m"/>
+                                                <constraint firstItem="lnt-yk-hps" firstAttribute="leading" secondItem="7lk-1g-77k" secondAttribute="leadingMargin" constant="12" id="iTE-DB-dmB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="qPD-Gb-CV1" kind="presentation" id="eJx-Vr-tZ1"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="eH4-jp-zFc" id="7ah-NO-viJ"/>
+                            <outlet property="delegate" destination="eH4-jp-zFc" id="cMV-oC-NFR"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="More" image="MoreIcon.png" id="VgC-CB-sq2"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rlS-uq-1by" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="267"/>
         </scene>
         <!--Abs Threshold View Controller-->
         <scene sceneID="67Z-Ee-DD4">
@@ -1774,6 +1941,10 @@
         <scene sceneID="rr8-nS-jYX">
             <objects>
                 <viewController id="SEa-mb-gia" customClass="AudioPlotViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YH6-ic-gVS"/>
+                        <viewControllerLayoutGuide type="bottom" id="MDi-oV-tUY"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kGy-BS-jZW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="211"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1823,6 +1994,122 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KpT-8i-W31" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-722" y="1597.5"/>
+        </scene>
+        <!--More-->
+        <scene sceneID="Q5w-2w-M3q">
+            <objects>
+                <viewController id="fcn-BO-fci" customClass="ModalViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dqA-Jc-aUo"/>
+                        <viewControllerLayoutGuide type="bottom" id="ohH-e5-hjp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wBh-pj-QIU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="License" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKH-nM-MHN" customClass="BaseLabel">
+                                <rect key="frame" x="265" y="40" width="70" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans-Light"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                </variation>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0V-ct-wTe" customClass="BaseTextView">
+                                <rect key="frame" x="20" y="118" width="560" height="462"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">The MIT License (MIT)
+
+Copyright (c) 2015 Georgi Ivanov
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+NVDSP - Copyright (c) 2012 - 2014  Bart Olsthoorn, website: bartolsthoorn.nl
+
+Pop software - Copyright (c) 2014, Facebook, Inc. All rights reserved.
+
+TPCircularBuffer - Copyright (C) 2012-2013 A Tasty Pixel
+
+EZAudio - Copyright (c) 2013 Syed Haris Ali
+
+BFPaperCheckbox - Copyright © (c) 2015 Bence Feher
+
+HMSegmentedControl - Copyright (c) 2012 Hesham Abd-Elmegid (http://www.hesh.am)</mutableString>
+                                <color key="textColor" red="0.20784313730000001" green="0.68627450980000004" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="centerVertically" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                </variation>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lF-Kf-fjR" customClass="RoundedButton">
+                                <rect key="frame" x="-50" y="30" width="110" height="45"/>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.73333333329999995" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="WiY-9m-blz">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="180"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="45" id="glz-Uf-FuB">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="65"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="titleEdgeInsets" minX="50" minY="-3" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="27" minY="7" maxX="57" maxY="7"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OpenSans"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="roundedness">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                </variation>
+                                <connections>
+                                    <action selector="cancelTap:" destination="nKs-FR-rZ0" eventType="touchUpInside" id="fgM-h8-TLN"/>
+                                    <action selector="dismissButtonTap:" destination="fcn-BO-fci" eventType="touchUpInside" id="How-LJ-YqE"/>
+                                    <action selector="stopTestTap:" destination="5TN-az-DWC" eventType="touchUpInside" id="S71-im-DQw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2901960784" green="0.78039215689999997" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="w0V-ct-wTe" secondAttribute="trailing" constant="20" id="7RY-br-BV5"/>
+                            <constraint firstItem="vKH-nM-MHN" firstAttribute="centerX" secondItem="wBh-pj-QIU" secondAttribute="centerX" id="7lK-Ed-ky2"/>
+                            <constraint firstItem="7lF-Kf-fjR" firstAttribute="leading" secondItem="wBh-pj-QIU" secondAttribute="leading" constant="-50" id="J63-27-sWL"/>
+                            <constraint firstItem="ohH-e5-hjp" firstAttribute="top" secondItem="w0V-ct-wTe" secondAttribute="bottom" constant="20" id="Li2-kc-LXP"/>
+                            <constraint firstItem="w0V-ct-wTe" firstAttribute="top" secondItem="vKH-nM-MHN" secondAttribute="bottom" constant="54" id="YWh-8H-9ew"/>
+                            <constraint firstItem="7lF-Kf-fjR" firstAttribute="centerY" secondItem="vKH-nM-MHN" secondAttribute="centerY" id="Yoc-Fw-gD2"/>
+                            <constraint firstItem="vKH-nM-MHN" firstAttribute="top" secondItem="dqA-Jc-aUo" secondAttribute="bottom" constant="20" id="Z6B-s6-Ip4"/>
+                            <constraint firstItem="w0V-ct-wTe" firstAttribute="leading" secondItem="wBh-pj-QIU" secondAttribute="leading" constant="20" id="g5n-wP-SHT"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="More" image="MoreIcon.png" id="sAz-3t-Uqa"/>
+                    <connections>
+                        <outletCollection property="childViews" destination="w0V-ct-wTe" id="aVl-hR-jen"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FFN-eZ-Iqm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1112" y="-444"/>
         </scene>
     </scenes>
     <resources>

@@ -8,8 +8,6 @@
 
 #import "BaseTextView.h"
 
-NSString* const ContentSizePath = @"contentSize";
-
 @implementation BaseTextView
 
 - (instancetype)initWithCoder:(NSCoder *)coder
@@ -37,6 +35,16 @@ NSString* const ContentSizePath = @"contentSize";
             [self setFont:font];
         }
     }
+    
+    [self centerVerticallyTextViewContent:_centerVertically];
+}
+
+-(void)viewControllerDidAppear
+{
+    if(!_centerVertically)
+    {
+        [self scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:YES];
+    }
 }
 
 -(void)centerVerticallyTextViewContent:(BOOL)center
@@ -47,45 +55,6 @@ NSString* const ContentSizePath = @"contentSize";
         topoffset = ( topoffset < 0.0 ? 0.0 : topoffset );
         self.contentOffset = (CGPoint){.x = 0, .y = -topoffset};
     }
-    else
-    {
-        self.contentOffset = CGPointZero;
-    }
-}
-
--(void)setCenterVertically:(BOOL)centerVertically
-{
-    if(centerVertically && _centerVertically == NO)
-    {
-        [self addObserver:self forKeyPath:ContentSizePath options:(NSKeyValueObservingOptionNew) context:NULL];
-    }
-    else if(_centerVertically == YES)
-    {
-        @try {
-            [self removeObserver:self forKeyPath:ContentSizePath];
-        }
-        @catch (NSException * __unused exception) {}
-        @finally{
-            [self centerVerticallyTextViewContent:NO];
-        }
-    }
-    
-    _centerVertically = centerVertically;
-}
-
--(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
-    if([keyPath isEqualToString:ContentSizePath])
-    {
-        [self centerVerticallyTextViewContent:YES];
-    }
-}
-
--(void)dealloc
-{
-    @try {
-        [self removeObserver:self forKeyPath:ContentSizePath];
-    }
-    @catch (NSException * __unused exception) {}
 }
 
 @end

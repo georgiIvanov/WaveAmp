@@ -21,7 +21,6 @@
 
 @property(nonatomic, weak) id<AudioDevicesDelegate> delegate;
 @property(nonatomic, readonly) NSInteger selectedInputDevice;
-@property(nonatomic, readonly) NSArray* inputDeviceNames;
 @property(nonatomic, readonly) BOOL usingHeadphones;
 
 -(instancetype)initWithCurrentAudioDevice:(EZAudioDevice*)currentDevice;

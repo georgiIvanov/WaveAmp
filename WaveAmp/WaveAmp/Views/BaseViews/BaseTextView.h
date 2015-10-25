@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseView.h"
 
-@interface BaseTextView : UITextView
+@interface BaseTextView : UITextView <BaseView>
 
 @property(nonatomic) IBInspectable NSString* fontName;
 @property(nonatomic) IBInspectable BOOL centerVertically;
