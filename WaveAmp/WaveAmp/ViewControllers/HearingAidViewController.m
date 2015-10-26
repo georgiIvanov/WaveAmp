@@ -80,8 +80,6 @@
         return;
     }
     
-    [self buttonStartPlaying:self.microphonePlayer.playing];
-    
     if(self.microphonePlayer.playing)
     {
         [self.microphonePlayer pause];
@@ -89,7 +87,9 @@
     else
     {
         [self.microphonePlayer play];
-    }    
+    }
+    
+    [self buttonStartPlaying:self.microphonePlayer.playing];
 }
 
 - (IBAction)switchInputSourceTap:(SpinningButton *)sender {
