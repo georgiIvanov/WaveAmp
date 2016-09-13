@@ -5,7 +5,7 @@ This application makes use of the following third party libraries:
 
 The MIT License (MIT)
 
-Copyright (c) 2014 Bence Feher
+Copyright © (c) 2015 Bence Feher
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -114,7 +114,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 The MIT License (MIT)
 
-Copyright (c) 2014 Bence Feher
+Copyright © (c) 2015 Bence Feher
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in

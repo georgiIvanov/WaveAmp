@@ -1,1032 +1,3546 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		0FA6C9961524C40A8B570F2A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CC663FCBFA90A9EC45B2CA /* libPods.a */; };
-		FF0A482F1B4E38FA0021B149 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0A482E1B4E38FA0021B149 /* libc++.dylib */; };
-		FF0A48321B4E3D870021B149 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A48311B4E3D870021B149 /* TabBarViewController.m */; };
-		FF0A48381B4E3F560021B149 /* AbsThresholdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A48371B4E3F560021B149 /* AbsThresholdViewController.m */; };
-		FF0A483F1B4E44A80021B149 /* AudiogramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A483E1B4E44A80021B149 /* AudiogramViewController.m */; };
-		FF0A48421B4FB44E0021B149 /* AmplitudeMultiplier.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A48411B4FB44E0021B149 /* AmplitudeMultiplier.m */; };
-		FF0A48451B4FB75B0021B149 /* HearingExamSoundMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A48441B4FB75B0021B149 /* HearingExamSoundMeter.m */; };
-		FF0A48491B4FEC7E0021B149 /* FrequencyThreshold.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A48481B4FEC7E0021B149 /* FrequencyThreshold.m */; };
-		FF0A484C1B5031A10021B149 /* ExamPunchCard.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A484B1B5031A10021B149 /* ExamPunchCard.m */; };
-		FF2619C81B661B770069907D /* BasicArrowDown.png in Resources */ = {isa = PBXBuildFile; fileRef = FF2619C71B661B770069907D /* BasicArrowDown.png */; };
-		FF3BFDDA1BD8CC770003630E /* AdjustedSpeechIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDD41BD8CC770003630E /* AdjustedSpeechIcon.png */; settings = {ASSET_TAGS = (); }; };
-		FF3BFDDB1BD8CC770003630E /* AdjustedSpeechIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDD51BD8CC770003630E /* AdjustedSpeechIcon@2x.png */; settings = {ASSET_TAGS = (); }; };
-		FF3BFDDC1BD8CC770003630E /* AudiogramIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDD61BD8CC770003630E /* AudiogramIcon.png */; settings = {ASSET_TAGS = (); }; };
-		FF3BFDDD1BD8CC770003630E /* AudiogramIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDD71BD8CC770003630E /* AudiogramIcon@2x.png */; settings = {ASSET_TAGS = (); }; };
-		FF3BFDDE1BD8CC770003630E /* HearingIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDD81BD8CC770003630E /* HearingIcon.png */; settings = {ASSET_TAGS = (); }; };
-		FF3BFDDF1BD8CC770003630E /* HearingIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDD91BD8CC770003630E /* HearingIcon@2x.png */; settings = {ASSET_TAGS = (); }; };
-		FF3BFDE21BD8CDED0003630E /* MoreIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDE01BD8CDED0003630E /* MoreIcon.png */; settings = {ASSET_TAGS = (); }; };
-		FF3BFDE31BD8CDED0003630E /* MoreIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDE11BD8CDED0003630E /* MoreIcon@2x.png */; settings = {ASSET_TAGS = (); }; };
-		FF3BFDE61BD8D1620003630E /* AudioPlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3BFDE51BD8D1620003630E /* AudioPlotViewController.m */; settings = {ASSET_TAGS = (); }; };
-		FF3BFDEA1BD8D76E0003630E /* PlaybackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3BFDE91BD8D76E0003630E /* PlaybackViewController.m */; settings = {ASSET_TAGS = (); }; };
-		FF3BFDED1BD8F2260003630E /* HearingAidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3BFDEC1BD8F2260003630E /* HearingAidViewController.m */; settings = {ASSET_TAGS = (); }; };
-		FF3BFDF01BD8F2CC0003630E /* MicrophonePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3BFDEF1BD8F2CC0003630E /* MicrophonePlayer.m */; settings = {ASSET_TAGS = (); }; };
-		FF3BFDF31BD90BCB0003630E /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3BFDF21BD90BCB0003630E /* AudioPlayer.m */; settings = {ASSET_TAGS = (); }; };
-		FF3BFDF61BD934780003630E /* Microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDF41BD934780003630E /* Microphone.png */; settings = {ASSET_TAGS = (); }; };
-		FF3BFDF71BD934780003630E /* MicrophoneMuted.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDF51BD934780003630E /* MicrophoneMuted.png */; settings = {ASSET_TAGS = (); }; };
-		FF3BFDFA1BDA12F90003630E /* AudioDevices.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3BFDF91BDA12F90003630E /* AudioDevices.m */; settings = {ASSET_TAGS = (); }; };
-		FF3BFDFC1BDA33DB0003630E /* SwitchButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3BFDFB1BDA33DB0003630E /* SwitchButton.png */; settings = {ASSET_TAGS = (); }; };
-		FF3BFE061BDA35EC0003630E /* BouncyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3BFDFF1BDA35EC0003630E /* BouncyButton.m */; settings = {ASSET_TAGS = (); }; };
-		FF3BFE071BDA35EC0003630E /* DrawerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3BFE011BDA35EC0003630E /* DrawerButton.m */; settings = {ASSET_TAGS = (); }; };
-		FF3BFE081BDA35EC0003630E /* PlaybackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3BFE031BDA35EC0003630E /* PlaybackButton.m */; settings = {ASSET_TAGS = (); }; };
-		FF3BFE091BDA35EC0003630E /* RoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3BFE051BDA35EC0003630E /* RoundedButton.m */; settings = {ASSET_TAGS = (); }; };
-		FF3BFE0C1BDA36390003630E /* SpinningButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3BFE0B1BDA36390003630E /* SpinningButton.m */; settings = {ASSET_TAGS = (); }; };
-		FF42B96D1B4E35AF00535A7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B96C1B4E35AF00535A7B /* main.m */; };
-		FF42B9701B4E35AF00535A7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF42B96F1B4E35AF00535A7B /* AppDelegate.m */; };
-		FF42B9761B4E35AF00535A7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9741B4E35AF00535A7B /* Main.storyboard */; };
-		FF42B9781B4E35AF00535A7B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9771B4E35AF00535A7B /* Images.xcassets */; };
-		FF42B97B1B4E35AF00535A7B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF42B9791B4E35AF00535A7B /* LaunchScreen.xib */; };
-		FF481DC61B5BB27900AF588B /* AudiogramView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF481DC51B5BB27900AF588B /* AudiogramView.m */; };
-		FF481DC91B5BB42C00AF588B /* LeftEar.png in Resources */ = {isa = PBXBuildFile; fileRef = FF481DC71B5BB42C00AF588B /* LeftEar.png */; };
-		FF481DCA1B5BB42C00AF588B /* RightEar.png in Resources */ = {isa = PBXBuildFile; fileRef = FF481DC81B5BB42C00AF588B /* RightEar.png */; };
-		FF481DCD1B5BB91300AF588B /* AudiogramMarkerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF481DCC1B5BB91300AF588B /* AudiogramMarkerView.m */; };
-		FF69D66A1B624C13000BD808 /* DSPHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = FF69D6691B624C13000BD808 /* DSPHelpers.m */; };
-		FF76043F1B53BEDE0024930C /* HearingWave.png in Resources */ = {isa = PBXBuildFile; fileRef = FF76043E1B53BEDE0024930C /* HearingWave.png */; };
-		FF7604431B53C6D20024930C /* UIView+PopAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7604421B53C6D20024930C /* UIView+PopAnimations.m */; };
-		FF7DD90D1B63ACBE008006DD /* ToneEqualizer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7DD90C1B63ACBE008006DD /* ToneEqualizer.m */; };
-		FF7DD9101B63ACD7008006DD /* SoundModifier.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7DD90F1B63ACD7008006DD /* SoundModifier.m */; };
-		FF7DD9131B63ADCB008006DD /* SoundModifiersFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7DD9121B63ADCB008006DD /* SoundModifiersFactory.m */; };
-		FF7DD9161B63B549008006DD /* HearingLossSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7DD9151B63B549008006DD /* HearingLossSimulator.m */; };
-		FF84486E1B7F19EA00A06D6B /* TestCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = FF84486D1B7F19EA00A06D6B /* TestCircle.png */; };
-		FF8448731B7F220600A06D6B /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF8448711B7F1BD400A06D6B /* OpenSans-Light.ttf */; };
-		FF8448741B7F220600A06D6B /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF8448701B7F1BBE00A06D6B /* OpenSans-Regular.ttf */; };
-		FF8448751B7F220600A06D6B /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF8448721B7F1C1300A06D6B /* OpenSans-Semibold.ttf */; };
-		FF8448771B7F27AF00A06D6B /* CloseIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8448761B7F27AF00A06D6B /* CloseIcon.png */; };
-		FF84488B1B7FA42400A06D6B /* LeftArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8448891B7FA42400A06D6B /* LeftArrow.png */; };
-		FF84488C1B7FA42400A06D6B /* RightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = FF84488A1B7FA42400A06D6B /* RightArrow.png */; };
-		FF8448971B809F5D00A06D6B /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8448921B809F5D00A06D6B /* BaseButton.m */; };
-		FF8448981B809F5D00A06D6B /* BaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8448941B809F5D00A06D6B /* BaseLabel.m */; };
-		FF8448991B809F5D00A06D6B /* BaseTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8448961B809F5D00A06D6B /* BaseTextView.m */; };
-		FF84489C1B80A69300A06D6B /* ViewConstants.mm in Sources */ = {isa = PBXBuildFile; fileRef = FF84489B1B80A69300A06D6B /* ViewConstants.mm */; };
-		FF8448A21B80B3D800A06D6B /* SegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8448A11B80B3D800A06D6B /* SegmentedControl.m */; };
-		FF86FF631B60B18500C3E093 /* NovocainePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF621B60B18500C3E093 /* NovocainePlayer.m */; };
-		FF86FF671B60B3F100C3E093 /* PureTonePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF661B60B3F100C3E093 /* PureTonePlayer.m */; };
-		FF86FF6B1B60CE4A00C3E093 /* PureToneAudiometer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF6A1B60CE4A00C3E093 /* PureToneAudiometer.m */; };
-		FF86FF711B60D75C00C3E093 /* FilePlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = FF86FF701B60D75C00C3E093 /* FilePlayer.mm */; };
-		FF9DB4E41B53E097006E4D3F /* TestInstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB4E31B53E097006E4D3F /* TestInstructionsViewController.m */; };
-		FF9DB4E61B53EE36006E4D3F /* Headphones.png in Resources */ = {isa = PBXBuildFile; fileRef = FF9DB4E51B53EE36006E4D3F /* Headphones.png */; };
-		FF9DB4E91B540192006E4D3F /* CommonAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB4E81B540192006E4D3F /* CommonAnimations.m */; };
-		FF9DB4EC1B54FA8E006E4D3F /* AudioTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB4EB1B54FA8E006E4D3F /* AudioTypes.m */; };
-		FF9DB5351B56360E006E4D3F /* AdjustedSpeechViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB5341B56360E006E4D3F /* AdjustedSpeechViewController.m */; };
-		FF9DB5411B56887B006E4D3F /* AudioFiles in Resources */ = {isa = PBXBuildFile; fileRef = FF9DB5401B56887B006E4D3F /* AudioFiles */; };
-		FF9DB5441B568918006E4D3F /* SoundFile.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DB5431B568918006E4D3F /* SoundFile.m */; };
-		FF9DB5471B569A95006E4D3F /* Pause.png in Resources */ = {isa = PBXBuildFile; fileRef = FF9DB5451B569A95006E4D3F /* Pause.png */; };
-		FF9DB5481B569A95006E4D3F /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = FF9DB5461B569A95006E4D3F /* Play.png */; };
-		FFCE73741B52580700F52920 /* PunchCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE73731B52580700F52920 /* PunchCardTests.m */; };
-		FFCE73781B525A5600F52920 /* AmplitudeMultiplierTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE73771B525A5600F52920 /* AmplitudeMultiplierTests.m */; };
-		FFCE737B1B525D2C00F52920 /* TestsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE737A1B525D2C00F52920 /* TestsAppDelegate.m */; };
-		FFCE737C1B525D4400F52920 /* TestsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE737A1B525D2C00F52920 /* TestsAppDelegate.m */; };
-		FFCE737F1B525E3200F52920 /* ExamPunchCard.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A484B1B5031A10021B149 /* ExamPunchCard.m */; };
-		FFCE73801B525E3800F52920 /* AmplitudeMultiplier.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0A48411B4FB44E0021B149 /* AmplitudeMultiplier.m */; };
-		FFCE73831B52AC6E00F52920 /* AudiogramData.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE73821B52AC6E00F52920 /* AudiogramData.m */; };
-		FFCE73851B52BC1400F52920 /* AudiogramDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE73841B52BC1400F52920 /* AudiogramDataTests.m */; };
-		FFCE73861B52BC1B00F52920 /* AudiogramData.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE73821B52AC6E00F52920 /* AudiogramData.m */; };
-		FFECC0521BDCD0DF0007DA70 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFECC0511BDCD0DF0007DA70 /* ModalViewController.m */; settings = {ASSET_TAGS = (); }; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		FF42B9811B4E35AF00535A7B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF42B95F1B4E35AF00535A7B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FF42B9661B4E35AF00535A7B;
-			remoteInfo = WaveAmp;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		57F6D79C9BC447900DED991A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		D5CC663FCBFA90A9EC45B2CA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC9F17805F845646925F68CD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		FF0A482E1B4E38FA0021B149 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
-		FF0A48301B4E3D870021B149 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
-		FF0A48311B4E3D870021B149 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
-		FF0A48361B4E3F560021B149 /* AbsThresholdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbsThresholdViewController.h; sourceTree = "<group>"; };
-		FF0A48371B4E3F560021B149 /* AbsThresholdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbsThresholdViewController.m; sourceTree = "<group>"; };
-		FF0A483D1B4E44A80021B149 /* AudiogramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiogramViewController.h; sourceTree = "<group>"; };
-		FF0A483E1B4E44A80021B149 /* AudiogramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiogramViewController.m; sourceTree = "<group>"; };
-		FF0A48401B4FB44E0021B149 /* AmplitudeMultiplier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmplitudeMultiplier.h; sourceTree = "<group>"; };
-		FF0A48411B4FB44E0021B149 /* AmplitudeMultiplier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmplitudeMultiplier.m; sourceTree = "<group>"; };
-		FF0A48431B4FB75B0021B149 /* HearingExamSoundMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HearingExamSoundMeter.h; sourceTree = "<group>"; };
-		FF0A48441B4FB75B0021B149 /* HearingExamSoundMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HearingExamSoundMeter.m; sourceTree = "<group>"; };
-		FF0A48471B4FEC7E0021B149 /* FrequencyThreshold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrequencyThreshold.h; sourceTree = "<group>"; };
-		FF0A48481B4FEC7E0021B149 /* FrequencyThreshold.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrequencyThreshold.m; sourceTree = "<group>"; };
-		FF0A484A1B5031A10021B149 /* ExamPunchCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExamPunchCard.h; sourceTree = "<group>"; };
-		FF0A484B1B5031A10021B149 /* ExamPunchCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExamPunchCard.m; sourceTree = "<group>"; };
-		FF2619C71B661B770069907D /* BasicArrowDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BasicArrowDown.png; sourceTree = "<group>"; };
-		FF3BFDD41BD8CC770003630E /* AdjustedSpeechIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AdjustedSpeechIcon.png; sourceTree = "<group>"; };
-		FF3BFDD51BD8CC770003630E /* AdjustedSpeechIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AdjustedSpeechIcon@2x.png"; sourceTree = "<group>"; };
-		FF3BFDD61BD8CC770003630E /* AudiogramIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AudiogramIcon.png; sourceTree = "<group>"; };
-		FF3BFDD71BD8CC770003630E /* AudiogramIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AudiogramIcon@2x.png"; sourceTree = "<group>"; };
-		FF3BFDD81BD8CC770003630E /* HearingIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HearingIcon.png; sourceTree = "<group>"; };
-		FF3BFDD91BD8CC770003630E /* HearingIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HearingIcon@2x.png"; sourceTree = "<group>"; };
-		FF3BFDE01BD8CDED0003630E /* MoreIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MoreIcon.png; sourceTree = "<group>"; };
-		FF3BFDE11BD8CDED0003630E /* MoreIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MoreIcon@2x.png"; sourceTree = "<group>"; };
-		FF3BFDE41BD8D1620003630E /* AudioPlotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlotViewController.h; sourceTree = "<group>"; };
-		FF3BFDE51BD8D1620003630E /* AudioPlotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlotViewController.m; sourceTree = "<group>"; };
-		FF3BFDE81BD8D76E0003630E /* PlaybackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaybackViewController.h; sourceTree = "<group>"; };
-		FF3BFDE91BD8D76E0003630E /* PlaybackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaybackViewController.m; sourceTree = "<group>"; };
-		FF3BFDEB1BD8F2260003630E /* HearingAidViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HearingAidViewController.h; sourceTree = "<group>"; };
-		FF3BFDEC1BD8F2260003630E /* HearingAidViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HearingAidViewController.m; sourceTree = "<group>"; };
-		FF3BFDEE1BD8F2CC0003630E /* MicrophonePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MicrophonePlayer.h; sourceTree = "<group>"; };
-		FF3BFDEF1BD8F2CC0003630E /* MicrophonePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MicrophonePlayer.m; sourceTree = "<group>"; };
-		FF3BFDF11BD90B080003630E /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
-		FF3BFDF21BD90BCB0003630E /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
-		FF3BFDF41BD934780003630E /* Microphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Microphone.png; sourceTree = "<group>"; };
-		FF3BFDF51BD934780003630E /* MicrophoneMuted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MicrophoneMuted.png; sourceTree = "<group>"; };
-		FF3BFDF81BDA12F90003630E /* AudioDevices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioDevices.h; sourceTree = "<group>"; };
-		FF3BFDF91BDA12F90003630E /* AudioDevices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioDevices.m; sourceTree = "<group>"; };
-		FF3BFDFB1BDA33DB0003630E /* SwitchButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SwitchButton.png; sourceTree = "<group>"; };
-		FF3BFDFE1BDA35EC0003630E /* BouncyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncyButton.h; sourceTree = "<group>"; };
-		FF3BFDFF1BDA35EC0003630E /* BouncyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncyButton.m; sourceTree = "<group>"; };
-		FF3BFE001BDA35EC0003630E /* DrawerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerButton.h; sourceTree = "<group>"; };
-		FF3BFE011BDA35EC0003630E /* DrawerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerButton.m; sourceTree = "<group>"; };
-		FF3BFE021BDA35EC0003630E /* PlaybackButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaybackButton.h; sourceTree = "<group>"; };
-		FF3BFE031BDA35EC0003630E /* PlaybackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaybackButton.m; sourceTree = "<group>"; };
-		FF3BFE041BDA35EC0003630E /* RoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundedButton.h; sourceTree = "<group>"; };
-		FF3BFE051BDA35EC0003630E /* RoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundedButton.m; sourceTree = "<group>"; };
-		FF3BFE0A1BDA36390003630E /* SpinningButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinningButton.h; sourceTree = "<group>"; };
-		FF3BFE0B1BDA36390003630E /* SpinningButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinningButton.m; sourceTree = "<group>"; };
-		FF42B9671B4E35AF00535A7B /* WaveAmp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveAmp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF42B96B1B4E35AF00535A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF42B96C1B4E35AF00535A7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FF42B96E1B4E35AF00535A7B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FF42B96F1B4E35AF00535A7B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FF42B9751B4E35AF00535A7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FF42B9771B4E35AF00535A7B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FF42B97A1B4E35AF00535A7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		FF42B9801B4E35AF00535A7B /* WaveAmpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaveAmpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF42B9851B4E35AF00535A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF481DC41B5BB27900AF588B /* AudiogramView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiogramView.h; sourceTree = "<group>"; };
-		FF481DC51B5BB27900AF588B /* AudiogramView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiogramView.m; sourceTree = "<group>"; };
-		FF481DC71B5BB42C00AF588B /* LeftEar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeftEar.png; sourceTree = "<group>"; };
-		FF481DC81B5BB42C00AF588B /* RightEar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RightEar.png; sourceTree = "<group>"; };
-		FF481DCB1B5BB91300AF588B /* AudiogramMarkerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiogramMarkerView.h; sourceTree = "<group>"; };
-		FF481DCC1B5BB91300AF588B /* AudiogramMarkerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiogramMarkerView.m; sourceTree = "<group>"; };
-		FF69D6681B624C13000BD808 /* DSPHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSPHelpers.h; sourceTree = "<group>"; };
-		FF69D6691B624C13000BD808 /* DSPHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSPHelpers.m; sourceTree = "<group>"; };
-		FF76043E1B53BEDE0024930C /* HearingWave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HearingWave.png; sourceTree = "<group>"; };
-		FF7604411B53C6D20024930C /* UIView+PopAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PopAnimations.h"; sourceTree = "<group>"; };
-		FF7604421B53C6D20024930C /* UIView+PopAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PopAnimations.m"; sourceTree = "<group>"; };
-		FF7DD90B1B63ACBE008006DD /* ToneEqualizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToneEqualizer.h; sourceTree = "<group>"; };
-		FF7DD90C1B63ACBE008006DD /* ToneEqualizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToneEqualizer.m; sourceTree = "<group>"; };
-		FF7DD90E1B63ACD7008006DD /* SoundModifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundModifier.h; sourceTree = "<group>"; };
-		FF7DD90F1B63ACD7008006DD /* SoundModifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundModifier.m; sourceTree = "<group>"; };
-		FF7DD9111B63ADCB008006DD /* SoundModifiersFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundModifiersFactory.h; sourceTree = "<group>"; };
-		FF7DD9121B63ADCB008006DD /* SoundModifiersFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundModifiersFactory.m; sourceTree = "<group>"; };
-		FF7DD9141B63B549008006DD /* HearingLossSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HearingLossSimulator.h; sourceTree = "<group>"; };
-		FF7DD9151B63B549008006DD /* HearingLossSimulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HearingLossSimulator.m; sourceTree = "<group>"; };
-		FF7DD9171B63BDE8008006DD /* ToneEqualizer_protected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToneEqualizer_protected.h; sourceTree = "<group>"; };
-		FF84486D1B7F19EA00A06D6B /* TestCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TestCircle.png; sourceTree = "<group>"; };
-		FF8448701B7F1BBE00A06D6B /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
-		FF8448711B7F1BD400A06D6B /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
-		FF8448721B7F1C1300A06D6B /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
-		FF8448761B7F27AF00A06D6B /* CloseIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseIcon.png; sourceTree = "<group>"; };
-		FF8448891B7FA42400A06D6B /* LeftArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeftArrow.png; sourceTree = "<group>"; };
-		FF84488A1B7FA42400A06D6B /* RightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RightArrow.png; sourceTree = "<group>"; };
-		FF8448911B809F5D00A06D6B /* BaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseButton.h; sourceTree = "<group>"; };
-		FF8448921B809F5D00A06D6B /* BaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseButton.m; sourceTree = "<group>"; };
-		FF8448931B809F5D00A06D6B /* BaseLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLabel.h; sourceTree = "<group>"; };
-		FF8448941B809F5D00A06D6B /* BaseLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLabel.m; sourceTree = "<group>"; };
-		FF8448951B809F5D00A06D6B /* BaseTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTextView.h; sourceTree = "<group>"; };
-		FF8448961B809F5D00A06D6B /* BaseTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTextView.m; sourceTree = "<group>"; };
-		FF84489A1B80A69300A06D6B /* ViewConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewConstants.h; sourceTree = "<group>"; };
-		FF84489B1B80A69300A06D6B /* ViewConstants.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewConstants.mm; sourceTree = "<group>"; };
-		FF8448A01B80B3D800A06D6B /* SegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentedControl.h; sourceTree = "<group>"; };
-		FF8448A11B80B3D800A06D6B /* SegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentedControl.m; sourceTree = "<group>"; };
-		FF86FF611B60B18500C3E093 /* NovocainePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NovocainePlayer.h; sourceTree = "<group>"; };
-		FF86FF621B60B18500C3E093 /* NovocainePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NovocainePlayer.m; sourceTree = "<group>"; };
-		FF86FF641B60B36000C3E093 /* NovocainePlayer_protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NovocainePlayer_protected.h; sourceTree = "<group>"; };
-		FF86FF651B60B3F100C3E093 /* PureTonePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureTonePlayer.h; sourceTree = "<group>"; };
-		FF86FF661B60B3F100C3E093 /* PureTonePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PureTonePlayer.m; sourceTree = "<group>"; };
-		FF86FF691B60CE4A00C3E093 /* PureToneAudiometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureToneAudiometer.h; sourceTree = "<group>"; };
-		FF86FF6A1B60CE4A00C3E093 /* PureToneAudiometer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PureToneAudiometer.m; sourceTree = "<group>"; };
-		FF86FF6C1B60CE6700C3E093 /* AudiometerProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiometerProtocols.h; sourceTree = "<group>"; };
-		FF86FF6F1B60D75C00C3E093 /* FilePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilePlayer.h; sourceTree = "<group>"; };
-		FF86FF701B60D75C00C3E093 /* FilePlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FilePlayer.mm; sourceTree = "<group>"; };
-		FF9DB4E21B53E097006E4D3F /* TestInstructionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestInstructionsViewController.h; sourceTree = "<group>"; };
-		FF9DB4E31B53E097006E4D3F /* TestInstructionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestInstructionsViewController.m; sourceTree = "<group>"; };
-		FF9DB4E51B53EE36006E4D3F /* Headphones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Headphones.png; sourceTree = "<group>"; };
-		FF9DB4E71B540192006E4D3F /* CommonAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonAnimations.h; sourceTree = "<group>"; };
-		FF9DB4E81B540192006E4D3F /* CommonAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonAnimations.m; sourceTree = "<group>"; };
-		FF9DB4EA1B54FA6A006E4D3F /* AudioTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioTypes.h; sourceTree = "<group>"; };
-		FF9DB4EB1B54FA8E006E4D3F /* AudioTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioTypes.m; sourceTree = "<group>"; };
-		FF9DB5331B56360E006E4D3F /* AdjustedSpeechViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdjustedSpeechViewController.h; sourceTree = "<group>"; };
-		FF9DB5341B56360E006E4D3F /* AdjustedSpeechViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdjustedSpeechViewController.m; sourceTree = "<group>"; };
-		FF9DB5401B56887B006E4D3F /* AudioFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AudioFiles; sourceTree = "<group>"; };
-		FF9DB5421B568918006E4D3F /* SoundFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundFile.h; sourceTree = "<group>"; };
-		FF9DB5431B568918006E4D3F /* SoundFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundFile.m; sourceTree = "<group>"; };
-		FF9DB5451B569A95006E4D3F /* Pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pause.png; sourceTree = "<group>"; };
-		FF9DB5461B569A95006E4D3F /* Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Play.png; sourceTree = "<group>"; };
-		FFCE73731B52580700F52920 /* PunchCardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PunchCardTests.m; sourceTree = "<group>"; };
-		FFCE73771B525A5600F52920 /* AmplitudeMultiplierTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmplitudeMultiplierTests.m; sourceTree = "<group>"; };
-		FFCE73791B525D2C00F52920 /* TestsAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestsAppDelegate.h; sourceTree = "<group>"; };
-		FFCE737A1B525D2C00F52920 /* TestsAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestsAppDelegate.m; sourceTree = "<group>"; };
-		FFCE73811B52AC6E00F52920 /* AudiogramData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiogramData.h; sourceTree = "<group>"; };
-		FFCE73821B52AC6E00F52920 /* AudiogramData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiogramData.m; sourceTree = "<group>"; };
-		FFCE73841B52BC1400F52920 /* AudiogramDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiogramDataTests.m; sourceTree = "<group>"; };
-		FFECC0501BDCD0DF0007DA70 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
-		FFECC0511BDCD0DF0007DA70 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
-		FFECC0531BDCD65C0007DA70 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		FF42B9641B4E35AF00535A7B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FF0A482F1B4E38FA0021B149 /* libc++.dylib in Frameworks */,
-				0FA6C9961524C40A8B570F2A /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FF42B97D1B4E35AF00535A7B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		14EEFCD0369F1A55470A9A07 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FF0A482E1B4E38FA0021B149 /* libc++.dylib */,
-				D5CC663FCBFA90A9EC45B2CA /* libPods.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C4B08BFABAF9E76B6258F14D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				57F6D79C9BC447900DED991A /* Pods.debug.xcconfig */,
-				DC9F17805F845646925F68CD /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		FF0A48391B4E41B00021B149 /* BusinessLayer */ = {
-			isa = PBXGroup;
-			children = (
-				FF7DD90A1B63ACBE008006DD /* SoundModifiers */,
-				FF86FF601B60B15400C3E093 /* AudioPlayer */,
-				FF86FF681B60CE4A00C3E093 /* Audiometer */,
-				FF0A48401B4FB44E0021B149 /* AmplitudeMultiplier.h */,
-				FF0A48411B4FB44E0021B149 /* AmplitudeMultiplier.m */,
-				FF0A48431B4FB75B0021B149 /* HearingExamSoundMeter.h */,
-				FF0A48441B4FB75B0021B149 /* HearingExamSoundMeter.m */,
-				FF9DB4EA1B54FA6A006E4D3F /* AudioTypes.h */,
-				FF9DB4EB1B54FA8E006E4D3F /* AudioTypes.m */,
-				FF69D6681B624C13000BD808 /* DSPHelpers.h */,
-				FF69D6691B624C13000BD808 /* DSPHelpers.m */,
-				FF3BFDF81BDA12F90003630E /* AudioDevices.h */,
-				FF3BFDF91BDA12F90003630E /* AudioDevices.m */,
-			);
-			path = BusinessLayer;
-			sourceTree = "<group>";
-		};
-		FF0A48461B4FEBE00021B149 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				FF0A48471B4FEC7E0021B149 /* FrequencyThreshold.h */,
-				FF0A48481B4FEC7E0021B149 /* FrequencyThreshold.m */,
-				FF0A484A1B5031A10021B149 /* ExamPunchCard.h */,
-				FF0A484B1B5031A10021B149 /* ExamPunchCard.m */,
-				FFCE73811B52AC6E00F52920 /* AudiogramData.h */,
-				FFCE73821B52AC6E00F52920 /* AudiogramData.m */,
-				FF9DB5421B568918006E4D3F /* SoundFile.h */,
-				FF9DB5431B568918006E4D3F /* SoundFile.m */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		FF3BFDD31BD8CC770003630E /* TabbarIcons */ = {
-			isa = PBXGroup;
-			children = (
-				FF3BFDE01BD8CDED0003630E /* MoreIcon.png */,
-				FF3BFDE11BD8CDED0003630E /* MoreIcon@2x.png */,
-				FF3BFDD41BD8CC770003630E /* AdjustedSpeechIcon.png */,
-				FF3BFDD51BD8CC770003630E /* AdjustedSpeechIcon@2x.png */,
-				FF3BFDD61BD8CC770003630E /* AudiogramIcon.png */,
-				FF3BFDD71BD8CC770003630E /* AudiogramIcon@2x.png */,
-				FF3BFDD81BD8CC770003630E /* HearingIcon.png */,
-				FF3BFDD91BD8CC770003630E /* HearingIcon@2x.png */,
-			);
-			path = TabbarIcons;
-			sourceTree = "<group>";
-		};
-		FF3BFDE71BD8D7610003630E /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				FFECC0501BDCD0DF0007DA70 /* ModalViewController.h */,
-				FFECC0511BDCD0DF0007DA70 /* ModalViewController.m */,
-				FF3BFDE81BD8D76E0003630E /* PlaybackViewController.h */,
-				FF3BFDE91BD8D76E0003630E /* PlaybackViewController.m */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		FF3BFDFD1BDA35EC0003630E /* Buttons */ = {
-			isa = PBXGroup;
-			children = (
-				FF3BFDFE1BDA35EC0003630E /* BouncyButton.h */,
-				FF3BFDFF1BDA35EC0003630E /* BouncyButton.m */,
-				FF3BFE001BDA35EC0003630E /* DrawerButton.h */,
-				FF3BFE011BDA35EC0003630E /* DrawerButton.m */,
-				FF3BFE021BDA35EC0003630E /* PlaybackButton.h */,
-				FF3BFE031BDA35EC0003630E /* PlaybackButton.m */,
-				FF3BFE041BDA35EC0003630E /* RoundedButton.h */,
-				FF3BFE051BDA35EC0003630E /* RoundedButton.m */,
-				FF3BFE0A1BDA36390003630E /* SpinningButton.h */,
-				FF3BFE0B1BDA36390003630E /* SpinningButton.m */,
-			);
-			path = Buttons;
-			sourceTree = "<group>";
-		};
-		FF42B95E1B4E35AF00535A7B = {
-			isa = PBXGroup;
-			children = (
-				FF42B9691B4E35AF00535A7B /* WaveAmp */,
-				FF42B9831B4E35AF00535A7B /* WaveAmpTests */,
-				FF42B9681B4E35AF00535A7B /* Products */,
-				C4B08BFABAF9E76B6258F14D /* Pods */,
-				14EEFCD0369F1A55470A9A07 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		FF42B9681B4E35AF00535A7B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FF42B9671B4E35AF00535A7B /* WaveAmp.app */,
-				FF42B9801B4E35AF00535A7B /* WaveAmpTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		FF42B9691B4E35AF00535A7B /* WaveAmp */ = {
-			isa = PBXGroup;
-			children = (
-				FF76043C1B53BE100024930C /* Resources */,
-				FF7604401B53C6D20024930C /* Animations */,
-				FF0A48461B4FEBE00021B149 /* Models */,
-				FF0A48391B4E41B00021B149 /* BusinessLayer */,
-				FF9DB54B1B569E74006E4D3F /* Views */,
-				FF42B9901B4E35D400535A7B /* ViewControllers */,
-				FF42B9941B4E35D900535A7B /* Storyboards */,
-				FF42B96E1B4E35AF00535A7B /* AppDelegate.h */,
-				FF42B96F1B4E35AF00535A7B /* AppDelegate.m */,
-				FF42B9771B4E35AF00535A7B /* Images.xcassets */,
-				FF42B96A1B4E35AF00535A7B /* Supporting Files */,
-			);
-			path = WaveAmp;
-			sourceTree = "<group>";
-		};
-		FF42B96A1B4E35AF00535A7B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FF42B96B1B4E35AF00535A7B /* Info.plist */,
-				FF42B96C1B4E35AF00535A7B /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FF42B9831B4E35AF00535A7B /* WaveAmpTests */ = {
-			isa = PBXGroup;
-			children = (
-				FFCE73771B525A5600F52920 /* AmplitudeMultiplierTests.m */,
-				FFCE73731B52580700F52920 /* PunchCardTests.m */,
-				FFCE73841B52BC1400F52920 /* AudiogramDataTests.m */,
-				FF42B9841B4E35AF00535A7B /* Supporting Files */,
-				FFCE73791B525D2C00F52920 /* TestsAppDelegate.h */,
-				FFCE737A1B525D2C00F52920 /* TestsAppDelegate.m */,
-			);
-			path = WaveAmpTests;
-			sourceTree = "<group>";
-		};
-		FF42B9841B4E35AF00535A7B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FF42B9851B4E35AF00535A7B /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FF42B9901B4E35D400535A7B /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				FF3BFDE71BD8D7610003630E /* Base */,
-				FF0A48301B4E3D870021B149 /* TabBarViewController.h */,
-				FF0A48311B4E3D870021B149 /* TabBarViewController.m */,
-				FF0A48361B4E3F560021B149 /* AbsThresholdViewController.h */,
-				FF0A48371B4E3F560021B149 /* AbsThresholdViewController.m */,
-				FF0A483D1B4E44A80021B149 /* AudiogramViewController.h */,
-				FF0A483E1B4E44A80021B149 /* AudiogramViewController.m */,
-				FF9DB4E21B53E097006E4D3F /* TestInstructionsViewController.h */,
-				FF9DB4E31B53E097006E4D3F /* TestInstructionsViewController.m */,
-				FF9DB5331B56360E006E4D3F /* AdjustedSpeechViewController.h */,
-				FF9DB5341B56360E006E4D3F /* AdjustedSpeechViewController.m */,
-				FF3BFDEB1BD8F2260003630E /* HearingAidViewController.h */,
-				FF3BFDEC1BD8F2260003630E /* HearingAidViewController.m */,
-				FF3BFDE41BD8D1620003630E /* AudioPlotViewController.h */,
-				FF3BFDE51BD8D1620003630E /* AudioPlotViewController.m */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		FF42B9941B4E35D900535A7B /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				FF42B9741B4E35AF00535A7B /* Main.storyboard */,
-				FF42B9791B4E35AF00535A7B /* LaunchScreen.xib */,
-			);
-			name = Storyboards;
-			sourceTree = "<group>";
-		};
-		FF481DC31B5BB27900AF588B /* Audiogram */ = {
-			isa = PBXGroup;
-			children = (
-				FF481DC41B5BB27900AF588B /* AudiogramView.h */,
-				FF481DC51B5BB27900AF588B /* AudiogramView.m */,
-				FF481DCB1B5BB91300AF588B /* AudiogramMarkerView.h */,
-				FF481DCC1B5BB91300AF588B /* AudiogramMarkerView.m */,
-			);
-			path = Audiogram;
-			sourceTree = "<group>";
-		};
-		FF76043C1B53BE100024930C /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				FF84486F1B7F1BA700A06D6B /* Fonts */,
-				FF9DB5401B56887B006E4D3F /* AudioFiles */,
-				FF76043D1B53BE1D0024930C /* Images */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		FF76043D1B53BE1D0024930C /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				FF3BFDD31BD8CC770003630E /* TabbarIcons */,
-				FF8448891B7FA42400A06D6B /* LeftArrow.png */,
-				FF84488A1B7FA42400A06D6B /* RightArrow.png */,
-				FF8448761B7F27AF00A06D6B /* CloseIcon.png */,
-				FF84486D1B7F19EA00A06D6B /* TestCircle.png */,
-				FF2619C71B661B770069907D /* BasicArrowDown.png */,
-				FF481DC71B5BB42C00AF588B /* LeftEar.png */,
-				FF481DC81B5BB42C00AF588B /* RightEar.png */,
-				FF9DB5451B569A95006E4D3F /* Pause.png */,
-				FF9DB5461B569A95006E4D3F /* Play.png */,
-				FF9DB4E51B53EE36006E4D3F /* Headphones.png */,
-				FF76043E1B53BEDE0024930C /* HearingWave.png */,
-				FF3BFDFB1BDA33DB0003630E /* SwitchButton.png */,
-				FF3BFDF41BD934780003630E /* Microphone.png */,
-				FF3BFDF51BD934780003630E /* MicrophoneMuted.png */,
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
-		FF7604401B53C6D20024930C /* Animations */ = {
-			isa = PBXGroup;
-			children = (
-				FF7604411B53C6D20024930C /* UIView+PopAnimations.h */,
-				FF7604421B53C6D20024930C /* UIView+PopAnimations.m */,
-				FF9DB4E71B540192006E4D3F /* CommonAnimations.h */,
-				FF9DB4E81B540192006E4D3F /* CommonAnimations.m */,
-			);
-			path = Animations;
-			sourceTree = "<group>";
-		};
-		FF7DD90A1B63ACBE008006DD /* SoundModifiers */ = {
-			isa = PBXGroup;
-			children = (
-				FF7DD9111B63ADCB008006DD /* SoundModifiersFactory.h */,
-				FF7DD9121B63ADCB008006DD /* SoundModifiersFactory.m */,
-				FF7DD90E1B63ACD7008006DD /* SoundModifier.h */,
-				FF7DD90F1B63ACD7008006DD /* SoundModifier.m */,
-				FF7DD9171B63BDE8008006DD /* ToneEqualizer_protected.h */,
-				FF7DD90B1B63ACBE008006DD /* ToneEqualizer.h */,
-				FF7DD90C1B63ACBE008006DD /* ToneEqualizer.m */,
-				FF7DD9141B63B549008006DD /* HearingLossSimulator.h */,
-				FF7DD9151B63B549008006DD /* HearingLossSimulator.m */,
-			);
-			path = SoundModifiers;
-			sourceTree = "<group>";
-		};
-		FF84486F1B7F1BA700A06D6B /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				FF8448711B7F1BD400A06D6B /* OpenSans-Light.ttf */,
-				FF8448701B7F1BBE00A06D6B /* OpenSans-Regular.ttf */,
-				FF8448721B7F1C1300A06D6B /* OpenSans-Semibold.ttf */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
-		FF8448901B809F5D00A06D6B /* BaseViews */ = {
-			isa = PBXGroup;
-			children = (
-				FFECC0531BDCD65C0007DA70 /* BaseView.h */,
-				FF8448911B809F5D00A06D6B /* BaseButton.h */,
-				FF8448921B809F5D00A06D6B /* BaseButton.m */,
-				FF8448931B809F5D00A06D6B /* BaseLabel.h */,
-				FF8448941B809F5D00A06D6B /* BaseLabel.m */,
-				FF8448951B809F5D00A06D6B /* BaseTextView.h */,
-				FF8448961B809F5D00A06D6B /* BaseTextView.m */,
-			);
-			path = BaseViews;
-			sourceTree = "<group>";
-		};
-		FF86FF601B60B15400C3E093 /* AudioPlayer */ = {
-			isa = PBXGroup;
-			children = (
-				FF3BFDF11BD90B080003630E /* AudioPlayer.h */,
-				FF3BFDF21BD90BCB0003630E /* AudioPlayer.m */,
-				FF86FF611B60B18500C3E093 /* NovocainePlayer.h */,
-				FF86FF641B60B36000C3E093 /* NovocainePlayer_protected.h */,
-				FF86FF621B60B18500C3E093 /* NovocainePlayer.m */,
-				FF86FF651B60B3F100C3E093 /* PureTonePlayer.h */,
-				FF86FF661B60B3F100C3E093 /* PureTonePlayer.m */,
-				FF86FF6F1B60D75C00C3E093 /* FilePlayer.h */,
-				FF86FF701B60D75C00C3E093 /* FilePlayer.mm */,
-				FF3BFDEE1BD8F2CC0003630E /* MicrophonePlayer.h */,
-				FF3BFDEF1BD8F2CC0003630E /* MicrophonePlayer.m */,
-			);
-			path = AudioPlayer;
-			sourceTree = "<group>";
-		};
-		FF86FF681B60CE4A00C3E093 /* Audiometer */ = {
-			isa = PBXGroup;
-			children = (
-				FF86FF6C1B60CE6700C3E093 /* AudiometerProtocols.h */,
-				FF86FF691B60CE4A00C3E093 /* PureToneAudiometer.h */,
-				FF86FF6A1B60CE4A00C3E093 /* PureToneAudiometer.m */,
-			);
-			path = Audiometer;
-			sourceTree = "<group>";
-		};
-		FF9DB54B1B569E74006E4D3F /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				FF8448901B809F5D00A06D6B /* BaseViews */,
-				FF481DC31B5BB27900AF588B /* Audiogram */,
-				FF3BFDFD1BDA35EC0003630E /* Buttons */,
-				FF84489A1B80A69300A06D6B /* ViewConstants.h */,
-				FF84489B1B80A69300A06D6B /* ViewConstants.mm */,
-				FF8448A01B80B3D800A06D6B /* SegmentedControl.h */,
-				FF8448A11B80B3D800A06D6B /* SegmentedControl.m */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		FF42B9661B4E35AF00535A7B /* WaveAmp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FF42B98A1B4E35AF00535A7B /* Build configuration list for PBXNativeTarget "WaveAmp" */;
-			buildPhases = (
-				F84B9BB3AB7CAFF785494CDE /* Check Pods Manifest.lock */,
-				FF42B9631B4E35AF00535A7B /* Sources */,
-				FF42B9641B4E35AF00535A7B /* Frameworks */,
-				FF42B9651B4E35AF00535A7B /* Resources */,
-				6B2F28AD0AF588AEF4713525 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = WaveAmp;
-			productName = WaveAmp;
-			productReference = FF42B9671B4E35AF00535A7B /* WaveAmp.app */;
-			productType = "com.apple.product-type.application";
-		};
-		FF42B97F1B4E35AF00535A7B /* WaveAmpTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FF42B98D1B4E35AF00535A7B /* Build configuration list for PBXNativeTarget "WaveAmpTests" */;
-			buildPhases = (
-				FF42B97C1B4E35AF00535A7B /* Sources */,
-				FF42B97D1B4E35AF00535A7B /* Frameworks */,
-				FF42B97E1B4E35AF00535A7B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FF42B9821B4E35AF00535A7B /* PBXTargetDependency */,
-			);
-			name = WaveAmpTests;
-			productName = WaveAmpTests;
-			productReference = FF42B9801B4E35AF00535A7B /* WaveAmpTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		FF42B95F1B4E35AF00535A7B /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0700;
-				ORGANIZATIONNAME = GeorgiIvanov;
-				TargetAttributes = {
-					FF42B9661B4E35AF00535A7B = {
-						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = MB2TZCB4B7;
-						SystemCapabilities = {
-							com.apple.BackgroundModes = {
-								enabled = 1;
-							};
-						};
-					};
-					FF42B97F1B4E35AF00535A7B = {
-						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = FF42B9661B4E35AF00535A7B;
-					};
-				};
-			};
-			buildConfigurationList = FF42B9621B4E35AF00535A7B /* Build configuration list for PBXProject "WaveAmp" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = FF42B95E1B4E35AF00535A7B;
-			productRefGroup = FF42B9681B4E35AF00535A7B /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				FF42B9661B4E35AF00535A7B /* WaveAmp */,
-				FF42B97F1B4E35AF00535A7B /* WaveAmpTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		FF42B9651B4E35AF00535A7B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FF3BFDDA1BD8CC770003630E /* AdjustedSpeechIcon.png in Resources */,
-				FF8448731B7F220600A06D6B /* OpenSans-Light.ttf in Resources */,
-				FF3BFDDC1BD8CC770003630E /* AudiogramIcon.png in Resources */,
-				FF8448741B7F220600A06D6B /* OpenSans-Regular.ttf in Resources */,
-				FF3BFDF61BD934780003630E /* Microphone.png in Resources */,
-				FF3BFDDB1BD8CC770003630E /* AdjustedSpeechIcon@2x.png in Resources */,
-				FF8448751B7F220600A06D6B /* OpenSans-Semibold.ttf in Resources */,
-				FF3BFDE21BD8CDED0003630E /* MoreIcon.png in Resources */,
-				FF84488B1B7FA42400A06D6B /* LeftArrow.png in Resources */,
-				FF42B9761B4E35AF00535A7B /* Main.storyboard in Resources */,
-				FF2619C81B661B770069907D /* BasicArrowDown.png in Resources */,
-				FF84488C1B7FA42400A06D6B /* RightArrow.png in Resources */,
-				FF84486E1B7F19EA00A06D6B /* TestCircle.png in Resources */,
-				FF3BFDF71BD934780003630E /* MicrophoneMuted.png in Resources */,
-				FF3BFDDE1BD8CC770003630E /* HearingIcon.png in Resources */,
-				FF9DB5481B569A95006E4D3F /* Play.png in Resources */,
-				FF9DB4E61B53EE36006E4D3F /* Headphones.png in Resources */,
-				FF3BFDDD1BD8CC770003630E /* AudiogramIcon@2x.png in Resources */,
-				FF481DCA1B5BB42C00AF588B /* RightEar.png in Resources */,
-				FF8448771B7F27AF00A06D6B /* CloseIcon.png in Resources */,
-				FF3BFDE31BD8CDED0003630E /* MoreIcon@2x.png in Resources */,
-				FF42B97B1B4E35AF00535A7B /* LaunchScreen.xib in Resources */,
-				FF9DB5411B56887B006E4D3F /* AudioFiles in Resources */,
-				FF42B9781B4E35AF00535A7B /* Images.xcassets in Resources */,
-				FF76043F1B53BEDE0024930C /* HearingWave.png in Resources */,
-				FF481DC91B5BB42C00AF588B /* LeftEar.png in Resources */,
-				FF3BFDDF1BD8CC770003630E /* HearingIcon@2x.png in Resources */,
-				FF9DB5471B569A95006E4D3F /* Pause.png in Resources */,
-				FF3BFDFC1BDA33DB0003630E /* SwitchButton.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FF42B97E1B4E35AF00535A7B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		6B2F28AD0AF588AEF4713525 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F84B9BB3AB7CAFF785494CDE /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		FF42B9631B4E35AF00535A7B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FF8448991B809F5D00A06D6B /* BaseTextView.m in Sources */,
-				FF3BFDEA1BD8D76E0003630E /* PlaybackViewController.m in Sources */,
-				FF3BFE091BDA35EC0003630E /* RoundedButton.m in Sources */,
-				FF9DB4E91B540192006E4D3F /* CommonAnimations.m in Sources */,
-				FF86FF671B60B3F100C3E093 /* PureTonePlayer.m in Sources */,
-				FF8448A21B80B3D800A06D6B /* SegmentedControl.m in Sources */,
-				FF7DD90D1B63ACBE008006DD /* ToneEqualizer.m in Sources */,
-				FF0A483F1B4E44A80021B149 /* AudiogramViewController.m in Sources */,
-				FF7604431B53C6D20024930C /* UIView+PopAnimations.m in Sources */,
-				FF3BFE071BDA35EC0003630E /* DrawerButton.m in Sources */,
-				FF8448971B809F5D00A06D6B /* BaseButton.m in Sources */,
-				FF0A48451B4FB75B0021B149 /* HearingExamSoundMeter.m in Sources */,
-				FF0A48321B4E3D870021B149 /* TabBarViewController.m in Sources */,
-				FF86FF6B1B60CE4A00C3E093 /* PureToneAudiometer.m in Sources */,
-				FF9DB5441B568918006E4D3F /* SoundFile.m in Sources */,
-				FF3BFE061BDA35EC0003630E /* BouncyButton.m in Sources */,
-				FF7DD9101B63ACD7008006DD /* SoundModifier.m in Sources */,
-				FF3BFE0C1BDA36390003630E /* SpinningButton.m in Sources */,
-				FF3BFDED1BD8F2260003630E /* HearingAidViewController.m in Sources */,
-				FF86FF631B60B18500C3E093 /* NovocainePlayer.m in Sources */,
-				FFCE737C1B525D4400F52920 /* TestsAppDelegate.m in Sources */,
-				FF0A48421B4FB44E0021B149 /* AmplitudeMultiplier.m in Sources */,
-				FF3BFE081BDA35EC0003630E /* PlaybackButton.m in Sources */,
-				FF0A484C1B5031A10021B149 /* ExamPunchCard.m in Sources */,
-				FF3BFDE61BD8D1620003630E /* AudioPlotViewController.m in Sources */,
-				FF481DC61B5BB27900AF588B /* AudiogramView.m in Sources */,
-				FF0A48491B4FEC7E0021B149 /* FrequencyThreshold.m in Sources */,
-				FF0A48381B4E3F560021B149 /* AbsThresholdViewController.m in Sources */,
-				FF3BFDFA1BDA12F90003630E /* AudioDevices.m in Sources */,
-				FF9DB4E41B53E097006E4D3F /* TestInstructionsViewController.m in Sources */,
-				FF7DD9161B63B549008006DD /* HearingLossSimulator.m in Sources */,
-				FF69D66A1B624C13000BD808 /* DSPHelpers.m in Sources */,
-				FFECC0521BDCD0DF0007DA70 /* ModalViewController.m in Sources */,
-				FFCE73831B52AC6E00F52920 /* AudiogramData.m in Sources */,
-				FF42B9701B4E35AF00535A7B /* AppDelegate.m in Sources */,
-				FF9DB4EC1B54FA8E006E4D3F /* AudioTypes.m in Sources */,
-				FF8448981B809F5D00A06D6B /* BaseLabel.m in Sources */,
-				FF481DCD1B5BB91300AF588B /* AudiogramMarkerView.m in Sources */,
-				FF86FF711B60D75C00C3E093 /* FilePlayer.mm in Sources */,
-				FF9DB5351B56360E006E4D3F /* AdjustedSpeechViewController.m in Sources */,
-				FF42B96D1B4E35AF00535A7B /* main.m in Sources */,
-				FF3BFDF31BD90BCB0003630E /* AudioPlayer.m in Sources */,
-				FF7DD9131B63ADCB008006DD /* SoundModifiersFactory.m in Sources */,
-				FF84489C1B80A69300A06D6B /* ViewConstants.mm in Sources */,
-				FF3BFDF01BD8F2CC0003630E /* MicrophonePlayer.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FF42B97C1B4E35AF00535A7B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FFCE73741B52580700F52920 /* PunchCardTests.m in Sources */,
-				FFCE73801B525E3800F52920 /* AmplitudeMultiplier.m in Sources */,
-				FFCE73861B52BC1B00F52920 /* AudiogramData.m in Sources */,
-				FFCE737F1B525E3200F52920 /* ExamPunchCard.m in Sources */,
-				FFCE73781B525A5600F52920 /* AmplitudeMultiplierTests.m in Sources */,
-				FFCE737B1B525D2C00F52920 /* TestsAppDelegate.m in Sources */,
-				FFCE73851B52BC1400F52920 /* AudiogramDataTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FF42B9821B4E35AF00535A7B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FF42B9661B4E35AF00535A7B /* WaveAmp */;
-			targetProxy = FF42B9811B4E35AF00535A7B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		FF42B9741B4E35AF00535A7B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FF42B9751B4E35AF00535A7B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FF42B9791B4E35AF00535A7B /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FF42B97A1B4E35AF00535A7B /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		FF42B9881B4E35AF00535A7B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		FF42B9891B4E35AF00535A7B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		FF42B98B1B4E35AF00535A7B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57F6D79C9BC447900DED991A /* Pods.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				INFOPLIST_FILE = WaveAmp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "GI.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		FF42B98C1B4E35AF00535A7B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC9F17805F845646925F68CD /* Pods.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = WaveAmp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "GI.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		FF42B98E1B4E35AF00535A7B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = WaveAmpTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "GI.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaveAmp.app/WaveAmp";
-			};
-			name = Debug;
-		};
-		FF42B98F1B4E35AF00535A7B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = WaveAmpTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "GI.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaveAmp.app/WaveAmp";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		FF42B9621B4E35AF00535A7B /* Build configuration list for PBXProject "WaveAmp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FF42B9881B4E35AF00535A7B /* Debug */,
-				FF42B9891B4E35AF00535A7B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FF42B98A1B4E35AF00535A7B /* Build configuration list for PBXNativeTarget "WaveAmp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FF42B98B1B4E35AF00535A7B /* Debug */,
-				FF42B98C1B4E35AF00535A7B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FF42B98D1B4E35AF00535A7B /* Build configuration list for PBXNativeTarget "WaveAmpTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FF42B98E1B4E35AF00535A7B /* Debug */,
-				FF42B98F1B4E35AF00535A7B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = FF42B95F1B4E35AF00535A7B /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>0FA6C9961524C40A8B570F2A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5CC663FCBFA90A9EC45B2CA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>14EEFCD0369F1A55470A9A07</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FF0A482E1B4E38FA0021B149</string>
+				<string>D5CC663FCBFA90A9EC45B2CA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>50E8C873374AEE14AAC08B1D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>57F6D79C9BC447900DED991A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6B2F28AD0AF588AEF4713525</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>C4B08BFABAF9E76B6258F14D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>57F6D79C9BC447900DED991A</string>
+				<string>DC9F17805F845646925F68CD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5CC663FCBFA90A9EC45B2CA</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>DC9F17805F845646925F68CD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F84B9BB3AB7CAFF785494CDE</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>FF0A482E1B4E38FA0021B149</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>compiled.mach-o.dylib</string>
+			<key>name</key>
+			<string>libc++.dylib</string>
+			<key>path</key>
+			<string>usr/lib/libc++.dylib</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>FF0A482F1B4E38FA0021B149</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF0A482E1B4E38FA0021B149</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF0A48301B4E3D870021B149</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TabBarViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF0A48311B4E3D870021B149</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TabBarViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF0A48321B4E3D870021B149</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF0A48311B4E3D870021B149</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF0A48361B4E3F560021B149</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AbsThresholdViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF0A48371B4E3F560021B149</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AbsThresholdViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF0A48381B4E3F560021B149</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF0A48371B4E3F560021B149</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF0A48391B4E41B00021B149</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FF7DD90A1B63ACBE008006DD</string>
+				<string>FF86FF601B60B15400C3E093</string>
+				<string>FF86FF681B60CE4A00C3E093</string>
+				<string>FF0A48401B4FB44E0021B149</string>
+				<string>FF0A48411B4FB44E0021B149</string>
+				<string>FF0A48431B4FB75B0021B149</string>
+				<string>FF0A48441B4FB75B0021B149</string>
+				<string>FF9DB4EA1B54FA6A006E4D3F</string>
+				<string>FF9DB4EB1B54FA8E006E4D3F</string>
+				<string>FF69D6681B624C13000BD808</string>
+				<string>FF69D6691B624C13000BD808</string>
+				<string>FF3BFDF81BDA12F90003630E</string>
+				<string>FF3BFDF91BDA12F90003630E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>BusinessLayer</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF0A483D1B4E44A80021B149</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AudiogramViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF0A483E1B4E44A80021B149</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AudiogramViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF0A483F1B4E44A80021B149</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF0A483E1B4E44A80021B149</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF0A48401B4FB44E0021B149</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AmplitudeMultiplier.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF0A48411B4FB44E0021B149</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AmplitudeMultiplier.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF0A48421B4FB44E0021B149</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF0A48411B4FB44E0021B149</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF0A48431B4FB75B0021B149</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>HearingExamSoundMeter.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF0A48441B4FB75B0021B149</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>HearingExamSoundMeter.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF0A48451B4FB75B0021B149</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF0A48441B4FB75B0021B149</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF0A48461B4FEBE00021B149</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FF0A48471B4FEC7E0021B149</string>
+				<string>FF0A48481B4FEC7E0021B149</string>
+				<string>FF0A484A1B5031A10021B149</string>
+				<string>FF0A484B1B5031A10021B149</string>
+				<string>FFCE73811B52AC6E00F52920</string>
+				<string>FFCE73821B52AC6E00F52920</string>
+				<string>FF9DB5421B568918006E4D3F</string>
+				<string>FF9DB5431B568918006E4D3F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Models</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF0A48471B4FEC7E0021B149</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FrequencyThreshold.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF0A48481B4FEC7E0021B149</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FrequencyThreshold.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF0A48491B4FEC7E0021B149</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF0A48481B4FEC7E0021B149</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF0A484A1B5031A10021B149</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ExamPunchCard.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF0A484B1B5031A10021B149</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ExamPunchCard.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF0A484C1B5031A10021B149</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF0A484B1B5031A10021B149</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF2619C71B661B770069907D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>BasicArrowDown.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF2619C81B661B770069907D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF2619C71B661B770069907D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF3BFDD31BD8CC770003630E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FF3BFDE01BD8CDED0003630E</string>
+				<string>FF3BFDE11BD8CDED0003630E</string>
+				<string>FF3BFDD41BD8CC770003630E</string>
+				<string>FF3BFDD51BD8CC770003630E</string>
+				<string>FF3BFDD61BD8CC770003630E</string>
+				<string>FF3BFDD71BD8CC770003630E</string>
+				<string>FF3BFDD81BD8CC770003630E</string>
+				<string>FF3BFDD91BD8CC770003630E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>TabbarIcons</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFDD41BD8CC770003630E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>AdjustedSpeechIcon.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFDD51BD8CC770003630E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>AdjustedSpeechIcon@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFDD61BD8CC770003630E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>AudiogramIcon.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFDD71BD8CC770003630E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>AudiogramIcon@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFDD81BD8CC770003630E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>HearingIcon.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFDD91BD8CC770003630E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>HearingIcon@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFDDA1BD8CC770003630E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF3BFDD41BD8CC770003630E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ASSET_TAGS</key>
+				<array/>
+			</dict>
+		</dict>
+		<key>FF3BFDDB1BD8CC770003630E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF3BFDD51BD8CC770003630E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ASSET_TAGS</key>
+				<array/>
+			</dict>
+		</dict>
+		<key>FF3BFDDC1BD8CC770003630E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF3BFDD61BD8CC770003630E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ASSET_TAGS</key>
+				<array/>
+			</dict>
+		</dict>
+		<key>FF3BFDDD1BD8CC770003630E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF3BFDD71BD8CC770003630E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ASSET_TAGS</key>
+				<array/>
+			</dict>
+		</dict>
+		<key>FF3BFDDE1BD8CC770003630E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF3BFDD81BD8CC770003630E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ASSET_TAGS</key>
+				<array/>
+			</dict>
+		</dict>
+		<key>FF3BFDDF1BD8CC770003630E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF3BFDD91BD8CC770003630E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ASSET_TAGS</key>
+				<array/>
+			</dict>
+		</dict>
+		<key>FF3BFDE01BD8CDED0003630E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>MoreIcon.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFDE11BD8CDED0003630E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>MoreIcon@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFDE21BD8CDED0003630E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF3BFDE01BD8CDED0003630E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ASSET_TAGS</key>
+				<array/>
+			</dict>
+		</dict>
+		<key>FF3BFDE31BD8CDED0003630E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF3BFDE11BD8CDED0003630E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ASSET_TAGS</key>
+				<array/>
+			</dict>
+		</dict>
+		<key>FF3BFDE41BD8D1620003630E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AudioPlotViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFDE51BD8D1620003630E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AudioPlotViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFDE61BD8D1620003630E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF3BFDE51BD8D1620003630E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ASSET_TAGS</key>
+				<array/>
+			</dict>
+		</dict>
+		<key>FF3BFDE71BD8D7610003630E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FFECC0501BDCD0DF0007DA70</string>
+				<string>FFECC0511BDCD0DF0007DA70</string>
+				<string>FF3BFDE81BD8D76E0003630E</string>
+				<string>FF3BFDE91BD8D76E0003630E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Base</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFDE81BD8D76E0003630E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PlaybackViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFDE91BD8D76E0003630E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>PlaybackViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFDEA1BD8D76E0003630E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF3BFDE91BD8D76E0003630E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ASSET_TAGS</key>
+				<array/>
+			</dict>
+		</dict>
+		<key>FF3BFDEB1BD8F2260003630E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>HearingAidViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFDEC1BD8F2260003630E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>HearingAidViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFDED1BD8F2260003630E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF3BFDEC1BD8F2260003630E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ASSET_TAGS</key>
+				<array/>
+			</dict>
+		</dict>
+		<key>FF3BFDEE1BD8F2CC0003630E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MicrophonePlayer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFDEF1BD8F2CC0003630E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>MicrophonePlayer.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFDF01BD8F2CC0003630E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF3BFDEF1BD8F2CC0003630E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ASSET_TAGS</key>
+				<array/>
+			</dict>
+		</dict>
+		<key>FF3BFDF11BD90B080003630E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AudioPlayer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFDF21BD90BCB0003630E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AudioPlayer.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFDF31BD90BCB0003630E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF3BFDF21BD90BCB0003630E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ASSET_TAGS</key>
+				<array/>
+			</dict>
+		</dict>
+		<key>FF3BFDF41BD934780003630E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Microphone.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFDF51BD934780003630E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>MicrophoneMuted.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFDF61BD934780003630E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF3BFDF41BD934780003630E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ASSET_TAGS</key>
+				<array/>
+			</dict>
+		</dict>
+		<key>FF3BFDF71BD934780003630E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF3BFDF51BD934780003630E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ASSET_TAGS</key>
+				<array/>
+			</dict>
+		</dict>
+		<key>FF3BFDF81BDA12F90003630E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AudioDevices.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFDF91BDA12F90003630E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AudioDevices.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFDFA1BDA12F90003630E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF3BFDF91BDA12F90003630E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ASSET_TAGS</key>
+				<array/>
+			</dict>
+		</dict>
+		<key>FF3BFDFB1BDA33DB0003630E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>SwitchButton.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFDFC1BDA33DB0003630E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF3BFDFB1BDA33DB0003630E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ASSET_TAGS</key>
+				<array/>
+			</dict>
+		</dict>
+		<key>FF3BFDFD1BDA35EC0003630E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FF3BFDFE1BDA35EC0003630E</string>
+				<string>FF3BFDFF1BDA35EC0003630E</string>
+				<string>FF3BFE001BDA35EC0003630E</string>
+				<string>FF3BFE011BDA35EC0003630E</string>
+				<string>FF3BFE021BDA35EC0003630E</string>
+				<string>FF3BFE031BDA35EC0003630E</string>
+				<string>FF3BFE041BDA35EC0003630E</string>
+				<string>FF3BFE051BDA35EC0003630E</string>
+				<string>FF3BFE0A1BDA36390003630E</string>
+				<string>FF3BFE0B1BDA36390003630E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Buttons</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFDFE1BDA35EC0003630E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>BouncyButton.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFDFF1BDA35EC0003630E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>BouncyButton.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFE001BDA35EC0003630E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DrawerButton.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFE011BDA35EC0003630E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DrawerButton.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFE021BDA35EC0003630E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PlaybackButton.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFE031BDA35EC0003630E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>PlaybackButton.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFE041BDA35EC0003630E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>RoundedButton.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFE051BDA35EC0003630E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>RoundedButton.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFE061BDA35EC0003630E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF3BFDFF1BDA35EC0003630E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ASSET_TAGS</key>
+				<array/>
+			</dict>
+		</dict>
+		<key>FF3BFE071BDA35EC0003630E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF3BFE011BDA35EC0003630E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ASSET_TAGS</key>
+				<array/>
+			</dict>
+		</dict>
+		<key>FF3BFE081BDA35EC0003630E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF3BFE031BDA35EC0003630E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ASSET_TAGS</key>
+				<array/>
+			</dict>
+		</dict>
+		<key>FF3BFE091BDA35EC0003630E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF3BFE051BDA35EC0003630E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ASSET_TAGS</key>
+				<array/>
+			</dict>
+		</dict>
+		<key>FF3BFE0A1BDA36390003630E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SpinningButton.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFE0B1BDA36390003630E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SpinningButton.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF3BFE0C1BDA36390003630E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF3BFE0B1BDA36390003630E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ASSET_TAGS</key>
+				<array/>
+			</dict>
+		</dict>
+		<key>FF42B95E1B4E35AF00535A7B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FF42B9691B4E35AF00535A7B</string>
+				<string>FF42B9831B4E35AF00535A7B</string>
+				<string>FF42B9681B4E35AF00535A7B</string>
+				<string>C4B08BFABAF9E76B6258F14D</string>
+				<string>14EEFCD0369F1A55470A9A07</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF42B95F1B4E35AF00535A7B</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0700</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>GeorgiIvanov</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>FF42B9661B4E35AF00535A7B</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.3.2</string>
+						<key>DevelopmentTeam</key>
+						<string>MB2TZCB4B7</string>
+						<key>SystemCapabilities</key>
+						<dict>
+							<key>com.apple.BackgroundModes</key>
+							<dict>
+								<key>enabled</key>
+								<string>1</string>
+							</dict>
+						</dict>
+					</dict>
+					<key>FF42B97F1B4E35AF00535A7B</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.3.2</string>
+						<key>TestTargetID</key>
+						<string>FF42B9661B4E35AF00535A7B</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>FF42B9621B4E35AF00535A7B</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>FF42B95E1B4E35AF00535A7B</string>
+			<key>productRefGroup</key>
+			<string>FF42B9681B4E35AF00535A7B</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>FF42B9661B4E35AF00535A7B</string>
+				<string>FF42B97F1B4E35AF00535A7B</string>
+			</array>
+		</dict>
+		<key>FF42B9621B4E35AF00535A7B</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>FF42B9881B4E35AF00535A7B</string>
+				<string>FF42B9891B4E35AF00535A7B</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>FF42B9631B4E35AF00535A7B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FF8448991B809F5D00A06D6B</string>
+				<string>FF3BFDEA1BD8D76E0003630E</string>
+				<string>FF3BFE091BDA35EC0003630E</string>
+				<string>FF9DB4E91B540192006E4D3F</string>
+				<string>FF86FF671B60B3F100C3E093</string>
+				<string>FF8448A21B80B3D800A06D6B</string>
+				<string>FF7DD90D1B63ACBE008006DD</string>
+				<string>FF0A483F1B4E44A80021B149</string>
+				<string>FF7604431B53C6D20024930C</string>
+				<string>FF3BFE071BDA35EC0003630E</string>
+				<string>FF8448971B809F5D00A06D6B</string>
+				<string>FF0A48451B4FB75B0021B149</string>
+				<string>FF0A48321B4E3D870021B149</string>
+				<string>FF86FF6B1B60CE4A00C3E093</string>
+				<string>FF9DB5441B568918006E4D3F</string>
+				<string>FF3BFE061BDA35EC0003630E</string>
+				<string>FF7DD9101B63ACD7008006DD</string>
+				<string>FF3BFE0C1BDA36390003630E</string>
+				<string>FF3BFDED1BD8F2260003630E</string>
+				<string>FF86FF631B60B18500C3E093</string>
+				<string>FFCE737C1B525D4400F52920</string>
+				<string>FF0A48421B4FB44E0021B149</string>
+				<string>FF3BFE081BDA35EC0003630E</string>
+				<string>FF0A484C1B5031A10021B149</string>
+				<string>FF3BFDE61BD8D1620003630E</string>
+				<string>FF481DC61B5BB27900AF588B</string>
+				<string>FF0A48491B4FEC7E0021B149</string>
+				<string>FF0A48381B4E3F560021B149</string>
+				<string>FF3BFDFA1BDA12F90003630E</string>
+				<string>FF9DB4E41B53E097006E4D3F</string>
+				<string>FF7DD9161B63B549008006DD</string>
+				<string>FF69D66A1B624C13000BD808</string>
+				<string>FFECC0521BDCD0DF0007DA70</string>
+				<string>FFCE73831B52AC6E00F52920</string>
+				<string>FF42B9701B4E35AF00535A7B</string>
+				<string>FF9DB4EC1B54FA8E006E4D3F</string>
+				<string>FF8448981B809F5D00A06D6B</string>
+				<string>FF481DCD1B5BB91300AF588B</string>
+				<string>FF86FF711B60D75C00C3E093</string>
+				<string>FF9DB5351B56360E006E4D3F</string>
+				<string>FF42B96D1B4E35AF00535A7B</string>
+				<string>FF3BFDF31BD90BCB0003630E</string>
+				<string>FF7DD9131B63ADCB008006DD</string>
+				<string>FF84489C1B80A69300A06D6B</string>
+				<string>FF3BFDF01BD8F2CC0003630E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>FF42B9641B4E35AF00535A7B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FF0A482F1B4E38FA0021B149</string>
+				<string>0FA6C9961524C40A8B570F2A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>FF42B9651B4E35AF00535A7B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FF3BFDDA1BD8CC770003630E</string>
+				<string>FF8448731B7F220600A06D6B</string>
+				<string>FF3BFDDC1BD8CC770003630E</string>
+				<string>FF8448741B7F220600A06D6B</string>
+				<string>FF3BFDF61BD934780003630E</string>
+				<string>FF3BFDDB1BD8CC770003630E</string>
+				<string>FF8448751B7F220600A06D6B</string>
+				<string>FF3BFDE21BD8CDED0003630E</string>
+				<string>FF84488B1B7FA42400A06D6B</string>
+				<string>FF42B9761B4E35AF00535A7B</string>
+				<string>FF2619C81B661B770069907D</string>
+				<string>FF84488C1B7FA42400A06D6B</string>
+				<string>FF84486E1B7F19EA00A06D6B</string>
+				<string>FF3BFDF71BD934780003630E</string>
+				<string>FF3BFDDE1BD8CC770003630E</string>
+				<string>FF9DB5481B569A95006E4D3F</string>
+				<string>FF9DB4E61B53EE36006E4D3F</string>
+				<string>FF3BFDDD1BD8CC770003630E</string>
+				<string>FF481DCA1B5BB42C00AF588B</string>
+				<string>FF8448771B7F27AF00A06D6B</string>
+				<string>FF3BFDE31BD8CDED0003630E</string>
+				<string>FF42B97B1B4E35AF00535A7B</string>
+				<string>FF9DB5411B56887B006E4D3F</string>
+				<string>FF42B9781B4E35AF00535A7B</string>
+				<string>FF76043F1B53BEDE0024930C</string>
+				<string>FF481DC91B5BB42C00AF588B</string>
+				<string>FF3BFDDF1BD8CC770003630E</string>
+				<string>FF9DB5471B569A95006E4D3F</string>
+				<string>FF3BFDFC1BDA33DB0003630E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>FF42B9661B4E35AF00535A7B</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>FF42B98A1B4E35AF00535A7B</string>
+			<key>buildPhases</key>
+			<array>
+				<string>F84B9BB3AB7CAFF785494CDE</string>
+				<string>FF42B9631B4E35AF00535A7B</string>
+				<string>FF42B9641B4E35AF00535A7B</string>
+				<string>FF42B9651B4E35AF00535A7B</string>
+				<string>6B2F28AD0AF588AEF4713525</string>
+				<string>50E8C873374AEE14AAC08B1D</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>WaveAmp</string>
+			<key>productName</key>
+			<string>WaveAmp</string>
+			<key>productReference</key>
+			<string>FF42B9671B4E35AF00535A7B</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>FF42B9671B4E35AF00535A7B</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>WaveAmp.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>FF42B9681B4E35AF00535A7B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FF42B9671B4E35AF00535A7B</string>
+				<string>FF42B9801B4E35AF00535A7B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF42B9691B4E35AF00535A7B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FF76043C1B53BE100024930C</string>
+				<string>FF7604401B53C6D20024930C</string>
+				<string>FF0A48461B4FEBE00021B149</string>
+				<string>FF0A48391B4E41B00021B149</string>
+				<string>FF9DB54B1B569E74006E4D3F</string>
+				<string>FF42B9901B4E35D400535A7B</string>
+				<string>FF42B9941B4E35D900535A7B</string>
+				<string>FF42B96E1B4E35AF00535A7B</string>
+				<string>FF42B96F1B4E35AF00535A7B</string>
+				<string>FF42B9771B4E35AF00535A7B</string>
+				<string>FF42B96A1B4E35AF00535A7B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>WaveAmp</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF42B96A1B4E35AF00535A7B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FF42B96B1B4E35AF00535A7B</string>
+				<string>FF42B96C1B4E35AF00535A7B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF42B96B1B4E35AF00535A7B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF42B96C1B4E35AF00535A7B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF42B96D1B4E35AF00535A7B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF42B96C1B4E35AF00535A7B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF42B96E1B4E35AF00535A7B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF42B96F1B4E35AF00535A7B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF42B9701B4E35AF00535A7B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF42B96F1B4E35AF00535A7B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF42B9741B4E35AF00535A7B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FF42B9751B4E35AF00535A7B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF42B9751B4E35AF00535A7B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF42B9761B4E35AF00535A7B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF42B9741B4E35AF00535A7B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF42B9771B4E35AF00535A7B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF42B9781B4E35AF00535A7B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF42B9771B4E35AF00535A7B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF42B9791B4E35AF00535A7B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FF42B97A1B4E35AF00535A7B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF42B97A1B4E35AF00535A7B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF42B97B1B4E35AF00535A7B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF42B9791B4E35AF00535A7B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF42B97C1B4E35AF00535A7B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FFCE73741B52580700F52920</string>
+				<string>FFCE73801B525E3800F52920</string>
+				<string>FFCE73861B52BC1B00F52920</string>
+				<string>FFCE737F1B525E3200F52920</string>
+				<string>FFCE73781B525A5600F52920</string>
+				<string>FFCE737B1B525D2C00F52920</string>
+				<string>FFCE73851B52BC1400F52920</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>FF42B97D1B4E35AF00535A7B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>FF42B97E1B4E35AF00535A7B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>FF42B97F1B4E35AF00535A7B</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>FF42B98D1B4E35AF00535A7B</string>
+			<key>buildPhases</key>
+			<array>
+				<string>FF42B97C1B4E35AF00535A7B</string>
+				<string>FF42B97D1B4E35AF00535A7B</string>
+				<string>FF42B97E1B4E35AF00535A7B</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>FF42B9821B4E35AF00535A7B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>WaveAmpTests</string>
+			<key>productName</key>
+			<string>WaveAmpTests</string>
+			<key>productReference</key>
+			<string>FF42B9801B4E35AF00535A7B</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>FF42B9801B4E35AF00535A7B</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>WaveAmpTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>FF42B9811B4E35AF00535A7B</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>FF42B95F1B4E35AF00535A7B</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>FF42B9661B4E35AF00535A7B</string>
+			<key>remoteInfo</key>
+			<string>WaveAmp</string>
+		</dict>
+		<key>FF42B9821B4E35AF00535A7B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>FF42B9661B4E35AF00535A7B</string>
+			<key>targetProxy</key>
+			<string>FF42B9811B4E35AF00535A7B</string>
+		</dict>
+		<key>FF42B9831B4E35AF00535A7B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FFCE73771B525A5600F52920</string>
+				<string>FFCE73731B52580700F52920</string>
+				<string>FFCE73841B52BC1400F52920</string>
+				<string>FF42B9841B4E35AF00535A7B</string>
+				<string>FFCE73791B525D2C00F52920</string>
+				<string>FFCE737A1B525D2C00F52920</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>WaveAmpTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF42B9841B4E35AF00535A7B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FF42B9851B4E35AF00535A7B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF42B9851B4E35AF00535A7B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF42B9881B4E35AF00535A7B</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>FF42B9891B4E35AF00535A7B</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>FF42B98A1B4E35AF00535A7B</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>FF42B98B1B4E35AF00535A7B</string>
+				<string>FF42B98C1B4E35AF00535A7B</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>FF42B98B1B4E35AF00535A7B</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>57F6D79C9BC447900DED991A</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>INFOPLIST_FILE</key>
+				<string>WaveAmp/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>GI.$(PRODUCT_NAME:rfc1034identifier)</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>FF42B98C1B4E35AF00535A7B</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>DC9F17805F845646925F68CD</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>INFOPLIST_FILE</key>
+				<string>WaveAmp/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>GI.$(PRODUCT_NAME:rfc1034identifier)</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>FF42B98D1B4E35AF00535A7B</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>FF42B98E1B4E35AF00535A7B</string>
+				<string>FF42B98F1B4E35AF00535A7B</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>FF42B98E1B4E35AF00535A7B</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>WaveAmpTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>GI.$(PRODUCT_NAME:rfc1034identifier)</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/WaveAmp.app/WaveAmp</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>FF42B98F1B4E35AF00535A7B</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>WaveAmpTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>GI.$(PRODUCT_NAME:rfc1034identifier)</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/WaveAmp.app/WaveAmp</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>FF42B9901B4E35D400535A7B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FF3BFDE71BD8D7610003630E</string>
+				<string>FF0A48301B4E3D870021B149</string>
+				<string>FF0A48311B4E3D870021B149</string>
+				<string>FF0A48361B4E3F560021B149</string>
+				<string>FF0A48371B4E3F560021B149</string>
+				<string>FF0A483D1B4E44A80021B149</string>
+				<string>FF0A483E1B4E44A80021B149</string>
+				<string>FF9DB4E21B53E097006E4D3F</string>
+				<string>FF9DB4E31B53E097006E4D3F</string>
+				<string>FF9DB5331B56360E006E4D3F</string>
+				<string>FF9DB5341B56360E006E4D3F</string>
+				<string>FF3BFDEB1BD8F2260003630E</string>
+				<string>FF3BFDEC1BD8F2260003630E</string>
+				<string>FF3BFDE41BD8D1620003630E</string>
+				<string>FF3BFDE51BD8D1620003630E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>ViewControllers</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF42B9941B4E35D900535A7B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FF42B9741B4E35AF00535A7B</string>
+				<string>FF42B9791B4E35AF00535A7B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Storyboards</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF481DC31B5BB27900AF588B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FF481DC41B5BB27900AF588B</string>
+				<string>FF481DC51B5BB27900AF588B</string>
+				<string>FF481DCB1B5BB91300AF588B</string>
+				<string>FF481DCC1B5BB91300AF588B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Audiogram</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF481DC41B5BB27900AF588B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AudiogramView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF481DC51B5BB27900AF588B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AudiogramView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF481DC61B5BB27900AF588B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF481DC51B5BB27900AF588B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF481DC71B5BB42C00AF588B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>LeftEar.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF481DC81B5BB42C00AF588B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>RightEar.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF481DC91B5BB42C00AF588B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF481DC71B5BB42C00AF588B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF481DCA1B5BB42C00AF588B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF481DC81B5BB42C00AF588B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF481DCB1B5BB91300AF588B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AudiogramMarkerView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF481DCC1B5BB91300AF588B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AudiogramMarkerView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF481DCD1B5BB91300AF588B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF481DCC1B5BB91300AF588B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF69D6681B624C13000BD808</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DSPHelpers.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF69D6691B624C13000BD808</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DSPHelpers.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF69D66A1B624C13000BD808</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF69D6691B624C13000BD808</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF76043C1B53BE100024930C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FF84486F1B7F1BA700A06D6B</string>
+				<string>FF9DB5401B56887B006E4D3F</string>
+				<string>FF76043D1B53BE1D0024930C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF76043D1B53BE1D0024930C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FF3BFDD31BD8CC770003630E</string>
+				<string>FF8448891B7FA42400A06D6B</string>
+				<string>FF84488A1B7FA42400A06D6B</string>
+				<string>FF8448761B7F27AF00A06D6B</string>
+				<string>FF84486D1B7F19EA00A06D6B</string>
+				<string>FF2619C71B661B770069907D</string>
+				<string>FF481DC71B5BB42C00AF588B</string>
+				<string>FF481DC81B5BB42C00AF588B</string>
+				<string>FF9DB5451B569A95006E4D3F</string>
+				<string>FF9DB5461B569A95006E4D3F</string>
+				<string>FF9DB4E51B53EE36006E4D3F</string>
+				<string>FF76043E1B53BEDE0024930C</string>
+				<string>FF3BFDFB1BDA33DB0003630E</string>
+				<string>FF3BFDF41BD934780003630E</string>
+				<string>FF3BFDF51BD934780003630E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Images</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF76043E1B53BEDE0024930C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>HearingWave.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF76043F1B53BEDE0024930C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF76043E1B53BEDE0024930C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF7604401B53C6D20024930C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FF7604411B53C6D20024930C</string>
+				<string>FF7604421B53C6D20024930C</string>
+				<string>FF9DB4E71B540192006E4D3F</string>
+				<string>FF9DB4E81B540192006E4D3F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Animations</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF7604411B53C6D20024930C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UIView+PopAnimations.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF7604421B53C6D20024930C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UIView+PopAnimations.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF7604431B53C6D20024930C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF7604421B53C6D20024930C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF7DD90A1B63ACBE008006DD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FF7DD9111B63ADCB008006DD</string>
+				<string>FF7DD9121B63ADCB008006DD</string>
+				<string>FF7DD90E1B63ACD7008006DD</string>
+				<string>FF7DD90F1B63ACD7008006DD</string>
+				<string>FF7DD9171B63BDE8008006DD</string>
+				<string>FF7DD90B1B63ACBE008006DD</string>
+				<string>FF7DD90C1B63ACBE008006DD</string>
+				<string>FF7DD9141B63B549008006DD</string>
+				<string>FF7DD9151B63B549008006DD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>SoundModifiers</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF7DD90B1B63ACBE008006DD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ToneEqualizer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF7DD90C1B63ACBE008006DD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ToneEqualizer.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF7DD90D1B63ACBE008006DD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF7DD90C1B63ACBE008006DD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF7DD90E1B63ACD7008006DD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SoundModifier.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF7DD90F1B63ACD7008006DD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SoundModifier.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF7DD9101B63ACD7008006DD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF7DD90F1B63ACD7008006DD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF7DD9111B63ADCB008006DD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SoundModifiersFactory.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF7DD9121B63ADCB008006DD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SoundModifiersFactory.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF7DD9131B63ADCB008006DD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF7DD9121B63ADCB008006DD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF7DD9141B63B549008006DD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>HearingLossSimulator.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF7DD9151B63B549008006DD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>HearingLossSimulator.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF7DD9161B63B549008006DD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF7DD9151B63B549008006DD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF7DD9171B63BDE8008006DD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ToneEqualizer_protected.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF84486D1B7F19EA00A06D6B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>TestCircle.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF84486E1B7F19EA00A06D6B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF84486D1B7F19EA00A06D6B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF84486F1B7F1BA700A06D6B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FF8448711B7F1BD400A06D6B</string>
+				<string>FF8448701B7F1BBE00A06D6B</string>
+				<string>FF8448721B7F1C1300A06D6B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Fonts</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF8448701B7F1BBE00A06D6B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file</string>
+			<key>path</key>
+			<string>OpenSans-Regular.ttf</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF8448711B7F1BD400A06D6B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file</string>
+			<key>path</key>
+			<string>OpenSans-Light.ttf</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF8448721B7F1C1300A06D6B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file</string>
+			<key>path</key>
+			<string>OpenSans-Semibold.ttf</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF8448731B7F220600A06D6B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF8448711B7F1BD400A06D6B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF8448741B7F220600A06D6B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF8448701B7F1BBE00A06D6B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF8448751B7F220600A06D6B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF8448721B7F1C1300A06D6B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF8448761B7F27AF00A06D6B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>CloseIcon.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF8448771B7F27AF00A06D6B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF8448761B7F27AF00A06D6B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF8448891B7FA42400A06D6B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>LeftArrow.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF84488A1B7FA42400A06D6B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>RightArrow.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF84488B1B7FA42400A06D6B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF8448891B7FA42400A06D6B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF84488C1B7FA42400A06D6B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF84488A1B7FA42400A06D6B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF8448901B809F5D00A06D6B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FFECC0531BDCD65C0007DA70</string>
+				<string>FF8448911B809F5D00A06D6B</string>
+				<string>FF8448921B809F5D00A06D6B</string>
+				<string>FF8448931B809F5D00A06D6B</string>
+				<string>FF8448941B809F5D00A06D6B</string>
+				<string>FF8448951B809F5D00A06D6B</string>
+				<string>FF8448961B809F5D00A06D6B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>BaseViews</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF8448911B809F5D00A06D6B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>BaseButton.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF8448921B809F5D00A06D6B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>BaseButton.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF8448931B809F5D00A06D6B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>BaseLabel.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF8448941B809F5D00A06D6B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>BaseLabel.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF8448951B809F5D00A06D6B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>BaseTextView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF8448961B809F5D00A06D6B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>BaseTextView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF8448971B809F5D00A06D6B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF8448921B809F5D00A06D6B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF8448981B809F5D00A06D6B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF8448941B809F5D00A06D6B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF8448991B809F5D00A06D6B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF8448961B809F5D00A06D6B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF84489A1B80A69300A06D6B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ViewConstants.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF84489B1B80A69300A06D6B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.cpp.objcpp</string>
+			<key>path</key>
+			<string>ViewConstants.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF84489C1B80A69300A06D6B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF84489B1B80A69300A06D6B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF8448A01B80B3D800A06D6B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SegmentedControl.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF8448A11B80B3D800A06D6B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SegmentedControl.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF8448A21B80B3D800A06D6B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF8448A11B80B3D800A06D6B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF86FF601B60B15400C3E093</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FF3BFDF11BD90B080003630E</string>
+				<string>FF3BFDF21BD90BCB0003630E</string>
+				<string>FF86FF611B60B18500C3E093</string>
+				<string>FF86FF641B60B36000C3E093</string>
+				<string>FF86FF621B60B18500C3E093</string>
+				<string>FF86FF651B60B3F100C3E093</string>
+				<string>FF86FF661B60B3F100C3E093</string>
+				<string>FF86FF6F1B60D75C00C3E093</string>
+				<string>FF86FF701B60D75C00C3E093</string>
+				<string>FF3BFDEE1BD8F2CC0003630E</string>
+				<string>FF3BFDEF1BD8F2CC0003630E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>AudioPlayer</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF86FF611B60B18500C3E093</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>NovocainePlayer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF86FF621B60B18500C3E093</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>NovocainePlayer.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF86FF631B60B18500C3E093</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF86FF621B60B18500C3E093</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF86FF641B60B36000C3E093</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>NovocainePlayer_protected.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF86FF651B60B3F100C3E093</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PureTonePlayer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF86FF661B60B3F100C3E093</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>PureTonePlayer.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF86FF671B60B3F100C3E093</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF86FF661B60B3F100C3E093</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF86FF681B60CE4A00C3E093</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FF86FF6C1B60CE6700C3E093</string>
+				<string>FF86FF691B60CE4A00C3E093</string>
+				<string>FF86FF6A1B60CE4A00C3E093</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Audiometer</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF86FF691B60CE4A00C3E093</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PureToneAudiometer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF86FF6A1B60CE4A00C3E093</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>PureToneAudiometer.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF86FF6B1B60CE4A00C3E093</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF86FF6A1B60CE4A00C3E093</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF86FF6C1B60CE6700C3E093</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AudiometerProtocols.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF86FF6F1B60D75C00C3E093</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FilePlayer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF86FF701B60D75C00C3E093</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.cpp.objcpp</string>
+			<key>path</key>
+			<string>FilePlayer.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF86FF711B60D75C00C3E093</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF86FF701B60D75C00C3E093</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF9DB4E21B53E097006E4D3F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TestInstructionsViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF9DB4E31B53E097006E4D3F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TestInstructionsViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF9DB4E41B53E097006E4D3F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF9DB4E31B53E097006E4D3F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF9DB4E51B53EE36006E4D3F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Headphones.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF9DB4E61B53EE36006E4D3F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF9DB4E51B53EE36006E4D3F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF9DB4E71B540192006E4D3F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CommonAnimations.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF9DB4E81B540192006E4D3F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>CommonAnimations.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF9DB4E91B540192006E4D3F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF9DB4E81B540192006E4D3F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF9DB4EA1B54FA6A006E4D3F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AudioTypes.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF9DB4EB1B54FA8E006E4D3F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AudioTypes.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF9DB4EC1B54FA8E006E4D3F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF9DB4EB1B54FA8E006E4D3F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF9DB5331B56360E006E4D3F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AdjustedSpeechViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF9DB5341B56360E006E4D3F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AdjustedSpeechViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF9DB5351B56360E006E4D3F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF9DB5341B56360E006E4D3F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF9DB5401B56887B006E4D3F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder</string>
+			<key>path</key>
+			<string>AudioFiles</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF9DB5411B56887B006E4D3F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF9DB5401B56887B006E4D3F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF9DB5421B568918006E4D3F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SoundFile.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF9DB5431B568918006E4D3F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SoundFile.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF9DB5441B568918006E4D3F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF9DB5431B568918006E4D3F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF9DB5451B569A95006E4D3F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Pause.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF9DB5461B569A95006E4D3F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Play.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF9DB5471B569A95006E4D3F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF9DB5451B569A95006E4D3F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF9DB5481B569A95006E4D3F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF9DB5461B569A95006E4D3F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF9DB54B1B569E74006E4D3F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FF8448901B809F5D00A06D6B</string>
+				<string>FF481DC31B5BB27900AF588B</string>
+				<string>FF3BFDFD1BDA35EC0003630E</string>
+				<string>FF84489A1B80A69300A06D6B</string>
+				<string>FF84489B1B80A69300A06D6B</string>
+				<string>FF8448A01B80B3D800A06D6B</string>
+				<string>FF8448A11B80B3D800A06D6B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Views</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FFCE73731B52580700F52920</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>PunchCardTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FFCE73741B52580700F52920</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FFCE73731B52580700F52920</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FFCE73771B525A5600F52920</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AmplitudeMultiplierTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FFCE73781B525A5600F52920</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FFCE73771B525A5600F52920</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FFCE73791B525D2C00F52920</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TestsAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FFCE737A1B525D2C00F52920</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TestsAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FFCE737B1B525D2C00F52920</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FFCE737A1B525D2C00F52920</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FFCE737C1B525D4400F52920</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FFCE737A1B525D2C00F52920</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FFCE737F1B525E3200F52920</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF0A484B1B5031A10021B149</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FFCE73801B525E3800F52920</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF0A48411B4FB44E0021B149</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FFCE73811B52AC6E00F52920</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AudiogramData.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FFCE73821B52AC6E00F52920</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AudiogramData.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FFCE73831B52AC6E00F52920</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FFCE73821B52AC6E00F52920</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FFCE73841B52BC1400F52920</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AudiogramDataTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FFCE73851B52BC1400F52920</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FFCE73841B52BC1400F52920</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FFCE73861B52BC1B00F52920</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FFCE73821B52AC6E00F52920</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FFECC0501BDCD0DF0007DA70</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ModalViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FFECC0511BDCD0DF0007DA70</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ModalViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FFECC0521BDCD0DF0007DA70</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FFECC0511BDCD0DF0007DA70</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ASSET_TAGS</key>
+				<array/>
+			</dict>
+		</dict>
+		<key>FFECC0531BDCD65C0007DA70</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>BaseView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>FF42B95F1B4E35AF00535A7B</string>
+</dict>
+</plist>
